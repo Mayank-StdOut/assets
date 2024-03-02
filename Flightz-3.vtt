@@ -1,0 +1,1655 @@
+WEBVTT
+
+00:00.000 --> 00:06.000
+How to create a form
+
+00:06.000 --> 00:13.000
+After creating a form, we need a flight data after user search.
+
+00:13.000 --> 00:19.000
+For that we need to use API and we will call it flight data.
+
+00:19.000 --> 00:22.000
+We will use rapid API.
+
+00:22.000 --> 00:25.000
+We have given the link of API in the link section.
+
+00:25.000 --> 00:31.000
+You have to go to your browser and paste the link.
+
+00:31.000 --> 00:34.000
+After that you will reach here.
+
+00:34.000 --> 00:39.000
+Here you will get the API by searching flight fare.
+
+00:39.000 --> 00:41.000
+First of all you have to sign up here.
+
+00:41.000 --> 00:49.000
+After signing up in this platform, you have to click on subscribe to use.
+
+00:49.000 --> 00:53.000
+Then you will get a pricing in this section.
+
+00:53.000 --> 00:55.000
+This is the basic plan.
+
+00:55.000 --> 00:57.000
+You have to click on subscribe.
+
+00:57.000 --> 00:59.000
+First you will sign up.
+
+00:59.000 --> 01:02.000
+Then you will come to pricing and click on subscribe.
+
+01:02.000 --> 01:05.000
+After that you have to come to endpoints.
+
+01:05.000 --> 01:08.000
+After coming to endpoints, you will see here.
+
+01:08.000 --> 01:19.000
+Here you will get the full API data on the right side.
+
+01:19.000 --> 01:23.000
+First of all you will click on node.js.
+
+01:23.000 --> 01:24.000
+And here you will go.
+
+01:24.000 --> 01:25.000
+First of all you will click on node.js.
+
+01:25.000 --> 01:26.000
+Then you will go to node.js.
+
+01:26.000 --> 01:30.000
+And here you will go to the end and click on fetch.
+
+01:30.000 --> 01:33.000
+So we will extract our data from the API in this way
+
+01:33.000 --> 01:35.000
+then you have to copy all this.
+
+01:35.000 --> 01:38.000
+And after copying you have to come back to the VS code.
+
+01:38.000 --> 01:43.000
+So I have already made my account.
+
+01:43.000 --> 01:48.000
+So when you copy the account, you will get your API here.
+
+01:48.000 --> 01:51.000
+I have made my account here already.
+
+01:51.000 --> 01:54.000
+So I have also copied it.
+
+01:54.000 --> 02:09.000
+First of all, I will go to the top and paste the handleSummit function in the handleSummit function.
+
+02:09.000 --> 02:15.000
+Now there are some things to pay attention to.
+
+02:15.000 --> 02:25.000
+The first thing is that you have to set these things in the URL method.
+
+02:25.000 --> 02:37.000
+For example, by doing formData.from and formData.to, what will happen here is that we will be taking these things from the form.
+
+02:37.000 --> 02:43.000
+And we will be setting these things in the API.
+
+02:43.000 --> 02:45.000
+And then in the end,
+
+02:45.000 --> 02:49.000
+you have to set the currency as INR.
+
+02:49.000 --> 02:52.000
+Because it is in Indian Rupees.
+
+02:52.000 --> 02:53.000
+After that,
+
+02:53.000 --> 02:58.000
+these things like your formData etc.
+
+02:58.000 --> 03:01.000
+We will be defining functions for these things as well.
+
+03:01.000 --> 03:03.000
+Before that, you will have an async function here.
+
+03:03.000 --> 03:06.000
+So you have to define the async here.
+
+03:06.000 --> 03:09.000
+After that, what you have to do is,
+
+03:09.000 --> 03:13.000
+first of all, you have to remove the handleInputChange function from here.
+
+03:13.000 --> 03:15.000
+You have to put it at the top.
+
+03:15.000 --> 03:17.000
+And here you have to do a copy.
+
+03:17.000 --> 03:20.000
+And in the handleInputChange, we have to do some things.
+
+03:20.000 --> 03:22.000
+What will those things be?
+
+03:22.000 --> 03:25.000
+The first thing is that we will pass the event here.
+
+03:25.000 --> 03:28.000
+What will the handleInputChange function be doing here?
+
+03:28.000 --> 03:30.000
+Whatever the user is writing,
+
+03:30.000 --> 03:33.000
+all of that will be saved here.
+
+03:33.000 --> 03:35.000
+In the handleInputChange.
+
+03:35.000 --> 03:39.000
+So here it will check that if the user has made some changes in the form,
+
+03:39.000 --> 03:40.000
+entered some parameters,
+
+03:40.000 --> 03:43.000
+which we have done last time in the movie.
+
+03:43.000 --> 03:48.000
+How we have extracted the values from the form using the event.
+
+03:48.000 --> 03:50.000
+So we will do the same thing here.
+
+03:50.000 --> 03:53.000
+Here we will use some object destructuring.
+
+03:53.000 --> 03:56.000
+So first of all, you remove the console.log from here.
+
+03:56.000 --> 03:59.000
+And what to do here?
+
+03:59.000 --> 04:01.000
+First of all, you write const here.
+
+04:01.000 --> 04:03.000
+And you will put two things in it.
+
+04:03.000 --> 04:05.000
+Name and value.
+
+04:05.000 --> 04:06.000
+What will happen here?
+
+04:06.000 --> 04:08.000
+Now I am going to tell you nicely.
+
+04:08.000 --> 04:12.000
+Before that, I will write my whole function first.
+
+04:12.000 --> 04:15.000
+What will you do by using event.target?
+
+04:15.000 --> 04:17.000
+All the values that the user will enter,
+
+04:17.000 --> 04:19.000
+we will fetch from there.
+
+04:19.000 --> 04:21.000
+And after that here,
+
+04:21.000 --> 04:24.000
+a formData name,
+
+04:24.000 --> 04:27.000
+which we will make a state now,
+
+04:27.000 --> 04:29.000
+you will put all the values in it.
+
+04:29.000 --> 04:30.000
+So here we will
+
+04:33.000 --> 04:35.000
+something like this.
+
+04:35.000 --> 04:38.000
+Here we will use object destructuring
+
+04:38.000 --> 04:40.000
+to set the name and value.
+
+04:40.000 --> 04:42.000
+So now I am going to
+
+04:42.000 --> 04:45.000
+explain you what to do.
+
+04:45.000 --> 04:47.000
+Ok.
+
+04:47.000 --> 04:49.000
+Now what we have to do?
+
+04:49.000 --> 04:51.000
+What we have to do here is
+
+04:51.000 --> 04:54.000
+that we have to take data from the form first.
+
+04:54.000 --> 04:56.000
+What will we take in the data?
+
+04:56.000 --> 04:58.000
+We will take name and value.
+
+04:58.000 --> 05:00.000
+For example,
+
+05:00.000 --> 05:02.000
+our first input form is this.
+
+05:02.000 --> 05:04.000
+Here we are taking data from from.
+
+05:04.000 --> 05:06.000
+So what is its name here?
+
+05:06.000 --> 05:07.000
+From.
+
+05:07.000 --> 05:08.000
+And what will be its value?
+
+05:08.000 --> 05:11.000
+The value that the user will enter will be its value.
+
+05:11.000 --> 05:12.000
+So from here,
+
+05:12.000 --> 05:16.000
+from the input named from,
+
+05:16.000 --> 05:18.000
+we will take the value of the user who will enter.
+
+05:18.000 --> 05:20.000
+And we will set it
+
+05:20.000 --> 05:23.000
+in the formData name state.
+
+05:23.000 --> 05:24.000
+So first of all,
+
+05:24.000 --> 05:26.000
+we will make a state of formData name.
+
+05:29.000 --> 05:32.000
+So here we make a state of formData name.
+
+05:34.000 --> 05:36.000
+And here we will write setFormData.
+
+05:38.000 --> 05:39.000
+And this state,
+
+05:39.000 --> 05:41.000
+what will it be storing?
+
+05:41.000 --> 05:43.000
+It will be storing
+
+05:43.000 --> 05:45.000
+one object.
+
+05:45.000 --> 05:47.000
+Javascript object.
+
+05:47.000 --> 05:49.000
+Javascript object is something like this.
+
+05:51.000 --> 05:53.000
+Here we will write from.
+
+05:53.000 --> 05:55.000
+After this,
+
+05:55.000 --> 05:57.000
+it will be storing the second thing,
+
+05:57.000 --> 05:59.000
+to.
+
+05:59.000 --> 06:01.000
+After this,
+
+06:01.000 --> 06:03.000
+it will be storing the third thing,
+
+06:03.000 --> 06:05.000
+date.
+
+06:07.000 --> 06:08.000
+After this,
+
+06:08.000 --> 06:09.000
+it will be storing the fourth thing,
+
+06:09.000 --> 06:11.000
+time.
+
+06:11.000 --> 06:12.000
+After this,
+
+06:12.000 --> 06:13.000
+it will be storing the first thing,
+
+06:13.000 --> 06:14.000
+date.
+
+06:14.000 --> 06:15.000
+All these,
+
+06:15.000 --> 06:16.000
+I will tell you
+
+06:16.000 --> 06:17.000
+very nicely
+
+06:17.000 --> 06:18.000
+as much as is happening here,
+
+06:18.000 --> 06:19.000
+just you have to write
+
+06:19.000 --> 06:20.000
+these things with me.
+
+06:20.000 --> 06:21.000
+You keep doing these things,
+
+06:21.000 --> 06:23.000
+and I will explain it to you
+
+06:23.000 --> 06:24.000
+from a good time.
+
+06:24.000 --> 06:25.000
+Okay.
+
+06:25.000 --> 06:27.000
+So what did we do now?
+
+06:27.000 --> 06:28.000
+First,
+
+06:28.000 --> 06:29.000
+let's understand it once again.
+
+06:30.000 --> 06:31.000
+What did we do first?
+
+06:31.000 --> 06:32.000
+Made the form.
+
+06:32.000 --> 06:33.000
+The first thing.
+
+06:33.000 --> 06:34.000
+Now,
+
+06:34.000 --> 06:35.000
+second thing,
+
+06:35.000 --> 06:36.000
+we used API here.
+
+06:36.000 --> 06:37.000
+API,
+
+06:37.000 --> 06:42.500
+Then we picked up the code from API and put it in the function of handleSummit.
+
+06:42.500 --> 06:47.000
+Now when the user clicks on the submit button, the API will search the data first.
+
+06:47.000 --> 06:55.500
+Before that, the user will have to store the form data somewhere.
+
+06:55.500 --> 07:00.000
+Where will we store it? We will store it in the state named formData.
+
+07:00.000 --> 07:02.500
+We have made a state named formData.
+
+07:02.500 --> 07:12.000
+We could have made a different state for form, for two, for date and then set the data one by one.
+
+07:12.000 --> 07:15.000
+But this would have been a lengthy and time-taking process.
+
+07:15.000 --> 07:26.000
+That's why we made a state in which we stored from, to, date, and adults and seed type using JavaScript object.
+
+07:26.000 --> 07:28.000
+And now what we did is,
+
+07:28.000 --> 07:32.000
+whenever there are changes in the user form,
+
+07:32.000 --> 07:35.500
+the handleInputChange function will be called.
+
+07:35.500 --> 07:38.500
+And it will set the data in the form.
+
+07:38.500 --> 07:41.500
+That is, it will set the data according to the name and the value.
+
+07:41.500 --> 07:43.500
+First it will take the name from here.
+
+07:43.500 --> 07:45.500
+It will see the name is from.
+
+07:45.500 --> 07:46.500
+So what will it do?
+
+07:46.500 --> 07:49.500
+It will use the object destructuring here.
+
+07:49.500 --> 07:51.500
+The meaning of object destructuring here is that
+
+07:51.500 --> 07:55.500
+it will first copy this whole thing and bring it here.
+
+07:55.500 --> 07:57.500
+The dot dot form data.
+
+07:57.500 --> 07:59.500
+And then the name,
+
+07:59.500 --> 08:01.500
+the name is setting the value of from.
+
+08:01.500 --> 08:03.500
+So the name is from.
+
+08:03.500 --> 08:05.500
+So the name from here,
+
+08:05.500 --> 08:08.500
+which is in the parameter object,
+
+08:08.500 --> 08:11.500
+will set the value in this whatever the user has entered.
+
+08:11.500 --> 08:12.500
+Okay?
+
+08:12.500 --> 08:14.500
+And our value will be this.
+
+08:14.500 --> 08:17.500
+event dot target, whatever the user is writing there.
+
+08:17.500 --> 08:19.500
+That thing.
+
+08:19.500 --> 08:21.500
+So now I think everything will be clear,
+
+08:21.500 --> 08:23.500
+how it is working.
+
+08:23.500 --> 08:26.500
+And now let's save it from here.
+
+08:26.500 --> 08:29.500
+And let's see handleSummit one more time.
+
+08:29.500 --> 08:31.500
+Now see one more thing here.
+
+08:31.500 --> 08:33.500
+This is the URL in handleSummit.
+
+08:33.500 --> 08:36.500
+This is actually the API of flightflare.
+
+08:36.500 --> 08:38.500
+Now this is the API of flightflare.
+
+08:38.500 --> 08:39.500
+What data has gone here?
+
+08:39.500 --> 08:40.500
+The data of from has gone here.
+
+08:40.500 --> 08:42.500
+Where we have entered the form data dot from.
+
+08:42.500 --> 08:43.500
+What is the form data?
+
+08:43.500 --> 08:44.500
+Here is our state.
+
+08:44.500 --> 08:45.500
+After this,
+
+08:45.500 --> 08:46.500
+sorry,
+
+08:46.500 --> 08:49.500
+the second thing is the form data dot two.
+
+08:49.500 --> 08:52.500
+Where this two data has gone.
+
+08:52.500 --> 08:54.500
+The third thing is the form data dot date.
+
+08:54.500 --> 08:56.500
+The date which will be entered by the user.
+
+08:56.500 --> 08:58.500
+Then how many adults are there.
+
+08:58.500 --> 09:00.500
+And the seed type will be entered.
+
+09:00.500 --> 09:02.500
+Now actually here you must have seen
+
+09:02.500 --> 09:04.500
+that I have set the results to one.
+
+09:04.500 --> 09:06.500
+Because all the other types,
+
+09:06.500 --> 09:07.500
+what are they?
+
+09:07.500 --> 09:09.500
+They are string types.
+
+09:09.500 --> 09:11.500
+These strings are storing here.
+
+09:11.500 --> 09:12.500
+But it is storing an integer.
+
+09:12.500 --> 09:14.500
+So we have to put a default value.
+
+09:14.500 --> 09:15.500
+So we put one.
+
+09:15.500 --> 09:17.500
+Suppose the adult user did not put any value.
+
+09:17.500 --> 09:20.500
+So he will take one by default.
+
+09:20.500 --> 09:22.500
+And what will happen after this?
+
+09:22.500 --> 09:26.500
+Here you can see try and catch.
+
+09:26.500 --> 09:28.500
+Here error handling is happening.
+
+09:28.500 --> 09:29.500
+Exceptional handling as we call it.
+
+09:29.500 --> 09:30.500
+What happens is,
+
+09:30.500 --> 09:32.500
+if this thing does not work,
+
+09:32.500 --> 09:34.500
+if it gives any error,
+
+09:34.500 --> 09:36.500
+then your code will not work.
+
+09:36.500 --> 09:38.500
+Your website will not crash.
+
+09:38.500 --> 09:41.500
+It will simply show the error in the console.
+
+09:41.500 --> 09:42.500
+Ok.
+
+09:42.500 --> 09:43.500
+So in try,
+
+09:43.500 --> 09:45.500
+we put the code which we think
+
+09:45.500 --> 09:47.500
+that there can be any possibility of error here.
+
+09:47.500 --> 09:48.500
+And in catch,
+
+09:48.500 --> 09:49.500
+what we put is that
+
+09:49.500 --> 09:50.500
+if there is any error,
+
+09:50.500 --> 09:52.500
+then what to do after that.
+
+09:52.500 --> 09:53.500
+Ok.
+
+09:53.500 --> 09:54.500
+Now what will we do?
+
+09:54.500 --> 09:55.500
+Our whole form,
+
+09:55.500 --> 09:56.500
+worm,
+
+09:56.500 --> 09:57.500
+everything is ready.
+
+09:57.500 --> 09:58.500
+Once we go to our website.
+
+09:59.500 --> 10:00.500
+And before that,
+
+10:00.500 --> 10:01.500
+we check the terminal.
+
+10:01.500 --> 10:02.500
+Is there any error coming?
+
+10:02.500 --> 10:04.500
+So here we are getting an error.
+
+10:04.500 --> 10:05.500
+It is written that
+
+10:05.500 --> 10:08.500
+in line number 17,
+
+10:08.500 --> 10:10.500
+the form data is not defined.
+
+10:10.500 --> 10:13.500
+Form data is not defined in line number 17.
+
+10:13.500 --> 10:16.500
+And here is one thing,
+
+10:16.500 --> 10:18.500
+that we have to see once,
+
+10:18.500 --> 10:21.500
+that we have done all this form data properly.
+
+10:21.500 --> 10:23.500
+And line number 17,
+
+10:23.500 --> 10:25.500
+which is this.
+
+10:25.500 --> 10:26.500
+Here you will see one thing,
+
+10:26.500 --> 10:28.500
+we have done format data instead of form data by mistake.
+
+10:28.500 --> 10:31.500
+So here we remove this.
+
+10:31.500 --> 10:32.500
+Now we save.
+
+10:32.500 --> 10:34.500
+Once we check the terminal.
+
+10:34.500 --> 10:37.500
+And still there is an error coming.
+
+10:37.500 --> 10:41.500
+Set flights data is not defined.
+
+10:41.500 --> 10:44.500
+And flights data is also not defined.
+
+10:44.500 --> 10:45.500
+Ok.
+
+10:45.500 --> 10:48.500
+So once we minimize it.
+
+10:48.500 --> 10:49.500
+Ok.
+
+10:49.500 --> 10:51.500
+So now there is one more thing.
+
+10:51.500 --> 10:52.500
+Which is flights data.
+
+10:52.500 --> 10:53.500
+That is,
+
+10:53.500 --> 10:54.500
+now what we will do,
+
+10:54.500 --> 10:55.500
+API,
+
+10:55.500 --> 10:57.500
+after calling API,
+
+10:57.500 --> 10:59.500
+after calling API,
+
+10:59.500 --> 11:00.500
+the API data that will be sent to us,
+
+11:00.500 --> 11:02.500
+we have to set it somewhere.
+
+11:02.500 --> 11:04.500
+API will also send some data.
+
+11:04.500 --> 11:06.500
+And that data is usually in the form of our array.
+
+11:06.500 --> 11:08.500
+The one you saw last time.
+
+11:08.500 --> 11:10.500
+So first we will make a state here.
+
+11:10.500 --> 11:12.500
+And first we will set the flight data.
+
+11:12.500 --> 11:14.500
+const
+
+11:14.500 --> 11:16.500
+flight
+
+11:16.500 --> 11:18.500
+data
+
+11:18.500 --> 11:20.500
+flight data
+
+11:20.500 --> 11:22.500
+And here we will do set
+
+11:22.500 --> 11:24.500
+flight data
+
+11:24.500 --> 11:26.500
+equals to
+
+11:26.500 --> 11:27.500
+here,
+
+11:27.500 --> 11:29.500
+we will create a useState.
+
+11:29.500 --> 11:30.500
+In which we will
+
+11:30.500 --> 11:32.500
+give an empty array.
+
+11:32.500 --> 11:33.500
+And you see another thing,
+
+11:33.500 --> 11:35.500
+here in Award.
+
+11:35.500 --> 11:36.500
+What we have done here,
+
+11:36.500 --> 11:38.500
+After copying all the code,
+
+11:38.500 --> 11:40.500
+you have to add these things.
+
+11:40.500 --> 11:43.500
+That you have to set flight data too.
+
+11:43.500 --> 11:44.500
+So in FlightData
+
+11:44.500 --> 11:46.500
+We give an array named research.
+
+11:46.500 --> 11:48.500
+The object named results is given.
+
+11:48.500 --> 11:49.500
+It has an array named results.
+
+11:49.500 --> 11:50.500
+That is,
+
+11:50.500 --> 11:52.500
+in the resultNom object
+
+11:52.500 --> 11:53.500
+itself,
+
+11:53.500 --> 11:54.500
+the full list of results
+
+11:54.500 --> 11:55.500
+is given to us.
+
+11:55.500 --> 12:00.900
+so you set the data like this and after that you can check by logging the data
+
+12:00.900 --> 12:03.500
+what is the response given to you by AAP
+
+12:03.500 --> 12:09.500
+now after this, I think all our errors have been resolved
+
+12:09.500 --> 12:11.500
+let's see it properly
+
+12:11.500 --> 12:14.500
+flight data ok ok
+
+12:14.500 --> 12:17.500
+ok flights data
+
+12:17.500 --> 12:20.500
+and set flights data
+
+12:20.500 --> 12:24.500
+ok now let's check the terminal and see
+
+12:24.500 --> 12:26.500
+all the errors have been resolved
+
+12:26.500 --> 12:28.500
+now we go to our browser
+
+12:28.500 --> 12:30.500
+and as soon as we come to the browser
+
+12:30.500 --> 12:32.500
+we do one thing, we put anything here
+
+12:32.500 --> 12:36.500
+like we put from delhi to bombay
+
+12:36.500 --> 12:38.500
+after this we put the third thing here
+
+12:38.500 --> 12:40.500
+date
+
+12:40.500 --> 12:43.500
+like yesterday is 29 so I am putting the date of 29
+
+12:43.500 --> 12:46.500
+and how many adults are we traveling
+
+12:46.500 --> 12:48.500
+for example one adult is traveling
+
+12:48.500 --> 12:50.500
+and traveling in economy
+
+12:50.500 --> 12:52.500
+you will click on find fares
+
+12:52.500 --> 12:54.500
+here is the form
+
+12:54.500 --> 12:56.500
+you can see that our page is being loaded
+
+12:56.500 --> 12:58.500
+means it is being reloaded
+
+12:58.500 --> 13:00.500
+our page is being reloaded
+
+13:00.500 --> 13:03.500
+now what you do with this
+
+13:03.500 --> 13:05.500
+first of all you go
+
+13:05.500 --> 13:08.500
+and check your console
+
+13:08.500 --> 13:12.500
+you see in the console you have not found any object
+
+13:12.500 --> 13:14.500
+why you have not found
+
+13:14.500 --> 13:16.500
+why you have not got the API
+
+13:16.500 --> 13:18.500
+so here is one problem
+
+13:18.500 --> 13:21.500
+the problem is that the form is being reloaded
+
+13:21.500 --> 13:23.500
+we don't want the form to be reloaded
+
+13:24.500 --> 13:28.500
+we don't want the form to be reloaded
+
+13:28.500 --> 13:30.500
+because if the form is reloaded
+
+13:30.500 --> 13:34.500
+then all your data will be removed
+
+13:34.500 --> 13:36.500
+so first we have to stop the form from being reloaded
+
+13:36.500 --> 13:38.500
+so we go to our
+
+13:38.500 --> 13:40.500
+VS code
+
+13:40.500 --> 13:42.500
+and in handle submit
+
+13:42.500 --> 13:46.500
+here we use one thing in javascript
+
+13:46.500 --> 13:48.500
+which is
+
+13:48.500 --> 13:52.500
+handle prevent default
+
+13:52.500 --> 13:54.500
+what does prevent default do
+
+13:54.500 --> 13:56.500
+it stops the form from being reloaded
+
+13:56.500 --> 13:57.500
+ok
+
+13:57.500 --> 13:58.500
+and
+
+13:58.500 --> 14:01.500
+ensures that all your data is sent to the API
+
+14:01.500 --> 14:03.500
+so before that
+
+14:03.500 --> 14:06.500
+we will put a parameter named event
+
+14:06.500 --> 14:07.500
+and
+
+14:07.500 --> 14:09.500
+event will tell us
+
+14:09.500 --> 14:11.500
+whether the form has been submitted or not
+
+14:11.500 --> 14:13.500
+so we will do event.preventDefault
+
+14:15.500 --> 14:17.500
+so when we will submit a form
+
+14:17.500 --> 14:18.500
+that is also an event
+
+14:18.500 --> 14:20.500
+so we have given it an event name
+
+14:20.500 --> 14:22.500
+event.preventDefault
+
+14:22.500 --> 14:23.500
+what will happen
+
+14:23.500 --> 14:24.500
+that
+
+14:24.500 --> 14:26.500
+here whenever you will submit a form
+
+14:26.500 --> 14:28.500
+then your form will not be reloaded
+
+14:28.500 --> 14:30.500
+so that your data can reach the API
+
+14:30.500 --> 14:32.500
+ok
+
+14:32.500 --> 14:34.500
+and before that we will do one more thing
+
+14:34.500 --> 14:36.500
+.log
+
+14:36.500 --> 14:38.500
+the data of the form
+
+14:38.500 --> 14:40.500
+which the user is actually submitting
+
+14:40.500 --> 14:42.500
+we have set it in the form data name state
+
+14:42.500 --> 14:44.500
+we will also
+
+14:44.500 --> 14:46.500
+log it once and see
+
+14:46.500 --> 14:48.500
+now we will go to our terminal
+
+14:48.500 --> 14:50.500
+first we will check the errors
+
+14:50.500 --> 14:51.500
+there is no error
+
+14:51.500 --> 14:52.500
+now we will go to the browser
+
+14:52.500 --> 14:54.500
+now we will write in the form
+
+14:54.500 --> 14:55.500
+for example delhi
+
+14:55.500 --> 14:56.500
+in 2 we will write
+
+14:56.500 --> 14:58.500
+bombay
+
+14:58.500 --> 15:00.500
+here we will select the date of tomorrow
+
+15:00.500 --> 15:02.500
+select address 1
+
+15:02.500 --> 15:04.500
+and let the type be economy
+
+15:04.500 --> 15:06.500
+click on find fares
+
+15:06.500 --> 15:08.500
+now see our form has not been reloaded
+
+15:08.500 --> 15:10.500
+now we will
+
+15:10.500 --> 15:12.500
+go once and
+
+15:12.500 --> 15:14.500
+check the console
+
+15:14.500 --> 15:16.500
+and we got an object in the console
+
+15:16.500 --> 15:18.500
+and you can see the object
+
+15:18.500 --> 15:19.500
+this is the object
+
+15:19.500 --> 15:21.500
+which the user has given the data of the form
+
+15:21.500 --> 15:23.500
+user has put adult 1
+
+15:23.500 --> 15:24.500
+today's date
+
+15:24.500 --> 15:26.500
+and after this
+
+15:26.500 --> 15:28.500
+from where the user is going
+
+15:28.500 --> 15:29.500
+how far will it go
+
+15:29.500 --> 15:30.500
+seat type
+
+15:30.500 --> 15:32.500
+all the things
+
+15:32.500 --> 15:34.500
+have come here
+
+15:34.500 --> 15:36.500
+once we check our app.jso
+
+15:36.500 --> 15:38.500
+once we check our app.jso
+
+15:38.500 --> 15:40.500
+and for now it is telling
+
+15:40.500 --> 15:41.500
+empty array
+
+15:41.500 --> 15:43.500
+so there are some problems here
+
+15:43.500 --> 15:45.500
+like our seat type did not come
+
+15:45.500 --> 15:47.500
+and this form
+
+15:47.500 --> 15:48.500
+did not come
+
+15:48.500 --> 15:50.500
+so let's check it once
+
+15:50.500 --> 15:52.500
+what is the problem
+
+15:52.500 --> 15:55.500
+so let's go back to our vscode
+
+15:58.500 --> 16:00.500
+and let's check it once
+
+16:00.500 --> 16:01.500
+is there any problem
+
+16:01.500 --> 16:02.500
+here form
+
+16:02.500 --> 16:04.500
+this form is nothing
+
+16:04.500 --> 16:05.500
+first of all it is from
+
+16:05.500 --> 16:06.500
+so we will go here first
+
+16:06.500 --> 16:07.500
+and form
+
+16:07.500 --> 16:08.500
+first thing
+
+16:08.500 --> 16:10.500
+and second thing
+
+16:10.500 --> 16:12.500
+which is that seat type
+
+16:12.500 --> 16:14.500
+seat type is actually this
+
+16:14.500 --> 16:16.500
+and let's go down here and see
+
+16:16.500 --> 16:18.500
+from here our
+
+16:18.500 --> 16:19.500
+our form
+
+16:19.500 --> 16:20.500
+our form
+
+16:20.500 --> 16:22.500
+what have we put in it
+
+16:22.500 --> 16:23.500
+so in this also
+
+16:23.500 --> 16:25.500
+we have put seat type only
+
+16:25.500 --> 16:26.500
+so for now
+
+16:26.500 --> 16:28.500
+there should be no problem here
+
+16:28.500 --> 16:30.500
+now let's save it once
+
+16:30.500 --> 16:32.500
+and
+
+16:32.500 --> 16:34.500
+before that
+
+16:34.500 --> 16:35.500
+we
+
+16:35.500 --> 16:37.500
+let's ensure some more things
+
+16:37.500 --> 16:38.500
+that our api
+
+16:38.500 --> 16:40.500
+there is no problem in it
+
+16:40.500 --> 16:41.500
+we did not put anything wrong in it
+
+16:41.500 --> 16:42.500
+form did not come
+
+16:42.500 --> 16:43.500
+ok
+
+16:43.500 --> 16:44.500
+now let's save it once
+
+16:44.500 --> 16:45.500
+let's go back to the browser
+
+16:45.500 --> 16:47.500
+and
+
+16:47.500 --> 16:49.500
+try one more time
+
+16:49.500 --> 16:50.500
+let's try
+
+16:50.500 --> 16:51.500
+so here we put
+
+16:51.500 --> 16:52.500
+dehli
+
+16:52.500 --> 16:53.500
+from dehli to bombay
+
+16:53.500 --> 16:55.500
+yesterday's date
+
+16:55.500 --> 16:56.500
+in the...
+
+16:56.500 --> 16:57.500
+we add one...
+
+16:57.500 --> 16:58.500
+this time we choose
+
+16:58.500 --> 16:59.500
+seat type something else
+
+16:59.500 --> 17:00.500
+business
+
+17:00.500 --> 17:01.500
+and this time
+
+17:01.500 --> 17:02.500
+we click it in the find face
+
+17:03.500 --> 17:04.500
+again we go to our
+
+17:04.500 --> 17:05.500
+console
+
+17:05.500 --> 17:07.500
+now here we have
+
+17:07.500 --> 17:08.500
+got object
+
+17:08.500 --> 17:09.500
+we see the object
+
+17:09.500 --> 17:10.500
+now see
+
+17:10.500 --> 17:11.500
+now everything is coming
+
+17:11.500 --> 17:12.500
+that means
+
+17:12.500 --> 17:13.500
+we are getting
+
+17:13.500 --> 17:14.500
+this one
+
+17:14.500 --> 17:15.500
+date
+
+17:15.500 --> 17:16.500
+from where
+
+17:16.500 --> 17:17.500
+to where
+
+17:17.500 --> 17:18.500
+to go
+
+17:18.500 --> 17:23.500
+Now let's see the second array and here also the length is 0.
+
+17:23.500 --> 17:29.500
+This means that the API response is not working.
+
+17:29.500 --> 17:32.500
+API is not returning any data to us.
+
+17:32.500 --> 17:36.500
+This means that either tomorrow's flights are not available or something else.
+
+17:36.500 --> 17:39.500
+Let's change its date once.
+
+17:39.500 --> 17:43.500
+Let's change it to adults and do this.
+
+17:43.500 --> 17:48.500
+Let's go back to Find Fairs.
+
+17:48.500 --> 17:50.500
+We have this object here.
+
+17:50.500 --> 17:55.500
+After this, the data will also come here which is still undefined.
+
+17:55.500 --> 18:02.500
+Let's check it again.
+
+18:02.500 --> 18:04.500
+Let's go to VS Code.
+
+18:04.500 --> 18:07.500
+Let's go to check the results of our API.
+
+18:07.500 --> 18:10.500
+Let's see what problem is coming here.
+
+18:10.500 --> 18:13.500
+Here we have done something like this.
+
+18:13.500 --> 18:16.500
+We have fetched the data from the URL.
+
+18:16.500 --> 18:19.500
+All the options have gone.
+
+18:19.500 --> 18:22.500
+After this, here are some things.
+
+18:22.500 --> 18:27.500
+We have taken our result in JSON form.
+
+18:27.500 --> 18:31.500
+We have set the data here by doing result.results.
+
+18:31.500 --> 18:32.500
+Let's do one thing.
+
+18:32.500 --> 18:33.500
+Let's not set the data here.
+
+18:33.500 --> 18:35.500
+For now, let's comment it.
+
+18:35.500 --> 18:39.500
+After this, here is the place to console log the flights data.
+
+18:39.500 --> 18:42.500
+Let's try it once directly.
+
+18:42.500 --> 18:48.500
+console.log
+
+18:48.500 --> 18:51.500
+The actual data which is coming from the API.
+
+18:51.500 --> 18:53.500
+Result.
+
+18:53.500 --> 18:55.500
+Let's log it.
+
+18:55.500 --> 19:00.500
+Let's go back once.
+
+19:00.500 --> 19:03.500
+Let's see it again.
+
+19:03.500 --> 19:06.500
+Let's click on Find Fairs.
+
+19:06.500 --> 19:08.500
+This is the object.
+
+19:08.500 --> 19:10.500
+Now the response of the API has come.
+
+19:10.500 --> 19:12.500
+See, the status is 200.
+
+19:12.500 --> 19:14.500
+The response of the API has been successful.
+
+19:14.500 --> 19:16.500
+Now we have full data here.
+
+19:16.500 --> 19:17.500
+Search data.
+
+19:17.500 --> 19:19.500
+Here the results have come.
+
+19:19.500 --> 19:23.500
+And inside the results, our full arrays have come.
+
+19:23.500 --> 19:26.500
+And here we have full data.
+
+19:26.500 --> 19:29.500
+So we have full data of the result.
+
+19:29.500 --> 19:31.500
+Now what do we do with this?
+
+19:31.500 --> 19:37.500
+Now let's go back to the VS Code and check this thing.
+
+19:37.500 --> 19:40.500
+So this thing is inside result.results.
+
+19:40.500 --> 19:44.500
+So now let's uncomment this thing from the API.
+
+19:44.500 --> 19:46.500
+And let's remove this.
+
+19:46.500 --> 19:48.500
+No, let's not leave this too.
+
+19:48.500 --> 19:52.500
+And here in result.results, you were able to see that there were two arrays coming.
+
+19:52.500 --> 19:57.500
+One array had 100 results and the other had 100 more results.
+
+19:57.500 --> 20:01.500
+So now we will pick the first array here.
+
+20:01.500 --> 20:06.500
+Which was the first array with 100 results.
+
+20:06.500 --> 20:08.500
+Now let's go and check in the browser.
+
+20:10.500 --> 20:13.500
+Ok.
+
+20:13.500 --> 20:15.500
+Ok.
+
+20:15.500 --> 20:20.500
+So now here we have clicked on find fields once again.
+
+20:20.500 --> 20:26.500
+After this, see, we have now got the result.
+
+20:26.500 --> 20:30.500
+This is our full result that has come to us.
+
+20:30.500 --> 20:33.500
+And this is the full result.
+
+20:33.500 --> 20:36.500
+This is the full result that we have now.
+
+20:36.500 --> 20:39.500
+Now our API is the correct response.
+
+20:39.500 --> 20:41.500
+It is giving the correct response.
+
+20:41.500 --> 20:43.500
+Ok.
+
+20:43.500 --> 20:45.500
+We will go back.
+
+20:45.500 --> 20:53.500
+And let's see if we try to pick everything instead of 0839.
+
+20:53.500 --> 20:58.500
+And remove console.log results.
+
+20:58.500 --> 21:00.500
+And now let's go once again.
+
+21:00.500 --> 21:02.500
+Once again.
+
+21:02.500 --> 21:08.500
+First of all, let's clear our console.
+
+21:08.500 --> 21:10.500
+And here let's do find fields again.
+
+21:10.500 --> 21:16.500
+And now it may take some time for the API response to come.
+
+21:16.500 --> 21:20.500
+So the API response has come.
+
+21:20.500 --> 21:23.500
+And we have got the full results array.
+
+21:23.500 --> 21:26.500
+So now we can see that we have got the full result.
+
+21:26.500 --> 21:29.500
+What actually happens sometimes is that there is a problem in the API.
+
+21:29.500 --> 21:31.500
+So due to that also it does not come.
+
+21:31.500 --> 21:33.500
+But now we are getting all the results.
+
+21:33.500 --> 21:34.500
+Arrival airport.
+
+21:34.500 --> 21:35.500
+Then baggage.
+
+21:35.500 --> 21:36.500
+And all these options.
+
+21:36.500 --> 21:37.500
+Flight name.
+
+21:37.500 --> 21:38.500
+Code.
+
+21:38.500 --> 21:39.500
+We have got everything.
+
+21:39.500 --> 21:40.500
+So now what we have to do.
+
+21:40.500 --> 21:42.500
+Now we just have to show this data.
+
+21:42.500 --> 21:43.500
+The data which is coming to us.
+
+21:43.500 --> 21:44.500
+To the user.
+
+21:44.500 --> 21:46.500
+So for that we will make a component.
+
+21:46.500 --> 21:49.500
+In which we will show the flight data of the user.
+
+21:49.500 --> 21:50.500
+All of it.
+
