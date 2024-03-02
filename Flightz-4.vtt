@@ -1,6 +1,6 @@
 WEBVTT
 
-00:00.000 --> 00:10.000
+00:06.000 --> 00:10.000
 So now we will create a component in which we will show the data of flights.
 
 00:10.000 --> 00:13.000
@@ -2163,6 +2163,5 @@ after this we will make its header
 20:27.000 --> 20:29.000
 and footer
 
-20:29.000 --> 20:31.000
-thank you
+
 
