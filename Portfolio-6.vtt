@@ -1,0 +1,1031 @@
+WEBVTT
+
+00:06.000 --> 00:11.000
+So, after completing the login page, we have to come to our main page.
+
+00:11.000 --> 00:14.000
+Here are some things that I would like to show you.
+
+00:14.000 --> 00:19.000
+When you log in, for example, I go back to login.
+
+00:19.000 --> 00:27.000
+And when you log in here, what happens is that you are redirected to your main page.
+
+00:27.000 --> 00:31.000
+So here I have logged in and I am redirected to my main page.
+
+00:31.000 --> 00:35.000
+But what is happening now?
+
+00:35.000 --> 00:43.000
+Now if someone is in slash login, for example,
+
+00:43.000 --> 00:52.000
+why will he log in when he can directly go to the main page without directly logging in?
+
+00:52.000 --> 00:56.000
+So here we have to put a condition on the main page as well.
+
+00:56.000 --> 01:02.000
+That if the user is not logged in, then the user should not be shown on the main page.
+
+01:02.000 --> 01:05.000
+And instead, the user should be redirected to the login page.
+
+01:05.000 --> 01:07.000
+So how will that happen?
+
+01:07.000 --> 01:11.000
+For this, what we will do is go to our VS Code.
+
+01:11.000 --> 01:16.000
+And after going to the VS Code, this is our main page basically.
+
+01:16.000 --> 01:24.000
+Here, first of all, what we are doing now, we will do this directly with the help of local storage.
+
+01:24.000 --> 01:26.000
+We will detect if the user is logged in or not.
+
+01:26.000 --> 01:33.000
+But as we will use CMS Sanity in the future, we will use Sanity for the backend.
+
+01:33.000 --> 01:36.000
+So I will also tell you how we can do all this.
+
+01:36.000 --> 01:38.000
+So what do we have to do first?
+
+01:38.000 --> 01:40.000
+First, we will create a use effect here.
+
+01:40.000 --> 01:46.000
+Okay, so you create a use effect.
+
+01:46.000 --> 01:55.000
+And after that, after creating a use effect, here we will check the first thing.
+
+01:55.000 --> 01:58.000
+That is, we will check the local storage.
+
+01:58.000 --> 02:01.000
+That is, I will give you a logic.
+
+02:01.000 --> 02:03.000
+It is a very simple logic, although it is not like this.
+
+02:03.000 --> 02:05.000
+But we will do this now.
+
+02:05.000 --> 02:07.000
+To learn, just to learn.
+
+02:07.000 --> 02:09.000
+So what will happen?
+
+02:09.000 --> 02:11.000
+That we have local storage.
+
+02:11.000 --> 02:14.000
+Now how will we know if any user is logged in or not?
+
+02:14.000 --> 02:16.000
+So we can do one thing.
+
+02:16.000 --> 02:22.000
+We check with local storage that if there is a user info object in local storage,
+
+02:22.000 --> 02:24.000
+which we created while logging in.
+
+02:25.000 --> 02:28.000
+That means the user is logged in.
+
+02:28.000 --> 02:35.000
+Otherwise, if the user info object is not in local storage, then the user is not logged in.
+
+02:35.000 --> 02:37.000
+Okay, it is very simple.
+
+02:37.000 --> 02:43.000
+That if we have put a check here using the use effect.
+
+02:43.000 --> 02:46.000
+As soon as the page is loaded, the use effect will run.
+
+02:46.000 --> 02:48.000
+The use effect will check the first thing.
+
+02:48.000 --> 02:53.000
+That is, is there anything in local storage by doing user info object?
+
+02:53.000 --> 02:54.000
+If there is,
+
+02:54.000 --> 02:58.000
+then it will allow the user to come to the main page.
+
+02:58.000 --> 03:02.000
+Otherwise, it will redirect the user to the login page.
+
+03:02.000 --> 03:04.000
+Okay, so now how will this thing be checked?
+
+03:04.000 --> 03:05.000
+It is very simple.
+
+03:05.000 --> 03:07.000
+We can do one thing.
+
+03:07.000 --> 03:10.000
+Here we can put a condition.
+
+03:10.000 --> 03:11.000
+What can be that condition?
+
+03:11.000 --> 03:12.000
+Let me tell you.
+
+03:12.000 --> 03:15.000
+So here we do one thing.
+
+03:15.000 --> 03:17.000
+If.
+
+03:17.000 --> 03:22.000
+Or by not putting if, we make a variable here.
+
+03:22.000 --> 03:23.000
+Const.
+
+03:24.000 --> 03:26.000
+User logged in.
+
+03:26.000 --> 03:31.000
+By doing.
+
+03:31.000 --> 03:33.000
+Or by doing user object.
+
+03:33.000 --> 03:35.000
+This user logged in will also work.
+
+03:35.000 --> 03:37.000
+And user logged in.
+
+03:37.000 --> 03:39.000
+And after this, what will we do here?
+
+03:39.000 --> 03:42.000
+Local storage dot get.
+
+03:42.000 --> 03:45.000
+What does local storage dot get method do?
+
+03:45.000 --> 03:49.000
+That it fetches the object that you will put in this parameter.
+
+03:49.000 --> 03:52.000
+The parameter that you will put in its parentheses.
+
+03:52.000 --> 03:54.000
+It will remove them from local storage.
+
+03:54.000 --> 03:58.000
+Here we will put user info object.
+
+03:58.000 --> 04:02.000
+So whatever it will get here called user info object.
+
+04:02.000 --> 04:04.000
+So it will fetch this thing.
+
+04:04.000 --> 04:06.000
+Okay, so we saved it by doing user info object.
+
+04:06.000 --> 04:07.000
+I think.
+
+04:07.000 --> 04:08.000
+Let me check it once.
+
+04:08.000 --> 04:10.000
+So here.
+
+04:10.000 --> 04:12.000
+Our user info object.
+
+04:12.000 --> 04:13.000
+Right.
+
+04:13.000 --> 04:17.000
+So we can directly check this thing from here.
+
+04:17.000 --> 04:19.000
+Okay.
+
+04:19.000 --> 04:22.000
+And here we can check one more thing after this.
+
+04:22.000 --> 04:23.000
+That if.
+
+04:23.000 --> 04:25.000
+User logged in.
+
+04:25.000 --> 04:26.000
+Dot.
+
+04:26.000 --> 04:28.000
+Now we have to see one more thing.
+
+04:28.000 --> 04:32.000
+That when we had saved the item in local storage.
+
+04:32.000 --> 04:34.000
+So there we had stringified it.
+
+04:34.000 --> 04:35.000
+You will remember.
+
+04:35.000 --> 04:37.000
+That our object save.
+
+04:37.000 --> 04:39.000
+User info object.
+
+04:39.000 --> 04:42.000
+We had done it by doing local storage dot set item.
+
+04:42.000 --> 04:44.000
+And we had stringified it.
+
+04:44.000 --> 04:45.000
+Okay.
+
+04:45.000 --> 04:47.000
+So it is necessary to stringify the object.
+
+04:47.000 --> 04:50.000
+But when we want to access some value from this.
+
+04:50.000 --> 04:51.000
+User info object.
+
+04:51.000 --> 04:53.000
+So we will want this.
+
+04:53.000 --> 04:54.000
+String.
+
+04:54.000 --> 04:56.000
+We cannot extract any value from string.
+
+04:56.000 --> 04:58.000
+Like as an object.
+
+04:58.000 --> 05:01.000
+So we will have to convert it in the form of object.
+
+05:01.000 --> 05:02.000
+So how will we do that?
+
+05:02.000 --> 05:03.000
+It is very easy.
+
+05:03.000 --> 05:06.000
+We have to convert that string back to object.
+
+05:06.000 --> 05:07.000
+So what will we do?
+
+05:07.000 --> 05:08.000
+Json.
+
+05:08.000 --> 05:09.000
+Dot parse.
+
+05:09.000 --> 05:14.000
+And you have to put this whole thing in bracket.
+
+05:14.000 --> 05:15.000
+That's it.
+
+05:15.000 --> 05:18.000
+So you have parsed it in the form of object.
+
+05:18.000 --> 05:19.000
+Okay.
+
+05:19.000 --> 05:20.000
+After this.
+
+05:20.000 --> 05:21.000
+After this.
+
+05:21.000 --> 05:22.000
+After this what we will do here.
+
+05:22.000 --> 05:23.000
+Our if condition.
+
+05:23.000 --> 05:25.000
+For this first we will put brackets here.
+
+05:25.000 --> 05:26.000
+And we will write here.
+
+05:26.000 --> 05:27.000
+User logged in.
+
+05:27.000 --> 05:28.000
+Dot email.
+
+05:28.000 --> 05:29.000
+Dot length.
+
+05:29.000 --> 05:30.000
+User logged in.
+
+05:30.000 --> 05:31.000
+So user logged in.
+
+05:31.000 --> 05:32.000
+Something is going wrong here.
+
+05:32.000 --> 05:33.000
+Okay.
+
+05:33.000 --> 05:34.000
+So here one parenthesis is missing.
+
+05:34.000 --> 05:35.000
+Okay.
+
+05:35.000 --> 05:36.000
+User logged in.
+
+05:36.000 --> 05:37.000
+Dot email.
+
+05:37.000 --> 05:38.000
+Dot.
+
+05:38.000 --> 05:39.000
+Length.
+
+05:39.000 --> 05:40.000
+Greater than zero.
+
+05:40.000 --> 05:41.000
+Okay.
+
+05:41.000 --> 05:42.000
+So here one parenthesis is missing.
+
+05:42.000 --> 05:43.000
+Okay.
+
+05:43.000 --> 05:44.000
+User logged in.
+
+05:44.000 --> 05:45.000
+Dot.
+
+05:45.000 --> 05:46.000
+Email.
+
+05:46.000 --> 05:47.000
+Dot.
+
+05:47.000 --> 05:48.000
+Length.
+
+05:48.000 --> 05:49.000
+Greater than zero.
+
+05:49.000 --> 05:50.000
+Okay.
+
+05:50.000 --> 05:51.000
+So.
+
+05:51.000 --> 05:52.000
+Then.
+
+05:52.000 --> 05:53.000
+Okay.
+
+05:53.000 --> 05:54.000
+I think here I have.
+
+05:54.000 --> 05:55.000
+Okay.
+
+05:55.000 --> 05:56.000
+This thing is.
+
+05:56.000 --> 05:57.000
+Okay.
+
+05:57.000 --> 05:58.000
+Now it is correct.
+
+05:58.000 --> 05:59.000
+So here.
+
+05:59.000 --> 06:00.000
+You can see this syntax.
+
+06:00.000 --> 06:01.000
+So it is something like this.
+
+06:01.000 --> 06:02.000
+And here I have put a condition.
+
+06:02.000 --> 06:03.000
+That if the user logged in.
+
+06:03.000 --> 06:04.000
+In its login details.
+
+06:04.000 --> 06:05.000
+In that object.
+
+06:05.000 --> 06:06.000
+Isn't it?
+
+06:06.000 --> 06:07.000
+The length of the email should be greater than zero.
+
+06:07.000 --> 06:08.000
+Why did we check this?
+
+06:08.000 --> 06:09.000
+Tomorrow if we just check this.
+
+06:09.000 --> 06:10.000
+That there should be an object named user logged in.
+
+06:10.000 --> 06:11.000
+So.
+
+06:11.000 --> 06:12.000
+The local storage.
+
+06:12.000 --> 06:13.000
+That is.
+
+06:13.000 --> 06:14.000
+That is.
+
+06:14.000 --> 06:15.000
+That is.
+
+06:15.000 --> 06:16.000
+That is.
+
+06:16.000 --> 06:17.000
+That is.
+
+06:17.000 --> 06:18.000
+That is.
+
+06:18.000 --> 06:19.000
+That is.
+
+06:19.000 --> 06:21.000
+The local storage could be edited by anybody.
+
+06:21.000 --> 06:22.000
+Yes.
+
+06:22.000 --> 06:24.000
+This can be edited by local storage.
+
+06:24.000 --> 06:26.000
+So I show you how to do it.
+
+06:26.000 --> 06:27.000
+This you can see over here.
+
+06:27.000 --> 06:28.000
+Now over here.
+
+06:28.000 --> 06:29.000
+Now I.
+
+06:29.000 --> 06:30.000
+Go.
+
+06:30.000 --> 06:31.000
+To console.
+
+06:31.000 --> 06:33.000
+And this our user.
+
+06:33.000 --> 06:34.000
+Which is local.
+
+06:34.000 --> 06:35.000
+Local storage.
+
+06:35.000 --> 06:36.000
+Right now this is the local storage.
+
+06:36.000 --> 06:37.000
+Now I right click here.
+
+06:37.000 --> 06:38.000
+And see over here.
+
+06:38.000 --> 06:40.000
+A option is coming by choice everything to edit.
+
+06:40.000 --> 06:41.000
+So from here any value can be edited.
+
+06:41.000 --> 06:42.000
+So who knows.
+
+06:42.000 --> 06:43.000
+Here a user.
+
+06:43.000 --> 06:45.000
+If we just enter the condition that in the user info object.
+
+06:45.000 --> 06:46.000
+That should exist.
+
+06:46.000 --> 06:47.000
+You could be broke.
+
+06:47.000 --> 06:48.000
+Now what happens.
+
+06:48.000 --> 06:53.000
+So, what if the user info object is created by the user itself?
+
+06:53.000 --> 06:57.000
+Let's assume that no user info object exists here.
+
+06:57.000 --> 06:59.000
+But what will the user do here?
+
+06:59.000 --> 07:01.000
+He will create an object here.
+
+07:01.000 --> 07:02.000
+User info object.
+
+07:02.000 --> 07:04.000
+And make this object empty.
+
+07:04.000 --> 07:06.000
+Make it empty.
+
+07:06.000 --> 07:08.000
+So, our if condition is that
+
+07:08.000 --> 07:10.000
+the user info object is already created.
+
+07:10.000 --> 07:12.000
+So, the user is logged in.
+
+07:12.000 --> 07:14.000
+So, we bring it to the main page.
+
+07:14.000 --> 07:16.000
+But we don't want to do this.
+
+07:16.000 --> 07:20.000
+I said that if the length of the email in this is 0,
+
+07:20.000 --> 07:22.000
+then you can log in.
+
+07:22.000 --> 07:25.000
+So, it is necessary to have an email here.
+
+07:25.000 --> 07:27.000
+But this is also not a solid proof idea.
+
+07:27.000 --> 07:28.000
+It is not a plan.
+
+07:28.000 --> 07:29.000
+Why?
+
+07:29.000 --> 07:31.000
+Because the user can put any email.
+
+07:31.000 --> 07:33.000
+How do we know that it is not verified?
+
+07:33.000 --> 07:35.000
+So, we will do this further.
+
+07:35.000 --> 07:38.000
+I will tell you how to find out each and every thing.
+
+07:38.000 --> 07:39.000
+How is the verification?
+
+07:39.000 --> 07:41.000
+What we have to do for this is
+
+07:41.000 --> 07:43.000
+that the email and other data
+
+07:43.000 --> 07:45.000
+will have to be stored in a database.
+
+07:45.000 --> 07:46.000
+Then from that database
+
+07:46.000 --> 07:47.000
+we will have to compare it.
+
+07:47.000 --> 07:49.000
+So, we will do that further.
+
+07:49.000 --> 07:51.000
+But for now, let us know this.
+
+07:51.000 --> 07:53.000
+So, let us go back.
+
+07:53.000 --> 07:54.000
+And here,
+
+07:54.000 --> 07:56.000
+I am putting one thing to teach you.
+
+07:56.000 --> 07:59.000
+If user logged in dot email dot length greater than 0,
+
+07:59.000 --> 08:01.000
+then what you have to do is
+
+08:01.000 --> 08:03.000
+to let the user stay on this page.
+
+08:03.000 --> 08:09.000
+If our user logged in dot email dot length greater than 0,
+
+08:09.000 --> 08:12.000
+then we will want the user to stay on this page.
+
+08:12.000 --> 08:14.000
+Otherwise, it will go to the login page.
+
+08:14.000 --> 08:15.000
+So, for this,
+
+08:15.000 --> 08:17.000
+the things that we will use to shift the page,
+
+08:17.000 --> 08:21.000
+the things that we will use to navigate the user from one page to another page,
+
+08:21.000 --> 08:23.000
+we will use something which we call use navigate.
+
+08:23.000 --> 08:25.000
+So, we will import it.
+
+08:25.000 --> 08:28.000
+So, to import it, you will write use navigate.
+
+08:28.000 --> 08:30.000
+So, it will be imported automatically.
+
+08:30.000 --> 08:32.000
+After this, you have to do one thing.
+
+08:32.000 --> 08:34.000
+You have to come to one of your components
+
+08:34.000 --> 08:44.000
+and write here const navigate equal to use navigate.
+
+08:44.000 --> 08:47.000
+And here, you have to do this.
+
+08:47.000 --> 08:49.000
+So, now, as soon as you call navigate,
+
+08:49.000 --> 08:51.000
+and mention the path in it,
+
+08:51.000 --> 08:55.000
+it will navigate you to that place when you want.
+
+08:55.000 --> 08:56.000
+And here, one more thing.
+
+08:56.000 --> 08:58.000
+Here, we have written local storage dot get.
+
+08:58.000 --> 09:00.000
+Here, we will write get item.
+
+09:00.000 --> 09:02.000
+So, get item.
+
+09:02.000 --> 09:03.000
+Okay.
+
+09:03.000 --> 09:06.000
+And here, we will put one more thing, one more check.
+
+09:06.000 --> 09:11.000
+User logged in and end.
+
+09:11.000 --> 09:12.000
+Now, we have also checked here that
+
+09:12.000 --> 09:13.000
+an object named user logged in
+
+09:13.000 --> 09:17.000
+and the length of the email in it is also greater than zero.
+
+09:17.000 --> 09:18.000
+Okay.
+
+09:18.000 --> 09:19.000
+So, we have put this check.
+
+09:19.000 --> 09:20.000
+Okay.
+
+09:20.000 --> 09:21.000
+There is nothing.
+
+09:21.000 --> 09:22.000
+It is just determining that the object is also existing
+
+09:22.000 --> 09:24.000
+and the email is also existing.
+
+09:24.000 --> 09:25.000
+Now, what will we do?
+
+09:25.000 --> 09:26.000
+We will just navigate.
+
+09:26.000 --> 09:28.000
+We will let the navigate remain on the main page.
+
+09:28.000 --> 09:30.000
+So, the user will remain on the main page.
+
+09:30.000 --> 09:32.000
+Otherwise, where will it navigate?
+
+09:32.000 --> 09:37.000
+Else, navigate.
+
+09:37.000 --> 09:38.000
+In login.
+
+09:38.000 --> 09:39.000
+Right?
+
+09:39.000 --> 09:40.000
+So, now, what is happening is that
+
+09:40.000 --> 09:43.000
+the user is logged in and his email is also there.
+
+09:43.000 --> 09:44.000
+Right?
+
+09:44.000 --> 09:45.000
+So, what will we do?
+
+09:45.000 --> 09:47.000
+We will let the user remain on this page.
+
+09:47.000 --> 09:48.000
+On the main page.
+
+09:48.000 --> 09:51.000
+Otherwise, we will navigate him on the login page.
+
+09:51.000 --> 09:53.000
+And here, we pass an empty array.
+
+09:53.000 --> 09:54.000
+Dependency array.
+
+09:54.000 --> 09:56.000
+So, whenever the page will be reloaded,
+
+09:56.000 --> 09:58.000
+this thing will work.
+
+09:58.000 --> 10:00.000
+Now, once we check this thing.
+
+10:00.000 --> 10:02.000
+Now, let's go to our browser.
+
+10:02.000 --> 10:03.000
+And after going to the browser,
+
+10:03.000 --> 10:04.000
+you see here,
+
+10:04.000 --> 10:06.000
+we are in the login page.
+
+10:06.000 --> 10:08.000
+Once, I try to go to the main page from the login page.
+
+10:08.000 --> 10:10.000
+Now, I am not logged in.
+
+10:10.000 --> 10:11.000
+As soon as I go to the main page,
+
+10:11.000 --> 10:12.000
+now, actually, I am logged in.
+
+10:12.000 --> 10:13.000
+Sorry, I didn't know.
+
+10:13.000 --> 10:14.000
+Yes.
+
+10:14.000 --> 10:15.000
+Now, what do we do to log out?
+
+10:15.000 --> 10:16.000
+Let's go to the application.
+
+10:16.000 --> 10:17.000
+See, here, in local storage,
+
+10:17.000 --> 10:19.000
+there is a user info object.
+
+10:19.000 --> 10:21.000
+And the email in it is greater than zero.
+
+10:21.000 --> 10:22.000
+I am logged in.
+
+10:22.000 --> 10:24.000
+As soon as I delete it,
+
+10:24.000 --> 10:25.000
+the user info object is also not there.
+
+10:25.000 --> 10:27.000
+The email in it is also not there.
+
+10:27.000 --> 10:28.000
+Now, if I reload,
+
+10:28.000 --> 10:30.000
+I will be redirected to the login page.
+
+10:30.000 --> 10:31.000
+Why?
+
+10:31.000 --> 10:33.000
+Because I am not logged in.
+
+10:33.000 --> 10:35.000
+Now, if I try once,
+
+10:35.000 --> 10:36.000
+to go to the main page
+
+10:36.000 --> 10:37.000
+and hit enter,
+
+10:37.000 --> 10:40.000
+then I will be redirected to the login page again.
+
+10:40.000 --> 10:42.000
+So, now, do you understand what is happening?
+
+10:42.000 --> 10:45.000
+This is the process of our code.
+
+10:45.000 --> 10:47.000
+That if I try to go to the main page
+
+10:47.000 --> 10:49.000
+by deleting the login,
+
+10:49.000 --> 10:51.000
+then I will be redirected to the login page again.
+
+10:51.000 --> 10:52.000
+Right?
+
+10:52.000 --> 10:55.000
+So, here, I want to show you something.
+
+10:55.000 --> 10:57.000
+I want to explain, basically.
+
+10:57.000 --> 11:00.000
+So, that you can understand it properly.
+
+11:00.000 --> 11:02.000
+First, we fetched the user info object
+
+11:02.000 --> 11:04.000
+from the local storage.
+
+11:04.000 --> 11:07.000
+Then, we put a condition in the useEffect.
+
+11:07.000 --> 11:08.000
+As soon as the main page is loaded,
+
+11:08.000 --> 11:09.000
+this useEffect runs.
+
+11:09.000 --> 11:10.000
+First, it will work by fetching
+
+11:10.000 --> 11:11.000
+from the local storage.
+
+11:11.000 --> 11:13.000
+Then, it will fetch the item from the local storage.
+
+11:13.000 --> 11:14.000
+And it will check that
+
+11:14.000 --> 11:16.000
+the item which we have fetched from the local storage,
+
+11:16.000 --> 11:17.000
+does it exist?
+
+11:17.000 --> 11:18.000
+If it does,
+
+11:18.000 --> 11:21.000
+then is its length greater than 0?
+
+11:21.000 --> 11:22.000
+If it is,
+
+11:22.000 --> 11:24.000
+then that person can come to the main page.
+
+11:24.000 --> 11:26.000
+This means that he has logged in.
+
+11:26.000 --> 11:28.000
+He must have logged in on Google.
+
+11:28.000 --> 11:30.000
+Only then, all these things would have come to him.
+
+11:30.000 --> 11:33.000
+Otherwise, he will navigate to the login page.
+
+11:33.000 --> 11:34.000
+Okay?
+
+11:34.000 --> 11:36.000
+It is very easy.
+
+11:36.000 --> 11:37.000
+Right.
+
+11:37.000 --> 11:38.000
+So, now, what do we do?
+
+11:38.000 --> 11:39.000
+We go to the web page.
+
+11:39.000 --> 11:40.000
+And,
+
+11:40.000 --> 11:44.000
+let's test it properly.
+
+11:44.000 --> 11:46.000
+So, as soon as I do continuous tagging,
+
+11:46.000 --> 11:49.000
+the user info object is created here.
+
+11:49.000 --> 11:50.000
+As soon as it is created,
+
+11:50.000 --> 11:52.000
+I come to this page.
+

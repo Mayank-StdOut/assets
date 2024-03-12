@@ -1,0 +1,1720 @@
+WEBVTT
+
+00:06.000 --> 00:16.000
+So now we have to do the first thing that the login we are doing to the user, its data is giving us a Google login, before that we will have to save a place.
+
+00:16.000 --> 00:25.000
+What was he saying now that the Google login we were doing, then Google gives us some object in response after login.
+
+00:25.000 --> 00:33.000
+So there is an email of the user, there is a name of the user, there is a profile picture of the user and there are some 2-3 IDs in it.
+
+00:33.000 --> 00:43.000
+Those things are what Google returns to us after login. So now we just did a simple login and that pop-up was open and the entire interface was visible there.
+
+00:43.000 --> 00:50.000
+But now what we have to do is that we have to store that object, according to that we will determine whether the user is logged in or not.
+
+00:50.000 --> 00:55.000
+So now what we will do is that first of all we will go to the top and one more thing.
+
+00:55.000 --> 00:59.000
+Here you see one thing, here we have put what attributes in Google login.
+
+00:59.000 --> 01:03.000
+Here we have given the size, type, so we have given it for styling.
+
+01:03.000 --> 01:13.000
+What is this one-tap? You must have noticed one thing that comes up even before we click on Google login, by doing continuous stacking, which used to come at the top.
+
+01:13.000 --> 01:21.000
+That is for this, so you do not have to click on the continue with Google button, there is an option directly there, which came by doing continuous stacking.
+
+01:21.000 --> 01:24.000
+So this is fine, but this is the main important thing.
+
+01:24.000 --> 01:25.000
+On-site.
+
+01:25.000 --> 01:26.000
+On-success.
+
+01:26.000 --> 01:27.000
+What does on-success do?
+
+01:27.000 --> 01:35.000
+What does on-success do is that whenever you log in, then here you have to determine something or the other that what is after login.
+
+01:35.000 --> 01:38.000
+Meaning on-success, meaning here the user has successfully logged in.
+
+01:38.000 --> 01:43.000
+So this thing called credential response returns a value parameter.
+
+01:43.000 --> 01:44.000
+Okay.
+
+01:44.000 --> 01:46.000
+Credentials response returns a parameter.
+
+01:46.000 --> 01:52.000
+So we said that as soon as the login is successful and the parameter of credential response comes, then a callback function will come.
+
+01:52.000 --> 01:54.000
+What do you do directly for this?
+
+01:54.000 --> 01:56.000
+You call the on-success function.
+
+01:56.000 --> 02:01.000
+So basically what we did is that as soon as the user log in as soon as it is successful.
+
+02:01.000 --> 02:04.000
+So here is a function called on-success, call it.
+
+02:04.000 --> 02:10.000
+Now in the on-success function, you send this parameter called credential response.
+
+02:10.000 --> 02:13.000
+Now we have not made the on-success yet, we make it.
+
+02:13.000 --> 02:18.000
+And in the on-error, as soon as there is an error, there will be a problem, a login field will come.
+
+02:18.000 --> 02:20.000
+Now what do we do?
+
+02:20.000 --> 02:21.000
+Let's go here.
+
+02:21.000 --> 02:23.000
+And here we will first make a state basically.
+
+02:23.000 --> 02:25.000
+Now what will we do here?
+
+02:25.000 --> 02:26.000
+We need some things.
+
+02:26.000 --> 02:30.000
+Const userInfo.
+
+02:30.000 --> 02:31.000
+The name of userInfo.
+
+02:31.000 --> 02:32.000
+We will make one state.
+
+02:32.000 --> 02:34.000
+And we will make one set userInfo.
+
+02:34.000 --> 02:36.000
+What will this state do?
+
+02:36.000 --> 02:37.000
+Let's see this thing.
+
+02:37.000 --> 02:42.000
+Now the data we will get after login will be stored in this userInfo.
+
+02:42.000 --> 02:45.000
+So after login, what data will we need?
+
+02:45.000 --> 02:47.000
+Now I will tell you.
+
+02:47.000 --> 02:49.000
+So the first data will need a name.
+
+02:49.000 --> 02:50.000
+So what is the name of the user?
+
+02:50.000 --> 02:51.000
+Right.
+
+02:51.000 --> 02:52.000
+What will we need for the second thing?
+
+02:52.000 --> 02:54.000
+We will need an email.
+
+02:54.000 --> 02:57.000
+What will we need after email?
+
+02:57.000 --> 02:59.000
+We will need a picture.
+
+02:59.000 --> 03:00.000
+Picture.
+
+03:00.000 --> 03:01.000
+Right.
+
+03:01.000 --> 03:02.000
+So this gives you a URL.
+
+03:02.000 --> 03:05.000
+Which is the profile photo of Gmail.
+
+03:05.000 --> 03:07.000
+It gives you that profile photo.
+
+03:07.000 --> 03:08.000
+Then there is a sub.
+
+03:08.000 --> 03:09.000
+Sub is an ID.
+
+03:09.000 --> 03:13.000
+So for every Gmail, there is a unique ID.
+
+03:13.000 --> 03:14.000
+You get that ID.
+
+03:14.000 --> 03:16.000
+And it stays the same all the time.
+
+03:16.000 --> 03:21.000
+That is, if Techerecon logs in every time, then everything will be the same for it.
+
+03:21.000 --> 03:25.000
+But if there is another email, John Doe, then everything will be different for that person.
+
+03:25.000 --> 03:26.000
+Right.
+
+03:26.000 --> 03:28.000
+Now we will need these things.
+
+03:28.000 --> 03:29.000
+Now where will we get these things?
+
+03:29.000 --> 03:33.000
+To get these things, we will have to do the credential response.
+
+03:33.000 --> 03:36.000
+We will have to get these things out of the object.
+
+03:36.000 --> 03:38.000
+So first we will make the onSuccess function.
+
+03:38.000 --> 03:41.000
+Hence onSuccess.
+
+03:41.000 --> 03:44.000
+We will make a function by saying onSuccess.
+
+03:44.000 --> 03:46.000
+And in this we will put a parameter.
+
+03:46.000 --> 03:47.000
+What?
+
+03:47.000 --> 03:48.000
+Credential.
+
+03:48.000 --> 03:49.000
+Credential response.
+
+03:49.000 --> 03:50.000
+Okay.
+
+03:50.000 --> 03:52.000
+So we will receive the credential response parameter.
+
+03:52.000 --> 03:54.000
+In this we will do the first thing.
+
+03:54.000 --> 03:56.000
+Look, the credential response that comes.
+
+03:56.000 --> 03:58.000
+Yes, I will tell you one more thing.
+
+03:58.000 --> 04:06.000
+Credential response is basically the object that comes from Google.
+
+04:06.000 --> 04:08.000
+It is not decoded.
+
+04:08.000 --> 04:10.000
+It means that it is encoded.
+
+04:10.000 --> 04:12.000
+So I will print it once.
+
+04:12.000 --> 04:13.000
+Wait a minute.
+
+04:13.000 --> 04:16.000
+As soon as I print it, you will understand what it is.
+
+04:16.000 --> 04:19.000
+Console.log credential response.
+
+04:20.000 --> 04:22.000
+Now we will do one thing.
+
+04:22.000 --> 04:27.000
+We will log in the console above the credential response.
+
+04:27.000 --> 04:32.000
+Now we come here.
+
+04:32.000 --> 04:35.000
+And is there any error coming here?
+
+04:35.000 --> 04:37.000
+Okay.
+
+04:37.000 --> 04:39.000
+Use state is not defined.
+
+04:39.000 --> 04:40.000
+Okay fine.
+
+04:40.000 --> 04:42.000
+So here we have made the use state.
+
+04:42.000 --> 04:44.000
+But did not import.
+
+04:44.000 --> 04:46.000
+So first we import the use state from here.
+
+04:46.000 --> 04:48.000
+It is given.
+
+04:48.000 --> 04:49.000
+We have imported the use state.
+
+04:49.000 --> 04:51.000
+Okay.
+
+04:51.000 --> 04:53.000
+We come back to the browser.
+
+04:53.000 --> 04:55.000
+Okay.
+
+04:55.000 --> 04:56.000
+Here you see.
+
+04:56.000 --> 04:57.000
+This is the one tab one.
+
+04:57.000 --> 04:58.000
+What I was telling you.
+
+04:58.000 --> 04:59.000
+This thing.
+
+04:59.000 --> 05:02.000
+First of all, we clear the console before logging in.
+
+05:02.000 --> 05:07.000
+So console.clear.
+
+05:07.000 --> 05:10.000
+One minute.
+
+05:10.000 --> 05:11.000
+Okay.
+
+05:11.000 --> 05:16.000
+After this, I will take this thing a little to the side.
+
+05:16.000 --> 05:17.000
+Okay.
+
+05:17.000 --> 05:18.000
+This is good.
+
+05:18.000 --> 05:20.000
+As soon as I do continuous stacking.
+
+05:20.000 --> 05:23.000
+As soon as it becomes successful.
+
+05:23.000 --> 05:25.000
+So see this is the whole credential.
+
+05:25.000 --> 05:26.000
+You must be seeing.
+
+05:26.000 --> 05:28.000
+This credential has come.
+
+05:28.000 --> 05:29.000
+Who is returning this to us?
+
+05:29.000 --> 05:33.000
+We are returning this Gmail, Google login.
+
+05:33.000 --> 05:37.000
+As soon as we did that, it was returned immediately.
+
+05:37.000 --> 05:39.000
+Now in the credential too.
+
+05:39.000 --> 05:40.000
+One more important thing.
+
+05:40.000 --> 05:41.000
+This credential.
+
+05:41.000 --> 05:42.000
+This credential.
+
+05:42.000 --> 05:44.000
+By doing a credential in the credential.
+
+05:44.000 --> 05:46.000
+The credential response is complete.
+
+05:46.000 --> 05:47.000
+The credential in it.
+
+05:47.000 --> 05:48.000
+This is our credential.
+
+05:48.000 --> 05:49.000
+This is important for us.
+
+05:49.000 --> 05:51.000
+All this data is stored in this.
+
+05:51.000 --> 05:54.000
+Now, but if you see all this, then it is encoded.
+
+05:54.000 --> 05:56.000
+You must not understand anything.
+
+05:56.000 --> 05:57.000
+Is not it?
+
+05:57.000 --> 05:58.000
+Entire encoded data.
+
+05:58.000 --> 05:59.000
+So we will have to decode it.
+
+05:59.000 --> 06:02.000
+Now we will use something to decode.
+
+06:02.000 --> 06:04.000
+Which is called JWT.
+
+06:04.000 --> 06:05.000
+Decode.
+
+06:05.000 --> 06:07.000
+So there is a JWT library.
+
+06:07.000 --> 06:10.000
+Let's use it to decode.
+
+06:10.000 --> 06:11.000
+Okay.
+
+06:11.000 --> 06:13.000
+So now let's go back to our code.
+
+06:13.000 --> 06:15.000
+And first of all, what do we do?
+
+06:15.000 --> 06:16.000
+Let's open the terminal.
+
+06:16.000 --> 06:19.000
+and jwt
+
+06:19.000 --> 06:22.000
+we will install that first
+
+06:22.000 --> 06:25.000
+for that we will go to our terminal
+
+06:25.000 --> 06:28.000
+and write npm install
+
+06:28.000 --> 06:31.000
+jwt equal
+
+06:31.000 --> 06:34.000
+you will write this
+
+06:34.000 --> 06:37.000
+as soon as you write your install will be done
+
+06:37.000 --> 06:40.000
+ok, install is done
+
+06:40.000 --> 06:43.000
+now you have to come back
+
+06:43.000 --> 06:46.000
+and here you have to import it
+
+06:46.000 --> 06:49.000
+to import you have to come here
+
+06:49.000 --> 06:52.000
+and write
+
+06:52.000 --> 06:55.000
+import jwt
+
+06:55.000 --> 06:58.000
+underscore
+
+06:58.000 --> 07:01.000
+decode
+
+07:01.000 --> 07:04.000
+from
+
+07:04.000 --> 07:07.000
+jwtd code
+
+07:07.000 --> 07:10.000
+jwtd
+
+07:10.000 --> 07:13.000
+library is imported
+
+07:13.000 --> 07:16.000
+now what you have to do
+
+07:16.000 --> 07:19.000
+you have to go down and here
+
+07:19.000 --> 07:22.000
+now our on success function
+
+07:22.000 --> 07:25.000
+in this credential response
+
+07:25.000 --> 07:28.000
+we have to decode it first
+
+07:28.000 --> 07:31.000
+we will do const
+
+07:31.000 --> 07:34.000
+decode
+
+07:34.000 --> 07:37.000
+now we will put credential response
+
+07:37.000 --> 07:40.000
+dot credential
+
+07:40.000 --> 07:43.000
+because we have to decode that credential
+
+07:43.000 --> 07:45.000
+because it has everything
+
+07:45.000 --> 07:47.000
+credential is spelling right
+
+07:47.000 --> 07:48.000
+ok
+
+07:48.000 --> 07:49.000
+after this
+
+07:49.000 --> 07:51.000
+as soon as that thing decodes
+
+07:51.000 --> 07:53.000
+after decoding
+
+07:53.000 --> 07:55.000
+we want
+
+07:55.000 --> 07:56.000
+as soon as it decodes
+
+07:56.000 --> 07:58.000
+our user info
+
+07:58.000 --> 08:01.000
+our user info state
+
+08:01.000 --> 08:04.000
+whatever things are running in it
+
+08:04.000 --> 08:06.000
+so let me tell you what happened
+
+08:06.000 --> 08:08.000
+as soon as we decode it
+
+08:08.000 --> 08:09.000
+ok
+
+08:09.000 --> 08:12.000
+and here we write decoded
+
+08:12.000 --> 08:14.000
+ok
+
+08:14.000 --> 08:15.000
+after decoding we gave its name
+
+08:15.000 --> 08:17.000
+now as soon as we became successful
+
+08:17.000 --> 08:19.000
+first we made a state
+
+08:19.000 --> 08:20.000
+in state we were saying
+
+08:20.000 --> 08:22.000
+that we will take all these things
+
+08:22.000 --> 08:23.000
+we will take all these things
+
+08:23.000 --> 08:25.000
+from the response of gmail
+
+08:25.000 --> 08:26.000
+now
+
+08:26.000 --> 08:27.000
+we have to take all these things
+
+08:27.000 --> 08:28.000
+from the response of gmail
+
+08:28.000 --> 08:29.000
+so what we did
+
+08:29.000 --> 08:30.000
+first in on success
+
+08:30.000 --> 08:31.000
+the credential response
+
+08:31.000 --> 08:33.000
+in that credential object
+
+08:33.000 --> 08:35.000
+first we decode it
+
+08:35.000 --> 08:36.000
+decode
+
+08:36.000 --> 08:38.000
+then we used object destructuring
+
+08:38.000 --> 08:41.000
+here we used set user info
+
+08:41.000 --> 08:42.000
+set user info
+
+08:42.000 --> 08:43.000
+we used this
+
+08:43.000 --> 08:45.000
+first we copied
+
+08:45.000 --> 08:46.000
+object was copied
+
+08:46.000 --> 08:47.000
+and then
+
+08:47.000 --> 08:49.000
+we added value in it
+
+08:49.000 --> 08:50.000
+so what value went in name
+
+08:50.000 --> 08:51.000
+which is name
+
+08:51.000 --> 08:52.000
+in name we decoded
+
+08:52.000 --> 08:53.000
+dot name
+
+08:53.000 --> 08:54.000
+ok
+
+08:54.000 --> 08:55.000
+after decoding
+
+08:55.000 --> 08:56.000
+in it
+
+08:56.000 --> 08:57.000
+there is one more
+
+08:57.000 --> 08:58.000
+key of name
+
+08:58.000 --> 08:59.000
+we have that
+
+08:59.000 --> 09:00.000
+email
+
+09:00.000 --> 09:01.000
+picture
+
+09:01.000 --> 09:02.000
+right
+
+09:02.000 --> 09:03.000
+everything
+
+09:03.000 --> 09:04.000
+so these are some things
+
+09:04.000 --> 09:05.000
+which were in it
+
+09:05.000 --> 09:06.000
+and we took all these
+
+09:06.000 --> 09:07.000
+and put in it
+
+09:07.000 --> 09:09.000
+let me do one more thing
+
+09:09.000 --> 09:10.000
+that
+
+09:10.000 --> 09:11.000
+I will show you
+
+09:11.000 --> 09:12.000
+here
+
+09:12.000 --> 09:13.000
+whatever
+
+09:13.000 --> 09:14.000
+decoded
+
+09:14.000 --> 09:15.000
+thing
+
+09:15.000 --> 09:16.000
+I will show you
+
+09:16.000 --> 09:17.000
+by printing
+
+09:17.000 --> 09:18.000
+so that you can
+
+09:18.000 --> 09:19.000
+see the clearance
+
+09:19.000 --> 09:20.000
+ok
+
+09:20.000 --> 09:21.000
+now what is decoded
+
+09:21.000 --> 09:22.000
+the credential
+
+09:22.000 --> 09:23.000
+which was encoded
+
+09:23.000 --> 09:24.000
+in front of you
+
+09:24.000 --> 09:25.000
+it is decoding
+
+09:25.000 --> 09:26.000
+so now
+
+09:26.000 --> 09:27.000
+I have printed it
+
+09:27.000 --> 09:28.000
+now let's do one thing
+
+09:28.000 --> 09:29.000
+let's check it once
+
+09:29.000 --> 09:30.000
+in browser
+
+09:30.000 --> 09:31.000
+ok
+
+09:31.000 --> 09:32.000
+so once
+
+09:32.000 --> 09:33.000
+I am going in browser
+
+09:33.000 --> 09:36.000
+after coming in browser
+
+09:36.000 --> 09:38.000
+I do continuous check
+
+09:38.000 --> 09:39.000
+and
+
+09:39.000 --> 09:41.000
+here I open it
+
+09:41.000 --> 09:42.000
+so see
+
+09:42.000 --> 09:43.000
+as soon as I open it
+
+09:43.000 --> 09:44.000
+see
+
+09:44.000 --> 09:45.000
+everything is decoded
+
+09:45.000 --> 09:46.000
+everything is decoded
+
+09:46.000 --> 09:47.000
+that credential
+
+09:47.000 --> 09:48.000
+which was there
+
+09:48.000 --> 09:49.000
+is decoded
+
+09:49.000 --> 09:50.000
+see
+
+09:50.000 --> 09:51.000
+your email
+
+09:51.000 --> 09:52.000
+email
+
+09:52.000 --> 09:53.000
+all these things
+
+09:53.000 --> 09:54.000
+email
+
+09:54.000 --> 09:55.000
+verified
+
+09:55.000 --> 09:56.000
+name
+
+09:56.000 --> 09:57.000
+account
+
+09:57.000 --> 09:58.000
+all these things
+
+09:58.000 --> 09:59.000
+which are
+
+09:59.000 --> 10:00.000
+picture
+
+10:00.000 --> 10:01.000
+which is picture
+
+10:01.000 --> 10:02.000
+one minute
+
+10:02.000 --> 10:03.000
+I will show you
+
+10:03.000 --> 10:04.000
+this thing
+
+10:04.000 --> 10:05.000
+in new tab
+
+10:05.000 --> 10:06.000
+ok
+
+10:06.000 --> 10:07.000
+so
+
+10:07.000 --> 10:08.000
+see
+
+10:08.000 --> 10:09.000
+picture
+
+10:09.000 --> 10:10.000
+picture
+
+10:10.000 --> 10:11.000
+everything is there
+
+10:11.000 --> 10:12.000
+so what happened here
+
+10:12.000 --> 10:13.000
+here
+
+10:13.000 --> 10:14.000
+all these things
+
+10:14.000 --> 10:15.000
+are decoded
+
+10:15.000 --> 10:16.000
+and what did we do
+
+10:16.000 --> 10:17.000
+email
+
+10:17.000 --> 10:18.000
+name
+
+10:18.000 --> 10:19.000
+right
+
+10:19.000 --> 10:20.000
+after name
+
+10:20.000 --> 10:21.000
+your picture
+
+10:21.000 --> 10:22.000
+and all these things
+
+10:22.000 --> 10:23.000
+we have stored in state
+
+10:23.000 --> 10:24.000
+that's it
+
+10:24.000 --> 10:25.000
+we have done nothing else
+
+10:25.000 --> 10:26.000
+ok
+
+10:26.000 --> 10:27.000
+now
+
+10:27.000 --> 10:28.000
+we come to this
+
+10:28.000 --> 10:29.000
+and
+
+10:29.000 --> 10:30.000
+here we have stored
+
+10:30.000 --> 10:31.000
+all these things
+
+10:31.000 --> 10:32.000
+but now
+
+10:32.000 --> 10:33.000
+we have stored
+
+10:33.000 --> 10:34.000
+so after this
+
+10:34.000 --> 10:35.000
+what will we do
+
+10:35.000 --> 10:36.000
+after storing
+
+10:36.000 --> 10:37.000
+we want
+
+10:37.000 --> 10:38.000
+to log in
+
+10:38.000 --> 10:39.000
+for the user
+
+10:39.000 --> 10:40.000
+just like that
+
+10:40.000 --> 10:41.000
+user
+
+10:41.000 --> 10:42.000
+like that
+
+10:42.000 --> 10:43.000
+user
+
+10:43.000 --> 10:44.000
+redirect
+
+10:44.000 --> 10:45.000
+in main page
+
+10:45.000 --> 10:46.000
+in main
+
+10:46.000 --> 10:47.000
+page
+
+10:47.000 --> 10:48.000
+so
+
+10:48.000 --> 10:49.000
+this is our main page
+
+10:49.000 --> 10:50.000
+so
+
+10:50.000 --> 10:51.000
+as user log in
+
+10:51.000 --> 10:52.000
+as like
+
+10:52.000 --> 10:53.000
+he redirect here
+
+10:53.000 --> 10:54.000
+and
+
+10:54.000 --> 10:55.000
+directly
+
+10:55.000 --> 10:56.000
+if this page
+
+10:56.000 --> 10:57.000
+user come
+
+10:57.000 --> 10:58.000
+try
+
+10:58.000 --> 10:59.000
+then he can't
+
+10:59.000 --> 11:00.000
+come
+
+11:00.000 --> 11:01.000
+where
+
+11:01.000 --> 11:02.000
+he go to
+
+11:02.000 --> 11:03.000
+login page
+
+11:03.000 --> 11:04.000
+from office
+
+11:04.000 --> 11:05.000
+go to login page
+
+11:05.000 --> 11:06.000
+means
+
+11:06.000 --> 11:07.000
+user can't come directly
+
+11:07.000 --> 11:11.000
+otherwise if the user is verified then it goes directly to the main page
+
+11:11.000 --> 11:16.000
+so what we do to do this, first we go to our code
+
+11:16.000 --> 11:21.000
+and after going here, first we use local storage
+
+11:21.000 --> 11:26.000
+for this we come down a little, here we use a use effect
+
+11:26.000 --> 11:28.000
+use effect
+
+11:28.000 --> 11:32.000
+and by using use effect we do one thing
+
+11:32.000 --> 11:37.000
+first let's import it to use effect
+
+11:37.000 --> 11:40.000
+it has been imported to use effect
+
+11:40.000 --> 11:42.000
+now what we do here first
+
+11:42.000 --> 11:49.000
+as soon as the details of the user come
+
+11:49.000 --> 11:51.000
+these things
+
+11:51.000 --> 11:56.000
+as soon as all these things come, user info comes to us
+
+11:56.000 --> 11:58.000
+this object becomes complete
+
+11:58.000 --> 12:00.000
+details come in it
+
+12:00.000 --> 12:02.000
+as soon as we do this
+
+12:02.000 --> 12:05.000
+we set all these details in local storage
+
+12:05.000 --> 12:08.000
+now why are we setting it in local storage, I will tell you
+
+12:08.000 --> 12:12.000
+so for this I have done one thing first
+
+12:12.000 --> 12:13.000
+which is
+
+12:13.000 --> 12:15.000
+if
+
+12:15.000 --> 12:18.000
+user info
+
+12:18.000 --> 12:19.000
+dot
+
+12:19.000 --> 12:20.000
+dot
+
+12:20.000 --> 12:21.000
+dot
+
+12:21.000 --> 12:22.000
+dot
+
+12:22.000 --> 12:23.000
+dot
+
+12:23.000 --> 12:24.000
+dot
+
+12:24.000 --> 12:25.000
+dot
+
+12:25.000 --> 12:26.000
+dot
+
+12:26.000 --> 12:27.000
+dot
+
+12:27.000 --> 12:28.000
+dot
+
+12:28.000 --> 12:29.000
+dot
+
+12:29.000 --> 12:30.000
+dot
+
+12:30.000 --> 12:31.000
+dot
+
+12:31.000 --> 12:32.000
+dot
+
+12:32.000 --> 12:33.000
+dot
+
+12:33.000 --> 12:34.000
+dot
+
+12:34.000 --> 12:35.000
+dot
+
+12:35.000 --> 12:36.000
+dot
+
+12:36.000 --> 12:37.000
+dot
+
+12:37.000 --> 12:38.000
+dot
+
+12:38.000 --> 12:39.000
+dot
+
+12:39.000 --> 12:40.000
+dot
+
+12:40.000 --> 12:41.000
+dot
+
+12:41.000 --> 12:42.000
+dot
+
+12:42.000 --> 12:43.000
+dot
+
+12:43.000 --> 12:44.000
+dot
+
+12:44.000 --> 12:45.000
+dot
+
+12:45.000 --> 12:46.000
+dot
+
+12:46.000 --> 12:47.000
+dot
+
+12:47.000 --> 12:48.000
+dot
+
+12:48.000 --> 12:57.000
+dot
+
+12:57.000 --> 12:58.000
+dot
+
+12:58.000 --> 12:59.000
+dot
+
+12:59.000 --> 13:00.000
+dot
+
+13:00.000 --> 13:01.000
+dot
+
+13:01.000 --> 13:03.000
+in which we are going to write
+
+13:03.000 --> 13:05.000
+is
+
+13:07.000 --> 13:09.000
+now let's see what happened
+
+13:09.000 --> 13:11.000
+what i did
+
+13:11.000 --> 13:13.000
+what happened
+
+13:13.000 --> 13:15.000
+first user login
+
+13:15.000 --> 13:17.000
+all details are set
+
+13:17.000 --> 13:19.000
+after setting
+
+13:19.000 --> 13:21.000
+these details don't get set immediately
+
+13:21.000 --> 13:23.000
+in any state
+
+13:23.000 --> 13:25.000
+state takes time to run
+
+13:25.000 --> 13:27.000
+if any value is saved in state
+
+13:27.000 --> 13:29.000
+then it takes time
+
+13:29.000 --> 13:31.000
+to print
+
+13:31.000 --> 13:33.000
+for example
+
+13:33.000 --> 13:35.000
+if you are going to print
+
+13:35.000 --> 13:37.000
+this state
+
+13:37.000 --> 13:39.000
+if you are going to print
+
+13:39.000 --> 13:41.000
+this state
+
+13:41.000 --> 13:43.000
+then it gets printed 2-3 times
+
+13:43.000 --> 13:45.000
+because in this state
+
+13:45.000 --> 13:47.000
+changes are happening slowly
+
+13:47.000 --> 13:49.000
+so
+
+13:49.000 --> 13:51.000
+the number of changes in a state
+
+13:51.000 --> 13:53.000
+is the number of times it runs
+
+13:53.000 --> 13:55.000
+so this means
+
+13:55.000 --> 13:57.000
+state takes time to load
+
+13:57.000 --> 13:59.000
+to complete
+
+13:59.000 --> 14:01.000
+so what we did
+
+14:01.000 --> 14:03.000
+we set a use effect
+
+14:03.000 --> 14:05.000
+we said whenever
+
+14:05.000 --> 14:07.000
+changes in user info
+
+14:07.000 --> 14:09.000
+i.e. changes in this state
+
+14:09.000 --> 14:11.000
+because first name will come
+
+14:11.000 --> 14:13.000
+then email will come
+
+14:13.000 --> 14:15.000
+then picture will come
+
+14:15.000 --> 14:17.000
+then these changes are happening
+
+14:17.000 --> 14:19.000
+right
+
+14:19.000 --> 14:21.000
+so we will say
+
+14:21.000 --> 14:23.000
+until changes
+
+14:23.000 --> 14:25.000
+run this thing
+
+14:25.000 --> 14:27.000
+now what we did
+
+14:27.000 --> 14:29.000
+we set a condition
+
+14:29.000 --> 14:31.000
+set it in local storage
+
+14:31.000 --> 14:33.000
+so we put a check
+
+14:33.000 --> 14:35.000
+that here actually
+
+14:35.000 --> 14:37.000
+something should happen
+
+14:37.000 --> 14:39.000
+it should not happen that
+
+14:39.000 --> 14:41.000
+something is not there
+
+14:41.000 --> 14:43.000
+i.e. state is made
+
+14:43.000 --> 14:45.000
+then we know
+
+14:45.000 --> 14:47.000
+first email is set
+
+14:47.000 --> 14:49.000
+picture is set
+
+14:49.000 --> 14:51.000
+name is not set
+
+14:51.000 --> 14:53.000
+so we put a condition
+
+14:53.000 --> 14:55.000
+so we put this
+
+14:55.000 --> 14:57.000
+because we want
+
+14:57.000 --> 14:59.000
+that something should happen
+
+14:59.000 --> 15:01.000
+as soon as this thing happens
+
+15:01.000 --> 15:03.000
+then we will want
+
+15:03.000 --> 15:05.000
+that user
+
+15:05.000 --> 15:07.000
+where should it go
+
+15:07.000 --> 15:09.000
+it should go
+
+15:09.000 --> 15:11.000
+window dot
+
+15:11.000 --> 15:13.000
+location dot
+
+15:13.000 --> 15:15.000
+forward slash
+
+15:15.000 --> 15:17.000
+what we did
+
+15:17.000 --> 15:19.000
+means
+
+15:19.000 --> 15:21.000
+as soon as things are saved
+
+15:21.000 --> 15:23.000
+user should not go forward slash
+
+15:23.000 --> 15:25.000
+i.e. go to main page
+
+15:25.000 --> 15:27.000
+so now we see one more thing
+
+15:27.000 --> 15:29.000
+local storage
+
+15:29.000 --> 15:31.000
+so we talked about what will happen
+
+15:31.000 --> 15:33.000
+that here first
+
+15:33.000 --> 15:35.000
+data of state will be saved in local storage
+
+15:35.000 --> 15:37.000
+and after that
+
+15:37.000 --> 15:39.000
+it will be redirected to forward slash
+
+15:39.000 --> 15:41.000
+i.e. main page
+
+15:41.000 --> 15:43.000
+but what is local storage
+
+15:43.000 --> 15:45.000
+tell me
+
+15:45.000 --> 15:47.000
+so for that one more thing
+
+15:47.000 --> 15:49.000
+we have given windows dot location
+
+15:49.000 --> 15:51.000
+we have to take it up
+
+15:51.000 --> 15:53.000
+we will take it up
+
+15:53.000 --> 15:55.000
+so it should be in if condition
+
+15:55.000 --> 15:57.000
+because if it is in if condition
+
+15:57.000 --> 15:59.000
+then it will not be in if condition
+
+15:59.000 --> 16:01.000
+so it will work every time
+
+16:01.000 --> 16:03.000
+as soon as user info is updated
+
+16:03.000 --> 16:05.000
+i.e. if you enter in page
+
+16:05.000 --> 16:07.000
+then it will work
+
+16:07.000 --> 16:09.000
+right
+
+16:09.000 --> 16:11.000
+and after that
+
+16:11.000 --> 16:13.000
+because user info is empty
+
+16:13.000 --> 16:15.000
+so first time it worked
+
+16:15.000 --> 16:17.000
+so as soon as you enter in page
+
+16:17.000 --> 16:19.000
+it will redirect you
+
+16:19.000 --> 16:21.000
+so no one will let you go in login page
+
+16:21.000 --> 16:23.000
+basic thing
+
+16:23.000 --> 16:25.000
+and one more thing
+
+16:25.000 --> 16:27.000
+after that you can redirect user
+
+16:27.000 --> 16:29.000
+now second thing
+
+16:29.000 --> 16:31.000
+what is local storage
+
+16:31.000 --> 16:33.000
+so what is local storage
+
+16:33.000 --> 16:35.000
+we understand it by looking at our browser
+
+16:35.000 --> 16:37.000
+so we came in our browser
+
+16:37.000 --> 16:39.000
+this is our browser
+
+16:39.000 --> 16:41.000
+and here
+
+16:41.000 --> 16:43.000
+i go to slash login
+
+16:43.000 --> 16:45.000
+and this is our page
+
+16:45.000 --> 16:47.000
+now what is happening
+
+16:47.000 --> 16:49.000
+that browser provides space
+
+16:49.000 --> 16:51.000
+to every website
+
+16:51.000 --> 16:53.000
+in a computer
+
+16:53.000 --> 16:55.000
+in which site stores
+
+16:55.000 --> 16:57.000
+that data can be any
+
+16:57.000 --> 16:59.000
+or that data can be user specific
+
+16:59.000 --> 17:01.000
+right
+
+17:01.000 --> 17:03.000
+or that data can be user specific
+
+17:03.000 --> 17:05.000
+or it can be login data
+
+17:05.000 --> 17:07.000
+like ours
+
+17:07.000 --> 17:09.000
+so anything can be
+
+17:09.000 --> 17:11.000
+so now this data
+
+17:11.000 --> 17:13.000
+we are saving this data in local storage
+
+17:13.000 --> 17:15.000
+which chrome offers
+
+17:15.000 --> 17:17.000
+to every website
+
+17:17.000 --> 17:19.000
+so how it looks
+
+17:19.000 --> 17:21.000
+we will see it once
+
+17:21.000 --> 17:23.000
+so what we did
+
+17:23.000 --> 17:25.000
+we go to our code
+
+17:25.000 --> 17:27.000
+and we created an object
+
+17:27.000 --> 17:29.000
+basically we named that object
+
+17:29.000 --> 17:31.000
+as user info object
+
+17:31.000 --> 17:33.000
+which is saved in local storage
+
+17:33.000 --> 17:35.000
+in local storage all the things
+
+17:35.000 --> 17:37.000
+are saved in the form of an object
+
+17:37.000 --> 17:39.000
+so you created user info object
+
+17:39.000 --> 17:41.000
+and then you have to stringify it
+
+17:41.000 --> 17:43.000
+stringify means you have to
+
+17:43.000 --> 17:45.000
+convert object into string
+
+17:45.000 --> 17:47.000
+and store it
+
+17:47.000 --> 17:49.000
+so basically object is converted
+
+17:49.000 --> 17:51.000
+into string and stored
+
+17:51.000 --> 17:53.000
+so we stringified user info object
+
+17:53.000 --> 17:55.000
+and put it in local storage
+
+17:55.000 --> 17:57.000
+so we stringified user info object
+
+17:57.000 --> 17:59.000
+and put it in local storage
+
+17:59.000 --> 18:01.000
+and now we will see
+
+18:01.000 --> 18:03.000
+how local storage looks
+
+18:03.000 --> 18:05.000
+so just like
+
+18:05.000 --> 18:07.000
+I am creating a control shift
+
+18:07.000 --> 18:09.000
+so you can see
+
+18:09.000 --> 18:11.000
+there is a console
+
+18:11.000 --> 18:13.000
+from the console you are in
+
+18:13.000 --> 18:15.000
+application
+
+18:15.000 --> 18:17.000
+when you click in application
+
+18:17.000 --> 18:19.000
+you can see local storage
+
+18:19.000 --> 18:21.000
+you can see it
+
+18:21.000 --> 18:23.000
+as soon as http localhost
+
+18:23.000 --> 18:25.000
+as soon as http localhost
+
+18:25.000 --> 18:31.000
+you can see here, so basically this is from our Google login, so you don't have to pay attention to this.
+
+18:31.000 --> 18:36.000
+Our main data will be stored, that is, the user info object will be stored here after logging in.
+
+18:36.000 --> 18:45.000
+So I'll show you how and here when I do continuous tech and as soon as I do it, it redirects me first
+
+18:45.000 --> 18:52.000
+and as soon as I redirected, it redirected to the windows.location and I came to the main page.
+
+18:52.000 --> 18:55.000
+And here you can see that this user info object has been stored.
+
+18:55.000 --> 18:58.000
+User info object has been stored and what is the name here?
+
+18:58.000 --> 19:03.000
+Email has been, name has been, picture has been, everything has been, these things have been stored here.
+
+19:03.000 --> 19:05.000
+Now do you understand what local storage is?
+
+19:05.000 --> 19:12.000
+Basically, this space is provided by the browser in the user's computer where the site can store its own information.
+
+19:12.000 --> 19:15.000
+Don't store your sensitive information here.
+
+19:15.000 --> 19:20.000
+So here our authentication with Google login has been completed.
+
+
+
