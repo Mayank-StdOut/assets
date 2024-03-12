@@ -1,0 +1,2081 @@
+WEBVTT
+
+00:06.000 --> 00:11.520
+So now we have to create a user form and in that user portfolio form, the user will enter
+
+00:11.520 --> 00:17.240
+his details and after entering, he will save the details in the backend and after that
+
+00:17.240 --> 00:21.760
+a link will be generated, as soon as the user clicks on the link, he will reach his portfolio
+
+00:21.760 --> 00:22.760
+page.
+
+00:22.760 --> 00:29.400
+Basically, we will be saving his portfolio details in our backend and then whenever someone
+
+00:29.400 --> 00:34.400
+visits the site of the same user's portfolio, he will be shown the details there.
+
+00:34.400 --> 00:35.400
+So how will all this happen?
+
+00:35.400 --> 00:40.400
+This mechanism is for the future, but now we create a portfolio form in a simple design
+
+00:40.400 --> 00:41.400
+wise.
+
+00:41.400 --> 00:48.400
+So let's go to our VS Code for this and here we remove all these things like div, this
+
+00:48.400 --> 00:49.400
+is main.
+
+00:49.400 --> 00:57.400
+After this, here in the code section, whatever the basic layout of the portfolio form, it
+
+00:57.400 --> 00:58.400
+will be given to you.
+
+00:58.400 --> 00:59.400
+You can see it here.
+
+00:59.400 --> 01:00.400
+You have to come here and paste that thing.
+
+01:00.400 --> 01:05.400
+Now here I am going to explain all the things to you well, what is it, how is it, I will
+
+01:05.400 --> 01:11.400
+explain everything because this is not the main thing.
+
+01:11.400 --> 01:12.400
+Look, design is not the main thing.
+
+01:12.400 --> 01:17.400
+At the end of the day, we will do the design, you will do it, but the logic part is a little
+
+01:17.400 --> 01:18.400
+important.
+
+01:18.400 --> 01:22.400
+How the data is going to be saved in the backend, how the user is going to see his portfolio,
+
+01:22.400 --> 01:24.400
+these are a lot of logic things.
+
+01:24.400 --> 01:28.400
+So for this thing, we will understand it well and for the time being, we also understand
+
+01:28.400 --> 01:29.400
+what it is.
+
+01:29.400 --> 01:38.400
+So now for the time being, here we have given a background image in our form, like we have
+
+01:38.400 --> 01:45.400
+given a login page and those same images that we have given in the login page, we have just
+
+01:45.400 --> 01:47.400
+blurred this image a little more.
+
+01:47.400 --> 01:49.400
+Now how will it be known?
+
+01:49.400 --> 01:53.400
+Look, here we have blurred this image a little more.
+
+01:53.400 --> 01:54.400
+How much?
+
+01:54.400 --> 01:55.400
+Backdrop blur xl.
+
+01:55.400 --> 01:57.400
+That is, we have added an image in it.
+
+01:57.400 --> 02:01.400
+In that, we have kept it empty, so we have kept xl in it, that is, we have blurred it a little more.
+
+02:01.400 --> 02:05.400
+After that, we have put a logout button in which we will make the handle logout function.
+
+02:05.400 --> 02:07.400
+There is also a loading state.
+
+02:07.400 --> 02:14.400
+So what we will do here is that we will check whether the form has been loaded or not.
+
+02:14.400 --> 02:17.400
+You must have noticed one thing, when we go to the main page from login, then for a while
+
+02:17.400 --> 02:19.400
+that main page shows.
+
+02:19.400 --> 02:20.400
+Why does this happen?
+
+02:20.400 --> 02:25.400
+Because basically, the function is not executed so fast.
+
+02:25.400 --> 02:26.400
+So as long as that main page is showing.
+
+02:26.400 --> 02:29.400
+We don't want the user to see the content in it.
+
+02:29.400 --> 02:31.400
+So we will put a loading state there.
+
+02:31.400 --> 02:32.400
+What will we do?
+
+02:32.400 --> 02:37.400
+We will write that as soon as the user goes into the use effect, that is, as soon as it goes
+
+02:37.400 --> 02:39.400
+to the main page, the use effect will run there.
+
+02:39.400 --> 02:43.400
+So by then, we will set that state in loading.
+
+02:43.400 --> 02:45.400
+Okay, so we will do all this further.
+
+02:45.400 --> 02:47.400
+And there is also handle submit.
+
+02:47.400 --> 02:49.400
+So after submitting the form, what will happen?
+
+02:49.400 --> 02:51.400
+There will be a value fetch on the handle submit.
+
+02:51.400 --> 02:55.400
+And the object we used to do destructuring, we will do that and fetch the value from here.
+
+02:56.400 --> 02:59.400
+So here we will also take the image input from below.
+
+02:59.400 --> 03:00.400
+How to take the input?
+
+03:00.400 --> 03:02.400
+We will also see the image.
+
+03:02.400 --> 03:05.400
+And here we will show the image above that image.
+
+03:05.400 --> 03:06.400
+There are some things like this.
+
+03:06.400 --> 03:08.400
+Here we will take the name input.
+
+03:08.400 --> 03:11.400
+First name, last name, experience, about, role, skills.
+
+03:11.400 --> 03:13.400
+These are some things that we will take the input from here.
+
+03:13.400 --> 03:15.400
+And this is a basic form.
+
+03:15.400 --> 03:17.400
+The classes in this you will be able to see.
+
+03:17.400 --> 03:18.400
+ML is margin left.
+
+03:18.400 --> 03:20.400
+And background gray.
+
+03:20.400 --> 03:21.400
+Border gray.
+
+03:21.400 --> 03:24.400
+So all these things are basic things.
+
+03:24.400 --> 03:25.400
+And these are basic classes.
+
+03:25.400 --> 03:27.400
+You will be able to find them if you search them.
+
+03:27.400 --> 03:29.400
+And you will be able to understand by looking at them.
+
+03:29.400 --> 03:30.400
+Okay.
+
+03:30.400 --> 03:33.400
+Once we go to our browser.
+
+03:33.400 --> 03:34.400
+Web page.
+
+03:34.400 --> 03:38.400
+And here we will go to this page.
+
+03:38.400 --> 03:40.400
+So here some errors will be coming.
+
+03:40.400 --> 03:43.400
+Of course, because we have not made some functions.
+
+03:43.400 --> 03:44.400
+So see, errors will come.
+
+03:44.400 --> 03:46.400
+What is loading?
+
+03:46.400 --> 03:49.400
+And what are the things that have been defined?
+
+03:49.400 --> 03:50.400
+So what do we do?
+
+03:50.400 --> 03:53.400
+Let's quickly define them.
+
+03:53.400 --> 03:55.400
+And let's not implement now.
+
+03:55.400 --> 03:57.400
+Because we just want to see the layout.
+
+03:57.400 --> 03:59.400
+So we will go.
+
+03:59.400 --> 04:01.400
+And what are the things that we have to implement?
+
+04:01.400 --> 04:03.400
+We will see that once.
+
+04:03.400 --> 04:05.400
+So first we will make the states quickly.
+
+04:05.400 --> 04:07.400
+What will be the states?
+
+04:07.400 --> 04:10.400
+The first will be form data.
+
+04:10.400 --> 04:12.400
+That's portfolio and data.
+
+04:12.400 --> 04:14.400
+So we will name it form data.
+
+04:14.400 --> 04:15.400
+What will it do?
+
+04:15.400 --> 04:16.400
+I will tell you right now.
+
+04:16.400 --> 04:23.400
+Set p and data.
+
+04:23.400 --> 04:24.400
+Right.
+
+04:25.400 --> 04:31.400
+Use state.
+
+04:31.400 --> 04:32.400
+And here.
+
+04:32.400 --> 04:35.400
+What do we set it for now?
+
+04:35.400 --> 04:39.400
+We set it in the form of an object.
+
+04:39.400 --> 04:41.400
+Because the platform form data.
+
+04:41.400 --> 04:42.400
+Where will it come from?
+
+04:42.400 --> 04:43.400
+When the form will be submitted.
+
+04:43.400 --> 04:44.400
+This.
+
+04:44.400 --> 04:45.400
+Handle submit function.
+
+04:45.400 --> 04:46.400
+You must be seeing.
+
+04:46.400 --> 04:47.400
+On submit.
+
+04:47.400 --> 04:48.400
+So as soon as the form will be submitted.
+
+04:48.400 --> 04:49.400
+Handle submit will run.
+
+04:49.400 --> 04:50.400
+And handle submit will create an object.
+
+04:50.400 --> 04:53.400
+And that object will be set in the platform data.
+
+04:53.400 --> 04:54.400
+We will see how that thing will happen now.
+
+04:54.400 --> 04:55.400
+Constant.
+
+04:55.400 --> 04:57.400
+And here is a loading thing.
+
+04:57.400 --> 04:58.400
+For loading.
+
+04:58.400 --> 05:00.400
+We set a state here.
+
+05:00.400 --> 05:03.400
+And set loading here.
+
+05:03.400 --> 05:06.400
+We have to keep that.
+
+05:06.400 --> 05:08.400
+Set loading.
+
+05:08.400 --> 05:10.400
+After this.
+
+05:10.400 --> 05:12.400
+Using this.
+
+05:12.400 --> 05:13.400
+Use state.
+
+05:13.400 --> 05:15.400
+By using.
+
+05:15.400 --> 05:18.400
+We set it to false for now.
+
+05:18.400 --> 05:21.400
+Because now we don't want our loader to work.
+
+05:21.400 --> 05:22.400
+Right.
+
+05:22.400 --> 05:23.400
+Now after this.
+
+05:23.400 --> 05:26.400
+The second thing.
+
+05:26.400 --> 05:27.400
+What is this?
+
+05:27.400 --> 05:29.400
+This visible.
+
+05:29.400 --> 05:31.400
+What is this visible thing?
+
+05:31.400 --> 05:32.400
+I will tell you.
+
+05:32.400 --> 05:34.400
+Here you see below.
+
+05:34.400 --> 05:35.400
+In the second.
+
+05:35.400 --> 05:36.400
+In the last.
+
+05:36.400 --> 05:38.400
+When our form is submitted.
+
+05:38.400 --> 05:40.400
+Our form is submitted.
+
+05:40.400 --> 05:41.400
+This button is submit button.
+
+05:41.400 --> 05:42.400
+Okay.
+
+05:42.400 --> 05:44.400
+So the first thing is in submit button.
+
+05:44.400 --> 05:45.400
+This loading will be written.
+
+05:45.400 --> 05:47.400
+As soon as the user clicks submit.
+
+05:47.400 --> 05:48.400
+As soon as the user clicks submit.
+
+05:48.400 --> 05:49.400
+Then loading will be written.
+
+05:49.400 --> 05:50.400
+Until.
+
+05:50.400 --> 05:51.400
+Until the form is not submitted.
+
+05:51.400 --> 05:52.400
+In the backend.
+
+05:52.400 --> 05:53.400
+Till then.
+
+05:53.400 --> 05:54.400
+This loading will be written.
+
+05:54.400 --> 05:55.400
+All these things will be clear to you.
+
+05:55.400 --> 05:56.400
+What is this?
+
+05:56.400 --> 05:58.400
+What have I done in one click?
+
+05:58.400 --> 06:00.400
+Everything will be clear.
+
+06:00.400 --> 06:02.400
+What is this visible here?
+
+06:02.400 --> 06:05.400
+This visible will give you the URL of the portfolio.
+
+06:05.400 --> 06:06.400
+Means.
+
+06:06.400 --> 06:07.400
+When the user clicks submit.
+
+06:07.400 --> 06:09.400
+Then the URL of the portfolio will be generated.
+
+06:09.400 --> 06:11.400
+That thing will be showing you here.
+
+06:11.400 --> 06:12.400
+So until.
+
+06:12.400 --> 06:14.400
+We set it to state.
+
+06:14.400 --> 06:19.400
+Const is visible.
+
+06:19.400 --> 06:20.400
+Is visible.
+
+06:20.400 --> 06:21.400
+And set.
+
+06:21.400 --> 06:22.400
+Is.
+
+06:22.400 --> 06:23.400
+Visible.
+
+06:23.400 --> 06:24.400
+Is equals to.
+
+06:24.400 --> 06:25.400
+Use state.
+
+06:25.400 --> 06:26.400
+And now we will give false.
+
+06:26.400 --> 06:27.400
+False.
+
+06:27.400 --> 06:28.400
+Okay.
+
+06:28.400 --> 06:29.400
+Now we have done this thing.
+
+06:29.400 --> 06:30.400
+Now after this one thing comes.
+
+06:30.400 --> 06:31.400
+That is loading.
+
+06:31.400 --> 06:32.400
+Loading what?
+
+06:32.400 --> 06:33.400
+Button loading state.
+
+06:33.400 --> 06:34.400
+Means.
+
+06:34.400 --> 06:35.400
+I will tell you what is.
+
+06:35.400 --> 06:36.400
+Set is B loading.
+
+06:36.400 --> 06:37.400
+And this is for submit button.
+
+06:37.400 --> 06:38.400
+Here we will put the handle submit function.
+
+06:38.400 --> 06:39.400
+Right?
+
+06:39.400 --> 06:40.400
+We will put the submit function.
+
+06:40.400 --> 06:41.400
+So.
+
+06:41.400 --> 06:42.400
+So.
+
+06:42.400 --> 06:43.400
+So.
+
+06:43.400 --> 06:44.400
+So.
+
+06:44.400 --> 06:45.400
+So.
+
+06:45.400 --> 06:46.400
+So.
+
+06:46.400 --> 06:47.400
+So.
+
+06:47.400 --> 06:48.400
+So.
+
+06:48.400 --> 06:49.400
+So.
+
+06:49.400 --> 06:50.400
+So.
+
+06:50.400 --> 06:51.400
+So.
+
+06:51.400 --> 06:52.400
+So.
+
+06:52.400 --> 06:53.400
+So.
+
+06:53.400 --> 06:54.400
+And here we will put the submit function.
+
+06:54.400 --> 07:18.760
+Const hand
+
+07:18.760 --> 07:19.760
+submit.
+
+07:19.760 --> 07:23.760
+Now there is a handleLogout which we will implement now.
+
+07:23.760 --> 07:25.760
+What is handleLogout?
+
+07:25.760 --> 07:26.760
+What will handleLogout do?
+
+07:26.760 --> 07:28.760
+As soon as the user clicks in logout,
+
+07:28.760 --> 07:30.760
+this is the logout text here,
+
+07:30.760 --> 07:31.760
+there is a div here,
+
+07:31.760 --> 07:33.760
+as soon as the user clicks in logout,
+
+07:33.760 --> 07:34.760
+the user will be logged out.
+
+07:34.760 --> 07:36.760
+And handleLogout function will be called first.
+
+07:36.760 --> 07:37.760
+So how did this happen?
+
+07:37.760 --> 07:38.760
+I will tell you.
+
+07:41.760 --> 07:42.760
+What will happen there?
+
+07:42.760 --> 07:44.760
+See, how did logout happen?
+
+07:44.760 --> 07:45.760
+You understand.
+
+07:45.760 --> 07:46.760
+How did login happen?
+
+07:46.760 --> 07:47.760
+First understand this.
+
+07:47.760 --> 07:48.760
+UserInfo object was created
+
+07:48.760 --> 07:50.760
+and we check that object.
+
+07:50.760 --> 07:51.760
+We do one thing.
+
+07:51.760 --> 07:53.760
+We delete UserInfo object.
+
+07:53.760 --> 07:54.760
+As soon as the user clicks in logout,
+
+07:54.760 --> 07:56.760
+UserInfo object will be deleted.
+
+07:56.760 --> 07:58.760
+And when UserInfo object is deleted,
+
+07:58.760 --> 07:59.760
+then user will be logged out.
+
+07:59.760 --> 08:00.760
+Right?
+
+08:00.760 --> 08:01.760
+So we do this.
+
+08:01.760 --> 08:03.760
+localStorage.clear
+
+08:03.760 --> 08:04.760
+And what will we write here?
+
+08:04.760 --> 08:05.760
+Nothing.
+
+08:05.760 --> 08:07.760
+If we do localStorage.clear,
+
+08:07.760 --> 08:09.760
+then localStorage will be cleared.
+
+08:09.760 --> 08:10.760
+Then what will we do?
+
+08:10.760 --> 08:11.760
+We will navigate the user.
+
+08:11.760 --> 08:13.760
+Where will we navigate?
+
+08:13.760 --> 08:14.760
+Forward slash.
+
+08:14.760 --> 08:16.760
+Means we will navigate to the main page.
+
+08:16.760 --> 08:18.760
+So that page will be reloaded in a way.
+
+08:18.760 --> 08:19.760
+As soon as localStorage is cleared,
+
+08:19.760 --> 08:21.760
+then what will happen to the main page?
+
+08:21.760 --> 08:22.760
+That once it had to reload.
+
+08:22.760 --> 08:23.760
+Right?
+
+08:23.760 --> 08:25.760
+It had to reload after changing something in localStorage.
+
+08:25.760 --> 08:27.760
+So we cleared localStorage.
+
+08:27.760 --> 08:28.760
+After clearing localStorage,
+
+08:28.760 --> 08:31.760
+we will redirect it back to the main page.
+
+08:31.760 --> 08:33.760
+So the main page first checks
+
+08:33.760 --> 08:35.760
+whether there is anything in localStorage or not.
+
+08:35.760 --> 08:36.760
+Now if it does not get anything,
+
+08:36.760 --> 08:37.760
+then it will redirect it to the login page.
+
+08:37.760 --> 08:38.760
+Do you understand?
+
+08:38.760 --> 08:39.760
+Basic logic.
+
+08:40.760 --> 08:41.760
+Now what we do here is
+
+08:41.760 --> 08:43.760
+once we make navigate here,
+
+08:43.760 --> 08:44.760
+which we have already made.
+
+08:44.760 --> 08:45.760
+Okay.
+
+08:45.760 --> 08:46.760
+Once we save it,
+
+08:46.760 --> 08:47.760
+and go back to our browser.
+
+08:47.760 --> 08:49.760
+And once we go back to our browser,
+
+08:49.760 --> 08:51.760
+and once we go back to our browser,
+
+08:51.760 --> 08:52.760
+let's see if there is any error
+
+08:52.760 --> 08:54.760
+which is coming.
+
+08:54.760 --> 08:56.760
+Preview image is not defined.
+
+08:56.760 --> 08:57.760
+Okay.
+
+08:57.760 --> 08:58.760
+Preview image is not defined.
+
+08:58.760 --> 09:01.760
+So we have to make a preview image as well.
+
+09:01.760 --> 09:02.760
+So okay.
+
+09:02.760 --> 09:03.760
+What is this preview image?
+
+09:03.760 --> 09:04.760
+I will also tell you this.
+
+09:04.760 --> 09:06.760
+So we go back to the code.
+
+09:06.760 --> 09:09.760
+And here we have to make a state
+
+09:09.760 --> 09:11.760
+by doing preview image.
+
+09:11.760 --> 09:13.760
+Let me tell you what it is.
+
+09:13.760 --> 09:15.760
+We come here.
+
+09:15.760 --> 09:16.760
+And after coming here,
+
+09:16.760 --> 09:17.760
+we come here.
+
+09:17.760 --> 09:18.760
+We come here.
+
+09:18.760 --> 09:20.760
+And after coming here,
+
+09:20.760 --> 09:21.760
+we come here.
+
+09:21.760 --> 09:24.760
+Here we make the state of the preview image.
+
+09:24.760 --> 09:26.760
+And now I will explain what it is.
+
+09:26.760 --> 09:27.760
+See here,
+
+09:27.760 --> 09:28.760
+preview image is used
+
+09:28.760 --> 09:31.760
+because when you see in our form,
+
+09:31.760 --> 09:35.760
+we have made an image input in the form.
+
+09:35.760 --> 09:37.760
+You are seeing type equal to file.
+
+09:37.760 --> 09:40.760
+We have made an image file input.
+
+09:40.760 --> 09:42.760
+And this image file,
+
+09:42.760 --> 09:44.760
+what we will basically do is
+
+09:44.760 --> 09:45.760
+you must have seen our form.
+
+09:45.760 --> 09:48.760
+Let me show you how our form looks like.
+
+09:48.760 --> 09:51.760
+So we are going to our browser.
+
+09:51.760 --> 09:59.760
+And here you will remember that our form is of this type.
+
+09:59.760 --> 10:00.760
+It was of this type, right?
+
+10:00.760 --> 10:01.760
+It was some form like this.
+
+10:01.760 --> 10:05.760
+Here we have input the file by choosing the file.
+
+10:05.760 --> 10:07.760
+As soon as a person clicks on the choose file,
+
+10:07.760 --> 10:16.760
+instead of the placeholder image, the user will see the file that the user has chosen.
+
+10:16.760 --> 10:22.760
+So if you choose the file from here, you will see the file after choosing it.
+
+10:22.760 --> 10:25.760
+So we want to do the same thing here.
+
+10:25.760 --> 10:27.760
+So let me show you how.
+
+10:27.760 --> 10:30.760
+So now we go here.
+
+10:30.760 --> 10:35.760
+And here we have input the file from the user.
+
+10:35.760 --> 10:36.760
+In the choose file button,
+
+10:36.760 --> 10:37.760
+we have input the file from the user.
+
+10:37.760 --> 10:40.760
+And after inputting the file,
+
+10:40.760 --> 10:47.760
+we have set the placeholder image to the placeholder image.
+
+10:47.760 --> 10:48.760
+We have set the preview image.
+
+10:48.760 --> 10:50.760
+Now let me show you how we will do this.
+
+10:50.760 --> 10:53.760
+So by default, the hacker image that you saw,
+
+10:53.760 --> 10:54.760
+that is this.
+
+10:54.760 --> 10:56.760
+So this is set in this state.
+
+10:56.760 --> 10:57.760
+So what will happen?
+
+10:57.760 --> 10:59.760
+First the user will set the file here.
+
+10:59.760 --> 11:01.760
+He will set it here.
+
+11:01.760 --> 11:02.760
+Here.
+
+11:02.760 --> 11:05.760
+And here the load function will be called.
+
+11:05.760 --> 11:06.760
+Which will be clicked in the choose file.
+
+11:06.760 --> 11:09.760
+As soon as you click in the choose file, the load function will be called.
+
+11:09.760 --> 11:11.760
+And what will the load file do?
+
+11:11.760 --> 11:14.760
+After doing everything, it will set the preview image.
+
+11:14.760 --> 11:16.760
+In this image, it will set its URL.
+
+11:16.760 --> 11:18.760
+It will generate a URL and it will set it.
+
+11:18.760 --> 11:19.760
+Okay.
+
+11:19.760 --> 11:21.760
+By default, the URL that will be set is this.
+
+11:21.760 --> 11:23.760
+So now what is the load file function?
+
+11:23.760 --> 11:24.760
+Once we make that.
+
+11:24.760 --> 11:27.760
+So the load file function is very easy.
+
+11:27.760 --> 11:30.760
+And here you will also learn to input the image.
+
+11:30.760 --> 11:32.760
+So you go down here.
+
+11:32.760 --> 11:35.760
+And we make the handle just below the submit.
+
+11:35.760 --> 11:38.760
+Or you can make it anywhere in the top.
+
+11:38.760 --> 11:39.760
+By the way, we make it here.
+
+11:39.760 --> 11:41.760
+So this is our load file function.
+
+11:41.760 --> 11:42.760
+What is it doing?
+
+11:42.760 --> 11:44.760
+Let's see it once nicely.
+
+11:44.760 --> 11:47.760
+Load file is capturing an event.
+
+11:47.760 --> 11:49.760
+The event is basically whatever the user is typing in the form.
+
+11:49.760 --> 11:50.760
+It must be writing.
+
+11:50.760 --> 11:51.760
+Whatever it is doing, it is an event.
+
+11:51.760 --> 11:52.760
+Okay.
+
+11:52.760 --> 11:55.760
+Load file is capturing the same event.
+
+11:55.760 --> 11:58.760
+And from that, it will capture only that type of event.
+
+11:58.760 --> 12:00.760
+Which will be of the file type.
+
+12:00.760 --> 12:02.760
+That is, the file we said input.file.
+
+12:02.760 --> 12:04.760
+Here only what the user does?
+
+12:04.760 --> 12:05.760
+What the user does?
+
+12:05.760 --> 12:06.760
+He will click choose file.
+
+12:06.760 --> 12:08.760
+And here where choose file will click.
+
+12:08.760 --> 12:09.760
+What is its type?
+
+12:09.760 --> 12:10.760
+File.
+
+12:10.760 --> 12:12.760
+File type is you can see.
+
+12:12.760 --> 12:14.760
+We did the type equal to file.
+
+12:14.760 --> 12:16.760
+And what will it do here?
+
+12:16.760 --> 12:17.760
+This function.
+
+12:17.760 --> 12:20.760
+This is the load file function.
+
+12:20.760 --> 12:22.760
+This will only work for file type.
+
+12:22.760 --> 12:24.760
+So here as soon as the user clicks on choose file.
+
+12:24.760 --> 12:26.760
+Then it will be given the option to input.
+
+12:26.760 --> 12:29.760
+So we said that only that one file can be inputted at once.
+
+12:29.760 --> 12:30.760
+So we made the file zero.
+
+12:30.760 --> 12:32.760
+That all the files it will see while inputting.
+
+12:32.760 --> 12:33.760
+When the user choose file.
+
+12:33.760 --> 12:35.760
+When the user is choosing file from desktop.
+
+12:35.760 --> 12:38.760
+Then from that only one file can be chosen.
+
+12:38.760 --> 12:40.760
+And this file reader.
+
+12:40.760 --> 12:43.760
+It will ensure that the user input is a file.
+
+12:43.760 --> 12:44.760
+Okay.
+
+12:44.760 --> 12:46.760
+So now this thing is.
+
+12:46.760 --> 12:48.760
+How did we know that the file will be inputted?
+
+12:48.760 --> 12:50.760
+We did the type equal to file.
+
+12:50.760 --> 12:51.760
+And here it checked.
+
+12:51.760 --> 12:53.760
+And as soon as the user.
+
+12:53.760 --> 12:55.760
+The file.
+
+12:55.760 --> 12:57.760
+As soon as it is loaded.
+
+12:57.760 --> 12:59.760
+As soon as it is loaded.
+
+12:59.760 --> 13:01.760
+What will it do?
+
+13:01.760 --> 13:04.760
+It will create a data URL form.
+
+13:04.760 --> 13:06.760
+Means it will create a URL.
+
+13:06.760 --> 13:08.760
+It is a very long URL.
+
+13:08.760 --> 13:10.760
+It will create that file.
+
+13:10.760 --> 13:12.760
+And it will set it in set preview image.
+
+13:12.760 --> 13:14.760
+Means it will set it here.
+
+13:14.760 --> 13:16.760
+So by default the value was this.
+
+13:16.760 --> 13:18.760
+But as soon as it is loaded.
+
+13:18.760 --> 13:20.760
+It will create a URL and set it by itself.
+
+13:20.760 --> 13:22.760
+And what is here?
+
+13:22.760 --> 13:24.760
+Here is the same thing.
+
+13:24.760 --> 13:26.760
+That the file reader.
+
+13:26.760 --> 13:27.760
+The file reader.
+
+13:27.760 --> 13:28.760
+This is gone.
+
+13:28.760 --> 13:29.760
+File reader.
+
+13:29.760 --> 13:30.760
+That any incoming data.
+
+13:30.760 --> 13:32.760
+Will work to convert it as a data URL.
+
+13:32.760 --> 13:34.760
+So this thing is decided here.
+
+13:34.760 --> 13:35.760
+So you will understand.
+
+13:35.760 --> 13:36.760
+It is very easy.
+
+13:36.760 --> 13:37.760
+First we took the input.
+
+13:37.760 --> 13:38.760
+From the input.
+
+13:38.760 --> 13:39.760
+We ensured that it is the same file.
+
+13:39.760 --> 13:40.760
+By doing a file reader.
+
+13:40.760 --> 13:42.760
+We took the JavaScript functionality.
+
+13:42.760 --> 13:43.760
+And we said.
+
+13:43.760 --> 13:44.760
+Brother.
+
+13:44.760 --> 13:45.760
+The file reader which gives the data URL.
+
+13:45.760 --> 13:47.760
+We have to set it in the preview image.
+
+13:47.760 --> 13:48.760
+Done.
+
+13:48.760 --> 13:51.760
+And then we show that data URL with the preview image.
+
+13:51.760 --> 13:52.760
+So let's see how our form looks.
+
+13:52.760 --> 13:54.760
+So we came to our form page.
+
+13:54.760 --> 13:56.760
+And our form page looks something like this.
+
+13:56.760 --> 13:57.760
+Okay.
+
+13:57.760 --> 13:58.760
+All those styles.
+
+13:58.760 --> 13:59.760
+All the things we have added from Tailwind.
+
+13:59.760 --> 14:01.760
+And we have added functionality here.
+
+14:01.760 --> 14:02.760
+We have added input boxes here.
+
+14:02.760 --> 14:03.760
+All these have come.
+
+14:03.760 --> 14:05.760
+Now the method of choose file.
+
+14:05.760 --> 14:06.760
+Which we had added recently.
+
+14:06.760 --> 14:07.760
+That has also come.
+
+14:07.760 --> 14:08.760
+So what will happen.
+
+14:08.760 --> 14:09.760
+As soon as we click on choose file.
+
+14:09.760 --> 14:11.760
+So here we will get options.
+
+14:11.760 --> 14:13.760
+To import any one of these files.
+
+14:13.760 --> 14:14.760
+Right.
+
+14:14.760 --> 14:16.760
+Now we can take only one file.
+
+14:16.760 --> 14:17.760
+Because we have.
+
+14:17.760 --> 14:18.760
+Files.
+
+14:18.760 --> 14:19.760
+Zero.
+
+14:19.760 --> 14:20.760
+Means.
+
+14:20.760 --> 14:21.760
+Input.
+
+14:21.760 --> 14:22.760
+One.
+
+14:22.760 --> 14:23.760
+File.
+
+14:23.760 --> 14:24.760
+Right.
+
+14:24.760 --> 14:25.760
+So now if we click on any screenshot.
+
+14:25.760 --> 14:26.760
+Or any image.
+
+14:26.760 --> 14:27.760
+In open.
+
+14:27.760 --> 14:28.760
+So here.
+
+14:28.760 --> 14:29.760
+See.
+
+14:29.760 --> 14:30.760
+The file has been set.
+
+14:30.760 --> 14:31.760
+Do you understand.
+
+14:31.760 --> 14:32.760
+As soon as we clicked on choose file.
+
+14:32.760 --> 14:34.760
+It created a data url.
+
+14:34.760 --> 14:35.760
+A data url.
+
+14:35.760 --> 14:36.760
+Means.
+
+14:36.760 --> 14:37.760
+It created a long and wide url.
+
+14:37.760 --> 14:38.760
+And that url.
+
+14:38.760 --> 14:39.760
+That is.
+
+14:39.760 --> 14:40.760
+Here.
+
+14:40.760 --> 14:41.760
+Has come in the preview image.
+
+14:41.760 --> 14:42.760
+And set.
+
+14:42.760 --> 14:43.760
+But our form.
+
+14:43.760 --> 14:44.760
+Doesn't look good.
+
+14:44.760 --> 14:45.760
+Right.
+
+14:45.760 --> 14:46.760
+Means.
+
+14:46.760 --> 14:47.760
+There are some things like this in it.
+
+14:47.760 --> 14:49.760
+So now what can we do to make it look good.
+
+14:49.760 --> 14:50.760
+To make it look good.
+
+14:50.760 --> 14:51.760
+What we do is.
+
+14:51.760 --> 14:52.760
+We go to this code.
+
+14:52.760 --> 14:53.760
+And.
+
+14:53.760 --> 14:54.760
+You.
+
+14:54.760 --> 14:55.760
+Have to do one thing.
+
+14:55.760 --> 14:56.760
+You have to go to your.
+
+14:56.760 --> 14:57.760
+Main.
+
+14:57.760 --> 14:58.760
+Index.
+
+14:58.760 --> 14:59.760
+Css.
+
+14:59.760 --> 15:00.760
+Now.
+
+15:00.760 --> 15:01.760
+In index.
+
+15:01.760 --> 15:02.760
+Css.
+
+15:02.760 --> 15:03.760
+We.
+
+15:03.760 --> 15:04.760
+Will add some styles.
+
+15:04.760 --> 15:05.760
+Here.
+
+15:05.760 --> 15:06.760
+So.
+
+15:06.760 --> 15:07.760
+Those styles of index.
+
+15:07.760 --> 15:08.760
+Css.
+
+15:08.760 --> 15:09.760
+Have been given to you.
+
+15:09.760 --> 15:10.760
+In your code section.
+
+15:10.760 --> 15:11.760
+You just copy it.
+
+15:11.760 --> 15:12.760
+And.
+
+15:12.760 --> 15:13.760
+Put it.
+
+15:13.760 --> 15:14.760
+Everything will be set.
+
+15:14.760 --> 15:15.760
+What happened here.
+
+15:15.760 --> 15:16.760
+Let me tell you.
+
+15:16.760 --> 15:17.760
+What we did.
+
+15:17.760 --> 15:18.760
+What we did.
+
+15:18.760 --> 15:19.760
+That we.
+
+15:19.760 --> 15:20.760
+First of all.
+
+15:20.760 --> 15:21.760
+A monster.
+
+15:21.760 --> 15:22.760
+Red.
+
+15:22.760 --> 15:23.760
+There is a.
+
+15:23.760 --> 15:24.760
+Font.
+
+15:24.760 --> 15:25.760
+That font.
+
+15:25.760 --> 15:26.760
+We have used here.
+
+15:26.760 --> 15:27.760
+That we.
+
+15:27.760 --> 15:28.760
+We have imported that thing.
+
+15:28.760 --> 15:29.760
+From.
+
+15:29.760 --> 15:30.760
+Google.
+
+15:30.760 --> 15:31.760
+Fonts.
+
+15:31.760 --> 15:32.760
+So.
+
+15:32.760 --> 15:33.760
+It is not even used.
+
+15:33.760 --> 15:34.760
+I will tell you.
+
+15:34.760 --> 15:35.760
+That means.
+
+15:35.760 --> 15:36.760
+We have basically.
+
+15:36.760 --> 15:37.760
+A monster.
+
+15:37.760 --> 15:38.760
+Red.
+
+15:38.760 --> 15:39.760
+Font.
+
+15:39.760 --> 15:40.760
+That is.
+
+15:40.760 --> 15:41.760
+Used.
+
+15:41.760 --> 15:42.760
+After that.
+
+15:42.760 --> 15:43.760
+Main.
+
+15:43.760 --> 15:44.760
+Thing.
+
+15:44.760 --> 15:45.760
+This.
+
+15:45.760 --> 15:46.760
+Image.
+
+15:46.760 --> 15:47.760
+Input.
+
+15:47.760 --> 15:48.760
+Image.
+
+15:48.760 --> 15:49.760
+Input.
+
+15:49.760 --> 15:50.760
+What have we done.
+
+15:50.760 --> 15:51.760
+That.
+
+15:51.760 --> 15:52.760
+The.
+
+15:52.760 --> 15:53.760
+Text.
+
+15:53.760 --> 15:54.760
+You.
+
+15:54.760 --> 15:55.760
+Showed.
+
+15:55.760 --> 15:56.760
+A text.
+
+15:56.760 --> 15:57.760
+On the side.
+
+15:57.760 --> 15:58.760
+Ok.
+
+15:58.760 --> 15:59.760
+So.
+
+15:59.760 --> 16:00.760
+This.
+
+16:00.760 --> 16:01.760
+Something.
+
+16:01.760 --> 16:02.760
+N.
+
+16:02.760 --> 16:03.760
+Text.
+
+16:03.760 --> 16:04.760
+Can you see.
+
+16:04.760 --> 16:05.760
+Something.
+
+16:05.760 --> 16:06.760
+This.
+
+16:06.760 --> 16:07.760
+Text.
+
+16:07.760 --> 16:08.760
+Is.
+
+16:08.760 --> 16:09.760
+By.
+
+16:09.760 --> 16:10.760
+Default.
+
+16:10.760 --> 16:11.760
+When.
+
+16:11.760 --> 16:12.760
+You.
+
+16:12.760 --> 16:13.760
+Take.
+
+16:13.760 --> 16:14.760
+Any.
+
+16:14.760 --> 16:15.760
+File.
+
+16:15.760 --> 16:16.760
+Type.
+
+16:16.760 --> 16:17.760
+Input.
+
+16:17.760 --> 16:18.760
+So.
+
+16:18.760 --> 16:19.760
+To.
+
+16:19.760 --> 16:20.760
+Remove.
+
+16:20.760 --> 16:21.760
+This.
+
+16:21.760 --> 16:22.760
+What.
+
+16:22.760 --> 16:23.760
+We.
+
+16:23.760 --> 16:24.760
+Do.
+
+16:24.760 --> 16:25.760
+The.
+
+16:25.760 --> 16:26.760
+Opacity.
+
+16:26.760 --> 16:27.760
+If.
+
+16:27.760 --> 16:28.760
+You.
+
+16:28.760 --> 16:29.760
+Click.
+
+16:29.760 --> 16:30.760
+On.
+
+16:30.760 --> 16:31.760
+A.
+
+16:31.760 --> 16:32.760
+Border.
+
+16:32.760 --> 16:33.760
+Of.
+
+16:33.760 --> 16:34.760
+Black.
+
+16:34.760 --> 16:35.760
+Color.
+
+16:35.760 --> 16:36.760
+By.
+
+16:36.760 --> 16:37.760
+Default.
+
+16:37.760 --> 16:38.760
+So.
+
+16:38.760 --> 16:39.760
+It.
+
+16:39.760 --> 16:40.760
+Will.
+
+16:40.760 --> 16:41.760
+Move.
+
+16:41.760 --> 16:42.760
+The.
+
+16:42.760 --> 16:43.760
+Text.
+
+16:43.760 --> 16:44.760
+Area.
+
+16:44.760 --> 16:45.760
+Is.
+
+16:45.760 --> 16:46.760
+Resizable.
+
+16:46.760 --> 16:47.760
+Not.
+
+16:47.760 --> 16:48.760
+That.
+
+16:48.760 --> 16:49.760
+User.
+
+16:49.760 --> 16:50.760
+Can.
+
+16:50.760 --> 16:51.760
+Drag.
+
+16:51.760 --> 16:52.760
+And.
+
+16:52.760 --> 16:53.760
+Just.
+
+16:53.760 --> 16:54.760
+Here.
+
+16:54.760 --> 16:55.760
+We.
+
+16:55.760 --> 16:56.760
+Have.
+
+16:56.760 --> 16:57.760
+The.
+
+16:57.760 --> 16:58.760
+Scroll.
+
+16:58.760 --> 16:59.760
+Bar.
+
+16:59.760 --> 17:00.760
+Now.
+
+17:00.760 --> 17:01.760
+Once.
+
+17:01.760 --> 17:02.760
+We.
+
+17:02.760 --> 17:03.760
+Check.
+
+17:03.760 --> 17:04.760
+Our.
+
+17:04.760 --> 17:05.760
+Page.
+
+17:05.760 --> 17:06.760
+So.
+
+17:06.760 --> 17:07.760
+See.
+
+17:07.760 --> 17:08.760
+How.
+
+17:08.760 --> 17:09.760
+Good.
+
+17:09.760 --> 17:10.760
+It.
+
+17:10.760 --> 17:11.760
+Is.
+
+17:11.760 --> 17:12.760
+Just.
+
+17:12.760 --> 17:13.760
+Here.
+
+17:13.760 --> 17:14.760
+Everyone's.
+
+17:14.760 --> 17:15.760
+Border.
+
+17:15.760 --> 17:16.760
+Bottom.
+
+17:16.760 --> 17:17.760
+Is.
+
+17:17.760 --> 17:18.760
+The.
+
+17:18.760 --> 17:19.760
+Scroll.
+
+17:19.760 --> 17:20.760
+Bar.
+
+17:20.760 --> 17:21.760
+On.
+
+17:21.760 --> 17:22.760
+This.
+
+17:22.760 --> 17:23.760
+Side.
+
+17:23.760 --> 17:24.760
+You.
+
+17:24.760 --> 17:25.760
+Can.
+
+17:25.760 --> 17:26.760
+See.
+
+17:26.760 --> 17:27.760
+That.
+
+17:27.760 --> 17:28.760
+Is.
+
+17:28.760 --> 17:29.760
+The.
+
+17:29.760 --> 17:30.760
+Page.
+
+17:30.760 --> 17:31.760
+Of.
+
+17:31.760 --> 17:32.760
+The.
+
+17:32.760 --> 17:33.760
+Page.
+
+17:33.760 --> 17:34.760
+Of.
+
+17:34.760 --> 17:35.760
+The.
+
+17:35.760 --> 17:36.760
+Page.
+
+17:36.760 --> 17:37.760
+And.
+
+17:37.760 --> 17:38.760
+We.
+
+17:38.760 --> 17:39.760
+Have.
+
+17:39.760 --> 17:40.760
+To.
+
+17:40.760 --> 17:41.760
+Navigate.
+
+17:41.760 --> 17:42.760
+This.
+
+17:42.760 --> 17:43.760
+Page.
+
+17:43.760 --> 17:44.760
+To.
+
+17:44.760 --> 17:45.760
+The.
+
+17:45.760 --> 17:46.760
+Login.
+
+17:46.760 --> 17:47.760
+Page.
+
+17:47.760 --> 17:48.760
+Of.
+
+17:48.760 --> 17:49.760
+The.
+
+17:49.760 --> 17:50.760
+Page.
+
+17:50.760 --> 17:51.760
+Of.
+
+17:51.760 --> 17:52.760
+The.
+
+17:52.760 --> 17:53.760
+Login.
+
+17:53.760 --> 17:54.760
+Page.
+
+17:54.760 --> 17:55.760
+Of.
+
+17:55.760 --> 17:56.760
+The.
+
+17:56.760 --> 17:57.760
+Page.
+
+17:57.760 --> 17:58.760
+Of.
+
+17:58.760 --> 17:59.760
+The.
+
+17:59.760 --> 18:00.760
+Page.
+
+18:00.760 --> 18:01.760
+And.
+
+18:01.760 --> 18:02.760
+Now.
+
+18:02.760 --> 18:03.760
+If.
+
+18:03.760 --> 18:04.760
+You.
+
+18:04.760 --> 18:05.760
+Are.
+
+18:05.760 --> 18:06.760
+Just.
+
+18:06.760 --> 18:07.760
+Here.
+
+18:07.760 --> 18:08.760
+To.
+
+18:08.760 --> 18:09.760
+Dig.
+
+18:09.760 --> 18:10.760
+And.
+
+18:10.760 --> 18:11.760
+At.
+
+18:11.760 --> 18:12.760
+The.
+
+18:12.760 --> 18:13.760
+Page.
+
+18:13.760 --> 18:14.760
+Of.
+
+18:14.760 --> 18:15.760
+The.
+
+18:15.760 --> 18:16.760
+Page.
+
+18:16.760 --> 18:17.760
+Of.
+
+18:17.760 --> 18:18.760
+This.
+
+18:18.760 --> 18:19.760
+Page.
+
+18:19.760 --> 18:20.760
+And.
+
+18:20.760 --> 18:21.760
+You.
+
+18:21.760 --> 18:22.760
+Now.
+
+18:22.760 --> 18:23.760
+If.
+
+18:23.760 --> 18:31.760
+Let's navigate to the login page and see what's happening.
+
+18:31.760 --> 18:37.760
+Now we have navigated.
+
+18:37.760 --> 18:39.760
+Let's try to go to the main page.
+
+18:39.760 --> 18:41.760
+We are not able to go.
+
+18:41.760 --> 18:48.760
+We are not able to go to the main page.
+
+18:48.760 --> 18:56.760
+So when we log in, we come to the main page and our form is in the main page.
+
+18:56.760 --> 18:58.760
+Let's fill the form and submit it.
+
+18:58.760 --> 19:01.760
+After submitting, you will see a URL generated here.
+
+19:01.760 --> 19:03.760
+So now we will tell you how it will happen.
+
+19:03.760 --> 19:06.760
+And as soon as we click on logout, we come to the login page.
+
+19:06.760 --> 19:07.760
+Nice.
+
+19:07.760 --> 19:08.760
+So now everything is working smoothly.
+
+19:08.760 --> 19:11.760
+And we have seen how to create a login form.
+
+19:11.760 --> 19:14.760
+And now we have to connect it to the backend.
+
+19:18.760 --> 19:22.760
+And now whatever is this and all.
+
+19:22.760 --> 19:24.760
+The way it's done and what we are doing is great.
+
+19:24.760 --> 19:25.760
+So much Kanani for the content.
+
+19:25.760 --> 19:27.760
+Yes.
+
+19:27.760 --> 19:33.760
+I am going to explain a little bit about Kanani to everyone if 你没有 jotka funk
+
+19:33.760 --> 19:35.760
+I am going to explain a little bit about Kanani for the content.
+
+19:35.760 --> 19:39.760
+and the way it's done and how it's done.
+
+19:39.760 --> 19:41.760
+And laundry products, well, Flowers are not easy.
+
+19:41.760 --> 19:43.760
+You will see this.
+
+19:43.760 --> 19:46.760
+It has a few Velcro packs and it is pretty Chemo at the Lieutenant twist.
+
+19:46.760 --> 19:47.760
+Okay, it is yes.
+
+19:47.760 --> 19:48.760
+Great.
+

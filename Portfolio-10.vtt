@@ -1,0 +1,1078 @@
+WEBVTT
+
+00:06.000 --> 00:12.000
+So now we know how to create a document in sanity but if we want to fetch something then how will we do it?
+
+00:12.000 --> 00:17.000
+So while doing that we will improve our login system. So how?
+
+00:17.000 --> 00:33.000
+We will clear all the things in our useEffect. So for now we will remove the if statements and other things.
+
+00:33.000 --> 00:37.000
+For now we will leave it as user logged in.
+
+00:37.000 --> 00:46.000
+And after that we will have to do try and catch exceptional handling.
+
+00:46.000 --> 00:47.000
+So we will have to do try and catch exceptional handling.
+
+00:47.000 --> 01:07.500
+So we will have to do try and catch exceptional handling.
+
+01:10.500 --> 01:16.000
+So the email that is here in the storage we have to verify the value of that email.
+
+01:16.000 --> 01:20.000
+does that email match with our Sanity's email
+
+01:20.000 --> 01:22.000
+does it match with any document's email
+
+01:22.000 --> 01:24.000
+what will we do by doing this
+
+01:24.000 --> 01:26.000
+understand this yourself
+
+01:26.000 --> 01:28.000
+if we check this
+
+01:28.000 --> 01:30.000
+then we will get to know that actually
+
+01:30.000 --> 01:32.000
+the user has logged in
+
+01:32.000 --> 01:34.000
+no one has come by fake editing
+
+01:34.000 --> 01:36.000
+inside the user object
+
+01:36.000 --> 01:38.000
+ok, so what do we do now
+
+01:38.000 --> 01:40.000
+to fetch it
+
+01:40.000 --> 01:42.000
+we will write client
+
+01:42.000 --> 01:44.000
+client
+
+01:44.000 --> 01:46.000
+as soon as you write it will be imported
+
+01:46.000 --> 01:48.000
+it is important to import client
+
+01:48.000 --> 01:50.000
+wherever you will call Sanity
+
+01:50.000 --> 01:52.000
+client.fetch
+
+01:52.000 --> 01:54.000
+what will the fetch method do
+
+01:54.000 --> 01:56.000
+it will fetch for you
+
+01:56.000 --> 01:58.000
+it will fetch according to the query you will give
+
+01:58.000 --> 02:00.000
+so what query do we give
+
+02:00.000 --> 02:02.000
+we will put backticks
+
+02:02.000 --> 02:04.000
+and here we will write star
+
+02:04.000 --> 02:06.000
+star
+
+02:06.000 --> 02:08.000
+then brackets
+
+02:08.000 --> 02:10.000
+underscore type equal to
+
+02:10.000 --> 02:12.000
+user
+
+02:12.000 --> 02:14.000
+type equal to
+
+02:14.000 --> 02:16.000
+user and end
+
+02:16.000 --> 02:18.000
+user email
+
+02:18.000 --> 02:20.000
+see we gave name after
+
+02:20.000 --> 02:22.000
+user email so we are calling with
+
+02:22.000 --> 02:24.000
+same name
+
+02:24.000 --> 02:26.000
+type is document type
+
+02:26.000 --> 02:28.000
+which document we are calling
+
+02:28.000 --> 02:30.000
+user
+
+02:30.000 --> 02:32.000
+now you will understand everything
+
+02:32.000 --> 02:34.000
+equal equal
+
+02:34.000 --> 02:36.000
+here we will put one thing
+
+02:36.000 --> 02:38.000
+which is this
+
+02:38.000 --> 02:40.000
+and here we will write
+
+02:40.000 --> 02:42.000
+what
+
+02:42.000 --> 02:44.000
+here we will write
+
+02:44.000 --> 02:46.000
+log in
+
+02:46.000 --> 02:48.000
+now we are doing
+
+02:48.000 --> 02:50.000
+let's see
+
+02:50.000 --> 02:52.000
+what we did here
+
+02:52.000 --> 02:54.000
+we wrote a query here
+
+02:54.000 --> 02:56.000
+what we wrote
+
+02:56.000 --> 02:58.000
+star type equal to user
+
+02:58.000 --> 03:00.000
+we said listen Sanity
+
+03:00.000 --> 03:02.000
+that type
+
+03:02.000 --> 03:04.000
+user type
+
+03:04.000 --> 03:06.000
+in user document
+
+03:06.000 --> 03:08.000
+if user email
+
+03:08.000 --> 03:10.000
+is equal to
+
+03:10.000 --> 03:12.000
+basically
+
+03:12.000 --> 03:14.000
+this user logged in email
+
+03:14.000 --> 03:16.000
+means
+
+03:16.000 --> 03:18.000
+let's understand this
+
+03:18.000 --> 03:20.000
+the document named user in Sanity
+
+03:20.000 --> 03:22.000
+in that user name document
+
+03:22.000 --> 03:24.000
+if any person's user email
+
+03:24.000 --> 03:26.000
+is equal to user logged in
+
+03:26.000 --> 03:28.000
+means this is set in local storage
+
+03:28.000 --> 03:30.000
+is equal to that email
+
+03:30.000 --> 03:32.000
+which is set in Sanity
+
+03:32.000 --> 03:34.000
+when those two emails are equal
+
+03:34.000 --> 03:36.000
+then from that all content
+
+03:36.000 --> 03:38.000
+star means fetch all the content
+
+03:38.000 --> 03:40.000
+so we are saying
+
+03:40.000 --> 03:42.000
+from this user
+
+03:42.000 --> 03:44.000
+from this document named user
+
+03:44.000 --> 03:46.000
+the email which we have given
+
+03:46.000 --> 03:48.000
+which email? this one
+
+03:48.000 --> 03:50.000
+in this user object
+
+03:50.000 --> 03:52.000
+in this user logged in object
+
+03:52.000 --> 03:54.000
+whatever email is set in it
+
+03:54.000 --> 03:56.000
+bring all the details of it
+
+03:56.000 --> 03:58.000
+for example
+
+03:58.000 --> 04:00.000
+let me explain it to you
+
+04:00.000 --> 04:02.000
+so here we go to our
+
+04:02.000 --> 04:04.000
+chrome
+
+04:04.000 --> 04:06.000
+after going to chrome we see this
+
+04:06.000 --> 04:08.000
+the document named user
+
+04:08.000 --> 04:10.000
+in this we said in the document named user
+
+04:10.000 --> 04:12.000
+if
+
+04:12.000 --> 04:14.000
+it is equal to that which is set in local storage
+
+04:14.000 --> 04:16.000
+what is our email in local storage?
+
+04:16.000 --> 04:18.000
+our email is in local storage
+
+04:18.000 --> 04:20.000
+basically
+
+04:20.000 --> 04:22.000
+that is
+
+04:22.000 --> 04:24.000
+tacky recon
+
+04:24.000 --> 04:26.000
+the email of tacky recon
+
+04:26.000 --> 04:28.000
+this email
+
+04:28.000 --> 04:30.000
+if it is equal to any
+
+04:30.000 --> 04:32.000
+of those email which exist in user
+
+04:32.000 --> 04:34.000
+then it will fetch all the data
+
+04:34.000 --> 04:36.000
+so what will it fetch? tacky recon
+
+04:36.000 --> 04:38.000
+and user picture will fetch
+
+04:38.000 --> 04:40.000
+hope you understood this
+
+04:40.000 --> 04:42.000
+now we will go back to this code
+
+04:42.000 --> 04:44.000
+we did this
+
+04:44.000 --> 04:46.000
+and we went to our main.js
+
+04:46.000 --> 04:48.000
+and we said
+
+04:48.000 --> 04:50.000
+fetch the data
+
+04:50.000 --> 04:52.000
+now the data is fetched
+
+04:52.000 --> 04:54.000
+but now how will we know
+
+04:54.000 --> 04:56.000
+what is in the data?
+
+04:56.000 --> 04:58.000
+so now we will write dot then
+
+04:58.000 --> 05:00.000
+dot then
+
+05:00.000 --> 05:02.000
+and here user logged in dot email
+
+05:02.000 --> 05:04.000
+dot email
+
+05:04.000 --> 05:06.000
+sorry
+
+05:06.000 --> 05:08.000
+we will not do this
+
+05:08.000 --> 05:10.000
+dot email
+
+05:10.000 --> 05:12.000
+so you are taking email from the object
+
+05:12.000 --> 05:14.000
+that is in user logged in
+
+05:14.000 --> 05:16.000
+and doing it equal to the user email
+
+05:16.000 --> 05:18.000
+ok you are specifying
+
+05:18.000 --> 05:20.000
+that you want the data of this email
+
+05:20.000 --> 05:22.000
+so dot then
+
+05:22.000 --> 05:24.000
+in dot then you will go
+
+05:24.000 --> 05:26.000
+one parameter will go by res
+
+05:26.000 --> 05:28.000
+res means result response
+
+05:28.000 --> 05:30.000
+whatever you want to understand
+
+05:30.000 --> 05:32.000
+we gave a parameter and in this response
+
+05:32.000 --> 05:34.000
+we will save that response which will give sanity
+
+05:34.000 --> 05:36.000
+if
+
+05:36.000 --> 05:38.000
+we will say if
+
+05:38.000 --> 05:40.000
+and we will say if
+
+05:40.000 --> 05:42.000
+res means response
+
+05:42.000 --> 05:44.000
+and end
+
+05:44.000 --> 05:46.000
+response
+
+05:46.000 --> 05:48.000
+ok let me turn off the capstock
+
+05:48.000 --> 05:50.000
+if res and end
+
+05:50.000 --> 05:52.000
+res dot
+
+05:52.000 --> 05:54.000
+length
+
+05:54.000 --> 05:56.000
+greater than zero
+
+05:56.000 --> 05:58.000
+then
+
+05:58.000 --> 06:00.000
+then do what
+
+06:00.000 --> 06:02.000
+then
+
+06:02.000 --> 06:04.000
+do nothing
+
+06:04.000 --> 06:06.000
+or also set loading
+
+06:06.000 --> 06:08.000
+to false message
+
+06:08.000 --> 06:10.000
+i am telling you what we are doing
+
+06:10.000 --> 06:12.000
+i will explain everything
+
+06:12.000 --> 06:14.000
+else
+
+06:14.000 --> 06:16.000
+else navigate
+
+06:16.000 --> 06:18.000
+user to
+
+06:18.000 --> 06:20.000
+the login
+
+06:20.000 --> 06:22.000
+what we did
+
+06:22.000 --> 06:24.000
+you understand
+
+06:24.000 --> 06:26.000
+what we fetched
+
+06:26.000 --> 06:28.000
+we said
+
+06:28.000 --> 06:30.000
+fetch details of this email
+
+06:30.000 --> 06:32.000
+from user document
+
+06:32.000 --> 06:34.000
+if in response
+
+06:34.000 --> 06:36.000
+something comes
+
+06:36.000 --> 06:38.000
+something comes for example
+
+06:38.000 --> 06:40.000
+in response
+
+06:40.000 --> 06:42.000
+and its length is also greater than zero
+
+06:42.000 --> 06:44.000
+means that object
+
+06:44.000 --> 06:46.000
+for that email
+
+06:46.000 --> 06:48.000
+we have data in sanity
+
+06:48.000 --> 06:50.000
+let's assume we have two situations
+
+06:50.000 --> 06:52.000
+either we have a particular email
+
+06:52.000 --> 06:54.000
+can exist in sanity
+
+06:54.000 --> 06:56.000
+and the other
+
+06:56.000 --> 06:58.000
+it can't
+
+06:58.000 --> 07:00.000
+because the user has either logged in or not
+
+07:00.000 --> 07:02.000
+if logged in
+
+07:02.000 --> 07:04.000
+it will also have an email in sanity
+
+07:04.000 --> 07:06.000
+and if there is an email
+
+07:06.000 --> 07:08.000
+then we said
+
+07:08.000 --> 07:10.000
+do one thing
+
+07:10.000 --> 07:12.000
+bring details of this email
+
+07:12.000 --> 07:14.000
+if in sanity
+
+07:14.000 --> 07:16.000
+the data of local storage email is found
+
+07:16.000 --> 07:18.000
+user is verified
+
+07:18.000 --> 07:20.000
+and if he got the data
+
+07:20.000 --> 07:22.000
+then we won't do anything
+
+07:22.000 --> 07:24.000
+but if in sanity
+
+07:24.000 --> 07:26.000
+the data of that email is not found
+
+07:26.000 --> 07:28.000
+which is saved in local storage
+
+07:28.000 --> 07:30.000
+means the user has logged in falsely
+
+07:30.000 --> 07:32.000
+then we will send it back in login
+
+07:32.000 --> 07:34.000
+ok we did this
+
+07:34.000 --> 07:36.000
+and here we did set loading to false
+
+07:36.000 --> 07:38.000
+here we made a state
+
+07:38.000 --> 07:40.000
+set loading
+
+07:40.000 --> 07:42.000
+we will make it true for now
+
+07:42.000 --> 07:44.000
+what does this loading state do
+
+07:44.000 --> 07:46.000
+as soon as a user comes to the main page
+
+07:46.000 --> 07:48.000
+you must have seen that as soon as a user comes to the main page
+
+07:48.000 --> 07:50.000
+and he hasn't logged in
+
+07:50.000 --> 07:52.000
+then he writes in the main page
+
+07:52.000 --> 07:54.000
+for some time
+
+07:54.000 --> 07:56.000
+then he gets redirected to login
+
+07:56.000 --> 07:58.000
+but he gets a glimpse
+
+07:58.000 --> 08:00.000
+what will the loading state do
+
+08:00.000 --> 08:02.000
+we have set it here
+
+08:02.000 --> 08:04.000
+loading will check
+
+08:04.000 --> 08:06.000
+that everything is done
+
+08:06.000 --> 08:08.000
+the user is able to see this
+
+08:08.000 --> 08:10.000
+otherwise
+
+08:10.000 --> 08:12.000
+the user is looking like this
+
+08:12.000 --> 08:14.000
+so we have set the loading
+
+08:14.000 --> 08:16.000
+as soon as he fetches the result
+
+08:16.000 --> 08:18.000
+the loading will be running
+
+08:18.000 --> 08:20.000
+so let me show you how this works
+
+08:20.000 --> 08:22.000
+let's go to our browser
+
+08:22.000 --> 08:24.000
+as soon as we go to browser
+
+08:24.000 --> 08:26.000
+we will go to our application
+
+08:26.000 --> 08:28.000
+after going to application
+
+08:28.000 --> 08:30.000
+you can see
+
+08:30.000 --> 08:32.000
+here i will go to
+
+08:32.000 --> 08:34.000
+slash login
+
+08:34.000 --> 08:36.000
+or i will log out from here
+
+08:36.000 --> 08:38.000
+i will click on continue in google
+
+08:38.000 --> 08:40.000
+so here you will see
+
+08:40.000 --> 08:42.000
+a loading will be written
+
+08:42.000 --> 08:44.000
+see this loading came
+
+08:44.000 --> 08:46.000
+this loading is there
+
+08:46.000 --> 08:48.000
+as long as the data is loading
+
+08:48.000 --> 08:50.000
+as long as it is checking
+
+08:50.000 --> 08:52.000
+as long as it is performing
+
+08:52.000 --> 08:54.000
+it is showing the loading screen
+
+08:54.000 --> 08:56.000
+suppose the user is logged out
+
+08:56.000 --> 08:58.000
+and he is going directly to the main page
+
+08:58.000 --> 09:00.000
+so as soon as the main page is going
+
+09:00.000 --> 09:02.000
+use effect works
+
+09:02.000 --> 09:04.000
+as long as the use effect is working
+
+09:04.000 --> 09:06.000
+we have set the loading
+
+09:06.000 --> 09:08.000
+we have set the loading
+
+09:08.000 --> 09:10.000
+so as long as
+
+09:10.000 --> 09:12.000
+for now let's see
+
+09:12.000 --> 09:14.000
+what error is coming
+
+09:14.000 --> 09:16.000
+ok what error is coming
+
+09:16.000 --> 09:18.000
+cannot read properties of email
+
+09:18.000 --> 09:20.000
+ok
+
+09:20.000 --> 09:22.000
+so what is happening here
+
+09:22.000 --> 09:24.000
+he is not getting email
+
+09:24.000 --> 09:26.000
+why he is not getting email
+
+09:26.000 --> 09:28.000
+because the user is not logged in
+
+09:28.000 --> 09:30.000
+there is no data in email
+
+09:30.000 --> 09:32.000
+there is no data in email
+
+09:32.000 --> 09:34.000
+in the application
+
+09:34.000 --> 09:36.000
+let me tell you
+
+09:36.000 --> 09:38.000
+we have set the email check
+
+09:38.000 --> 09:40.000
+this one
+
+09:40.000 --> 09:42.000
+so first he will try to fetch
+
+09:42.000 --> 09:44.000
+but if he does not get email
+
+09:44.000 --> 09:46.000
+suppose the user is logged out
+
+09:46.000 --> 09:48.000
+and then the user is trying to go to the main page
+
+09:48.000 --> 09:50.000
+so first he will check
+
+09:50.000 --> 09:52.000
+what is the email of the user
+
+09:52.000 --> 09:54.000
+if he does not get then he will throw error
+
+09:54.000 --> 09:56.000
+we do not want to throw error
+
+09:56.000 --> 09:58.000
+so what we will do
+
+09:58.000 --> 10:00.000
+we will navigate him to login
+
+10:00.000 --> 10:02.000
+where in cache
+
+10:02.000 --> 10:04.000
+any error comes to us
+
+10:04.000 --> 10:06.000
+now let's go back to the page
+
+10:06.000 --> 10:08.000
+ok
+
+10:08.000 --> 10:10.000
+ok
+
+10:10.000 --> 10:12.000
+ok
+
+10:12.000 --> 10:14.000
+let me see
+
+10:14.000 --> 10:16.000
+may be there is any other error
+
+10:16.000 --> 10:18.000
+ok
+
+10:18.000 --> 10:20.000
+ok
+
+10:20.000 --> 10:22.000
+ok
+
+10:22.000 --> 10:24.000
+we have done everything correctly
+
+10:24.000 --> 10:26.000
+there should not be any error
+
+10:26.000 --> 10:28.000
+if i am not ok
+
+10:28.000 --> 10:30.000
+so we have done this error
+
+10:30.000 --> 10:32.000
+that we have put it outside the try
+
+10:32.000 --> 10:34.000
+so ok
+
+10:34.000 --> 10:36.000
+ok now let's save it
+
+10:36.000 --> 10:38.000
+ok
+
+10:38.000 --> 10:40.000
+ok now it is working
+
+10:40.000 --> 10:42.000
+now it is working
+
+10:42.000 --> 10:44.000
+now suppose he goes to the main page
+
+10:44.000 --> 10:46.000
+so see
+
+10:46.000 --> 10:48.000
+he is seeing a loading screen
+
+10:48.000 --> 10:50.000
+he will not see the page
+
+10:50.000 --> 10:52.000
+ok
+
+10:52.000 --> 10:54.000
+but if we were not setting the loading
+
+10:54.000 --> 10:56.000
+then he would have seen the page
+
+10:56.000 --> 10:58.000
+then he would have come to the login
+
+10:58.000 --> 11:00.000
+so this is something like this
+
+11:00.000 --> 11:02.000
+now as soon as you will do continuous login check
+
+11:02.000 --> 11:04.000
+as soon as you will do continuous login check
+
+11:04.000 --> 11:06.000
+then you will come inside
+
+11:06.000 --> 11:08.000
+now here suppose
+
+11:08.000 --> 11:10.000
+you are trying to cheat
+
+11:10.000 --> 11:12.000
+from any user info object
+
+11:12.000 --> 11:14.000
+suppose you have
+
+11:14.000 --> 11:16.000
+deleted it completely
+
+11:16.000 --> 11:18.000
+so it will not work like before
+
+11:18.000 --> 11:20.000
+now
+
+11:20.000 --> 11:22.000
+as soon as you will refresh it
+
+11:22.000 --> 11:24.000
+you will be logged out
+
+11:24.000 --> 11:26.000
+because you
+
+11:26.000 --> 11:28.000
+because you have cleared
+
+11:28.000 --> 11:30.000
+user info object there
+
+11:30.000 --> 11:32.000
+so it will not work like before
+
+11:32.000 --> 11:34.000
+so we have to do one thing
+
+11:34.000 --> 11:36.000
+we will clear the email
+
+11:36.000 --> 11:38.000
+now we have cleared the email
+
+11:38.000 --> 11:40.000
+we have put some sforg email
+
+11:40.000 --> 11:42.000
+what email we will put here
+
+11:42.000 --> 11:44.000
+we will put
+
+11:44.000 --> 11:46.000
+testadreadgmail.com
+
+11:46.000 --> 11:48.000
+testadreadgmail.com
+
+11:48.000 --> 11:50.000
+now if we refresh
+
+11:50.000 --> 11:52.000
+now if we refresh
+
+11:52.000 --> 11:54.000
+then we are logged out
+
+11:54.000 --> 11:56.000
+because now that email
+
+11:56.000 --> 11:58.000
+does not match with sanity email
+
+11:58.000 --> 12:00.000
+in sanity any testadreadgmail name is not there
+
+12:00.000 --> 12:02.000
+in sanity any testadreadgmail name is not there
+
+12:02.000 --> 12:04.000
+so it has sent us in login
+
+12:04.000 --> 12:06.000
+so this is
+
+12:06.000 --> 12:08.000
+basically the check we implemented
+
+12:08.000 --> 12:10.000
+using sanity
+
+12:10.000 --> 12:12.000
+because it is something like this
+
+12:12.000 --> 12:14.000
+so let us take a quick recap
+
+12:14.000 --> 12:16.000
+what we did
+
+12:16.000 --> 12:18.000
+first of all
+
+12:18.000 --> 12:20.000
+while logging in
+
+12:20.000 --> 12:22.000
+we created a document using sanity
+
+12:22.000 --> 12:24.000
+we put everything in it
+
+12:24.000 --> 12:26.000
+then we came to main page
+
+12:26.000 --> 12:28.000
+we used use effect
+
+12:28.000 --> 12:30.000
+after using use effect we said
+
+12:30.000 --> 12:32.000
+add the local object
+
+12:32.000 --> 12:34.000
+in local storage
+
+12:34.000 --> 12:36.000
+and compare it with sanity email
+
+12:36.000 --> 12:38.000
+if any object is found
+
+12:38.000 --> 12:40.000
+then let user be in main page
+
+12:40.000 --> 12:42.000
+and set loading fault
+
+12:42.000 --> 12:44.000
+means page load is not done
+
+12:44.000 --> 12:46.000
+but if any email is not found
+
+12:46.000 --> 12:48.000
+of user
+
+12:48.000 --> 12:50.000
+then navigate user to login
+
+12:50.000 --> 12:52.000
+and if any error occurs
+
+12:52.000 --> 12:54.000
+then navigate to login
+
+12:54.000 --> 12:56.000
+now you would have understood
+
+12:56.000 --> 12:58.000
+how it works
+
+
+

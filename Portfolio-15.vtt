@@ -1,0 +1,284 @@
+WEBVTT
+
+00:06.000 --> 00:11.800
+So now we will deploy our site, first of all you have to come to your chrome and here
+
+00:11.800 --> 00:19.880
+you have to write app.netlify.com signup, so this is basically a site, its name is netlify,
+
+00:19.880 --> 00:26.560
+here you can deploy any of your react application for free, so you signup with github here,
+
+00:26.560 --> 00:28.060
+if you have a github account.
+
+00:28.060 --> 00:36.000
+If you don't you can quickly go to github.com it's a very easy process, then you have to
+
+00:36.000 --> 00:39.400
+go down here and drag and drop the options on the app, we will upload our files from
+
+00:39.400 --> 00:40.400
+here.
+
+00:40.400 --> 00:48.640
+Now how to do that, we will come to the github vs code, and as we come to the vs code, you
+
+00:48.640 --> 00:54.240
+have to create a file by redirecting it to the public folder of your project.
+
+00:54.240 --> 00:55.320
+And here we will come to the public folder and here you have to create a file by redirecting
+
+00:55.320 --> 00:56.320
+it.
+
+00:56.320 --> 01:03.820
+You will create a redirect file, no extension, no .txt, no any name, you will make it with underscore redirects.
+
+01:04.320 --> 01:07.320
+In that you will write this thing, a simple line.
+
+01:07.820 --> 01:14.820
+This is necessary to define your path and routes in your Netlify when you host the project basically.
+
+01:15.820 --> 01:17.320
+Right? So you can understand by name only.
+
+01:17.820 --> 01:23.320
+So you just write this thing here, whatever it is, you have to write it as it is.
+
+01:23.820 --> 01:25.820
+After that what you have to do is open your command prompt.
+
+01:26.320 --> 01:28.820
+If your development server is running, then you can close it.
+
+01:29.320 --> 01:31.820
+And here you have to write a command, npm run build.
+
+01:32.320 --> 01:33.820
+Npm run build command.
+
+01:34.320 --> 01:35.320
+This is the command.
+
+01:35.820 --> 01:39.820
+As soon as you enter it, then basically a build folder will be created.
+
+01:40.320 --> 01:42.820
+Which you can upload there in Netlify.
+
+01:43.320 --> 01:44.820
+So that your site will be deployed.
+
+01:45.320 --> 01:47.820
+So this folder will take a few seconds to build.
+
+01:48.320 --> 01:52.820
+As soon as the process is completed, you will get a folder by doing a dist.
+
+01:53.320 --> 01:55.820
+You will host this dist folder.
+
+01:56.320 --> 01:58.320
+You will upload it basically in Netlify.
+
+01:58.820 --> 02:00.320
+So you will go back to your Netlify.
+
+02:01.320 --> 02:02.820
+So we will go to our Netlify.
+
+02:03.320 --> 02:05.320
+And here there is an option to upload browse.
+
+02:05.820 --> 02:06.320
+In that you will go.
+
+02:06.820 --> 02:11.320
+And here you have to select the dist in your portfolio builder folder and click on upload.
+
+02:12.320 --> 02:13.820
+And then you have to click on upload from here.
+
+02:14.320 --> 02:19.820
+As soon as you click on upload, the file will be uploaded in a few seconds and your site will be deployed.
+
+02:20.320 --> 02:23.820
+Your site has been deployed in just a single click.
+
+02:23.820 --> 02:28.320
+As soon as you click on open production deploy, your site will be opened.
+
+02:28.820 --> 02:30.320
+But it has got some URL of this type.
+
+02:30.820 --> 02:33.320
+So let's do one thing, let's change its domain quickly.
+
+02:33.820 --> 02:36.320
+So what we do for this, we go to site configuration.
+
+02:36.820 --> 02:38.320
+There will be an option on your left.
+
+02:38.820 --> 02:42.320
+After going to site configuration, you have to click on change site name.
+
+02:42.820 --> 02:47.320
+And here you have to give a custom name to any custom site.
+
+02:47.820 --> 02:50.320
+I have given portfolio builder standard out.
+
+02:50.820 --> 02:52.320
+You can give any name.
+
+02:52.320 --> 02:53.820
+You have to save this.
+
+02:54.320 --> 02:56.820
+As soon as you save, your site has been deployed.
+
+02:57.320 --> 03:00.820
+But the process is not complete yet.
+
+03:01.320 --> 03:04.820
+As soon as you go to this link, your site has been deployed.
+
+03:05.320 --> 03:10.820
+But as soon as you do continuous techie or continuous google for the first time, this will not work.
+
+03:11.320 --> 03:16.820
+Because we have to add course origin to our google cloud console and sanity.
+
+03:17.320 --> 03:18.820
+So now we will go to google cloud console.
+
+03:19.320 --> 03:20.820
+Slash APIs.
+
+03:20.820 --> 03:22.320
+Here you have to go to the OAuth token.
+
+03:22.820 --> 03:24.320
+You have to click on edit.
+
+03:24.820 --> 03:29.320
+As soon as you click on edit, this will open.
+
+03:29.820 --> 03:31.320
+URIs, origin, etc.
+
+03:31.820 --> 03:38.320
+So first of all, you will do add URI and you will add the name of the app in the way I have added.
+
+03:38.820 --> 03:41.320
+In the same way, you have to do the same thing below.
+
+03:41.820 --> 03:47.320
+As soon as you add, our google authentication has been set up.
+
+03:47.820 --> 03:49.320
+After this, we have to go to sanity.
+
+03:49.320 --> 03:50.820
+In sanity.io slash manage.
+
+03:51.320 --> 03:52.820
+We have to select the project.
+
+03:53.320 --> 03:54.820
+We have to go to the API.
+
+03:55.320 --> 03:58.820
+After going to the API, we have to add the course origin here.
+
+03:59.320 --> 04:03.820
+And while adding, you have to remember to click on the allow credentials button.
+
+04:04.320 --> 04:04.820
+Okay.
+
+04:05.320 --> 04:06.320
+And all of this is done for us.
+
+04:06.820 --> 04:08.320
+Now finally, this work will be done.
+
+04:08.820 --> 04:12.820
+And your site has been finally uploaded and deployed.
+
+04:13.320 --> 04:15.820
+You can share it with anyone from here.
+
+04:16.320 --> 04:17.820
+To any of your friends.
+
+04:17.820 --> 04:20.320
+Or you can list it in any of your resumes.
+
+04:20.820 --> 04:23.320
+Because now you have a deployed URL.
+
+04:23.820 --> 04:24.320
+Okay.
+
+04:24.820 --> 04:25.820
+Now after this.
+
+04:26.320 --> 04:28.320
+Now what can we do extra in this?
+
+04:28.820 --> 04:30.320
+This is what you have to see.
+
+04:30.820 --> 04:32.820
+So now what we have done here basically till now.
+
+04:33.320 --> 04:34.820
+That we had taken a portfolio form.
+
+04:35.320 --> 04:35.820
+Isn't it?
+
+04:36.320 --> 04:39.820
+And we were using the same portfolio form to fill the details.
+
+04:40.320 --> 04:45.320
+And according to the user who was entering the details, the portfolio website was being created.
+
+04:45.320 --> 04:49.820
+But now I would like you to give the option of templates in this.
+
+04:50.320 --> 04:52.820
+As soon as the user logs in, there will be a lot of templates.
+
+04:53.320 --> 04:55.820
+User select a template from those templates.
+
+04:56.320 --> 04:57.820
+Enter your data, save it.
+
+04:58.320 --> 05:00.820
+And its site will be ready according to that same template.
+
+05:01.320 --> 05:02.820
+This is not at all difficult.
+
+05:03.320 --> 05:04.820
+If you try, it will definitely happen.
+
+05:05.320 --> 05:08.820
+And here, the user will get a lot of variety options.
+
+05:09.320 --> 05:12.820
+And by doing a lot of things in this, it is possible that you can make it better tomorrow.
+
+05:13.320 --> 05:14.820
+And a very good project will be made.
+
+05:15.320 --> 05:19.820
+So for now, our portfolio builder project is finally over.
+

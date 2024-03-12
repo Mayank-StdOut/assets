@@ -1,0 +1,225 @@
+WEBVTT
+
+
+00:06.000 --> 00:12.000
+Before building an application, let's know the workflow of the application.
+
+00:12.000 --> 00:17.000
+First of all, our page is a login page.
+
+00:17.000 --> 00:20.000
+We will login through Gmail.
+
+00:20.000 --> 00:24.000
+As soon as the user logs in, he will go to the portfolio form.
+
+00:24.000 --> 00:35.000
+In the portfolio form, the details of the user will be asked, that is, the name of the user, about the user, the contact information of the user, the user's experience, and these are some things that we will ask the user.
+
+00:35.000 --> 00:45.000
+As soon as the user fills these details, we will create a page and a template, which will be a template of a portfolio page.
+
+00:45.000 --> 00:48.000
+In that template, we will show these details.
+
+00:48.000 --> 00:51.000
+It is very easy, we will login the user.
+
+00:51.000 --> 00:54.000
+After logging in, we will enter his details.
+
+00:54.000 --> 00:56.000
+We will store it in our backend.
+
+00:56.000 --> 01:03.000
+And then we will show the details of the user in the already created template of the portfolio.
+
+01:03.000 --> 01:06.000
+So now what will be the template of the portfolio?
+
+01:06.000 --> 01:08.000
+There will be a home page.
+
+01:08.000 --> 01:09.000
+We will create a home page.
+
+01:09.000 --> 01:11.000
+There will be an about page.
+
+01:11.000 --> 01:14.000
+And right after that, there will be a contact page.
+
+01:14.000 --> 01:18.000
+So these will be some pages that will be in our site.
+
+01:18.000 --> 01:20.000
+So you must have understood the workflow.
+
+01:20.000 --> 01:23.000
+Now there are some things here that you will have to apply logic on the site.
+
+01:23.000 --> 01:24.000
+It is enough.
+
+01:24.000 --> 01:27.000
+As per the design, you know that everything is normal.
+
+01:27.000 --> 01:34.000
+But logic wise, to make your logic building better, we will also add some good logic in it.
+
+01:34.000 --> 01:36.000
+Now what is here?
+
+01:36.000 --> 01:40.000
+First of all, I will show you here that how everything will actually look.
+
+01:40.000 --> 01:46.000
+This is our first page where we will login the user.
+
+01:46.000 --> 01:48.000
+First of all, the user will login here.
+
+01:48.000 --> 01:52.000
+As soon as he logins, what should happen after logging in?
+
+01:52.000 --> 01:54.000
+A portfolio form should open.
+
+01:54.000 --> 01:56.000
+So here goes the portfolio form.
+
+01:56.000 --> 02:03.000
+Now in the portfolio form, the user will enter details like first name, last name, about, experience and a lot more.
+
+02:03.000 --> 02:05.000
+So if we scroll down, something will come down.
+
+02:05.000 --> 02:06.000
+Then at the end, there is a submit button.
+
+02:06.000 --> 02:10.000
+As soon as the user clicks the submit button, he will get a link generated.
+
+02:10.000 --> 02:12.000
+As soon as he clicks on that link, something like this will come on the page.
+
+02:12.000 --> 02:13.000
+So what is here?
+
+02:13.000 --> 02:15.000
+The page was already created.
+
+02:15.000 --> 02:19.000
+But the user's name and details are showing here.
+
+02:19.000 --> 02:20.000
+Like the name of the user is showing here.
+
+02:20.000 --> 02:21.000
+Right?
+
+02:21.000 --> 02:22.000
+The name of the user is showing here.
+
+02:22.000 --> 02:24.000
+The role of the user is showing here.
+
+02:24.000 --> 02:25.000
+So what is this?
+
+02:25.000 --> 02:29.000
+You have already created a template and you have shown the details from there.
+
+02:29.000 --> 02:33.000
+Now after this, the fourth page is an about page.
+
+02:33.000 --> 02:35.000
+So the about page is something like this.
+
+02:35.000 --> 02:37.000
+The user's name is here in the about page.
+
+02:37.000 --> 02:40.000
+Here is the user's about experience.
+
+02:40.000 --> 02:42.000
+Here is the user's role and experience.
+
+02:42.000 --> 02:44.000
+And here is the user's skill.
+
+02:44.000 --> 02:46.000
+So something like this will appear.
+
+02:46.000 --> 02:47.000
+Right?
+
+02:47.000 --> 02:49.000
+After this, the contact page where the user's email will appear.
+
+02:49.000 --> 02:51.000
+So you must be able to understand.
+
+02:51.000 --> 02:53.000
+That the details that we have entered from the user.
+
+02:53.000 --> 02:55.000
+We are showing them.
+
+02:55.000 --> 02:58.000
+Now the special thing about this is that it is made in react.
+
+02:58.000 --> 03:01.000
+And pages will not be reloaded in react.
+
+03:01.000 --> 03:05.000
+That is, when you go to home, go to about, go to contact.
+
+03:05.000 --> 03:07.000
+So the pages will not be reloaded.
+
+03:07.000 --> 03:08.000
+The best thing.
+
+03:08.000 --> 03:10.000
+So its user experience will be very much enhanced.
+
+03:10.000 --> 03:14.000
+And after this, here are some other things.
+
+03:14.000 --> 03:19.000
+For example, according to different users, the data should be shown differently.
+
+03:19.000 --> 03:20.000
+So how will we do that?
+
+03:20.000 --> 03:23.000
+We will see all that while making the project further.
+
+03:23.000 --> 03:25.000
+You will get to learn sanity in this.
+
+03:25.000 --> 03:27.000
+Sanity is basically a headless CMS.
+
+03:27.000 --> 03:29.000
+You will also know what it is.
+
+03:29.000 --> 03:32.000
+We will not be using normal CSS for CSS here.
+
+03:32.000 --> 03:33.000
+We will be using Tailwind.
+
+03:33.000 --> 03:34.000
+So it is a very interesting project.
+
+03:34.000 --> 03:36.000
+We will also deploy it at the end.
+
+03:36.000 --> 03:38.000
+So this website will be hosted.
+
+03:38.000 --> 03:40.000
+So you can also share its link with your friends.
+

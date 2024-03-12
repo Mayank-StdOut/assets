@@ -1,0 +1,145 @@
+WEBVTT
+
+00:06.000 --> 00:11.000
+So, here I have logged in from another id, which is the standard output id.
+
+00:11.000 --> 00:14.000
+And here I have marked all the things, I have put the image.
+
+00:14.000 --> 00:16.000
+I have written the first name, last name.
+
+00:16.000 --> 00:17.000
+I have written about.
+
+00:17.000 --> 00:19.000
+After about, I have written experience.
+
+00:19.000 --> 00:21.000
+After experience, I have written role here.
+
+00:21.000 --> 00:23.000
+And I have written skill here.
+
+00:23.000 --> 00:27.000
+So, till now, we have made the portfolio only with the id of techy recon.
+
+00:27.000 --> 00:34.000
+But now, we are also making the portfolio with the id of this core.standard output.
+
+00:34.000 --> 00:39.000
+As soon as we submit here, our information will be saved in sanity.
+
+00:39.000 --> 00:43.000
+And as soon as the information is saved, we click on visit your portfolio.
+
+00:43.000 --> 00:48.000
+So, we reach the id of core.standard output.
+
+00:48.000 --> 00:49.000
+See this.
+
+00:49.000 --> 00:53.000
+And as soon as we come here, our everything is visible.
+
+00:53.000 --> 00:57.000
+Our core.standard output is also basically a portfolio.
+
+00:57.000 --> 00:59.000
+Let's go to about.
+
+00:59.000 --> 01:02.000
+So, all the things in about will be shown to you.
+
+01:02.000 --> 01:03.000
+Right?
+
+01:03.000 --> 01:05.000
+And then you will go to contact.
+
+01:05.000 --> 01:07.000
+So, things will be shown to you in contact.
+
+01:07.000 --> 01:10.000
+So, here you can see that our email id was this.
+
+01:10.000 --> 01:13.000
+The first part of this is core.standard output.
+
+01:13.000 --> 01:16.000
+We have used it as an id in the url.
+
+01:16.000 --> 01:17.000
+Okay.
+
+01:17.000 --> 01:22.000
+So, now if any person will search techy recon, then that person will see the portfolio of techy recon.
+
+01:22.000 --> 01:25.000
+And if any person will search core.standard output,
+
+01:25.000 --> 01:27.000
+then he will see the portfolio of techy recon.
+
+01:27.000 --> 01:30.000
+And instead of this, you can add a lot of users.
+
+01:30.000 --> 01:31.000
+A lot of.
+
+01:31.000 --> 01:36.000
+You can add lakhs of users who can make a portfolio in your website.
+
+01:36.000 --> 01:38.000
+What an amazing project, right?
+
+01:38.000 --> 01:40.000
+The template will be the same.
+
+01:40.000 --> 01:41.000
+Only the data will change.
+
+01:41.000 --> 01:43.000
+By whom?
+
+01:43.000 --> 01:44.000
+By this id.
+
+01:44.000 --> 01:46.000
+Okay.
+
+01:46.000 --> 01:48.000
+And after this, you can go to the main page.
+
+01:48.000 --> 01:51.000
+And by going here, we will also log out here.
+
+01:51.000 --> 01:56.000
+So, even after logging out here, we will see the portfolio of that user.
+
+01:56.000 --> 01:58.000
+Okay.
+
+01:58.000 --> 02:02.000
+Whether you are logged in or logged out, you will see everyone's portfolio.
+
+02:02.000 --> 02:04.000
+And you can share it.
+
+02:04.000 --> 02:08.000
+After this, now we will deploy it.
+
+02:08.000 --> 02:15.000
+And this will be an actual site which you can mention in your resume with a link.
+
+02:15.000 --> 02:18.000
+And now you can enhance it more from your side.
+
+02:18.000 --> 02:21.000
+And how you will enhance it, we will tell you later.
+
+02:21.000 --> 02:23.000
+What other good things you can add to it.
+
+
+

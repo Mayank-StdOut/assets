@@ -1,0 +1,759 @@
+WEBVTT
+
+00:06.000 --> 00:11.000
+So now our form has been created, but where will we save the data of that form?
+
+00:11.000 --> 00:16.000
+Now some of you must be thinking that why don't we save that data in local storage?
+
+00:16.000 --> 00:23.000
+So we can't save data in local storage because local storage is only for one individual.
+
+00:23.000 --> 00:28.000
+That means if data is being saved in your computer, then only you will see it, the other person will not be able to see it.
+
+00:28.000 --> 00:35.000
+So we can't save the data of the portfolio in the computer of the same user who has created the form.
+
+00:35.000 --> 00:41.000
+Then he will be able to see the side of his portfolio and no one else will be able to see it because that data will not be shared with others.
+
+00:41.000 --> 00:47.000
+The login data that we had stored was only for that particular user.
+
+00:47.000 --> 00:50.000
+So we didn't have any problem with it, we didn't even have to share it.
+
+00:50.000 --> 00:57.000
+So now we need something that saves the data of the user in a cloud, in a server, in a storage.
+
+00:57.000 --> 00:58.000
+And we can save it.
+
+00:58.000 --> 01:02.000
+And when any other user wants, then he will also be able to see that data.
+
+01:02.000 --> 01:06.000
+Because the portfolio site will not be seen by just one person.
+
+01:06.000 --> 01:09.000
+There are a lot of people who will see the portfolio site.
+
+01:09.000 --> 01:15.000
+So we will have to store that data in a place that is accessible from everywhere.
+
+01:15.000 --> 01:18.000
+So for this we will use Sanity.
+
+01:18.000 --> 01:19.000
+What is Sanity?
+
+01:19.000 --> 01:23.000
+You can understand Sanity as a content management platform.
+
+01:23.000 --> 01:27.000
+What is a content management platform?
+
+01:27.000 --> 01:30.000
+Basically, whatever data you have, everything is handled by Sanity.
+
+01:30.000 --> 01:32.000
+You give all your data to Sanity.
+
+01:32.000 --> 01:36.000
+And then you get it from Sanity one by one, delete it, do whatever you have to do.
+
+01:36.000 --> 01:40.000
+You can run all the CRUD operations on the entire data.
+
+01:40.000 --> 01:45.000
+CRUD means you can create any data, basically a document.
+
+01:45.000 --> 01:49.000
+You can create any data, you can read it, you can update it, you can delete it.
+
+01:49.000 --> 01:51.000
+So you can do all these operations in it.
+
+01:51.000 --> 01:56.000
+So basically you can see how many companies have used Sanity.
+
+01:56.000 --> 01:59.000
+And this is the latest technology.
+
+01:59.000 --> 02:06.000
+All the big companies like Puma, Nike, Figma, Shopify, Loom, Cloudflare.
+
+02:06.000 --> 02:09.000
+So all these big companies must be using Sanity.
+
+02:09.000 --> 02:11.000
+Who are they actually using?
+
+02:11.000 --> 02:12.000
+Sanity.
+
+02:12.000 --> 02:16.000
+So it is written here, it is told how it works.
+
+02:16.000 --> 02:22.000
+So basically the data that we send, receive, and delete here is all through API calls.
+
+02:22.000 --> 02:24.000
+So I will explain everything to you now.
+
+02:24.000 --> 02:26.000
+Before that, what we have to do is,
+
+02:26.000 --> 02:28.000
+we have to create an account.
+
+02:28.000 --> 02:30.000
+For that we click on get started.
+
+02:30.000 --> 02:33.000
+And after that we have to sign up here.
+
+02:33.000 --> 02:35.000
+So you can sign up here.
+
+02:35.000 --> 02:37.000
+So I sign up with my account.
+
+02:37.000 --> 02:39.000
+And you also sign up.
+
+02:39.000 --> 02:47.000
+And here, after this, our dashboard will open.
+
+02:47.000 --> 02:49.000
+What we have to do first is,
+
+02:49.000 --> 02:52.000
+now we have to go to create a new project.
+
+02:52.000 --> 02:55.000
+And here, the first thing we have to do is,
+
+02:56.000 --> 02:59.000
+right now we come back from here.
+
+02:59.000 --> 03:03.000
+And we go to our VS Core.
+
+03:03.000 --> 03:05.000
+So we have come to our VS Core.
+
+03:05.000 --> 03:09.000
+Now, after this, we open our terminal.
+
+03:09.000 --> 03:16.000
+And here we go to the directory of Portfolio Builder.
+
+03:16.000 --> 03:18.000
+Portfolio Builder.
+
+03:18.000 --> 03:21.000
+Okay, I have come to the directory of my current project.
+
+03:21.000 --> 03:24.000
+You also have to come to the directory of this project.
+
+03:24.000 --> 03:25.000
+After this,
+
+03:25.000 --> 03:27.000
+here you will use a command.
+
+03:27.000 --> 03:28.000
+Which is,
+
+03:28.000 --> 03:33.000
+npm install sanity.
+
+03:33.000 --> 03:35.000
+At the rate sanity.
+
+03:35.000 --> 03:38.000
+Slash client.
+
+03:38.000 --> 03:39.000
+What does this do?
+
+03:39.000 --> 03:41.000
+This command basically,
+
+03:41.000 --> 03:43.000
+which is your sanity client.
+
+03:43.000 --> 03:44.000
+Right?
+
+03:44.000 --> 03:45.000
+It installs it.
+
+03:45.000 --> 03:48.000
+So there are some dependencies that are required.
+
+03:48.000 --> 03:50.000
+So it does this thing for you.
+
+03:50.000 --> 03:53.000
+So till it is happening.
+
+03:53.000 --> 03:58.000
+Okay, so our sanity is installed.
+
+03:58.000 --> 04:03.000
+Now after this, we have to install one more package.
+
+04:03.000 --> 04:05.000
+Which is this.
+
+04:05.000 --> 04:08.000
+So here I will do it properly.
+
+04:08.000 --> 04:11.000
+Okay, npm install at the rate sanity.
+
+04:11.000 --> 04:13.000
+Slash block content to react.
+
+04:13.000 --> 04:17.000
+And you will install it.
+
+04:17.000 --> 04:18.000
+Okay.
+
+04:18.000 --> 04:21.000
+So the installation here is complete.
+
+04:21.000 --> 04:22.000
+Nice.
+
+04:22.000 --> 04:23.000
+Now we will clear it.
+
+04:23.000 --> 04:25.000
+And here you have to write after this,
+
+04:25.000 --> 04:28.000
+sanity logout.
+
+04:28.000 --> 04:30.000
+What does this do?
+
+04:30.000 --> 04:33.000
+Basically, you have to give a fresh start.
+
+04:33.000 --> 04:35.000
+So you log out sanity.
+
+04:35.000 --> 04:36.000
+After this, you write here,
+
+04:36.000 --> 04:38.000
+sanity init.
+
+04:38.000 --> 04:40.000
+And enter.
+
+04:40.000 --> 04:42.000
+As soon as you enter.
+
+04:42.000 --> 04:47.000
+So here we ask you some options.
+
+04:47.000 --> 04:50.000
+And here you can start creating the back end of sanity.
+
+04:50.000 --> 04:51.000
+So here I will press yes.
+
+04:51.000 --> 04:53.000
+I will enter.
+
+04:53.000 --> 04:56.000
+Now it is asking how you want to login.
+
+04:56.000 --> 04:58.000
+What will be your login type?
+
+04:58.000 --> 05:01.000
+Google, github, email or something else.
+
+05:01.000 --> 05:04.000
+So here I will adjust it from a minute.
+
+05:04.000 --> 05:05.000
+Okay.
+
+05:05.000 --> 05:07.000
+So here I will login with google.
+
+05:07.000 --> 05:09.000
+You can select it with up arrow or down arrow.
+
+05:09.000 --> 05:11.000
+So now we will login with google.
+
+05:11.000 --> 05:12.000
+And enter.
+
+05:12.000 --> 05:17.000
+As soon as we enter, it redirects us to the web page.
+
+05:17.000 --> 05:19.000
+We are redirected to the web page.
+
+05:19.000 --> 05:23.000
+We will click on techie reconnaissance.
+
+05:23.000 --> 05:26.000
+And we will login.
+
+05:26.000 --> 05:27.000
+Okay, nice.
+
+05:27.000 --> 05:29.000
+Login has been successful.
+
+05:29.000 --> 05:32.000
+We will go back to our terminal.
+
+05:32.000 --> 05:35.000
+And here you are asking us.
+
+05:35.000 --> 05:36.000
+Create new project.
+
+05:36.000 --> 05:38.000
+The project you want to create.
+
+05:38.000 --> 05:40.000
+New project.
+
+05:40.000 --> 05:42.000
+So you just press enter once.
+
+05:42.000 --> 05:47.000
+You press enter from create new project.
+
+05:47.000 --> 05:48.000
+In create new project.
+
+05:48.000 --> 05:50.000
+And you will press create new project.
+
+05:50.000 --> 05:52.000
+It will ask you what you want to name the project.
+
+05:52.000 --> 05:55.000
+So you write portfolio.
+
+05:55.000 --> 05:58.000
+Underscore backend.
+
+05:58.000 --> 05:59.000
+Do backend.
+
+05:59.000 --> 06:05.000
+Hit enter.
+
+06:05.000 --> 06:06.000
+Okay.
+
+06:06.000 --> 06:08.000
+Your content will be stored in a data set.
+
+06:08.000 --> 06:10.000
+That can be public or private.
+
+06:10.000 --> 06:15.000
+Depending whether you want a query or content without authentication.
+
+06:15.000 --> 06:16.000
+Okay.
+
+06:16.000 --> 06:17.000
+So here you press yes and continue.
+
+06:17.000 --> 06:24.000
+By pressing yes.
+
+06:24.000 --> 06:25.000
+After this.
+
+06:25.000 --> 06:27.000
+After this path will ask you.
+
+06:27.000 --> 06:29.000
+Do you want to keep it in this path.
+
+06:29.000 --> 06:31.000
+Do you want to keep it in this folder.
+
+06:31.000 --> 06:33.000
+Which is the folder of portfolio builder.
+
+06:33.000 --> 06:35.000
+You press enter.
+
+06:35.000 --> 06:36.000
+And after this it will ask you.
+
+06:36.000 --> 06:38.000
+You have to select the template.
+
+06:38.000 --> 06:40.000
+So suppose tomorrow you will create an e-commerce site.
+
+06:40.000 --> 06:41.000
+Or a blog site.
+
+06:41.000 --> 06:43.000
+Or a movie project site.
+
+06:43.000 --> 06:46.000
+So for this you already have the schemas.
+
+06:46.000 --> 06:47.000
+Schemas means.
+
+06:47.000 --> 06:48.000
+Tables.
+
+06:48.000 --> 06:49.000
+Fields.
+
+06:49.000 --> 06:50.000
+All these things are already given to you.
+
+06:50.000 --> 06:51.000
+Right.
+
+06:51.000 --> 06:52.000
+So fields etc.
+
+06:52.000 --> 06:53.000
+Are already made.
+
+06:53.000 --> 06:54.000
+But we are making a clean project here.
+
+06:54.000 --> 06:55.000
+So you will write.
+
+06:55.000 --> 06:57.000
+Clean project with no predefined schemas.
+
+06:57.000 --> 06:58.000
+So down arrow.
+
+06:58.000 --> 06:59.000
+You will bring it here.
+
+06:59.000 --> 07:00.000
+And hit enter.
+
+07:00.000 --> 07:01.000
+After this it will ask you.
+
+07:01.000 --> 07:02.000
+Do you want to use typescript.
+
+07:02.000 --> 07:03.000
+So now again we press no.
+
+07:03.000 --> 07:04.000
+And.
+
+07:04.000 --> 07:05.000
+And.
+
+07:05.000 --> 07:06.000
+And.
+
+07:06.000 --> 07:07.000
+And.
+
+07:07.000 --> 07:08.000
+And.
+
+07:08.000 --> 07:09.000
+And.
+
+07:09.000 --> 07:10.000
+And.
+
+07:10.000 --> 07:11.000
+And.
+
+07:11.000 --> 07:12.000
+And.
+
+07:12.000 --> 07:13.000
+And.
+
+07:13.000 --> 07:14.000
+And.
+
+07:14.000 --> 07:15.000
+And.
+
+07:15.000 --> 07:16.000
+And.
+
+07:16.000 --> 07:17.000
+And.
+
+07:17.000 --> 07:18.000
+And.
+
+07:18.000 --> 07:19.000
+And.
+
+07:19.000 --> 07:20.000
+And.
+
+07:20.000 --> 07:21.000
+And.
+
+07:21.000 --> 07:22.000
+And.
+
+07:22.000 --> 07:23.000
+And.
+
+07:23.000 --> 07:24.000
+And.
+
+07:24.000 --> 07:25.000
+And.
+
+07:25.000 --> 07:26.000
+And.
+
+07:26.000 --> 07:27.000
+And.
+
+07:27.000 --> 07:28.000
+And.
+
+07:28.000 --> 07:29.000
+And.
+
+07:29.000 --> 07:30.000
+And.
+
+07:30.000 --> 07:31.000
+And.
+
+07:31.000 --> 07:32.000
+And.
+
+07:32.000 --> 07:33.000
+And.
+
+07:33.000 --> 07:34.000
+And.
+
+07:34.000 --> 07:35.000
+And.
+
+07:35.000 --> 07:36.000
+And.
+
+07:36.000 --> 07:37.000
+And.
+
+07:37.000 --> 07:38.000
+And.
+
+07:38.000 --> 07:39.000
+And.
+
+07:39.000 --> 07:40.000
+And.
+
+07:40.000 --> 07:41.000
+And.
+
+07:41.000 --> 07:42.000
+And.
+
+07:42.000 --> 07:43.000
+And.
+
+07:43.000 --> 07:44.000
+And.
+
+07:44.000 --> 07:46.000
+the file would have been created, if you will see
+
+07:46.000 --> 07:48.000
+by doing Portfolio backend
+
+07:48.000 --> 07:50.000
+here, by doing Portfolio backend
+
+07:50.000 --> 07:52.000
+the file is basically a Sanity file
+
+07:52.000 --> 07:54.000
+in this, all our
+
+07:54.000 --> 07:56.000
+documents, schemas,
+
+07:56.000 --> 07:58.000
+all the data, we will send through them
+
+07:58.000 --> 08:00.000
+in Sanity
+
+08:00.000 --> 08:02.000
+and here we will define
+
+08:02.000 --> 08:04.000
+what will happen in our Sanity data set
+
+08:04.000 --> 08:06.000
+you will get to know all those things
+
+08:06.000 --> 08:08.000
+so for now, our Portfolio backend
+
+08:08.000 --> 08:10.000
+folder, in this, all the configuration
+
+08:10.000 --> 08:12.000
+files of Sanity, you will get
+
+08:12.000 --> 08:14.000
+to know all those things
+
+08:14.000 --> 08:16.000
+so now what you have to do first
+
+08:16.000 --> 08:18.000
+you have to go to the terminal
+
+08:18.000 --> 08:20.000
+and after going here, you have to enter
+
+08:20.000 --> 08:22.000
+cd portfolio backend
+
+08:22.000 --> 08:24.000
+and you have to write in Sanity
+
+08:24.000 --> 08:26.000
+dev
+
+08:26.000 --> 08:28.000
+and as soon as you do Sanity dev
+
+08:28.000 --> 08:30.000
+then your
+
+08:30.000 --> 08:32.000
+Sanity server will basically
+
+08:32.000 --> 08:34.000
+start and here you will get to see
+
+08:34.000 --> 08:36.000
+what all things you will store
+
+08:36.000 --> 08:38.000
+in Sanity
+
+08:38.000 --> 08:40.000
+you will get to see everything
+
+08:40.000 --> 08:42.000
+so you click on it
+
+08:42.000 --> 08:44.000
+and yes, here
+
+08:44.000 --> 08:46.000
+the Sanity studio is opening
+
+08:46.000 --> 08:48.000
+so for now
+
+08:48.000 --> 08:50.000
+I will remove all these things
+
+08:50.000 --> 08:52.000
+ok, we don't need that
+
+08:52.000 --> 08:54.000
+ok, Sanity studio
+
+08:54.000 --> 08:56.000
+is open
+
+08:56.000 --> 08:58.000
+now we have to log in
+
+08:58.000 --> 09:00.000
+the thing we logged in
+
+09:00.000 --> 09:02.000
+we logged in from google, so we will log in from google
+
+09:02.000 --> 09:04.000
+after this
+
+09:06.000 --> 09:08.000
+you will see that
+
+09:08.000 --> 09:10.000
+our Sanity studio is open
+
+09:10.000 --> 09:12.000
+here whatever we have created
+
+09:12.000 --> 09:14.000
+we have not created yet
+
+09:14.000 --> 09:16.000
+so you will not see anything here
+
+09:16.000 --> 09:18.000
+but as soon as we
+
+09:18.000 --> 09:20.000
+will create different documents
+
+09:20.000 --> 09:22.000
+fields and different data
+
+09:22.000 --> 09:24.000
+to store
+
+09:24.000 --> 09:26.000
+so you will start seeing all those things
+
+09:26.000 --> 09:28.000
+the data we will store
+
+09:28.000 --> 09:30.000
+you will start seeing all that
+
+09:30.000 --> 09:32.000
+so now we will see how we can
+
+09:32.000 --> 09:34.000
+bring documents and other data
+
+09:34.000 --> 09:36.000
+and can retrieve it
+
+09:36.000 --> 09:38.000
+so you will see all these things now
+
+

@@ -1,0 +1,3980 @@
+WEBVTT
+
+00:06.000 --> 00:11.400
+So now we will start making portfolio pages, so how will the portfolio pages look, I showed
+
+00:11.400 --> 00:20.000
+you one more time, but let's see one more time, so here, when we go here and see, then
+
+00:20.000 --> 00:29.600
+portfolio pages will look like this, as you can see here, this page, this is our first
+
+00:29.600 --> 00:37.200
+home page template, home page will look something like this, now we will see where we will use
+
+00:37.200 --> 00:42.600
+the input we have taken, we will see this thing, so first of all, we will use the image, user
+
+00:42.600 --> 00:50.600
+picture here, we will use the user's name here, we will use the role of the user here,
+
+00:50.600 --> 00:57.600
+after this, here is our home page, so we will make a home page, the second thing we will
+
+00:57.600 --> 00:59.600
+make will be our about page.
+
+00:59.600 --> 01:04.600
+In the about page, we will use the profile picture again, we will use the name, what
+
+01:04.600 --> 01:09.600
+will we use after the name, we will use about after the name, right, we will use the skill
+
+01:09.600 --> 01:13.600
+here, we will use the experience, then the skill will be CA, right, the experience will
+
+01:13.600 --> 01:17.600
+be CA, we will use this, right, after this, there will be a third page, it will be a contact
+
+01:17.600 --> 01:22.600
+page, where we will show the contact information user key, which is email, we will show it
+
+01:22.600 --> 01:27.600
+instead of contact, then we will have to make the header and footer, so we will make that
+
+01:27.600 --> 01:28.600
+too.
+
+01:28.600 --> 01:29.600
+Okay.
+
+01:29.600 --> 01:36.600
+So, we have to make this thing, after this, now how will this work, how will we make
+
+01:36.600 --> 01:41.600
+it, basically, now we are seeing that the URL of our website is of this type, now I will
+
+01:41.600 --> 01:51.600
+give you an example, like GitHub, GitHub, and here we have written something like, for example,
+
+01:51.600 --> 01:58.600
+Linux, we have done something like this, and when we go here, so now we will see here that
+
+01:58.600 --> 02:05.600
+we go to github.com slash storeworlds, right, as soon as you go to github.com slash storeworlds,
+
+02:05.600 --> 02:10.600
+then there is a user like this, there is a user named storeworld, and what you have to
+
+02:10.600 --> 02:14.600
+do to go to the GitHub page of that user, you have to write the name of the user in the
+
+02:14.600 --> 02:20.600
+URL of the website, for example, there may be a user by doing saga, whatever it means,
+
+02:20.600 --> 02:27.600
+I am putting a random word, but such a user is existing, if you can see, okay, so this
+
+02:27.600 --> 02:34.600
+is a user, so these users are existing, like one is here, night, and such users are
+
+02:34.600 --> 02:41.600
+existing, basically, right, so what is happening here, that the github.com slash, whatever the
+
+02:41.600 --> 02:47.600
+username is, we see the user's GitHub here, okay, we will apply this thing to our website
+
+02:47.600 --> 02:53.600
+too, now the name of our website, the name of the website, for example, is this, slash,
+
+02:53.600 --> 02:56.600
+you will write, name, any user's name, you will write, name of the user, you will write,
+
+02:56.600 --> 03:00.600
+the name of the user, and we will enter, then here we will see the user, if this name
+
+03:00.600 --> 03:04.600
+of the user exists, then it will be visible, otherwise, what will it be visible, 404, means
+
+03:04.600 --> 03:10.600
+user not found, such a page will come, okay, so now how to define these routes, let's see
+
+03:10.600 --> 03:16.600
+this properly once, so we will go back to our VS code, and here we have defined routes
+
+03:16.600 --> 03:20.600
+in app.js, do you know, when we go to the slash, we will see the main page rendered,
+
+03:20.600 --> 03:25.600
+we had made a form in the main page, right, then we put logic in it, that if any user
+
+03:25.600 --> 03:29.600
+is not logged in, then it will go to the login page, right, if it has been logged in,
+
+03:29.600 --> 03:33.600
+then it will be visible on the main page, and now all the logic that we had put, it is
+
+03:33.600 --> 03:39.600
+visible here, now after this, now what will we do, now we will make two or three more
+
+03:39.600 --> 03:46.600
+routes like this, right, so I keep replicating it from below, and after this, what is here,
+
+03:46.600 --> 03:53.600
+here now we will put the third thing, which will be slash id, I will explain to you what
+
+03:53.600 --> 03:54.600
+I want to do.
+
+03:55.600 --> 04:09.600
+here we will put colon id slash about, then here is the font pack, then here one more
+
+04:09.600 --> 04:23.600
+thing, star, here, now what I have done here, let's know this, apart from this, here we
+
+04:23.600 --> 04:40.540
+will add something to about component, and here so we
+
+04:40.540 --> 04:43.000
+have 2 about components here one, we have made we have w just content is that about.
+
+04:43.000 --> 04:48.600
+we have made we have made bolt component, here went our out component, and this thing
+
+04:48.600 --> 04:49.600
+is imported to them.
+
+04:49.600 --> 04:50.600
+Okay, the export is complete.
+
+04:50.600 --> 04:51.600
+Where did we make this?
+
+04:51.600 --> 04:52.600
+We have make it in the components.
+
+04:52.600 --> 04:59.600
+here about contact login ok so i am telling you that what i am doing here
+
+04:59.600 --> 05:05.600
+here i am doing contact
+
+05:05.600 --> 05:07.600
+contact
+
+05:07.600 --> 05:11.600
+here what i did i will tell you
+
+05:11.600 --> 05:13.600
+what happened here
+
+05:13.600 --> 05:16.600
+we saw that when forward slash user used to come
+
+05:16.600 --> 05:17.600
+so he used to see main page
+
+05:17.600 --> 05:19.600
+he used to see login
+
+05:19.600 --> 05:21.600
+now what is this slash id here
+
+05:21.600 --> 05:23.600
+we said
+
+05:23.600 --> 05:26.600
+after url anything will be written
+
+05:26.600 --> 05:28.600
+after slash
+
+05:28.600 --> 05:30.600
+leaving login
+
+05:30.600 --> 05:31.600
+leaving login
+
+05:31.600 --> 05:33.600
+anything will be written
+
+05:33.600 --> 05:35.600
+because login is already defined
+
+05:35.600 --> 05:38.600
+anything will be written so it will be treated as an id
+
+05:38.600 --> 05:40.600
+in this route
+
+05:40.600 --> 05:42.600
+whatever is written after slash
+
+05:42.600 --> 05:43.600
+leaving them
+
+05:43.600 --> 05:46.600
+whatever will be written will be treated as an id
+
+05:46.600 --> 05:50.600
+so tomorrow we can capture it as an id
+
+05:50.600 --> 05:51.600
+means
+
+05:51.600 --> 05:54.600
+there is a method called use params
+
+05:54.600 --> 05:57.600
+we will be able to capture it by using it
+
+05:57.600 --> 05:59.600
+what i am saying you will understand it well
+
+05:59.600 --> 06:01.600
+before that i will
+
+06:01.600 --> 06:03.600
+here for now
+
+06:03.600 --> 06:06.600
+by saying not found
+
+06:06.600 --> 06:09.600
+i will create a page
+
+06:09.600 --> 06:11.600
+ok
+
+06:11.600 --> 06:14.600
+and here in component another page will be created
+
+06:14.600 --> 06:16.600
+by saying not found
+
+06:16.600 --> 06:18.600
+not found
+
+06:18.600 --> 06:19.600
+dot
+
+06:20.600 --> 06:21.600
+dot
+
+06:21.600 --> 06:22.600
+dot
+
+06:22.600 --> 06:23.600
+dot
+
+06:23.600 --> 06:26.600
+dot
+
+06:26.600 --> 06:27.600
+dot
+
+06:27.600 --> 06:28.600
+dot
+
+06:28.600 --> 06:29.600
+dot
+
+06:29.600 --> 06:30.600
+dot
+
+06:30.600 --> 06:31.600
+dot
+
+06:31.600 --> 06:32.600
+dot
+
+06:32.600 --> 06:33.600
+dot
+
+06:33.600 --> 06:34.600
+dot
+
+06:34.600 --> 06:35.600
+dot
+
+06:35.600 --> 06:36.600
+dot
+
+06:36.600 --> 06:37.600
+dot
+
+06:37.600 --> 06:38.600
+dot
+
+06:38.600 --> 06:39.600
+dot
+
+06:39.600 --> 06:40.600
+dot
+
+06:40.600 --> 06:41.600
+dot
+
+06:41.600 --> 06:42.600
+and you can here
+
+06:42.600 --> 06:43.600
+how cool
+
+06:43.600 --> 06:44.600
+you can see
+
+06:44.600 --> 06:45.600
+that
+
+06:45.600 --> 06:46.600
+Box
+
+06:49.600 --> 06:52.600
+Contact is not found. So now we will write 404.
+
+06:52.600 --> 06:55.600
+404
+
+06:55.600 --> 06:58.600
+And one minute. Ok.
+
+06:58.600 --> 07:01.600
+These are some of our components. Now we call them.
+
+07:01.600 --> 07:04.600
+After login, as soon as it goes to slash id,
+
+07:04.600 --> 07:07.600
+this will basically be the end page. So we will have to make a component
+
+07:07.600 --> 07:10.600
+named home.
+
+07:10.600 --> 07:13.600
+I will tell you all this in a few minutes.
+
+07:13.600 --> 07:16.600
+Ok.
+
+07:16.600 --> 07:19.600
+Now let's see. First let's import them quickly.
+
+07:19.600 --> 07:22.600
+Let's import the component.
+
+07:22.600 --> 07:25.600
+Press control space and enter.
+
+07:25.600 --> 07:28.600
+Ok.
+
+07:28.600 --> 07:31.600
+What I did here, you will see. In our website,
+
+07:31.600 --> 07:34.600
+as soon as someone writes something after slash id,
+
+07:34.600 --> 07:37.600
+which is not in routes, he will treat it as an id
+
+07:37.600 --> 07:40.600
+and it will go to the home page.
+
+07:40.600 --> 07:43.600
+In route, if slash id or any name
+
+07:43.600 --> 07:46.600
+or anything is seen and after that slash about is written
+
+07:46.600 --> 07:49.600
+then it will go to the about page.
+
+07:49.600 --> 07:52.600
+In id, by doing any id, if you put contact then it will go to
+
+07:52.600 --> 07:55.600
+slash contact. Otherwise, if from these
+
+07:55.600 --> 07:58.600
+if the user will try to write anything other than this
+
+07:58.600 --> 08:01.600
+then it will go to the not found page.
+
+08:01.600 --> 08:04.600
+Now I will explain it well. So here I go
+
+08:04.600 --> 08:07.600
+and here in my url
+
+08:07.600 --> 08:10.600
+slash any id
+
+08:10.600 --> 08:13.600
+if I will write anything here then it will be treated as an id.
+
+08:13.600 --> 08:16.600
+I can give it a number, name, anything.
+
+08:16.600 --> 08:19.600
+So this will be treated as an id.
+
+08:19.600 --> 08:22.600
+As soon as I press enter, I will come to the home page.
+
+08:22.600 --> 08:25.600
+Ok. As soon as I press enter, I have come to the home page.
+
+08:25.600 --> 08:28.600
+And let me see once what I have written on the home page.
+
+08:28.600 --> 08:31.600
+Which is
+
+08:31.600 --> 08:34.600
+Here I hit enter and go to the home page once.
+
+08:34.600 --> 08:37.600
+And here I write home.
+
+08:37.600 --> 08:40.600
+Ok. So I wrote any random id and hit enter
+
+08:40.600 --> 08:43.600
+so I came to the home page.
+
+08:43.600 --> 08:46.600
+Now after this id, I write slash about home page.
+
+08:46.600 --> 08:49.600
+So I will come to the about page.
+
+08:49.600 --> 08:52.600
+I write it as slash contact.
+
+08:52.600 --> 08:55.600
+So I will come to the contact page.
+
+08:55.600 --> 08:58.600
+Here basically this thing is this id which if you have not written
+
+08:58.600 --> 09:01.600
+and if you have tried to write something else other than that
+
+09:01.600 --> 09:04.600
+then which page will you come to?
+
+09:04.600 --> 09:07.600
+You have come to the home page for example.
+
+09:07.600 --> 09:10.600
+Because you had put a slash.
+
+09:10.600 --> 09:13.600
+Apart from this, one more thing to check.
+
+09:13.600 --> 09:15.600
+Which is here slash start.
+
+09:16.600 --> 09:21.600
+Ok. I think here is some big key.
+
+09:21.600 --> 09:24.600
+About has been done. Contact has been done.
+
+09:24.600 --> 09:26.600
+Ok.
+
+09:26.600 --> 09:30.600
+Ok. Not found is also fine here. Everything is fine.
+
+09:30.600 --> 09:32.600
+So here is something like this for now.
+
+09:32.600 --> 09:34.600
+Now after this
+
+09:34.600 --> 09:36.600
+I go to the browser.
+
+09:36.600 --> 09:38.600
+And here I write something like this.
+
+09:38.600 --> 09:40.600
+I write something like this which does not actually exist.
+
+09:40.600 --> 09:44.600
+Like this. This is a path which does not exist.
+
+09:44.600 --> 09:47.600
+Means actually this will be treated as an id.
+
+09:47.600 --> 09:50.600
+After this if you will write anything here which does not exist.
+
+09:50.600 --> 09:53.600
+If you will type enter then it will take you to 404 page.
+
+09:53.600 --> 09:56.600
+Because nothing like this does not exist.
+
+09:56.600 --> 09:58.600
+Isn't it?
+
+09:58.600 --> 10:00.600
+So what happened here?
+
+10:00.600 --> 10:02.600
+What happened here is that when you wrote slash
+
+10:02.600 --> 10:04.600
+then it will take you to the main page i.e. the form page.
+
+10:04.600 --> 10:07.600
+If you will write login then it will go to the login page.
+
+10:07.600 --> 10:10.600
+But as soon as you will write some parameter after that
+
+10:10.600 --> 10:13.600
+then it will treat this id and will take you to the home page.
+
+10:14.600 --> 10:16.600
+And after that if you will write about
+
+10:16.600 --> 10:18.600
+then it will take you to the about page and will take you to the contact page.
+
+10:18.600 --> 10:20.600
+But apart from about and contact
+
+10:20.600 --> 10:22.600
+if you have written something like this by doing slash
+
+10:22.600 --> 10:26.600
+then also it will take you to the not found page.
+
+10:26.600 --> 10:28.600
+It will take you to the not found page.
+
+10:28.600 --> 10:30.600
+Here we will do one more thing.
+
+10:30.600 --> 10:32.600
+Here if we will write slash
+
+10:32.600 --> 10:34.600
+if we will write normal
+
+10:34.600 --> 10:36.600
+then we will go to the form page.
+
+10:36.600 --> 10:39.600
+If we will write login then we will come to the login page.
+
+10:39.600 --> 10:41.600
+Isn't it?
+
+10:41.600 --> 10:43.600
+Now we will write slash any id.
+
+10:43.600 --> 10:45.600
+if we write techy.conversion
+
+10:45.600 --> 10:46.600
+then we will come to the home page.
+
+10:46.600 --> 10:48.600
+We will write slash
+
+10:48.600 --> 10:50.600
+if we will write home
+
+10:50.600 --> 10:51.600
+what will we get then?
+
+10:51.600 --> 10:52.600
+We will get the error.
+
+10:52.600 --> 10:55.600
+We will write slash contact
+
+10:55.600 --> 10:57.600
+then we will come to the contact page.
+
+10:57.600 --> 10:59.600
+About is in about page
+
+10:59.600 --> 11:01.600
+And if we will try to write something else
+
+11:01.600 --> 11:03.600
+what will we get then?
+
+11:03.600 --> 11:04.600
+Error.
+
+11:04.600 --> 11:05.600
+Alright
+
+11:05.600 --> 11:09.600
+If we will write contact then we will come to the contact page
+
+11:10.600 --> 11:11.600
+We did this.
+
+11:11.600 --> 11:13.600
+And basically here we have
+
+11:13.600 --> 11:20.100
+This id works here that you can capture this thing in any page in the name of id
+
+11:20.100 --> 11:25.600
+And then tomorrow you can compare this with our gmail id given in sanity
+
+11:25.600 --> 11:29.600
+By which we will know whether this user name exists or not
+
+11:29.600 --> 11:33.600
+Now what we do is that we go back
+
+11:33.600 --> 11:39.600
+And one more thing to pay attention to is that if we go to the slash
+
+11:39.600 --> 11:43.600
+So here we are logged in, that's why we see this page
+
+11:43.600 --> 11:46.600
+If we log out then we try to go to the slash
+
+11:46.600 --> 11:49.600
+Then we will not see this page, we will come to the login
+
+11:49.600 --> 11:53.600
+But if we go to the slash id, then we will see this page
+
+11:53.600 --> 11:56.600
+And we want this, if we want we can make it secure too
+
+11:56.600 --> 11:59.600
+But why didn't we make it because it is a portfolio page
+
+11:59.600 --> 12:01.600
+Whether you log in or not in github
+
+12:01.600 --> 12:04.600
+If you go to anyone's profile then you will see
+
+12:04.600 --> 12:08.600
+Because we want the user to see the portfolio
+
+12:08.600 --> 12:09.600
+We log in
+
+12:09.600 --> 12:12.600
+We want the user to log in when he makes an account
+
+12:12.600 --> 12:15.600
+Now he is not making an account, he just came to see someone else's portfolio
+
+12:15.600 --> 12:16.600
+So he can see
+
+12:16.600 --> 12:17.600
+Right
+
+12:17.600 --> 12:18.600
+These things
+
+12:18.600 --> 12:21.600
+So now again we log in
+
+12:21.600 --> 12:23.600
+Okay
+
+12:23.600 --> 12:25.600
+Now after this
+
+12:25.600 --> 12:27.600
+Now we go back
+
+12:30.600 --> 12:32.600
+Now here we have done these things
+
+12:32.600 --> 12:34.600
+Now I will show you what the actual work of id is
+
+12:34.600 --> 12:35.600
+What is the actual work of id
+
+12:35.600 --> 12:36.600
+We went to the home page
+
+12:36.600 --> 12:38.600
+In home.jsx
+
+12:38.600 --> 12:39.600
+Do one thing here
+
+12:39.600 --> 12:40.600
+Write
+
+12:40.600 --> 12:44.600
+const
+
+12:44.600 --> 12:46.600
+Bracket id
+
+12:46.600 --> 12:49.600
+Equals to use params
+
+12:49.600 --> 12:51.600
+Write this thing and enter
+
+12:51.600 --> 12:54.600
+Use params will be imported from react.com
+
+12:54.600 --> 12:55.600
+And now you
+
+12:55.600 --> 12:57.600
+Lock the console.
+
+12:57.600 --> 12:59.600
+Id
+
+12:59.600 --> 13:04.600
+What we did here
+
+13:04.600 --> 13:06.600
+A method named use params
+
+13:06.600 --> 13:08.600
+A function is in react
+
+13:08.600 --> 13:10.600
+What it does
+
+13:10.600 --> 13:14.600
+That whatever the parameter named id will get in the url
+
+13:14.600 --> 13:16.600
+It will fetch
+
+13:16.600 --> 13:18.600
+Now here we have made the parameter named id
+
+13:18.600 --> 13:19.600
+Here is the id
+
+13:19.600 --> 13:20.600
+So in the url
+
+13:20.600 --> 13:21.600
+After forward slash
+
+13:21.600 --> 13:22.600
+Whatever will happen
+
+13:22.600 --> 13:24.600
+Leaving the login
+
+13:24.600 --> 13:27.600
+That thing will treat you as an id
+
+13:27.600 --> 13:28.600
+And that thing
+
+13:28.600 --> 13:31.600
+That thing you will get by printing here
+
+13:31.600 --> 13:32.600
+Okay
+
+13:32.600 --> 13:34.600
+You can give some other names instead of id here
+
+13:34.600 --> 13:35.600
+For example, you give here
+
+13:35.600 --> 13:36.600
+Name
+
+13:36.600 --> 13:37.600
+If you give it slash name
+
+13:37.600 --> 13:38.600
+Here
+
+13:38.600 --> 13:39.600
+Slash name
+
+13:39.600 --> 13:40.600
+Slash name
+
+13:40.600 --> 13:41.600
+By doing slash name
+
+13:41.600 --> 13:42.600
+And then you here
+
+13:42.600 --> 13:43.600
+Instead of id
+
+13:43.600 --> 13:44.600
+By doing slash name
+
+13:44.600 --> 13:45.600
+If you say
+
+13:45.600 --> 13:47.600
+So you get that parameter
+
+13:47.600 --> 13:50.600
+Which parameter you have given the name of slash name
+
+13:50.600 --> 13:51.600
+Okay
+
+13:51.600 --> 13:52.600
+So for now we leave it as id
+
+13:52.600 --> 13:53.600
+Right
+
+13:53.600 --> 13:55.600
+Leave it as id for now
+
+13:55.600 --> 13:57.600
+And here
+
+13:57.600 --> 13:58.600
+We left the id
+
+13:58.600 --> 14:00.600
+Now after this we will reload it
+
+14:00.600 --> 14:02.600
+And we will go back
+
+14:02.600 --> 14:04.600
+And here we
+
+14:04.600 --> 14:05.600
+Here we
+
+14:05.600 --> 14:06.600
+Forward slash
+
+14:06.600 --> 14:07.600
+Forward slash
+
+14:07.600 --> 14:08.600
+Now
+
+14:08.600 --> 14:09.600
+Let's call our console
+
+14:09.600 --> 14:10.600
+And here
+
+14:10.600 --> 14:11.600
+I write forward slash
+
+14:11.600 --> 14:12.600
+Anything
+
+14:12.600 --> 14:13.600
+Forward slash
+
+14:13.600 --> 14:14.600
+Write
+
+14:14.600 --> 14:15.600
+Std
+
+14:15.600 --> 14:16.600
+Colon
+
+14:16.600 --> 14:17.600
+Colon
+
+14:17.600 --> 14:18.600
+Out
+
+14:18.600 --> 14:19.600
+And enter
+
+14:19.600 --> 14:20.600
+So see this
+
+14:20.600 --> 14:21.600
+Std out
+
+14:21.600 --> 14:22.600
+Std out
+
+14:22.600 --> 14:24.600
+Printed in the console
+
+14:24.600 --> 14:25.600
+After this
+
+14:25.600 --> 14:26.600
+If I slash
+
+14:26.600 --> 14:27.600
+Write anything
+
+14:27.600 --> 14:28.600
+And write
+
+14:28.600 --> 14:29.600
+Or I write about
+
+14:29.600 --> 14:30.600
+So
+
+14:30.600 --> 14:32.600
+You will not get anything here
+
+14:32.600 --> 14:33.600
+Because here
+
+14:33.600 --> 14:34.600
+We have come to the about page
+
+14:34.600 --> 14:35.600
+And we
+
+14:35.600 --> 14:36.600
+Where did the id grab
+
+14:36.600 --> 14:37.600
+In the home page
+
+14:37.600 --> 14:38.600
+But if you go to the home page
+
+14:38.600 --> 14:39.600
+Then you will see the id
+
+14:39.600 --> 14:40.600
+It will be printed
+
+14:40.600 --> 14:41.600
+I mean you understand
+
+14:41.600 --> 14:43.600
+It will print the id parameter
+
+14:43.600 --> 14:44.600
+That is
+
+14:44.600 --> 14:45.600
+This parameter
+
+14:45.600 --> 14:46.600
+For this
+
+14:46.600 --> 14:47.600
+It has become an id
+
+14:47.600 --> 14:49.600
+So you can use it anywhere
+
+14:49.600 --> 14:50.600
+Now
+
+14:50.600 --> 14:51.600
+Where will you use it
+
+14:51.600 --> 14:52.600
+You will find out later
+
+14:52.600 --> 14:53.600
+Okay
+
+14:53.600 --> 14:54.600
+After this
+
+14:54.600 --> 14:55.600
+We will go to the office
+
+14:55.600 --> 14:56.600
+So here
+
+14:56.600 --> 14:57.600
+We have come
+
+14:57.600 --> 14:58.600
+In the code of our home page
+
+14:58.600 --> 14:59.600
+And here
+
+14:59.600 --> 15:00.600
+What we will do
+
+15:00.600 --> 15:01.600
+That is
+
+15:01.600 --> 15:03.600
+We will verify
+
+15:03.600 --> 15:04.600
+The url key id
+
+15:04.600 --> 15:05.600
+In the url
+
+15:05.600 --> 15:06.600
+Basically
+
+15:06.600 --> 15:07.600
+The id
+
+15:07.600 --> 15:08.600
+We will compare it
+
+15:08.600 --> 15:09.600
+First of all
+
+15:09.600 --> 15:10.600
+In our sanity
+
+15:10.600 --> 15:12.600
+The profile document
+
+15:12.600 --> 15:13.600
+Inside it
+
+15:13.600 --> 15:14.600
+With the email id
+
+15:14.600 --> 15:15.600
+That is
+
+15:15.600 --> 15:17.600
+Our url key id
+
+15:17.600 --> 15:18.600
+If any
+
+15:18.600 --> 15:19.600
+Profile document
+
+15:19.600 --> 15:20.600
+Matches
+
+15:20.600 --> 15:21.600
+Any
+
+15:21.600 --> 15:22.600
+For example
+
+15:22.600 --> 15:23.600
+Profile document
+
+15:23.600 --> 15:24.600
+And its email id
+
+15:24.600 --> 15:25.600
+Matches
+
+15:25.600 --> 15:26.600
+Our
+
+15:26.600 --> 15:27.600
+url key id
+
+15:27.600 --> 15:28.600
+This means
+
+15:28.600 --> 15:29.600
+The data of the user
+
+15:29.600 --> 15:30.600
+Exists
+
+15:30.600 --> 15:31.600
+And if the data of the user
+
+15:31.600 --> 15:32.600
+Exists
+
+15:32.600 --> 15:33.600
+Then we
+
+15:33.600 --> 15:34.600
+Can show it
+
+15:34.600 --> 15:35.600
+In the url
+
+15:35.600 --> 15:36.600
+But if that id
+
+15:36.600 --> 15:37.600
+Does not match
+
+15:37.600 --> 15:38.600
+With any profile document
+
+15:38.600 --> 15:39.600
+Of sanity
+
+15:39.600 --> 15:40.600
+This means
+
+15:40.600 --> 15:41.600
+That the user
+
+15:41.600 --> 15:42.600
+Does not exist
+
+15:42.600 --> 15:43.600
+That
+
+15:43.600 --> 15:44.600
+Useless
+
+15:44.600 --> 15:45.600
+Id
+
+15:45.600 --> 15:46.600
+Has been entered
+
+15:46.600 --> 15:47.600
+In the url
+
+15:47.600 --> 15:48.600
+So we will redirect it
+
+15:48.600 --> 15:49.600
+In 404
+
+15:49.600 --> 15:50.600
+How to do this
+
+15:50.600 --> 15:51.600
+For this
+
+15:51.600 --> 15:52.600
+What we will do
+
+15:52.600 --> 15:53.600
+First of all
+
+15:53.600 --> 15:54.600
+We will remove it
+
+15:54.600 --> 15:55.600
+By doing
+
+15:55.600 --> 15:56.600
+Console.log
+
+15:56.600 --> 15:57.600
+And here
+
+15:57.600 --> 15:58.600
+We will put
+
+15:58.600 --> 15:59.600
+A use effect
+
+15:59.600 --> 16:00.600
+We will put
+
+16:00.600 --> 16:01.600
+Use effect
+
+16:01.600 --> 16:02.600
+And it is
+
+16:02.600 --> 16:03.600
+Imported
+
+16:03.600 --> 16:04.600
+Now we will
+
+16:04.600 --> 16:05.600
+Use it
+
+16:05.600 --> 16:06.600
+And in this
+
+16:06.600 --> 16:07.600
+We will create
+
+16:07.600 --> 16:08.600
+A first
+
+16:08.600 --> 16:09.600
+Asynchronous function
+
+16:09.600 --> 16:10.600
+Which we will name
+
+16:10.600 --> 16:11.600
+FetchData
+
+16:11.600 --> 16:12.600
+And this
+
+16:12.600 --> 16:13.600
+Will be
+
+16:13.600 --> 16:14.600
+An asynchronous
+
+16:14.600 --> 16:15.600
+Function
+
+16:15.600 --> 16:16.600
+And after
+
+16:16.600 --> 16:17.600
+This
+
+16:17.600 --> 16:18.600
+Here
+
+16:18.600 --> 16:19.600
+We will
+
+16:19.600 --> 16:20.600
+Put a
+
+16:20.600 --> 16:21.600
+Try block
+
+16:21.600 --> 16:22.600
+And a
+
+16:22.600 --> 16:23.600
+Catch
+
+16:23.600 --> 16:24.600
+Try catch
+
+16:24.600 --> 16:25.600
+Ok
+
+16:25.600 --> 16:26.600
+Now
+
+16:26.600 --> 16:27.600
+The first
+
+16:27.600 --> 16:28.600
+Thing that
+
+16:28.600 --> 16:29.600
+Will go
+
+16:29.600 --> 16:30.600
+In this
+
+16:30.600 --> 16:31.600
+Will go
+
+16:31.600 --> 16:32.600
+Our
+
+16:32.600 --> 16:33.600
+Query
+
+16:33.600 --> 16:34.600
+Our Query
+
+16:34.600 --> 16:35.600
+Will go
+
+16:35.600 --> 16:36.600
+For whose
+
+16:36.600 --> 16:37.600
+Sanity
+
+16:37.600 --> 16:38.600
+So Query
+
+16:38.600 --> 16:39.600
+Will be
+
+16:39.600 --> 16:40.600
+Something like this
+
+16:40.600 --> 16:41.600
+Here is
+
+16:41.600 --> 16:42.600
+That Query
+
+16:42.600 --> 16:43.600
+What does
+
+16:43.600 --> 16:44.600
+Query say
+
+16:44.600 --> 16:45.600
+Let's see
+
+16:45.600 --> 16:46.600
+So
+
+16:46.600 --> 16:47.600
+Query says
+
+16:47.600 --> 16:48.600
+That
+
+16:48.600 --> 16:49.600
+The
+
+16:49.600 --> 16:50.600
+Res
+
+16:50.600 --> 16:51.600
+Name
+
+16:51.600 --> 16:52.600
+Variable
+
+16:52.600 --> 16:53.600
+Put that result
+
+16:53.600 --> 16:54.600
+In it
+
+16:54.600 --> 16:55.600
+Fetch
+
+16:55.600 --> 16:56.600
+Put that result
+
+16:56.600 --> 16:57.600
+And keep
+
+16:57.600 --> 16:58.600
+Where
+
+16:58.600 --> 16:59.600
+The type
+
+16:59.600 --> 17:00.600
+Of the
+
+17:00.600 --> 17:01.600
+Profile
+
+17:01.600 --> 17:02.600
+Of the
+
+17:02.600 --> 17:03.600
+Id
+
+17:03.600 --> 17:04.600
+Of the
+
+17:04.600 --> 17:05.600
+Id
+
+17:05.600 --> 17:06.600
+Is
+
+17:06.600 --> 17:07.640
+Which
+
+17:07.640 --> 17:08.600
+Is
+
+17:08.600 --> 17:09.600
+In
+
+17:09.600 --> 17:10.600
+The
+
+17:10.600 --> 17:11.600
+U
+
+17:11.600 --> 17:12.600
+R
+
+17:12.600 --> 17:13.600
+L
+
+17:13.600 --> 17:14.600
+Which
+
+17:14.600 --> 17:15.600
+Is
+
+17:15.600 --> 17:16.600
+Variable
+
+17:16.600 --> 17:17.600
+In
+
+17:17.600 --> 17:18.600
+The
+
+17:18.600 --> 17:19.600
+URL
+
+17:19.600 --> 17:20.600
+After
+
+17:20.600 --> 17:21.600
+Slash
+
+17:21.600 --> 17:22.600
+That
+
+17:22.600 --> 17:23.600
+Is
+
+17:23.600 --> 17:24.600
+Our
+
+17:24.600 --> 17:25.600
+Id
+
+17:25.600 --> 17:26.600
+If
+
+17:26.600 --> 17:27.600
+That
+
+17:27.600 --> 17:28.600
+Id
+
+17:28.600 --> 17:29.600
+That
+
+17:29.600 --> 17:30.600
+Is
+
+17:30.600 --> 17:31.600
+U
+
+17:31.600 --> 17:33.600
+we have added at the rate gmail.com
+
+17:33.600 --> 17:34.600
+what will it do?
+
+17:34.600 --> 17:35.600
+at the rate gmail.com
+
+17:35.600 --> 17:37.600
+it will convert it into an email id
+
+17:37.600 --> 17:38.600
+that id was half
+
+17:38.600 --> 17:40.600
+because we kept it half intentionally
+
+17:40.600 --> 17:41.600
+because it looks good
+
+17:41.600 --> 17:45.600
+but here we have appended at the rate gmail.com
+
+17:45.600 --> 17:49.600
+now we have just compared it with the user email in the profile
+
+17:49.600 --> 17:52.600
+if there is any user email in the profile
+
+17:52.600 --> 17:54.600
+which is equal to id
+
+17:54.600 --> 17:56.600
+which is equal to id
+
+17:56.600 --> 17:58.600
+then fetch its data to us
+
+17:58.600 --> 17:59.600
+so what will we do?
+
+17:59.600 --> 18:01.600
+we will add a condition after that
+
+18:01.600 --> 18:05.600
+that if res
+
+18:05.600 --> 18:07.600
+res means response
+
+18:07.600 --> 18:09.600
+if there is a response
+
+18:09.600 --> 18:14.600
+and the response length is greater than 0
+
+18:14.600 --> 18:16.600
+there is no empty response
+
+18:16.600 --> 18:18.600
+there is no empty response
+
+18:18.600 --> 18:19.600
+and there is a response
+
+18:19.600 --> 18:21.600
+and there is no empty response
+
+18:21.600 --> 18:22.600
+then what will we do?
+
+18:22.600 --> 18:25.600
+we will make a state at the top
+
+18:25.600 --> 18:27.600
+we will name the state
+
+18:27.600 --> 18:28.600
+user data
+
+18:28.600 --> 18:29.600
+user data
+
+18:29.600 --> 18:30.600
+and
+
+18:30.600 --> 18:31.600
+and
+
+18:31.600 --> 18:34.600
+here we will enter a set user data
+
+18:34.600 --> 18:36.600
+and this user data
+
+18:36.600 --> 18:38.600
+is of which type?
+
+18:38.600 --> 18:40.600
+will be an array
+
+18:41.600 --> 18:42.600
+use state
+
+18:42.600 --> 18:46.600
+and here we will enter it in the form of an array
+
+18:46.600 --> 18:47.600
+okay
+
+18:47.600 --> 18:48.600
+now whatever this data is
+
+18:48.600 --> 18:50.600
+we have to set it in this
+
+18:50.600 --> 18:52.600
+if the response is an object
+
+18:52.600 --> 18:53.600
+then
+
+18:53.600 --> 18:54.600
+what will we do?
+
+18:54.600 --> 18:55.600
+set user data
+
+18:55.600 --> 18:57.600
+and we will enter the response in this
+
+18:57.600 --> 18:58.600
+okay
+
+18:58.600 --> 19:08.600
+As soon as this happens, we will make another block in the else block.
+
+19:08.600 --> 19:11.600
+If the response is not there, then what to do?
+
+19:11.600 --> 19:16.600
+If the response is not there, it means that he did not get any data of that email.
+
+19:16.600 --> 19:22.600
+If anyone is putting anything in the URL, instead of ID, anything, A, B, C, D, X, Y, anything.
+
+19:22.600 --> 19:28.600
+And the ID in that type of URL, that type of email did not exist in Sanity.
+
+19:28.600 --> 19:29.600
+What does this mean?
+
+19:29.600 --> 19:31.600
+User does not exist.
+
+19:31.600 --> 19:34.600
+And if the user does not exist, then what do we have to do?
+
+19:34.600 --> 19:35.600
+We have to redirect the user.
+
+19:35.600 --> 19:37.600
+We do not have any portfolio of that name.
+
+19:37.600 --> 19:38.600
+So we will navigate the user.
+
+19:38.600 --> 19:40.600
+Where will we navigate?
+
+19:40.600 --> 19:45.600
+We will navigate the user to any page that shows 404.
+
+19:45.600 --> 19:47.600
+And when did we see 404?
+
+19:47.600 --> 19:50.600
+Whenever we used to go to such a place,
+
+19:50.600 --> 19:52.600
+we used to go to such a path that did not exist.
+
+19:52.600 --> 19:54.600
+It used to give 404 on its own.
+
+19:54.600 --> 19:56.600
+I will show you one thing.
+
+19:56.600 --> 20:02.600
+Whenever we used to try to go somewhere else other than these, it used to give 404.
+
+20:02.600 --> 20:03.600
+So we will do the same thing.
+
+20:03.600 --> 20:06.600
+Before that, we will have to set up this navigate.
+
+20:06.600 --> 20:08.600
+So we will set up the navigate.
+
+20:08.600 --> 20:09.600
+How will we do that?
+
+20:09.600 --> 20:10.600
+Come here.
+
+20:10.600 --> 20:15.600
+const navigate is equal to use navigate.
+
+20:15.600 --> 20:17.600
+And here the import is done on its own.
+
+20:17.600 --> 20:18.600
+And we have set up.
+
+20:18.600 --> 20:21.600
+After this, here we will use navigate.
+
+20:21.600 --> 20:23.600
+Navigate.
+
+20:23.600 --> 20:25.600
+And where will we navigate it?
+
+20:25.600 --> 20:29.600
+no slash user found.
+
+20:29.600 --> 20:32.600
+We have written this URL on its own.
+
+20:32.600 --> 20:33.600
+This URL does not exist.
+
+20:33.600 --> 20:35.600
+Now when this URL does not exist,
+
+20:35.600 --> 20:38.600
+it will redirect it to 404 on its own.
+
+20:38.600 --> 20:40.600
+It will show 404 component.
+
+20:40.600 --> 20:42.600
+Okay.
+
+20:42.600 --> 20:43.600
+Now here one more thing.
+
+20:43.600 --> 20:45.600
+If we get any error,
+
+20:45.600 --> 20:49.600
+if we get any error in the catch error,
+
+20:49.600 --> 20:50.600
+then what will happen?
+
+20:50.600 --> 20:51.600
+Then what will happen?
+
+20:51.600 --> 20:53.600
+Still, this user will put it in not found.
+
+20:53.600 --> 20:56.600
+If there is any error, where will we go?
+
+20:56.600 --> 20:58.600
+In no user found.
+
+20:58.600 --> 21:00.600
+Now let's check it once.
+
+21:00.600 --> 21:02.600
+And if it works,
+
+21:02.600 --> 21:04.600
+then it means we are good to go.
+
+21:04.600 --> 21:05.600
+Apart from this,
+
+21:05.600 --> 21:07.600
+the function of fetch data,
+
+21:07.600 --> 21:09.600
+we have not called it.
+
+21:09.600 --> 21:10.600
+It is necessary to call it.
+
+21:10.600 --> 21:13.600
+So let's call it just below.
+
+21:13.600 --> 21:14.600
+Here,
+
+21:14.600 --> 21:17.600
+let's call it just after it is made.
+
+21:17.600 --> 21:18.600
+And now what do we do?
+
+21:18.600 --> 21:20.600
+Let's go to our web page.
+
+21:20.600 --> 21:22.600
+And when you go to the web page,
+
+21:22.600 --> 21:24.600
+then you go to the site.
+
+21:24.600 --> 21:26.600
+As soon as we go to the site,
+
+21:26.600 --> 21:27.600
+we,
+
+21:27.600 --> 21:28.600
+you,
+
+21:28.600 --> 21:29.600
+here,
+
+21:29.600 --> 21:30.600
+what we have done is,
+
+21:30.600 --> 21:31.600
+we have implemented it only on the home page.
+
+21:31.600 --> 21:33.600
+So that thing will only work on the home page.
+
+21:33.600 --> 21:35.600
+So if we go here,
+
+21:35.600 --> 21:36.600
+any such thing,
+
+21:36.600 --> 21:38.600
+like techy recon.
+
+21:38.600 --> 21:40.600
+I go to techy recon and enter.
+
+21:40.600 --> 21:42.600
+So here it says,
+
+21:42.600 --> 21:43.600
+no user found.
+
+21:43.600 --> 21:44.600
+Why did this happen?
+
+21:44.600 --> 21:45.600
+Let's see it once.
+
+21:45.600 --> 21:48.600
+techy slash recon.
+
+21:48.600 --> 21:49.600
+And as soon as we go to this,
+
+21:49.600 --> 21:50.600
+we navigate.
+
+21:50.600 --> 21:51.600
+Why?
+
+21:51.600 --> 21:52.600
+Let's see it once.
+
+21:52.600 --> 21:53.600
+So we go to the profile
+
+21:53.600 --> 21:56.600
+and here the user named techy recon is closed.
+
+21:56.600 --> 21:59.600
+Already in the profile.
+
+21:59.600 --> 22:00.600
+But why is it not happening here?
+
+22:00.600 --> 22:04.600
+Let's see it once.
+
+22:04.600 --> 22:05.600
+Okay.
+
+22:05.600 --> 22:06.600
+Slash,
+
+22:06.600 --> 22:07.600
+if I try to go here,
+
+22:07.600 --> 22:08.600
+try to go,
+
+22:08.600 --> 22:09.600
+hello world,
+
+22:09.600 --> 22:10.600
+if I go somewhere else like this,
+
+22:10.600 --> 22:11.600
+then I will go.
+
+22:11.600 --> 22:12.600
+So here,
+
+22:12.600 --> 22:13.600
+no user found is redirecting.
+
+22:13.600 --> 22:16.600
+But if I go to techy recon,
+
+22:16.600 --> 22:18.600
+which is an existing user,
+
+22:18.600 --> 22:20.600
+forward slash,
+
+22:20.600 --> 22:21.600
+enter,
+
+22:21.600 --> 22:22.600
+then no user found is still coming.
+
+22:22.600 --> 22:24.600
+We have to see what is the problem with this.
+
+22:24.600 --> 22:26.600
+Let's check it quickly.
+
+22:26.600 --> 22:28.600
+So the problem is that
+
+22:28.600 --> 22:30.600
+our client file is basically,
+
+22:30.600 --> 22:31.600
+we have not imported it.
+
+22:31.600 --> 22:32.600
+We have used the client,
+
+22:32.600 --> 22:33.600
+client dot fetch,
+
+22:33.600 --> 22:34.600
+but we forgot to import it.
+
+22:34.600 --> 22:35.600
+So we have to remember this.
+
+22:35.600 --> 22:37.600
+So we press control and space
+
+22:37.600 --> 22:39.600
+and import it.
+
+22:39.600 --> 22:41.600
+So I think
+
+22:41.600 --> 22:43.600
+this import will be done.
+
+22:43.600 --> 22:45.600
+Why is this not being imported?
+
+22:45.600 --> 22:46.600
+I have to see it.
+
+22:46.600 --> 22:47.600
+Write client directly here.
+
+22:47.600 --> 22:49.600
+If you write your client directly,
+
+22:49.600 --> 22:51.600
+then it will be imported.
+
+22:51.600 --> 22:52.600
+But here,
+
+22:52.600 --> 22:53.600
+one minute,
+
+22:53.600 --> 22:55.600
+I will have to select JSX first from here.
+
+22:55.600 --> 22:57.600
+So how did I select this?
+
+22:57.600 --> 22:58.600
+Right below,
+
+22:58.600 --> 22:59.600
+what I show you,
+
+22:59.600 --> 23:00.600
+the screen,
+
+23:00.600 --> 23:01.600
+by doing something,
+
+23:01.600 --> 23:03.600
+you will see here,
+
+23:03.600 --> 23:04.600
+this,
+
+23:04.600 --> 23:06.600
+which you will see at the very bottom,
+
+23:06.600 --> 23:08.600
+JSX is written in the bottom right corner.
+
+23:08.600 --> 23:09.600
+You will click on it.
+
+23:09.600 --> 23:10.600
+And when,
+
+23:10.600 --> 23:12.600
+if something else was written there instead of JSX,
+
+23:12.600 --> 23:14.600
+then you will select it by doing JSX.
+
+23:14.600 --> 23:15.600
+Okay?
+
+23:15.600 --> 23:16.600
+Okay.
+
+23:17.600 --> 23:18.600
+Now here,
+
+23:18.600 --> 23:19.600
+what we do is,
+
+23:19.600 --> 23:20.600
+the client,
+
+23:20.600 --> 23:21.600
+we will write the client,
+
+23:21.600 --> 23:22.600
+if we press enter,
+
+23:22.600 --> 23:23.600
+then the client will be imported.
+
+23:23.600 --> 23:24.600
+And after this,
+
+23:24.600 --> 23:27.600
+now let's go and check our webpage.
+
+23:27.600 --> 23:29.600
+Now we have come to our webpage.
+
+23:29.600 --> 23:30.600
+And here,
+
+23:30.600 --> 23:32.600
+once I write techy recon,
+
+23:32.600 --> 23:33.600
+techy recon.
+
+23:33.600 --> 23:34.600
+So you will see,
+
+23:34.600 --> 23:36.600
+now we have come to the home page.
+
+23:36.600 --> 23:37.600
+Here,
+
+23:37.600 --> 23:38.600
+you understood,
+
+23:38.600 --> 23:39.600
+when we wrote an ID here,
+
+23:39.600 --> 23:40.600
+which is valid,
+
+23:40.600 --> 23:41.600
+basically,
+
+23:41.600 --> 23:42.600
+by doing techy recon,
+
+23:42.600 --> 23:44.600
+the email we have,
+
+23:44.600 --> 23:45.600
+it exists.
+
+23:45.600 --> 23:46.600
+Now here,
+
+23:46.600 --> 23:47.600
+we have not shown the entire email.
+
+23:47.600 --> 23:48.600
+Once you keep in mind,
+
+23:48.600 --> 23:49.600
+we have only written techy recon.
+
+23:49.600 --> 23:51.600
+But what is going on in the background,
+
+23:51.600 --> 23:52.600
+we are reading it as an email.
+
+23:52.600 --> 23:53.600
+I will show you.
+
+23:53.600 --> 23:55.600
+We see in the background here.
+
+23:55.600 --> 23:56.600
+We have here,
+
+23:56.600 --> 23:57.600
+what was the ID,
+
+23:57.600 --> 23:58.600
+techy recon.
+
+23:58.600 --> 23:59.600
+But who are we matching with?
+
+23:59.600 --> 24:01.600
+techy recon plus at the rate gmail dot com.
+
+24:01.600 --> 24:03.600
+So it is matching with one user email,
+
+24:03.600 --> 24:05.600
+which exists in the profile.
+
+24:05.600 --> 24:06.600
+Okay.
+
+24:06.600 --> 24:07.600
+So because of this,
+
+24:07.600 --> 24:09.600
+we are showing the home page there.
+
+24:09.600 --> 24:10.600
+But,
+
+24:10.600 --> 24:11.600
+but,
+
+24:11.600 --> 24:13.600
+if we write something here instead of techy recon,
+
+24:13.600 --> 24:14.600
+which does not exist,
+
+24:14.600 --> 24:15.600
+then,
+
+24:15.600 --> 24:16.600
+right?
+
+24:16.600 --> 24:17.600
+So if we write here,
+
+24:17.600 --> 24:18.600
+abcd,
+
+24:18.600 --> 24:19.600
+which,
+
+24:19.600 --> 24:20.600
+abcd at the rate gmail dot com,
+
+24:20.600 --> 24:22.600
+no user name exists.
+
+24:22.600 --> 24:23.600
+If we type enter,
+
+24:23.600 --> 24:25.600
+then we will come here in no user font.
+
+24:25.600 --> 24:26.600
+See,
+
+24:26.600 --> 24:27.600
+it has been redirected.
+
+24:27.600 --> 24:28.600
+It has been redirected.
+
+24:28.600 --> 24:29.600
+Now,
+
+24:29.600 --> 24:30.600
+if we had written something else,
+
+24:30.600 --> 24:31.600
+for example,
+
+24:31.600 --> 24:32.600
+xyz,
+
+24:32.600 --> 24:33.600
+then also,
+
+24:33.600 --> 24:34.600
+we would not be coming here.
+
+24:34.600 --> 24:35.600
+But yes,
+
+24:35.600 --> 24:36.600
+in techy recon,
+
+24:36.600 --> 24:38.600
+we are able to do that thing.
+
+24:38.600 --> 24:40.600
+We are able to do that thing for techy recon.
+
+24:40.600 --> 24:41.600
+Now,
+
+24:41.600 --> 24:42.600
+when we go to techy recon,
+
+24:42.600 --> 24:43.600
+then we will not get any error.
+
+24:43.600 --> 24:44.600
+But,
+
+24:44.600 --> 24:45.600
+apart from this,
+
+24:45.600 --> 24:46.600
+if we had done abcd,
+
+24:46.600 --> 24:48.600
+if we had written abcd slash about,
+
+24:48.600 --> 24:50.600
+then we would have been able to go to about page.
+
+24:50.600 --> 24:51.600
+Because,
+
+24:51.600 --> 24:52.600
+we have not put any check in about page.
+
+24:52.600 --> 24:53.600
+Like,
+
+24:53.600 --> 24:54.600
+we have put a check in home page.
+
+24:54.600 --> 24:56.600
+We have to put the same type of check in about page also.
+
+24:56.600 --> 24:57.600
+Right?
+
+24:57.600 --> 24:58.600
+And,
+
+24:58.600 --> 24:59.600
+similarly,
+
+24:59.600 --> 25:00.600
+we have to put in contact also.
+
+25:00.600 --> 25:01.600
+So,
+
+25:01.600 --> 25:02.600
+for now,
+
+25:02.600 --> 25:03.600
+we will do that thing also.
+
+25:03.600 --> 25:04.600
+So,
+
+25:04.600 --> 25:05.600
+we come back.
+
+25:05.600 --> 25:06.600
+And,
+
+25:06.600 --> 25:07.600
+our user data here,
+
+25:07.600 --> 25:09.600
+we had set that in our state.
+
+25:09.600 --> 25:11.600
+The state of user data which we have made.
+
+25:11.600 --> 25:12.600
+Here,
+
+25:12.600 --> 25:13.600
+we have set the user data.
+
+25:13.600 --> 25:14.600
+And,
+
+25:14.600 --> 25:16.600
+the response which we had received,
+
+25:16.600 --> 25:17.600
+basically,
+
+25:17.600 --> 25:18.600
+that is our main data.
+
+25:18.600 --> 25:19.600
+And,
+
+25:19.600 --> 25:20.600
+we have set the same response.
+
+25:20.600 --> 25:21.600
+Now,
+
+25:21.600 --> 25:22.600
+we are also printing that response.
+
+25:22.600 --> 25:23.600
+So,
+
+25:23.600 --> 25:24.600
+let's see how the response is written.
+
+25:24.600 --> 25:25.600
+Now,
+
+25:25.600 --> 25:26.600
+we will go to techy recon.
+
+25:26.600 --> 25:29.600
+I will open this.
+
+25:29.600 --> 25:30.600
+And,
+
+25:30.600 --> 25:31.600
+see this.
+
+25:31.600 --> 25:32.600
+Here,
+
+25:32.600 --> 25:33.600
+the array has come.
+
+25:33.600 --> 25:34.600
+As soon as you go to the array,
+
+25:34.600 --> 25:35.600
+see this.
+
+25:35.600 --> 25:36.600
+In the zeroth file,
+
+25:36.600 --> 25:37.600
+you have got all the details.
+
+25:37.600 --> 25:38.600
+Have you written techy recon?
+
+25:38.600 --> 25:39.600
+Have you written techy recon?
+
+25:39.600 --> 25:40.600
+And,
+
+25:40.600 --> 25:41.600
+here,
+
+25:41.600 --> 25:42.600
+all the details have come.
+
+25:42.600 --> 25:43.600
+Of the user.
+
+25:43.600 --> 25:44.600
+Where,
+
+25:44.600 --> 25:45.600
+right?
+
+25:45.600 --> 25:46.600
+Hi there,
+
+25:46.600 --> 25:47.600
+first name,
+
+25:47.600 --> 25:48.600
+last name,
+
+25:48.600 --> 25:49.600
+profile picture,
+
+25:49.600 --> 25:50.600
+all the details,
+
+25:50.600 --> 25:51.600
+associated with this email,
+
+25:51.600 --> 25:52.600
+all have come to us.
+
+25:52.600 --> 25:53.600
+Now,
+
+25:53.600 --> 25:54.600
+we can use them,
+
+25:54.600 --> 25:55.600
+to show,
+
+25:55.600 --> 25:56.600
+to showcase on our page.
+
+25:56.600 --> 25:57.600
+Because,
+
+25:57.600 --> 25:58.600
+now,
+
+25:58.600 --> 25:59.600
+we have got everything.
+
+25:59.600 --> 26:00.600
+So,
+
+26:00.600 --> 26:01.600
+let's go.
+
+26:01.600 --> 26:02.600
+And,
+
+26:02.600 --> 26:03.600
+let's start making the design of the main page.
+
+26:03.600 --> 26:04.600
+Okay.
+
+26:04.600 --> 26:05.600
+So,
+
+26:05.600 --> 26:06.600
+what will we do here?
+
+26:06.600 --> 26:07.600
+First of all,
+
+26:07.600 --> 26:08.600
+I will remove this.
+
+26:08.600 --> 26:09.600
+And,
+
+26:09.600 --> 26:10.600
+after this,
+
+26:10.600 --> 26:11.600
+the first thing we will do is,
+
+26:11.600 --> 26:12.600
+we will make,
+
+26:12.600 --> 26:13.600
+header and,
+
+26:13.600 --> 26:14.600
+footer.
+
+26:14.600 --> 26:15.600
+Okay.
+
+26:15.600 --> 26:16.600
+So,
+
+26:16.600 --> 26:17.600
+we will go to components.
+
+26:17.600 --> 26:18.600
+Okay.
+
+26:18.600 --> 26:19.600
+What did I press?
+
+26:19.600 --> 26:20.600
+Okay.
+
+26:20.600 --> 26:21.600
+Okay.
+
+26:21.600 --> 26:22.600
+So,
+
+26:22.600 --> 26:23.600
+we will go to our,
+
+26:23.600 --> 26:24.600
+main source.
+
+26:24.600 --> 26:25.600
+And,
+
+26:25.600 --> 26:26.600
+we will go to components.
+
+26:26.600 --> 26:27.600
+And,
+
+26:27.600 --> 26:28.600
+we will make a new component.
+
+26:28.600 --> 26:29.600
+We will name it,
+
+26:29.600 --> 26:30.600
+header dot,
+
+26:30.600 --> 26:31.600
+jsx.
+
+26:31.600 --> 26:32.600
+Okay.
+
+26:32.600 --> 26:33.600
+And,
+
+26:33.600 --> 26:34.600
+after this,
+
+26:34.600 --> 26:35.600
+we will write,
+
+26:35.600 --> 26:36.600
+r,
+
+26:36.600 --> 26:37.600
+a,
+
+26:37.600 --> 26:38.600
+f,
+
+26:38.600 --> 26:39.600
+c,
+
+26:39.600 --> 26:40.600
+and,
+
+26:40.600 --> 26:41.600
+we will write.
+
+26:41.600 --> 26:42.600
+Then,
+
+26:42.600 --> 26:43.600
+we will write,
+
+26:43.600 --> 26:44.600
+footer dot,
+
+26:44.600 --> 26:45.600
+jsx.
+
+26:45.600 --> 26:46.600
+footer dot,
+
+26:46.600 --> 26:47.600
+jsx.
+
+26:47.600 --> 26:48.600
+Now,
+
+26:48.600 --> 26:50.600
+header and footer are very small.
+
+26:50.600 --> 26:51.600
+So,
+
+26:51.600 --> 26:52.600
+you will get its code in,
+
+26:52.600 --> 26:53.600
+code section.
+
+26:53.600 --> 26:54.600
+So,
+
+26:54.600 --> 26:55.600
+you copy paste it directly.
+
+26:55.600 --> 26:56.600
+And,
+
+26:56.600 --> 26:57.600
+here,
+
+26:57.600 --> 26:58.600
+what we did is,
+
+26:58.600 --> 26:59.600
+let's understand.
+
+26:59.600 --> 27:00.600
+There is nothing in header and footer.
+
+27:00.600 --> 27:01.600
+Basically,
+
+27:01.600 --> 27:02.600
+we have captured the id here,
+
+27:02.600 --> 27:03.600
+using use params.
+
+27:03.600 --> 27:04.600
+And,
+
+27:04.600 --> 27:05.600
+here,
+
+27:05.600 --> 27:06.600
+we have used link.
+
+27:06.600 --> 27:07.600
+What is link?
+
+27:07.600 --> 27:08.600
+We understand this.
+
+27:08.600 --> 27:09.600
+You remember,
+
+27:09.600 --> 27:10.600
+we used routes in app dot jsx.
+
+27:10.600 --> 27:11.600
+Okay.
+
+27:11.600 --> 27:12.600
+Routes.
+
+27:12.600 --> 27:13.600
+Now,
+
+27:13.600 --> 27:14.600
+the routes,
+
+27:14.600 --> 27:15.600
+we use these routes,
+
+27:15.600 --> 27:17.600
+to decide the path.
+
+27:17.600 --> 27:18.600
+And,
+
+27:18.600 --> 27:19.600
+here,
+
+27:19.600 --> 27:20.600
+we have used link in header.
+
+27:20.600 --> 27:21.600
+This link,
+
+27:21.600 --> 27:22.600
+takes you to the same path,
+
+27:22.600 --> 27:24.600
+which is decided in our routes.
+
+27:24.600 --> 27:25.600
+But,
+
+27:25.600 --> 27:27.600
+without reloading the page.
+
+27:27.600 --> 27:28.600
+Means,
+
+27:28.600 --> 27:29.600
+here,
+
+27:29.600 --> 27:30.600
+in link,
+
+27:30.600 --> 27:31.600
+as we have put,
+
+27:31.600 --> 27:32.600
+id slash,
+
+27:32.600 --> 27:33.600
+forward slash.
+
+27:33.600 --> 27:34.600
+This means,
+
+27:34.600 --> 27:35.600
+we are talking about home page.
+
+27:35.600 --> 27:36.600
+Id,
+
+27:36.600 --> 27:37.600
+suppose,
+
+27:37.600 --> 27:38.600
+someone from techy recon,
+
+27:38.600 --> 27:39.600
+localhost slash techy recon slash.
+
+27:39.600 --> 27:40.600
+Means,
+
+27:40.600 --> 27:41.600
+as soon as you click in this,
+
+27:41.600 --> 27:42.600
+it will go to home.
+
+27:42.600 --> 27:43.600
+Then,
+
+27:43.600 --> 27:44.600
+this id,
+
+27:44.600 --> 27:45.600
+will go to techy recon slash contact.
+
+27:45.600 --> 27:46.600
+techy recon slash about.
+
+27:46.600 --> 27:47.600
+So,
+
+27:47.600 --> 27:48.600
+here,
+
+27:48.600 --> 27:49.600
+we have written id.
+
+27:49.600 --> 27:50.600
+And,
+
+27:50.600 --> 27:51.600
+here,
+
+27:51.600 --> 27:52.600
+using use params,
+
+27:52.600 --> 27:53.600
+we have taken the id.
+
+27:53.600 --> 27:54.600
+And,
+
+27:54.600 --> 27:55.600
+in link tag,
+
+27:55.600 --> 27:56.600
+we use some steps.
+
+27:56.600 --> 27:57.600
+We put 2.
+
+27:57.600 --> 27:58.600
+And,
+
+27:58.600 --> 27:59.600
+after that,
+
+27:59.600 --> 28:00.600
+we write in it,
+
+28:00.600 --> 28:01.600
+whatever the url is.
+
+28:01.600 --> 28:02.600
+Basically.
+
+28:02.600 --> 28:03.600
+And,
+
+28:03.600 --> 28:04.600
+here,
+
+28:04.600 --> 28:05.600
+we have put the profile picture.
+
+28:05.600 --> 28:06.600
+Here it is.
+
+28:06.600 --> 28:07.600
+We have put the image.
+
+28:07.600 --> 28:08.600
+Basically,
+
+28:08.600 --> 28:09.600
+its,
+
+28:09.600 --> 28:10.600
+here it is.
+
+28:10.600 --> 28:11.600
+So,
+
+28:11.600 --> 28:12.600
+let me show you once,
+
+28:12.600 --> 28:13.600
+how it is shown.
+
+28:15.600 --> 28:16.600
+So,
+
+28:16.600 --> 28:17.600
+we will come here.
+
+28:17.600 --> 28:18.600
+And,
+
+28:18.600 --> 28:19.600
+before that,
+
+28:19.600 --> 28:20.600
+we have to import the header once.
+
+28:20.600 --> 28:21.600
+So,
+
+28:21.600 --> 28:22.600
+we will go to home.
+
+28:22.600 --> 28:23.600
+We will go to home.
+
+28:23.600 --> 28:24.600
+And,
+
+28:24.600 --> 28:25.600
+here,
+
+28:25.600 --> 28:26.600
+first,
+
+28:26.600 --> 28:27.600
+we will import the header.
+
+28:27.600 --> 28:28.600
+Header.
+
+28:28.600 --> 28:29.600
+Ok.
+
+28:29.600 --> 28:30.600
+So,
+
+28:30.600 --> 28:31.600
+we have imported the header.
+
+28:31.600 --> 28:32.600
+After that,
+
+28:32.600 --> 28:33.600
+we will,
+
+28:33.600 --> 28:34.600
+in return,
+
+28:34.600 --> 28:35.600
+here,
+
+28:35.600 --> 28:36.600
+first of all,
+
+28:36.600 --> 28:37.600
+we will put,
+
+28:37.600 --> 28:38.600
+a header.
+
+28:38.600 --> 28:39.600
+So,
+
+28:39.600 --> 28:40.600
+we will put,
+
+28:40.600 --> 28:41.600
+header.
+
+28:41.600 --> 28:42.600
+And,
+
+28:42.600 --> 28:43.600
+after that,
+
+28:43.600 --> 28:44.600
+this is basically,
+
+28:44.600 --> 28:45.600
+a component.
+
+28:45.600 --> 28:46.600
+So,
+
+28:46.600 --> 28:47.600
+all this,
+
+28:47.600 --> 28:48.600
+is fine.
+
+28:48.600 --> 28:49.600
+Now,
+
+28:49.600 --> 28:50.600
+we go to our page.
+
+28:50.600 --> 28:51.600
+And,
+
+28:51.600 --> 28:52.600
+now,
+
+28:52.600 --> 28:53.600
+you will see,
+
+28:53.600 --> 28:54.600
+you can see the header.
+
+28:54.600 --> 28:55.600
+You can see the header.
+
+28:55.600 --> 28:56.600
+So,
+
+28:56.600 --> 28:57.600
+this header,
+
+28:57.600 --> 28:58.600
+is of this type.
+
+28:58.600 --> 28:59.600
+Now,
+
+28:59.600 --> 29:00.600
+as you click on home,
+
+29:00.600 --> 29:01.600
+where will you go?
+
+29:01.600 --> 29:02.600
+You will use the link tag.
+
+29:02.600 --> 29:03.600
+And,
+
+29:03.600 --> 29:04.600
+where will you go?
+
+29:04.600 --> 29:05.600
+In the tag icon,
+
+29:05.600 --> 29:06.600
+in the forward slash.
+
+29:06.600 --> 29:07.600
+So,
+
+29:07.600 --> 29:08.600
+you will be on this page.
+
+29:08.600 --> 29:09.600
+We used the tag icon,
+
+29:09.600 --> 29:10.600
+that is why.
+
+29:10.600 --> 29:11.600
+And,
+
+29:11.600 --> 29:12.600
+if you click on contact,
+
+29:12.600 --> 29:13.600
+you will go to the tag icon slash,
+
+29:13.600 --> 29:14.600
+contact.
+
+29:14.600 --> 29:15.600
+Okay?
+
+29:15.600 --> 29:16.600
+And,
+
+29:16.600 --> 29:17.600
+if you click on about,
+
+29:17.600 --> 29:18.600
+you will go to
+
+29:18.600 --> 29:19.600
+tag icon slash,
+
+29:19.600 --> 29:20.600
+about.
+
+29:20.600 --> 29:21.600
+Same thing,
+
+29:21.600 --> 29:22.600
+if this id,
+
+29:22.600 --> 29:23.600
+was something else,
+
+29:23.600 --> 29:24.600
+for example,
+
+29:24.600 --> 29:25.600
+was by hitting,
+
+29:25.600 --> 29:26.600
+which doesn't exist,
+
+29:26.600 --> 29:27.600
+then,
+
+29:27.600 --> 29:28.600
+you will directly come to this page.
+
+29:28.600 --> 29:29.600
+But,
+
+29:29.600 --> 29:30.600
+if the id exists,
+
+29:30.600 --> 29:31.600
+then,
+
+29:31.600 --> 29:32.600
+you will see this page,
+
+29:32.600 --> 29:33.600
+and you will also see the header footer.
+
+29:33.600 --> 29:34.600
+Okay?
+
+29:34.600 --> 29:35.600
+You must have understood,
+
+29:35.600 --> 29:36.600
+what we have done here,
+
+29:36.600 --> 29:37.600
+basically.
+
+29:37.600 --> 29:38.600
+Now,
+
+29:38.600 --> 29:39.600
+you can't go directly to
+
+29:39.600 --> 29:40.600
+slash home.
+
+29:40.600 --> 29:41.600
+If you had put it there,
+
+29:41.600 --> 29:42.600
+directly slash home.
+
+29:42.600 --> 29:43.600
+What is slash home?
+
+29:43.600 --> 29:44.600
+It doesn't exist, right?
+
+29:44.600 --> 29:45.600
+But,
+
+29:45.600 --> 29:46.600
+if you had put id slash home,
+
+29:46.600 --> 29:47.600
+sorry,
+
+29:47.600 --> 29:48.600
+if you had put id slash about,
+
+29:48.600 --> 29:49.600
+then,
+
+29:49.600 --> 29:50.600
+it would have existed.
+
+29:50.600 --> 29:51.600
+If you had put id and
+
+29:51.600 --> 29:52.600
+directly slash about,
+
+29:52.600 --> 29:53.600
+then,
+
+29:53.600 --> 29:54.600
+it wouldn't have existed.
+
+29:54.600 --> 29:55.600
+It doesn't exist.
+
+29:55.600 --> 29:56.600
+So,
+
+29:56.600 --> 29:57.600
+the header we have,
+
+29:57.600 --> 29:58.600
+that is why,
+
+29:58.600 --> 29:59.600
+we have shown it today.
+
+29:59.600 --> 30:00.600
+Now,
+
+30:00.600 --> 30:01.600
+after this,
+
+30:01.600 --> 30:02.600
+our header is done.
+
+30:02.600 --> 30:03.600
+Now,
+
+30:03.600 --> 30:04.600
+we will go back.
+
+30:04.600 --> 30:05.600
+And,
+
+30:05.600 --> 30:06.600
+after this,
+
+30:06.600 --> 30:07.600
+our other thing,
+
+30:07.600 --> 30:09.600
+its code is also given to you.
+
+30:09.600 --> 30:10.600
+So,
+
+30:10.600 --> 30:11.600
+now,
+
+30:11.600 --> 30:12.600
+if you put it directly here,
+
+30:12.600 --> 30:13.600
+then,
+
+30:13.600 --> 30:14.600
+there is nothing in it.
+
+30:14.600 --> 30:15.600
+So,
+
+30:15.600 --> 30:16.600
+our header and footer are made.
+
+30:16.600 --> 30:17.600
+And,
+
+30:17.600 --> 30:18.600
+after this,
+
+30:18.600 --> 30:19.600
+we come back to our home.
+
+30:19.600 --> 30:20.600
+After coming to home,
+
+30:20.600 --> 30:21.600
+here,
+
+30:21.600 --> 30:22.600
+our main logic,
+
+30:22.600 --> 30:23.600
+we have made it.
+
+30:23.600 --> 30:24.600
+After this,
+
+30:24.600 --> 30:25.600
+the main thing that comes,
+
+30:25.600 --> 30:26.600
+that is something,
+
+30:26.600 --> 30:27.600
+whatever your style is,
+
+30:27.600 --> 30:28.600
+whatever your elements are,
+
+30:28.600 --> 30:29.600
+basically.
+
+30:29.600 --> 30:30.600
+So,
+
+30:30.600 --> 30:31.600
+its code is also given to you,
+
+30:31.600 --> 30:32.600
+that,
+
+30:32.600 --> 30:33.600
+whatever style it is,
+
+30:33.600 --> 30:34.600
+and whatever our page looks like,
+
+30:34.600 --> 30:35.600
+that,
+
+30:35.600 --> 30:36.600
+that,
+
+30:36.600 --> 30:38.600
+those are only styles.
+
+30:38.600 --> 30:39.600
+So,
+
+30:39.600 --> 30:40.600
+styles,
+
+30:40.600 --> 30:41.600
+basically,
+
+30:41.600 --> 30:42.600
+if you understand,
+
+30:42.600 --> 30:43.600
+I will explain it to you,
+
+30:43.600 --> 30:44.600
+the work that is being done here.
+
+30:44.600 --> 30:45.600
+And,
+
+30:45.600 --> 30:46.600
+that is an easy thing,
+
+30:46.600 --> 30:47.600
+making styles.
+
+30:47.600 --> 30:48.600
+Just,
+
+30:48.600 --> 30:49.600
+the main thing that was left,
+
+30:49.600 --> 30:50.600
+that was,
+
+30:50.600 --> 30:51.600
+how to get data from Sanity.
+
+30:51.600 --> 30:52.600
+And,
+
+30:52.600 --> 30:53.600
+how to compare the top URL ID,
+
+30:53.600 --> 30:54.600
+and,
+
+30:54.600 --> 30:55.600
+how to know,
+
+30:55.600 --> 30:56.600
+that how the user exists.
+
+30:56.600 --> 30:57.600
+And,
+
+30:57.600 --> 30:58.600
+if the user exists,
+
+30:58.600 --> 30:59.600
+then,
+
+30:59.600 --> 31:00.600
+we have to show the data of that.
+
+31:00.600 --> 31:01.600
+So,
+
+31:01.600 --> 31:02.600
+we did it here.
+
+31:02.600 --> 31:03.600
+What we did,
+
+31:03.600 --> 31:04.600
+see this.
+
+31:04.600 --> 31:05.600
+Whatever the design is,
+
+31:05.600 --> 31:14.600
+Now we have created a header and we have started making styles under it.
+
+31:14.600 --> 31:19.600
+First thing is image. So the image of the user will be visible in the first page.
+
+31:19.600 --> 31:22.600
+How will the image be visible? It will be visible from here.
+
+31:22.600 --> 31:26.600
+UserData.length 0. What is userData? It is our state.
+
+31:26.600 --> 31:31.600
+If it exists, its length is greater than 0, it means there is some data in userData.
+
+31:31.600 --> 31:39.600
+And if there is data, then the element with the 0th index in the array,
+
+31:39.600 --> 31:45.600
+i.e. the first element that I showed you, bring the profile picture that exists in it.
+
+31:45.600 --> 31:52.600
+And if there is no profile picture, then directly put this thing here.
+
+31:52.600 --> 31:56.600
+What is it? tiniurl.com and instead of this, we put our source here.
+
+31:56.600 --> 32:00.600
+Which source? The image we have put in assets.
+
+32:00.600 --> 32:01.600
+Which source? The image we have put in assets.
+
+32:01.600 --> 32:04.600
+And the initial image? profile.jpg. We put this.
+
+32:04.600 --> 32:10.600
+If no profile picture exists, then it will show directly profile.jpg.
+
+32:10.600 --> 32:20.600
+components slash assets slash profile dot jpg. So this is it.
+
+32:20.600 --> 32:23.600
+So you know where we got this profile picture from?
+
+32:23.600 --> 32:26.600
+This is the user data set we had set here.
+
+32:26.600 --> 32:28.600
+And we got the profile picture from this user data.
+
+32:28.600 --> 32:30.600
+If it exists, then we will show the profile data.
+
+32:30.600 --> 32:35.600
+Otherwise, we will show the profile.jpg directly.
+
+32:35.600 --> 32:39.600
+Apart from this, we will keep the first name and last name of the user here.
+
+32:39.600 --> 32:42.600
+So what we will do here is, we used the h1 tag.
+
+32:42.600 --> 32:44.600
+We used the h1 tag here.
+
+32:44.600 --> 32:47.600
+And if the first name exists in the user data,
+
+32:47.600 --> 32:50.600
+till the time the data is being loaded, for example, till the time there is no data,
+
+32:50.600 --> 32:52.600
+it will write loading there.
+
+32:52.600 --> 32:55.600
+Till the time there is no data, it will write loading there.
+
+32:55.600 --> 32:59.600
+And as soon as the data is there, if it comes,
+
+32:59.600 --> 33:01.600
+then we will write first name plus last name.
+
+33:01.600 --> 33:03.600
+That is, its name will be shown.
+
+33:03.600 --> 33:07.600
+Now we have to set the loading here too.
+
+33:07.600 --> 33:09.600
+We have used loading here.
+
+33:09.600 --> 33:12.600
+We have used the loading state, but where will we define it?
+
+33:12.600 --> 33:14.600
+Let's define it here.
+
+33:14.600 --> 33:21.600
+const loading and set loading.
+
+33:21.600 --> 33:25.600
+By default, we set the true.
+
+33:25.600 --> 33:27.600
+By default, the loading will remain true.
+
+33:29.600 --> 33:31.600
+And when will we set it false?
+
+33:31.600 --> 33:34.600
+That is, when the data comes to the user in the beginning,
+
+33:34.600 --> 33:36.600
+then the page will be loading for it.
+
+33:36.600 --> 33:38.600
+Because nothing has been fetched yet.
+
+33:38.600 --> 33:41.600
+And as soon as it is fetched, we will set loading false.
+
+33:41.600 --> 33:45.600
+Loading will be set false and the data will be shown to the user.
+
+33:45.600 --> 33:47.600
+Loading is also done here.
+
+33:47.600 --> 33:52.600
+Here we have shown the user's first name plus last name here.
+
+33:52.600 --> 33:54.600
+After this, the user's role will come here.
+
+33:54.600 --> 33:56.600
+The user will put his role here.
+
+33:56.600 --> 33:58.600
+After this, we have made a card here.
+
+33:58.600 --> 34:00.600
+We have shown you the card.
+
+34:00.600 --> 34:03.600
+And after this, we have put a button below.
+
+34:03.600 --> 34:05.600
+Sorry, inside the card.
+
+34:05.600 --> 34:08.600
+Basically, the card is attached to the link tag.
+
+34:08.600 --> 34:09.600
+There are two cards in it.
+
+34:09.600 --> 34:12.600
+By doing contact me and about me.
+
+34:12.600 --> 34:15.600
+As soon as you press the contact me card, you will go to contact.
+
+34:15.600 --> 34:16.600
+ID slash contact.
+
+34:16.600 --> 34:18.600
+We are redirecting the user in this way.
+
+34:18.600 --> 34:20.600
+Because we need our ID.
+
+34:20.600 --> 34:22.600
+To put the user in the contact or about page.
+
+34:22.600 --> 34:24.600
+All its things are here.
+
+34:24.600 --> 34:27.600
+And basically, everything else is normal.
+
+34:27.600 --> 34:29.600
+Let's go to our web page.
+
+34:29.600 --> 34:32.600
+And let's see if there is any error.
+
+34:32.600 --> 34:33.600
+Ok.
+
+34:33.600 --> 34:34.600
+So, link not defined.
+
+34:34.600 --> 34:35.600
+Ok.
+
+34:35.600 --> 34:36.600
+Fine.
+
+34:36.600 --> 34:38.600
+So, we basically have to import the link.
+
+34:38.600 --> 34:40.600
+So, we will go back.
+
+34:40.600 --> 34:42.600
+And here is our link.
+
+34:42.600 --> 34:44.600
+We will select it.
+
+34:44.600 --> 34:45.600
+Control space and hit enter.
+
+34:45.600 --> 34:47.600
+The link has been imported.
+
+34:47.600 --> 34:50.600
+In the header also, we have probably imported the link.
+
+34:50.600 --> 34:51.600
+Ok.
+
+34:51.600 --> 34:52.600
+Let's go back.
+
+34:52.600 --> 34:54.600
+There is still some error.
+
+34:54.600 --> 34:56.600
+And now the footer is not defined.
+
+34:56.600 --> 34:58.600
+So, we have to import the footer also.
+
+34:58.600 --> 35:01.600
+So, we basically import the footer.
+
+35:01.600 --> 35:03.600
+So, where will we go?
+
+35:03.600 --> 35:05.600
+Just below.
+
+35:05.600 --> 35:07.600
+And the footer which we have kept here.
+
+35:07.600 --> 35:08.600
+We will do this.
+
+35:08.600 --> 35:09.600
+Control space and hit enter.
+
+35:09.600 --> 35:11.600
+The footer has also been imported.
+
+35:11.600 --> 35:13.600
+And finally, you must be able to see.
+
+35:13.600 --> 35:16.600
+That we can see here.
+
+35:16.600 --> 35:19.600
+We can see our entire web page here.
+
+35:19.600 --> 35:20.600
+Right.
+
+35:20.600 --> 35:21.600
+Here the name of the user has come.
+
+35:21.600 --> 35:22.600
+Hello world.
+
+35:22.600 --> 35:25.600
+Because in our form, we had put the name hello world.
+
+35:25.600 --> 35:27.600
+We had put the role as web dev.
+
+35:27.600 --> 35:28.600
+Ok.
+
+35:28.600 --> 35:30.600
+If we press about me, contact me, then the link tag will be used.
+
+35:30.600 --> 35:33.600
+In the link, it will go to slash id slash about.
+
+35:33.600 --> 35:35.600
+It will go to slash id slash contact.
+
+35:35.600 --> 35:36.600
+Ok.
+
+35:36.600 --> 35:37.600
+Now, as soon as we click, see.
+
+35:37.600 --> 35:38.600
+We have come to the contact page.
+
+35:38.600 --> 35:41.600
+As soon as we click, we have come to the about page.
+
+35:41.600 --> 35:42.600
+Now, see here.
+
+35:42.600 --> 35:43.600
+Loading has come in the middle.
+
+35:43.600 --> 35:44.600
+What does loading tell?
+
+35:44.600 --> 35:46.600
+That the data is being loaded.
+
+35:46.600 --> 35:48.600
+Fetch is not done yet.
+
+35:48.600 --> 35:49.600
+Now, what do we do once?
+
+35:49.600 --> 35:50.600
+Press in portfolio builder.
+
+35:50.600 --> 35:52.600
+So, we will come to our form page.
+
+35:52.600 --> 35:54.600
+Now, here we choose the file.
+
+35:54.600 --> 35:57.600
+Now, we put our data here and see.
+
+35:57.600 --> 35:59.600
+We went here in downloads.
+
+35:59.600 --> 36:04.600
+And we chose some image from here.
+
+36:04.600 --> 36:06.600
+For example, we chose this image.
+
+36:06.600 --> 36:07.600
+We put the name.
+
+36:07.600 --> 36:12.600
+Techie Recon.
+
+36:12.600 --> 36:18.600
+I am a professional.
+
+36:18.600 --> 36:20.600
+You are writing on your own.
+
+36:20.600 --> 36:23.600
+Web developer.
+
+36:23.600 --> 36:24.600
+Having.
+
+36:24.600 --> 36:26.600
+Knowledge.
+
+36:26.600 --> 36:29.600
+Or you can write deep knowledge kind of.
+
+36:29.600 --> 36:31.600
+Knowledge of.
+
+36:31.600 --> 36:33.600
+React.
+
+36:33.600 --> 36:35.600
+And monstack.
+
+36:35.600 --> 36:37.600
+And you directly write monstack.
+
+36:37.600 --> 36:39.600
+Do something like this.
+
+36:39.600 --> 36:40.600
+And blah blah.
+
+36:40.600 --> 36:42.600
+You can write whatever else you want to write.
+
+36:42.600 --> 36:44.600
+Here I was just doing testing.
+
+36:44.600 --> 36:45.600
+Experience.
+
+36:45.600 --> 36:48.600
+I have an experience.
+
+36:48.600 --> 36:51.600
+Of.
+
+36:51.600 --> 36:53.600
+10 years.
+
+36:53.600 --> 36:55.600
+Working with.
+
+36:55.600 --> 36:58.600
+Big MNCs.
+
+36:58.600 --> 37:00.600
+Okay.
+
+37:00.600 --> 37:02.600
+Now, you can write your role.
+
+37:02.600 --> 37:04.600
+For example, web developer.
+
+37:04.600 --> 37:05.600
+And you can write a pipe symbol.
+
+37:05.600 --> 37:06.600
+Network engineer.
+
+37:06.600 --> 37:07.600
+You can write a role like this.
+
+37:07.600 --> 37:09.600
+Then you can put any other skill.
+
+37:09.600 --> 37:10.600
+For example.
+
+37:10.600 --> 37:11.600
+Whatever is written here.
+
+37:11.600 --> 37:13.600
+I will replicate the same thing.
+
+37:13.600 --> 37:14.600
+Team lead.
+
+37:14.600 --> 37:15.600
+Okay.
+
+37:15.600 --> 37:17.600
+And after this.
+
+37:17.600 --> 37:18.600
+You can put anyone.
+
+37:18.600 --> 37:20.600
+Project.
+
+37:20.600 --> 37:21.600
+Management.
+
+37:21.600 --> 37:22.600
+You have some things.
+
+37:22.600 --> 37:23.600
+Fill out.
+
+37:23.600 --> 37:24.600
+You will do like submit.
+
+37:24.600 --> 37:26.600
+So, document is already created.
+
+37:26.600 --> 37:27.600
+Okay.
+
+37:27.600 --> 37:28.600
+I will show you.
+
+37:28.600 --> 37:29.600
+Localhost.
+
+37:29.600 --> 37:30.600
+333.
+
+37:30.600 --> 37:31.600
+This is our entirety.
+
+37:31.600 --> 37:32.600
+We have opened.
+
+37:32.600 --> 37:33.600
+And the document.
+
+37:33.600 --> 37:35.600
+It is already created in the profile.
+
+37:35.600 --> 37:36.600
+In what name?
+
+37:36.600 --> 37:39.600
+The document of hacky recon is already created.
+
+37:39.600 --> 37:40.600
+And it has that old information.
+
+37:40.600 --> 37:41.600
+Hello world.
+
+37:41.600 --> 37:42.600
+All these things.
+
+37:42.600 --> 37:43.600
+123.
+
+37:43.600 --> 37:44.600
+Web dev.
+
+37:44.600 --> 37:45.600
+But as soon as I will save it here.
+
+37:45.600 --> 37:46.600
+Then it will change.
+
+37:46.600 --> 37:47.600
+This information.
+
+37:47.600 --> 37:48.600
+Because which method we used.
+
+37:48.600 --> 37:49.600
+Create and replace.
+
+37:49.600 --> 37:50.600
+If it already exists.
+
+37:50.600 --> 37:51.600
+Then replace it.
+
+37:51.600 --> 37:52.600
+If it doesn't.
+
+37:52.600 --> 37:53.600
+Then create it.
+
+37:53.600 --> 37:54.600
+As soon as you submit it.
+
+37:54.600 --> 37:55.600
+As soon as you submit it.
+
+37:55.600 --> 37:56.600
+It is loading.
+
+37:56.600 --> 37:57.600
+As soon as it is loaded.
+
+37:57.600 --> 37:58.600
+Here you are submitted.
+
+37:58.600 --> 37:59.600
+And this visit your portfolio.
+
+37:59.600 --> 38:00.600
+Has come here.
+
+38:00.600 --> 38:01.600
+Here is the URL.
+
+38:01.600 --> 38:02.600
+Here is the link.
+
+38:02.600 --> 38:03.600
+As soon as you click.
+
+38:03.600 --> 38:04.600
+Then you will come to your portfolio.
+
+38:04.600 --> 38:05.600
+Understood.
+
+38:05.600 --> 38:06.600
+What was this?
+
+38:06.600 --> 38:07.600
+How easy was it?
+
+38:07.600 --> 38:08.600
+What did we do?
+
+38:08.600 --> 38:09.600
+Visit your portfolio.
+
+38:09.600 --> 38:10.600
+So we know.
+
+38:10.600 --> 38:11.600
+How did we put it?
+
+38:11.600 --> 38:12.600
+Slash.
+
+38:12.600 --> 38:13.600
+Whatever is the ID of the user.
+
+38:13.600 --> 38:14.600
+Basically.
+
+38:14.600 --> 38:15.600
+Gmail ID.
+
+38:15.600 --> 38:16.600
+Its first part was picked up.
+
+38:16.600 --> 38:17.600
+From local storage.
+
+38:17.600 --> 38:18.600
+And in that only.
+
+38:18.600 --> 38:19.600
+The user will be redirected.
+
+38:19.600 --> 38:20.600
+So.
+
+38:20.600 --> 38:21.600
+The first part of Gmail ID.
+
+38:21.600 --> 38:22.600
+Is Techie Recon.
+
+38:22.600 --> 38:23.600
+And the user is redirected here.
+
+38:23.600 --> 38:24.600
+We have checked on the home page.
+
+38:24.600 --> 38:25.600
+That Techie Recon.
+
+38:25.600 --> 38:26.600
+Like Email ID.
+
+38:26.600 --> 38:27.600
+Exists.
+
+38:27.600 --> 38:28.600
+If it exists.
+
+38:28.600 --> 38:29.600
+Then show its data.
+
+38:29.600 --> 38:30.600
+And the data is shown.
+
+38:30.600 --> 38:31.600
+Techie Recon.
+
+38:31.600 --> 38:32.600
+Web Developer.
+
+38:32.600 --> 38:33.600
+Network Engineer.
+
+38:33.600 --> 38:34.600
+And the photo is also shown.
+
+38:34.600 --> 38:35.600
+You must be able to understand now.
+
+38:35.600 --> 38:36.600
+So this is our home page.
+
+38:36.600 --> 38:37.600
+Which is.
+
+38:37.600 --> 38:38.600
+Completed.
+

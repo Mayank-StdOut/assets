@@ -1,0 +1,599 @@
+WEBVTT
+
+00:06.000 --> 00:29.980
+So now let's start making our about and contact page, okay, so now the logic that we put in the home page is exactly the same logic in the about page and the same logic is in the contact page, we will use the use effect and compare the id with our gmail which exists in the profile and if it happens then only we will show the data, okay, so it is the same thing,
+
+00:30.000 --> 00:55.680
+and the designs are also basically simple designs, so all these things are provided to you, right, so you understood the main logic by implementing it in the home page, now you have to replicate the same logic, just the same logic in the about and contact page, okay, so we have given you the code, just you have to bring it here and here you have to understand it right now, that what we have done basically, so see what we have done here,
+
+00:56.080 --> 00:58.980
+we have done here, first of all, our,
+
+00:59.320 --> 00:59.820
+whatever,
+
+01:00.000 --> 01:28.900
+important things have been imported, header, footer, etc., everything, we have taken the id, we have taken the user data, which we were taking earlier in the home page and the same is exactly the same logic, which we had put in the home page, we have fetched here, all the data of the user email, which is the id at the rate gmail dot com, and we have set it in the user data, if the user gets it, then it is good, we set it in the user data, otherwise we redirect it to such a place where it will be 404 page,
+
+01:28.900 --> 01:31.080
+if everything will show got it after
+
+01:31.360 --> 01:32.160
+this,
+
+01:32.160 --> 01:33.960
+after this we have put a
+
+01:34.900 --> 01:36.500
+simple, our basically, our
+
+01:36.600 --> 01:42.840
+design, what is
+
+01:42.840 --> 01:45.600
+the first thingpack as we have had the user data here,
+
+01:45.600 --> 01:53.100
+if it exists, then we will render our div with the help of this Tigers 것을
+
+01:53.440 --> 01:56.200
+, this element or this element, which we will enter for
+
+01:56.200 --> 01:56.820
+a minute,
+
+01:57.300 --> 01:58.200
+this is rendering,
+
+01:58.900 --> 02:01.900
+Where is it? I think, I think.
+
+02:01.900 --> 02:02.900
+It is here.
+
+02:02.900 --> 02:04.900
+Okay, we will render this div.
+
+02:04.900 --> 02:07.900
+Else, we will be showing loading there.
+
+02:07.900 --> 02:10.900
+So, I will have to check for a minute where it is.
+
+02:10.900 --> 02:12.900
+Okay, it is here.
+
+02:12.900 --> 02:13.900
+See this.
+
+02:13.900 --> 02:15.900
+User data.length 0.
+
+02:15.900 --> 02:17.900
+User data.length 0.
+
+02:17.900 --> 02:19.900
+So, we will show this div to it.
+
+02:19.900 --> 02:21.900
+Which div? This div.
+
+02:21.900 --> 02:26.900
+We will show this div in which the user will see the image, first name and last name.
+
+02:26.900 --> 02:27.900
+Otherwise, he will see loading.
+
+02:27.900 --> 02:32.900
+So, if the user does not exist, then he will write loading.
+
+02:32.900 --> 02:36.900
+And if it exists, then the image will be shown as we did in the home page.
+
+02:36.900 --> 02:38.900
+Using user data 0.profilePicture.
+
+02:38.900 --> 02:40.900
+Otherwise, what will happen to the user here?
+
+02:40.900 --> 02:43.900
+First name, which exists only in the user data.
+
+02:43.900 --> 02:46.900
+Plus, space, last name.
+
+02:46.900 --> 02:48.900
+This thing will show to the user.
+
+02:48.900 --> 02:51.900
+And this thing will come by saying hello, I am.
+
+02:51.900 --> 02:52.900
+After this, the same thing is here.
+
+02:52.900 --> 02:54.900
+The user will see about here.
+
+02:54.900 --> 02:57.900
+And if about does not exist, then noBioAvailability.
+
+02:57.900 --> 03:00.900
+Now, the last thing to understand is this.
+
+03:00.900 --> 03:01.900
+What have we done here?
+
+03:01.900 --> 03:03.900
+Here we will see the user's skills.
+
+03:03.900 --> 03:05.900
+And we will see using this thing.
+
+03:05.900 --> 03:06.900
+What have we done here?
+
+03:06.900 --> 03:09.900
+Here we have used the map.
+
+03:09.900 --> 03:11.900
+And whatever our object is.
+
+03:11.900 --> 03:12.900
+Let me show you this once.
+
+03:12.900 --> 03:14.900
+We go to the web page.
+
+03:14.900 --> 03:19.900
+And basically, we print our object array in the home page first.
+
+03:19.900 --> 03:21.900
+Either we go directly to about.
+
+03:21.900 --> 03:22.900
+We went to about.
+
+03:22.900 --> 03:26.900
+And you will see here that something like this is running on our about page.
+
+03:26.900 --> 03:27.900
+What happened?
+
+03:27.900 --> 03:30.900
+Until the data was not there, it came by loading there.
+
+03:30.900 --> 03:33.900
+And as soon as the data came, it showed the whole data here.
+
+03:33.900 --> 03:35.900
+Here the skills are shown.
+
+03:35.900 --> 03:38.900
+After the skills, your work experience is being shown here.
+
+03:38.900 --> 03:39.900
+Right?
+
+03:39.900 --> 03:40.900
+You have not done anything.
+
+03:40.900 --> 03:45.900
+You have just designed and just displayed the thing that we have extracted from the sanity.
+
+03:45.900 --> 03:46.900
+It is very simple.
+
+03:46.900 --> 03:48.900
+And here your name is Tecidicon.
+
+03:48.900 --> 03:49.900
+This is coming.
+
+03:49.900 --> 03:53.900
+And here you are getting whatever is about.
+
+03:53.900 --> 03:54.900
+Okay.
+
+03:54.900 --> 03:55.900
+Now, let me show you the object once.
+
+03:55.900 --> 03:57.900
+So, let's print the object here.
+
+03:57.900 --> 03:58.900
+Quickly.
+
+03:58.900 --> 04:00.900
+You must be seeing this web page.
+
+04:00.900 --> 04:03.900
+Now, let's print the object here.
+
+04:03.900 --> 04:05.900
+So, let's go here.
+
+04:05.900 --> 04:08.900
+And let's do console.log here.
+
+04:08.900 --> 04:10.900
+Dot log.
+
+04:10.900 --> 04:12.900
+User data.
+
+04:12.900 --> 04:16.900
+Let's do console.log here for user data.
+
+04:16.900 --> 04:18.900
+After that, let's come here again.
+
+04:18.900 --> 04:22.900
+And here we have once.
+
+04:22.900 --> 04:24.900
+User data has come to us.
+
+04:24.900 --> 04:26.900
+Now, as soon as you go to user data, you will see here.
+
+04:26.900 --> 04:30.900
+Skill 1, Skill 2, Skill 3, Skill 4.
+
+04:30.900 --> 04:31.900
+So, you must be seeing these skills here.
+
+04:31.900 --> 04:32.900
+These are the skills.
+
+04:32.900 --> 04:34.900
+You must be seeing these skills.
+
+04:34.900 --> 04:36.900
+So, what have we done there?
+
+04:36.900 --> 04:41.900
+That basically, we have rendered the skills at this place.
+
+04:41.900 --> 04:42.900
+At the bottom.
+
+04:42.900 --> 04:43.900
+We have not done anything.
+
+04:43.900 --> 04:44.900
+We have used the map function.
+
+04:44.900 --> 04:46.900
+And we have filtered it out.
+
+04:46.900 --> 04:49.900
+First, we have extracted all the keys of that object.
+
+04:49.900 --> 04:51.900
+We have extracted all the keys of the object of user data.
+
+04:51.900 --> 04:53.900
+That is, user profile picture, user email, user name.
+
+04:53.900 --> 04:55.900
+First name, last name, skill 1, skill 2.
+
+04:55.900 --> 04:57.900
+All the keys have come from this.
+
+04:57.900 --> 05:00.900
+Now, among them, we have filtered out those keys.
+
+05:00.900 --> 05:02.900
+Which start by doing skills.
+
+05:02.900 --> 05:05.900
+So, we saw skill 1, skill 2, skill 3, skill 4.
+
+05:05.900 --> 05:07.900
+So, we have filtered this out.
+
+05:07.900 --> 05:10.900
+And we have run the map function on them.
+
+05:10.900 --> 05:12.900
+We have run the map function on them.
+
+05:12.900 --> 05:15.900
+And we have rendered them one by one.
+
+05:15.900 --> 05:16.900
+Something like this.
+
+05:16.900 --> 05:19.900
+We have rendered those keys from the user data.
+
+05:19.900 --> 05:21.900
+Which we have mapped.
+
+05:21.900 --> 05:22.900
+So, it is showing here.
+
+05:22.900 --> 05:24.900
+Basically, it was simple.
+
+05:24.900 --> 05:26.900
+Now, the same thing is here.
+
+05:26.900 --> 05:29.900
+We will do the same thing on the about contact page too.
+
+05:29.900 --> 05:31.900
+We will go to contact.
+
+05:31.900 --> 05:32.900
+It also has a code.
+
+05:32.900 --> 05:33.900
+We will paste it too.
+
+05:33.900 --> 05:36.900
+And here, the same thing is happening on the contact page too.
+
+05:36.900 --> 05:38.900
+That the user will be checked first.
+
+05:38.900 --> 05:41.900
+After checking, the user's info will be shown.
+
+05:41.900 --> 05:43.900
+And here, I will show you the contact page.
+
+05:43.900 --> 05:44.900
+How is it looking?
+
+05:44.900 --> 05:46.900
+Now, we will remove it.
+
+05:46.900 --> 05:48.900
+And here, as soon as we.
+
+05:48.900 --> 05:49.900
+Now, notice one more thing.
+
+05:49.900 --> 05:51.900
+As soon as we click on navbar in home.
+
+05:51.900 --> 05:53.900
+In home, the page has not been reloaded.
+
+05:53.900 --> 05:55.900
+You can see that the page is not being reloaded.
+
+05:55.900 --> 05:58.900
+In contact, the page is not being reloaded.
+
+05:58.900 --> 06:01.900
+In about, the page is not being reloaded.
+
+06:01.900 --> 06:02.900
+Okay.
+
+06:02.900 --> 06:04.900
+So, in contact, we will see something like this.
+
+06:04.900 --> 06:05.900
+This is nothing.
+
+06:05.900 --> 06:08.900
+Basically, we have put a value in the input box.
+
+06:08.900 --> 06:10.900
+So, we cannot change this.
+
+06:10.900 --> 06:12.900
+We cannot change this.
+
+06:12.900 --> 06:14.900
+And on top of that, the send message button.
+
+06:14.900 --> 06:16.900
+As soon as we click on it.
+
+06:16.900 --> 06:18.900
+There is a mail to method in the HTML.
+
+06:18.900 --> 06:19.900
+We have used that.
+
+06:19.900 --> 06:20.900
+So, we will go back.
+
+06:20.900 --> 06:21.900
+So, we will go back.
+
+06:21.900 --> 06:24.900
+And this is basically a mail to method in JSX.
+
+06:24.900 --> 06:27.900
+So, here we have used this.
+
+06:27.900 --> 06:31.900
+So, as soon as the person clicks on the submit message button.
+
+06:31.900 --> 06:35.900
+As soon as the user clicks on the send message button.
+
+06:35.900 --> 06:38.900
+As soon as he clicks, this function runs.
+
+06:38.900 --> 06:40.900
+The page is saved from being reloaded.
+
+06:40.900 --> 06:41.900
+And where does the user come here?
+
+06:41.900 --> 06:43.900
+In the mail to method.
+
+06:43.900 --> 06:44.900
+There is a mail to method.
+
+06:44.900 --> 06:46.900
+In front of this, whatever email you will put.
+
+06:46.900 --> 06:48.900
+So, it will open your email by default.
+
+06:48.900 --> 06:49.900
+Okay.
+
+06:49.900 --> 06:51.900
+So, if the email of the user exists.
+
+06:51.900 --> 06:53.900
+So, it will run on the email of the user.
+
+06:53.900 --> 06:55.900
+So, we will go back to the web page.
+
+06:55.900 --> 06:58.900
+And as soon as we click on the send message.
+
+06:58.900 --> 07:01.900
+So, our mail will open by default by itself.
+
+07:01.900 --> 07:02.900
+You will see.
+
+07:02.900 --> 07:04.900
+So, our mail has opened here.
+
+07:04.900 --> 07:06.900
+If you go to about.
+
+07:06.900 --> 07:09.900
+So, you will see the about of the user here.
+
+07:09.900 --> 07:12.900
+If you go to home, you will see all these things.
+
+07:12.900 --> 07:14.900
+So, now we have to see one more thing here.
+
+07:14.900 --> 07:17.900
+For example, this ID user is existing.
+
+07:17.900 --> 07:18.900
+Okay.
+
+07:18.900 --> 07:20.900
+So, here this page is showing us.
+
+07:20.900 --> 07:22.900
+If there is any such ID whose user does not exist.
+
+07:22.900 --> 07:24.900
+For example, by doing something like this.
+
+07:24.900 --> 07:25.900
+We hit enter.
+
+07:25.900 --> 07:26.900
+So, see.
+
+07:26.900 --> 07:28.900
+Here it is redirecting us to page 404.
+
+07:28.900 --> 07:29.900
+Okay.
+
+07:29.900 --> 07:31.900
+And before this, it was showing by loading.
+
+07:31.900 --> 07:33.900
+Because at that time it did not get any data.
+
+07:33.900 --> 07:35.900
+After that, it redirected to 404.
+
+07:35.900 --> 07:37.900
+Now, the page 404.
+
+07:37.900 --> 07:39.900
+We will have to show something good here.
+
+07:39.900 --> 07:41.900
+This 404 is not looking good directly.
+
+07:41.900 --> 07:42.900
+So, what do we do?
+
+07:42.900 --> 07:43.900
+Let's go.
+
+07:43.900 --> 07:46.900
+And we also give it a small style.
+
+07:46.900 --> 07:47.900
+So, we will go.
+
+07:47.900 --> 07:49.900
+We have made it in not found.jsx.
+
+07:49.900 --> 07:52.900
+And in that, we have given you this style.
+
+07:52.900 --> 07:54.900
+You can directly paste it.
+
+07:54.900 --> 07:56.900
+It is a very small and beautiful style.
+
+07:56.900 --> 07:58.900
+We will go back to the web page.
+
+07:58.900 --> 07:59.900
+So, something like this will be seen.
+
+07:59.900 --> 08:01.900
+So, page 404 looks very beautiful.
+
+08:01.900 --> 08:03.900
+As soon as we go to go back to home.
+
+08:03.900 --> 08:05.900
+So, you will come here.
+
+08:05.900 --> 08:06.900
+So, now as soon as you go.
+
+08:06.900 --> 08:08.900
+In this, you will get it here.
+
+08:08.900 --> 08:10.900
+If someone does not exist.
+
+08:10.900 --> 08:13.900
+So, then here you will get page 404.
+
+08:13.900 --> 08:16.900
+For example, you want to go to taggy recon.
+
+08:16.900 --> 08:18.900
+But you are accessing a page which is not there.
+
+08:18.900 --> 08:19.900
+Like by helping.
+
+08:19.900 --> 08:20.900
+This is not there.
+
+08:20.900 --> 08:22.900
+So, then you will come to 404.
+
+08:22.900 --> 08:23.900
+Isn't it?
+
+08:23.900 --> 08:25.900
+And you will enter in taggy recon.
+
+08:25.900 --> 08:27.900
+So, you will come to taggy recon page.
+

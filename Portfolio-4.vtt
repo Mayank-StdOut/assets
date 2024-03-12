@@ -1,0 +1,2213 @@
+WEBVTT
+
+00:06.000 --> 00:12.000
+To set up Google login, we will first install a package which is Google OAuth Provider.
+
+00:12.000 --> 00:28.000
+To install the package, go to your terminal and enter the command npm install react-oauth-google
+
+00:28.000 --> 00:34.000
+After this, go to your VS Code and go to your main.jsx.
+
+00:34.000 --> 00:37.000
+First of all, we will import the package.
+
+00:37.000 --> 00:41.000
+import google-oauth-provider
+
+00:41.000 --> 00:47.000
+After this, we will use Google OAuth Provider at the top.
+
+00:47.000 --> 00:53.000
+After this, we will use Google OAuth Provider at the top.
+
+00:53.000 --> 00:57.000
+Now open and close both the stack.
+
+00:57.000 --> 00:58.000
+Now open and close both the stack.
+
+00:58.000 --> 01:00.000
+Now I will put the package as is.
+
+01:00.000 --> 01:03.000
+Now Google OAuth provider is covering you.
+
+01:03.000 --> 01:09.000
+Now while importing you will find it using this application
+
+01:09.000 --> 01:13.000
+Next we will go to our login page.
+
+01:13.000 --> 01:20.000
+Now now what we should do is
+
+01:20.000 --> 01:27.000
+Means, we have Google Luna Logon and Google OAuth Provider's package.
+
+01:27.000 --> 01:29.000
+so we will import it in this way
+
+01:29.000 --> 01:31.000
+so what google login does
+
+01:31.000 --> 01:33.000
+it makes the button of google login
+
+01:33.000 --> 01:35.000
+for you
+
+01:35.000 --> 01:37.000
+so as you use this thing
+
+01:37.000 --> 01:39.000
+your google login button gets created
+
+01:39.000 --> 01:41.000
+and for this
+
+01:41.000 --> 01:43.000
+what we will do is
+
+01:43.000 --> 01:45.000
+we have given you a simple code
+
+01:45.000 --> 01:47.000
+with which you can directly implement the button
+
+01:47.000 --> 01:49.000
+so for this
+
+01:49.000 --> 01:51.000
+first I will remove something from it
+
+01:51.000 --> 01:53.000
+and here we
+
+01:53.000 --> 01:55.000
+put something like this
+
+01:55.000 --> 01:57.000
+and here
+
+01:57.000 --> 01:59.000
+as soon as you put this code
+
+01:59.000 --> 02:01.000
+your google login button will be created
+
+02:01.000 --> 02:03.000
+so next time we will check our webpage
+
+02:03.000 --> 02:05.000
+we will go to our webpage
+
+02:05.000 --> 02:07.000
+so you can see
+
+02:07.000 --> 02:09.000
+that google login button is showing here
+
+02:09.000 --> 02:11.000
+as soon as you click on google login button
+
+02:11.000 --> 02:13.000
+then a popup opens here
+
+02:13.000 --> 02:15.000
+this popup opens
+
+02:15.000 --> 02:17.000
+but this popup is blank
+
+02:17.000 --> 02:19.000
+why is it blank
+
+02:19.000 --> 02:21.000
+because in this popup a client id is required
+
+02:21.000 --> 02:23.000
+and we have not given that client id
+
+02:23.000 --> 02:25.000
+and how to make a client id
+
+02:25.000 --> 02:27.000
+we will tell you that
+
+02:27.000 --> 02:29.000
+first we will set up our login page
+
+02:29.000 --> 02:31.000
+then we will put a client id
+
+02:31.000 --> 02:33.000
+and as soon as we put a client id
+
+02:33.000 --> 02:35.000
+it will work
+
+02:35.000 --> 02:37.000
+so we
+
+02:37.000 --> 02:39.000
+go back to vs code
+
+02:39.000 --> 02:41.000
+and here first thing
+
+02:41.000 --> 02:43.000
+we make a div
+
+02:43.000 --> 02:45.000
+div
+
+02:45.000 --> 02:47.000
+and we saw that
+
+02:47.000 --> 02:49.000
+behind our login page
+
+02:49.000 --> 02:51.000
+we put a background image
+
+02:51.000 --> 02:53.000
+how we put that background image
+
+02:53.000 --> 02:55.000
+for that we have given you a background image
+
+02:55.000 --> 02:57.000
+in the link section
+
+02:57.000 --> 02:59.000
+so that background image
+
+02:59.000 --> 03:01.000
+called bg.jpg
+
+03:01.000 --> 03:03.000
+you have to take that
+
+03:03.000 --> 03:05.000
+and you have to put that in your assets
+
+03:05.000 --> 03:07.000
+so you have to put that in your assets
+
+03:07.000 --> 03:09.000
+and after that
+
+03:09.000 --> 03:11.000
+logo.png
+
+03:11.000 --> 03:13.000
+you have to put that in your assets
+
+03:13.000 --> 03:15.000
+and there is one more photo
+
+03:15.000 --> 03:17.000
+called profile.jpg
+
+03:17.000 --> 03:19.000
+you have to put that in your assets
+
+03:19.000 --> 03:21.000
+after downloading
+
+03:21.000 --> 03:23.000
+you have to save all these things
+
+03:23.000 --> 03:25.000
+in your assets
+
+03:25.000 --> 03:27.000
+after that
+
+03:27.000 --> 03:29.000
+we go to login
+
+03:29.000 --> 03:31.000
+here we have given our class name via bg
+
+03:31.000 --> 03:33.000
+after giving bg
+
+03:33.000 --> 03:35.000
+we have put brackets here
+
+03:35.000 --> 03:37.000
+now what we will do
+
+03:37.000 --> 03:39.000
+we will write url
+
+03:39.000 --> 03:41.000
+then we will put path
+
+03:41.000 --> 03:43.000
+so now what we will do
+
+03:43.000 --> 03:45.000
+to add background image
+
+03:45.000 --> 03:47.000
+we will use something like this
+
+03:47.000 --> 03:49.000
+bg url
+
+03:49.000 --> 03:51.000
+so here we will write
+
+03:51.000 --> 03:53.000
+slash source slash components
+
+03:53.000 --> 03:55.000
+components slash assets
+
+03:55.000 --> 03:57.000
+and here we will
+
+03:57.000 --> 03:59.000
+do something like this
+
+03:59.000 --> 04:01.000
+so what will happen
+
+04:01.000 --> 04:03.000
+that our
+
+04:03.000 --> 04:05.000
+main div
+
+04:05.000 --> 04:07.000
+in that
+
+04:07.000 --> 04:09.000
+an image will be added in the background
+
+04:09.000 --> 04:11.000
+and we will close the div
+
+04:11.000 --> 04:13.000
+by using div
+
+04:13.000 --> 04:15.000
+so we have closed it
+
+04:15.000 --> 04:17.000
+and our background image has been added
+
+04:17.000 --> 04:19.000
+now after this
+
+04:19.000 --> 04:21.000
+we have to put bg cover
+
+04:21.000 --> 04:23.000
+now if we put bg cover
+
+04:23.000 --> 04:25.000
+it will cover the whole page
+
+04:25.000 --> 04:27.000
+so what will it do
+
+04:27.000 --> 04:29.000
+the image will be in the center of the page
+
+04:29.000 --> 04:31.000
+ok
+
+04:31.000 --> 04:33.000
+now let's do one thing
+
+04:33.000 --> 04:35.000
+let's go to our web page
+
+04:35.000 --> 04:37.000
+let's go to our web page
+
+04:37.000 --> 04:39.000
+and here
+
+04:39.000 --> 04:41.000
+let's see
+
+04:41.000 --> 04:43.000
+we can't see the image
+
+04:43.000 --> 04:45.000
+so let's check
+
+04:45.000 --> 04:47.000
+why we can't see the image
+
+04:47.000 --> 04:49.000
+so
+
+04:49.000 --> 04:51.000
+let's go back
+
+04:51.000 --> 04:53.000
+and let's see
+
+04:53.000 --> 04:55.000
+after assets we have to write
+
+04:55.000 --> 04:57.000
+slash bg dot
+
+04:57.000 --> 04:59.000
+bg dot jpg
+
+04:59.000 --> 05:01.000
+right like this
+
+05:01.000 --> 05:03.000
+ok now we will go to our browser
+
+05:03.000 --> 05:05.000
+and
+
+05:05.000 --> 05:07.000
+after going to our browser
+
+05:07.000 --> 05:09.000
+when we will see
+
+05:09.000 --> 05:11.000
+our image has been loaded
+
+05:11.000 --> 05:13.000
+so it is only showing this much
+
+05:13.000 --> 05:15.000
+because it is only covering the google login page
+
+05:15.000 --> 05:17.000
+now we will put it in the center
+
+05:17.000 --> 05:19.000
+so it will cover the entire height
+
+05:19.000 --> 05:21.000
+so now we will configure it properly
+
+05:21.000 --> 05:23.000
+we will go back
+
+05:23.000 --> 05:25.000
+to the vs code
+
+05:25.000 --> 05:27.000
+and after going to the vs code
+
+05:27.000 --> 05:29.000
+here I will do one more thing
+
+05:29.000 --> 05:31.000
+some steps
+
+05:31.000 --> 05:33.000
+ok
+
+05:33.000 --> 05:35.000
+now what we will do here
+
+05:35.000 --> 05:37.000
+we will put an image here
+
+05:37.000 --> 05:39.000
+first we will put an image
+
+05:39.000 --> 05:41.000
+before the google login button
+
+05:41.000 --> 05:43.000
+what will the image do
+
+05:43.000 --> 05:45.000
+we will put the icon of our portfolio builder
+
+05:45.000 --> 05:47.000
+we will put the icon of our portfolio builder
+
+05:47.000 --> 05:49.000
+did we put the image in the source
+
+05:49.000 --> 05:51.000
+we put the logo in the source
+
+05:51.000 --> 05:53.000
+so we import the logo directly
+
+05:53.000 --> 05:55.000
+so we import the logo
+
+05:55.000 --> 05:57.000
+import
+
+05:57.000 --> 05:59.000
+import
+
+05:59.000 --> 06:01.000
+logo from
+
+06:01.000 --> 06:03.000
+and dot
+
+06:03.000 --> 06:05.000
+forward slash
+
+06:05.000 --> 06:07.000
+assets
+
+06:07.000 --> 06:09.000
+slash logo dot png
+
+06:09.000 --> 06:11.000
+like this
+
+06:11.000 --> 06:13.000
+we will import something
+
+06:13.000 --> 06:15.000
+and here in the source
+
+06:15.000 --> 06:17.000
+we will set the logo
+
+06:17.000 --> 06:19.000
+ok
+
+06:19.000 --> 06:21.000
+and here we will write
+
+06:21.000 --> 06:23.000
+logo
+
+06:23.000 --> 06:25.000
+ok
+
+06:25.000 --> 06:27.000
+and here we will write
+
+06:27.000 --> 06:29.000
+logo
+
+06:29.000 --> 06:31.000
+ok
+
+06:31.000 --> 06:33.000
+ok
+
+06:33.000 --> 06:35.000
+ok
+
+06:35.000 --> 06:37.000
+ok
+
+06:37.000 --> 06:39.000
+ok
+
+06:39.000 --> 06:41.000
+ok
+
+06:41.000 --> 06:43.000
+ok
+
+06:43.000 --> 06:45.000
+ok
+
+06:45.000 --> 06:47.000
+ok
+
+06:47.000 --> 06:49.000
+ok
+
+06:49.000 --> 06:51.000
+ok
+
+06:51.000 --> 07:07.000
+ok
+
+07:07.000 --> 07:09.000
+ok
+
+07:09.000 --> 07:11.000
+ok
+
+07:11.000 --> 07:13.000
+ok
+
+07:13.000 --> 07:15.000
+ok
+
+07:15.000 --> 07:17.000
+ok
+
+07:17.000 --> 07:19.000
+ok
+
+07:19.000 --> 07:22.000
+here we will give Z-index 10
+
+07:22.000 --> 07:25.000
+so that the background image doesn't go behind the page
+
+07:25.000 --> 07:28.000
+and we will give it some brightness
+
+07:28.000 --> 07:31.000
+brightness will make it brighter and will make it white
+
+07:31.000 --> 07:34.000
+so we will give it some brightness
+
+07:34.000 --> 07:37.000
+now after this
+
+07:37.000 --> 07:40.000
+we will go to our web page
+
+07:40.000 --> 07:43.000
+as you see the web page
+
+07:43.000 --> 07:46.000
+it is normal now
+
+07:46.000 --> 07:49.000
+it is login with google
+
+07:49.000 --> 07:52.000
+and after this
+
+07:52.000 --> 07:55.000
+we will add one more thing
+
+07:55.000 --> 07:58.000
+we will create a div below this
+
+07:58.000 --> 08:01.000
+and the div
+
+08:01.000 --> 08:04.000
+we have saved it
+
+08:04.000 --> 08:07.000
+we will create a div
+
+08:07.000 --> 08:10.000
+and in div we will give a class name
+
+08:10.000 --> 08:13.000
+first we will give mxauto
+
+08:13.000 --> 08:16.000
+so it will be in the center
+
+08:16.000 --> 08:17.000
+hscreen
+
+08:17.000 --> 08:20.000
+hscreen covers the entire screen
+
+08:20.000 --> 08:22.000
+means the image will be shown in the entire screen
+
+08:22.000 --> 08:23.000
+ok
+
+08:23.000 --> 08:25.000
+now we will add one more thing
+
+08:25.000 --> 08:28.000
+rounded md
+
+08:28.000 --> 08:31.000
+so basically
+
+08:31.000 --> 08:34.000
+the button will be rounded
+
+08:34.000 --> 08:37.000
+after this
+
+08:37.000 --> 08:40.000
+the second thing we have to add is flex
+
+08:40.000 --> 08:43.000
+and next we have to add justify center
+
+08:43.000 --> 08:45.000
+so we have flexed the display
+
+08:45.000 --> 08:47.000
+and we have added justify content
+
+08:47.000 --> 08:50.000
+so that the content will be in the center
+
+08:50.000 --> 08:52.000
+of the whole page
+
+08:52.000 --> 08:53.000
+and we will enter the item
+
+08:53.000 --> 08:55.000
+and the whole content will be in the center
+
+08:55.000 --> 08:58.000
+after this we will add backdrop blur
+
+08:58.000 --> 09:00.000
+so whatever class you can see
+
+09:00.000 --> 09:02.000
+I am adding dots here
+
+09:02.000 --> 09:03.000
+so what is this
+
+09:03.000 --> 09:06.000
+vs code will automatically put it in the class name
+
+09:06.000 --> 09:09.000
+ok so this is a shortcut to give
+
+09:09.000 --> 09:11.000
+we will do backdrop blur
+
+09:11.000 --> 09:12.000
+so what it will do
+
+09:12.000 --> 09:13.000
+it will blur the image at the back
+
+09:13.000 --> 09:14.000
+what md will do
+
+09:14.000 --> 09:15.000
+it will blur a little bit
+
+09:15.000 --> 09:17.000
+if you add lg it will blur a little more
+
+09:17.000 --> 09:19.000
+if you add xl it will blur more
+
+09:19.000 --> 09:20.000
+ok
+
+09:20.000 --> 09:23.000
+then the last thing we will give is overflow hidden
+
+09:23.000 --> 09:25.000
+so that the page is not scroll
+
+09:25.000 --> 09:27.000
+the overflow will be hidden
+
+09:27.000 --> 09:28.000
+now we will enter it
+
+09:28.000 --> 09:29.000
+so see the div is made
+
+09:29.000 --> 09:31.000
+the whole class we added has come
+
+09:31.000 --> 09:32.000
+right
+
+09:32.000 --> 09:34.000
+and this div
+
+09:34.000 --> 09:39.000
+we will put this div below the google login div
+
+09:39.000 --> 09:42.000
+so the google login will come in this div
+
+09:42.000 --> 09:44.000
+ok so the google login button will come in the whole page
+
+09:44.000 --> 09:45.000
+it will come in the center
+
+09:45.000 --> 09:48.000
+and after this the margin auto will come in the middle
+
+09:48.000 --> 09:50.000
+justify content center is given
+
+09:50.000 --> 09:52.000
+so now you have understood all these things
+
+09:52.000 --> 09:53.000
+right
+
+09:53.000 --> 09:55.000
+now as soon as we go to our web page
+
+09:55.000 --> 09:58.000
+so as soon as I come to the web page
+
+09:58.000 --> 10:00.000
+so here you will see
+
+10:00.000 --> 10:03.000
+that this whole thing is ready
+
+10:03.000 --> 10:05.000
+like the login page
+
+10:05.000 --> 10:07.000
+you can see that it is blurred at the back
+
+10:07.000 --> 10:08.000
+right
+
+10:08.000 --> 10:09.000
+the whole screen is being covered
+
+10:09.000 --> 10:11.000
+and the whole overflow is hidden
+
+10:11.000 --> 10:12.000
+so the overflow is not happening here
+
+10:12.000 --> 10:14.000
+and if you press in google login method
+
+10:14.000 --> 10:15.000
+so see this
+
+10:15.000 --> 10:16.000
+this popup opens
+
+10:16.000 --> 10:18.000
+and see the logo above
+
+10:18.000 --> 10:19.000
+the one with the portfolio builder
+
+10:19.000 --> 10:21.000
+you can see that too
+
+10:21.000 --> 10:22.000
+so now what we will do
+
+10:22.000 --> 10:24.000
+to make it look better
+
+10:24.000 --> 10:26.000
+we will add a text below it
+
+10:26.000 --> 10:28.000
+sample text
+
+10:28.000 --> 10:31.000
+so now we go to our
+
+10:31.000 --> 10:33.000
+vs code
+
+10:33.000 --> 10:34.000
+and after going here
+
+10:34.000 --> 10:36.000
+this one sample text
+
+10:36.000 --> 10:38.000
+it can be something like this
+
+10:38.000 --> 10:40.000
+here you have seen one more thing
+
+10:40.000 --> 10:41.000
+this div
+
+10:41.000 --> 10:42.000
+we had put
+
+10:42.000 --> 10:43.000
+in which we had put these styles
+
+10:43.000 --> 10:45.000
+here we have enclosed google login with this
+
+10:45.000 --> 10:46.000
+right
+
+10:46.000 --> 10:48.000
+now after this what we do here
+
+10:48.000 --> 10:50.000
+just below this
+
+10:50.000 --> 10:52.000
+we put a simple paragraph
+
+10:52.000 --> 10:53.000
+in which nothing
+
+10:53.000 --> 10:54.000
+you have written
+
+10:54.000 --> 10:56.000
+by signing in you agree to this this this
+
+10:56.000 --> 10:58.000
+this is a placeholder kind of
+
+10:58.000 --> 11:00.000
+so it will look better
+
+11:00.000 --> 11:01.000
+right
+
+11:01.000 --> 11:02.000
+after this we do one thing
+
+11:02.000 --> 11:04.000
+we go to our web page
+
+11:04.000 --> 11:05.000
+and we will go
+
+11:05.000 --> 11:07.000
+so see this
+
+11:07.000 --> 11:09.000
+its look is coming right
+
+11:09.000 --> 11:10.000
+we do continue with google
+
+11:10.000 --> 11:12.000
+so here the continue with google
+
+11:12.000 --> 11:13.000
+so sorry
+
+11:13.000 --> 11:17.080
+google ghost
+
+11:17.080 --> 11:19.000
+wesley
+
+11:19.000 --> 11:20.000
+as you can see
+
+11:20.000 --> 11:21.000
+its not working
+
+11:21.000 --> 11:22.000
+so now
+
+11:22.000 --> 11:23.000
+we need a client id
+
+11:23.000 --> 11:24.000
+ok
+
+11:24.000 --> 11:25.000
+so now what we do
+
+11:25.000 --> 11:26.000
+we will go
+
+11:26.000 --> 11:27.000
+open a new tab
+
+11:27.000 --> 11:28.000
+and write here
+
+11:28.000 --> 11:29.000
+google cloud consult
+
+11:29.000 --> 11:31.000
+we will get our API profile
+
+11:31.000 --> 11:32.000
+application id
+
+11:32.000 --> 11:33.000
+client id
+
+11:33.000 --> 11:35.000
+which we will put in this
+
+11:35.000 --> 11:36.000
+then it will work
+
+11:36.000 --> 11:37.000
+so here you will go
+
+11:37.000 --> 11:38.000
+and at google
+
+11:38.000 --> 11:39.000
+cloud platform
+
+11:39.000 --> 11:41.000
+you first sign in
+
+11:41.000 --> 11:44.000
+As soon as you sign in, something like this will open.
+
+11:44.000 --> 11:48.000
+Look here, a project is being written, portfolio builder, which I had already made.
+
+11:48.000 --> 11:52.000
+So I open it and here what we do now is create a new project.
+
+11:52.000 --> 11:55.000
+What do you do here? You will go back.
+
+11:55.000 --> 11:57.000
+Here you will go to this project at the top.
+
+11:57.000 --> 12:00.000
+You must be writing either a new project or something like this.
+
+12:00.000 --> 12:02.000
+But you must be getting something up there.
+
+12:02.000 --> 12:05.000
+You will click here, go to create new project.
+
+12:05.000 --> 12:07.000
+And here we give a name to the project.
+
+12:07.000 --> 12:10.000
+Okay, we give the name to the project.
+
+12:10.000 --> 12:13.000
+Portfolio.
+
+12:13.000 --> 12:16.000
+Portfolio site.
+
+12:16.000 --> 12:18.000
+Builder.
+
+12:18.000 --> 12:20.000
+By doing this, we get some names.
+
+12:20.000 --> 12:24.000
+And here who has given the suggestion.
+
+12:24.000 --> 12:28.000
+This is not working, so here the suggestions come.
+
+12:28.000 --> 12:31.000
+So now we cut it and whatever suggestions are given here.
+
+12:31.000 --> 12:34.000
+According to that suggestion, if we go.
+
+12:34.000 --> 12:36.000
+So something is coming here.
+
+12:36.000 --> 12:37.000
+The name has been invalid.
+
+12:37.000 --> 12:38.000
+Letters.
+
+12:38.000 --> 12:39.000
+Enter letters.
+
+12:39.000 --> 12:40.000
+Numbers.
+
+12:40.000 --> 12:41.000
+Okay.
+
+12:41.000 --> 12:43.000
+Okay, maybe underscore will not work in this.
+
+12:43.000 --> 12:45.000
+So portfolio.
+
+12:45.000 --> 12:47.000
+Suggestion has come here.
+
+12:47.000 --> 12:49.000
+So let's take this suggestion below.
+
+12:49.000 --> 12:51.000
+By hiding the project.
+
+12:51.000 --> 12:53.000
+And we took this suggestion like this.
+
+12:53.000 --> 12:55.000
+And here you will click create.
+
+12:55.000 --> 12:56.000
+You will click create.
+
+12:56.000 --> 13:01.000
+Your project will be created here.
+
+13:01.000 --> 13:03.000
+So writing creating project is coming.
+
+13:03.000 --> 13:05.000
+Okay, now it's created, right?
+
+13:05.000 --> 13:06.000
+Now you will select the project.
+
+13:06.000 --> 13:08.000
+After selecting, what you have to do?
+
+13:08.000 --> 13:11.000
+After selecting, everything will come here.
+
+13:11.000 --> 13:12.000
+Project ID etc.
+
+13:12.000 --> 13:14.000
+Everything will come here.
+
+13:14.000 --> 13:16.000
+Now you have to go to the URL.
+
+13:16.000 --> 13:19.000
+You have to remove the home app and write everything here.
+
+13:19.000 --> 13:20.000
+APIs.
+
+13:20.000 --> 13:21.000
+Apis.
+
+13:21.000 --> 13:22.000
+Enter.
+
+13:22.000 --> 13:24.000
+You will directly reach the APIs section.
+
+13:24.000 --> 13:26.000
+What will come here as soon as you come here?
+
+13:26.000 --> 13:27.000
+Credentials.
+
+13:27.000 --> 13:29.000
+First you will go to the credentials.
+
+13:29.000 --> 13:31.000
+As soon as you go to the credentials.
+
+13:31.000 --> 13:33.000
+You see that the same project is selected.
+
+13:33.000 --> 13:34.000
+Which you have just made.
+
+13:34.000 --> 13:35.000
+And by going to the credentials.
+
+13:35.000 --> 13:36.000
+You will go here.
+
+13:36.000 --> 13:38.000
+You will click on create credentials.
+
+13:38.000 --> 13:40.000
+You will click on OAuth Client ID.
+
+13:40.000 --> 13:43.000
+As soon as you click on OAuth Client ID.
+
+13:43.000 --> 13:46.000
+The Client ID will be generated here.
+
+13:46.000 --> 13:49.000
+Here you have to click on the Configure Consent Screen.
+
+13:49.000 --> 13:51.000
+You will click here.
+
+13:51.000 --> 13:56.000
+And here you will reach this page.
+
+13:56.000 --> 13:58.000
+Here you have to click on external.
+
+13:58.000 --> 13:59.000
+And you have to create.
+
+13:59.000 --> 14:02.000
+As soon as you create, it will ask you the information of the app.
+
+14:02.000 --> 14:03.000
+So give the name of the app.
+
+14:03.000 --> 14:04.000
+So we give the name of the app.
+
+14:04.000 --> 14:06.000
+Portfolio Builder.
+
+14:06.000 --> 14:08.000
+And here.
+
+14:08.000 --> 14:10.000
+User Support Email.
+
+14:10.000 --> 14:13.000
+So select the email from which you have created your account.
+
+14:13.000 --> 14:15.000
+And here.
+
+14:15.000 --> 14:16.000
+If you are asking for a photo.
+
+14:16.000 --> 14:17.000
+So don't put that.
+
+14:17.000 --> 14:18.000
+No problem.
+
+14:18.000 --> 14:19.000
+And here.
+
+14:19.000 --> 14:20.000
+Finally.
+
+14:20.000 --> 14:21.000
+Developer Contact.
+
+14:21.000 --> 14:25.000
+So here you put your email again.
+
+14:25.000 --> 14:27.000
+gmail.com
+
+14:27.000 --> 14:29.000
+Now what you have to do directly from here.
+
+14:29.000 --> 14:31.000
+Save and continue.
+
+14:31.000 --> 14:32.000
+As soon as you do it.
+
+14:32.000 --> 14:33.000
+So after this it happens.
+
+14:34.000 --> 14:36.000
+Second thing comes Scopes.
+
+14:36.000 --> 14:37.000
+Right.
+
+14:37.000 --> 14:38.000
+Here comes Scopes.
+
+14:38.000 --> 14:39.000
+You don't have to do anything.
+
+14:39.000 --> 14:40.000
+Save and continue.
+
+14:40.000 --> 14:41.000
+And don't do anything.
+
+14:41.000 --> 14:43.000
+You have to save and continue everything.
+
+14:43.000 --> 14:46.000
+And where.
+
+14:46.000 --> 14:48.000
+You have to go back to dashboard.
+
+14:48.000 --> 14:49.000
+Back to dashboard.
+
+14:49.000 --> 14:50.000
+And the work is done.
+
+14:50.000 --> 14:52.000
+Everything is done.
+
+14:52.000 --> 14:57.000
+After this you have to go to your credentials.
+
+14:57.000 --> 14:58.000
+After going to credentials.
+
+14:58.000 --> 15:00.000
+What you have to do here.
+
+15:00.000 --> 15:02.000
+The OAuth Client ID.
+
+15:02.000 --> 15:03.000
+Here you have created.
+
+15:03.000 --> 15:04.000
+The account type.
+
+15:04.000 --> 15:06.000
+You have to select the web application.
+
+15:06.000 --> 15:07.000
+Right.
+
+15:07.000 --> 15:08.000
+After selecting the web application.
+
+15:08.000 --> 15:09.000
+What I did here.
+
+15:09.000 --> 15:10.000
+You know.
+
+15:10.000 --> 15:11.000
+I came back.
+
+15:11.000 --> 15:12.000
+In credentials.
+
+15:12.000 --> 15:13.000
+I pressed create again.
+
+15:13.000 --> 15:15.000
+Clicked on OAuth Client ID.
+
+15:15.000 --> 15:16.000
+Right.
+
+15:16.000 --> 15:18.000
+Selected its web application.
+
+15:18.000 --> 15:21.000
+Here you are asking for authorized origins.
+
+15:21.000 --> 15:22.000
+From where.
+
+15:22.000 --> 15:23.000
+Which is.
+
+15:23.000 --> 15:26.000
+Which site you basically want to implement.
+
+15:26.000 --> 15:27.000
+Okay.
+
+15:27.000 --> 15:29.000
+So our current site.
+
+15:29.000 --> 15:31.000
+Its URL is localhost.
+
+15:31.000 --> 15:32.000
+So we are saying.
+
+15:32.000 --> 15:33.000
+That it is only localhost.
+
+15:33.000 --> 15:34.000
+For now.
+
+15:34.000 --> 15:35.000
+Let's keep it for that.
+
+15:35.000 --> 15:37.000
+When we will deploy the website.
+
+15:37.000 --> 15:39.000
+So the URL of our website.
+
+15:39.000 --> 15:40.000
+We will put it here.
+
+15:40.000 --> 15:41.000
+So this will make it.
+
+15:41.000 --> 15:43.000
+Only from the authorized domain.
+
+15:43.000 --> 15:45.000
+Google sign in can be done.
+
+15:45.000 --> 15:47.000
+So you will do this.
+
+15:47.000 --> 15:50.000
+http localhost.
+
+15:50.000 --> 15:52.000
+Then we will add another URL.
+
+15:52.000 --> 15:56.000
+We will write http.
+
+15:56.000 --> 15:59.000
+localhost.
+
+15:59.000 --> 16:00.000
+colon.
+
+16:00.000 --> 16:01.000
+5173.
+
+16:01.000 --> 16:02.000
+Now.
+
+16:02.000 --> 16:03.000
+After this.
+
+16:03.000 --> 16:04.000
+Okay.
+
+16:04.000 --> 16:05.000
+I think.
+
+16:05.000 --> 16:06.000
+Here.
+
+16:06.000 --> 16:07.000
+Editing.
+
+16:07.000 --> 16:08.000
+Yes.
+
+16:08.000 --> 16:09.000
+Okay.
+
+16:09.000 --> 16:10.000
+So you have to stay in edit.
+
+16:10.000 --> 16:11.000
+I had clicked on save from the other side.
+
+16:11.000 --> 16:12.000
+After this.
+
+16:12.000 --> 16:13.000
+Again.
+
+16:13.000 --> 16:14.000
+You have to copy paste the same thing.
+
+16:14.000 --> 16:15.000
+Put it down.
+
+16:15.000 --> 16:16.000
+Where.
+
+16:16.000 --> 16:17.000
+Here.
+
+16:17.000 --> 16:18.000
+Add URI.
+
+16:18.000 --> 16:19.000
+Okay.
+
+16:19.000 --> 16:20.000
+Again.
+
+16:20.000 --> 16:21.000
+You have to add a URI.
+
+16:21.000 --> 16:22.000
+And.
+
+16:22.000 --> 16:23.000
+5.
+
+16:23.000 --> 16:24.000
+7.
+
+16:24.000 --> 16:25.000
+3.
+
+16:25.000 --> 16:26.000
+7.
+
+16:26.000 --> 16:27.000
+3.
+
+16:27.000 --> 16:28.000
+And you have to add one more thing.
+
+16:28.000 --> 16:29.000
+Apart from localhost.
+
+16:29.000 --> 16:30.000
+Here.
+
+16:30.000 --> 16:31.000
+You have to put.
+
+16:31.000 --> 16:32.000
+Here.
+
+16:32.000 --> 16:33.000
+You have to put.
+
+16:33.000 --> 16:34.000
+127.
+
+16:34.000 --> 16:35.000
+Dot.
+
+16:35.000 --> 16:36.000
+0.
+
+16:36.000 --> 16:37.000
+Dot.
+
+16:37.000 --> 16:38.000
+0.
+
+16:38.000 --> 16:39.000
+Dot.
+
+16:39.000 --> 16:40.000
+1.
+
+16:40.000 --> 16:41.000
+Okay.
+
+16:41.000 --> 16:42.000
+One minute.
+
+16:42.000 --> 16:43.000
+I'm here.
+
+16:43.000 --> 16:44.000
+0.
+
+16:44.000 --> 16:45.000
+1.
+
+16:45.000 --> 16:46.000
+Yes.
+
+16:46.000 --> 16:47.000
+So this is our URL.
+
+16:47.000 --> 16:48.000
+What you know now.
+
+16:48.000 --> 16:49.000
+That our URL.
+
+16:49.000 --> 16:50.000
+That's all.
+
+16:50.000 --> 16:51.000
+This is gone.
+
+16:51.000 --> 16:52.000
+Okay.
+
+16:52.000 --> 16:53.000
+After that.
+
+16:53.000 --> 16:54.000
+Let's add another URL.
+
+16:54.000 --> 16:55.000
+Here.
+
+16:55.000 --> 16:56.000
+5.
+
+16:56.000 --> 16:57.000
+1.
+
+16:57.000 --> 16:58.000
+7.
+
+16:58.000 --> 16:59.000
+3.
+
+16:59.000 --> 17:00.000
+5.
+
+17:00.000 --> 17:01.000
+1.
+
+17:01.000 --> 17:02.000
+7.
+
+17:02.000 --> 17:03.000
+3.
+
+17:03.000 --> 17:04.000
+Let's remove 5.
+
+17:04.000 --> 17:05.000
+1.
+
+17:05.000 --> 17:06.000
+7.
+
+17:06.000 --> 17:07.000
+3.
+
+17:07.000 --> 17:08.000
+You have to configure something like this.
+
+17:08.000 --> 17:09.000
+If you don't want to put the localhost above.
+
+17:09.000 --> 17:10.000
+Then don't put it.
+
+17:10.000 --> 17:11.000
+But I put it.
+
+17:11.000 --> 17:12.000
+Okay.
+
+17:12.000 --> 17:13.000
+After that.
+
+17:13.000 --> 17:14.000
+Here.
+
+17:14.000 --> 17:15.000
+You configure it.
+
+17:15.000 --> 17:16.000
+Here too.
+
+17:16.000 --> 17:17.000
+By configuring something like this.
+
+17:17.000 --> 17:18.000
+Let's remove this thing.
+
+17:18.000 --> 17:19.000
+Right.
+
+17:19.000 --> 17:20.000
+Everything is done.
+
+17:20.000 --> 17:21.000
+Let's save.
+
+17:21.000 --> 17:22.000
+After saving.
+
+17:22.000 --> 17:23.000
+We came.
+
+17:23.000 --> 17:24.000
+And here.
+
+17:24.000 --> 17:25.000
+See.
+
+17:25.000 --> 17:26.000
+Your client ID.
+
+17:26.000 --> 17:27.000
+This is gone.
+
+17:27.000 --> 17:28.000
+Copy it here.
+
+17:28.000 --> 17:29.000
+In the key.
+
+17:29.000 --> 17:30.000
+This is a formality.
+
+17:30.000 --> 17:31.000
+So you just create it.
+
+17:31.000 --> 17:33.000
+There will be no need for it.
+
+17:33.000 --> 17:34.000
+So.
+
+17:34.000 --> 17:36.000
+Creating API key is happening.
+
+17:36.000 --> 17:37.000
+And here it is done.
+
+17:37.000 --> 17:38.000
+You close it.
+
+17:38.000 --> 17:39.000
+You have copied your client ID.
+
+17:39.000 --> 17:40.000
+That's it.
+
+17:40.000 --> 17:41.000
+What do you have to do after this?
+
+17:41.000 --> 17:42.000
+Now you have to go.
+
+17:42.000 --> 17:43.000
+Where?
+
+17:43.000 --> 17:44.000
+In the project.
+
+17:44.000 --> 17:46.000
+So let's go back to our project.
+
+17:46.000 --> 17:47.000
+In VSCode.
+
+17:47.000 --> 17:48.000
+And in VSCode.
+
+17:48.000 --> 17:52.000
+We have the main.jsx.
+
+17:52.000 --> 17:53.000
+Main.jsx.
+
+17:53.000 --> 17:54.000
+Here we have.
+
+17:54.000 --> 17:56.000
+The Google OAuth provider.
+
+17:56.000 --> 17:57.000
+Used.
+
+17:57.000 --> 17:58.000
+Isn't it?
+
+17:58.000 --> 17:59.000
+Google OAuth provider.
+
+17:59.000 --> 18:00.000
+Here.
+
+18:00.000 --> 18:01.000
+It has a prop.
+
+18:01.000 --> 18:02.000
+By doing client ID.
+
+18:02.000 --> 18:03.000
+Client ID.
+
+18:03.000 --> 18:05.000
+Your client ID will go to this client ID.
+
+18:05.000 --> 18:06.000
+So.
+
+18:06.000 --> 18:07.000
+As soon as you paste it.
+
+18:07.000 --> 18:08.000
+Your client ID.
+
+18:08.000 --> 18:09.000
+So it went here.
+
+18:09.000 --> 18:10.000
+But.
+
+18:10.000 --> 18:11.000
+One thing.
+
+18:11.000 --> 18:12.000
+There is more.
+
+18:12.000 --> 18:13.000
+Now.
+
+18:13.000 --> 18:14.000
+In any real world application.
+
+18:14.000 --> 18:15.000
+Directly.
+
+18:15.000 --> 18:16.000
+Not in plain text.
+
+18:16.000 --> 18:17.000
+No one stores their keys.
+
+18:17.000 --> 18:18.000
+Secure things.
+
+18:18.000 --> 18:19.000
+Always.
+
+18:19.000 --> 18:20.000
+You.
+
+18:20.000 --> 18:21.000
+Dot.
+
+18:21.000 --> 18:22.000
+Env.
+
+18:22.000 --> 18:23.000
+Means.
+
+18:23.000 --> 18:24.000
+Stores in a virtual environment.
+
+18:24.000 --> 18:25.000
+And then.
+
+18:25.000 --> 18:26.000
+Bring that thing here.
+
+18:26.000 --> 18:27.000
+Now.
+
+18:27.000 --> 18:28.000
+Let me tell you.
+
+18:28.000 --> 18:29.000
+So.
+
+18:29.000 --> 18:30.000
+What you do.
+
+18:30.000 --> 18:31.000
+First of all.
+
+18:31.000 --> 18:32.000
+Go to your.
+
+18:32.000 --> 18:33.000
+Side.
+
+18:33.000 --> 18:34.000
+Here.
+
+18:34.000 --> 18:35.000
+In explorer.
+
+18:35.000 --> 18:36.000
+In file explorer.
+
+18:36.000 --> 18:37.000
+And.
+
+18:37.000 --> 18:38.000
+The source directory.
+
+18:38.000 --> 18:39.000
+Here.
+
+18:39.000 --> 18:40.000
+You will click.
+
+18:40.000 --> 18:41.000
+In blank space.
+
+18:41.000 --> 18:42.000
+Which is the lowest.
+
+18:42.000 --> 18:43.000
+You will click once.
+
+18:43.000 --> 18:44.000
+And here.
+
+18:44.000 --> 18:45.000
+You will create a file.
+
+18:45.000 --> 18:46.000
+Dot.
+
+18:46.000 --> 18:47.000
+Env.
+
+18:47.000 --> 18:48.000
+Dot.
+
+18:48.000 --> 18:49.000
+Env.
+
+18:49.000 --> 18:50.000
+Okay.
+
+18:50.000 --> 18:51.000
+This is the outermost.
+
+18:51.000 --> 18:52.000
+Right.
+
+18:52.000 --> 18:53.000
+This is out of the public too.
+
+18:53.000 --> 18:54.000
+Out of everything.
+
+18:54.000 --> 18:55.000
+Dot.
+
+18:55.000 --> 18:56.000
+Env.
+
+18:56.000 --> 18:57.000
+Dot.
+
+18:57.000 --> 18:58.000
+Envm.
+
+18:58.000 --> 18:59.000
+Dot.
+
+18:59.000 --> 19:00.000
+Envm.
+
+19:00.000 --> 19:01.000
+Dot.
+
+19:01.000 --> 19:02.000
+Envm.
+
+19:02.000 --> 19:03.000
+Dot.
+
+19:03.000 --> 19:04.000
+Envm.
+
+19:04.000 --> 19:05.000
+Dot.
+
+19:05.000 --> 19:06.000
+Envm.
+
+19:06.000 --> 19:07.000
+Dot.
+
+19:07.000 --> 19:08.000
+Envm.
+
+19:08.000 --> 19:09.000
+Dot.
+
+19:09.000 --> 19:10.000
+Envm.
+
+19:10.000 --> 19:11.000
+Dot.
+
+19:11.000 --> 19:12.000
+Envm.
+
+19:12.000 --> 19:13.000
+Dot.
+
+19:13.000 --> 19:14.000
+Envm
+
+19:14.000 --> 19:15.000
+For that.
+
+19:15.000 --> 19:16.000
+address.
+
+19:16.000 --> 19:17.000
+Here.
+
+19:17.000 --> 19:18.000
+We will wait before.
+
+19:18.000 --> 19:19.000
+We are waiting for the alcohol.
+
+19:19.000 --> 19:20.000
+Now.
+
+19:20.000 --> 19:21.000
+An.
+
+19:21.000 --> 19:22.000
+Going to the.
+
+19:22.000 --> 19:23.000
+Long.
+
+19:23.000 --> 19:24.000
+Down.
+
+19:24.000 --> 19:25.000
+An.
+
+19:25.000 --> 19:30.000
+white google client
+
+19:30.000 --> 19:32.000
+now as soon as we write this thing
+
+19:32.000 --> 19:34.000
+so what happens is that this thing
+
+19:34.000 --> 19:36.000
+as soon as your code runs
+
+19:36.000 --> 19:38.000
+it will automatically be replaced with .env
+
+19:38.000 --> 19:40.000
+now what will be the benefit of this
+
+19:40.000 --> 19:42.000
+the benefit of this will be that
+
+19:42.000 --> 19:44.000
+it will not appear in the browser in plain text
+
+19:44.000 --> 19:47.000
+so any attacker will not be able to steal your API
+
+19:47.000 --> 19:49.000
+it is now saved right
+
+19:49.000 --> 19:51.000
+so as soon as you write this thing in the client id
+
+19:51.000 --> 19:53.000
+so that white google client
+
+19:53.000 --> 19:55.000
+we had made a variable here
+
+19:55.000 --> 19:57.000
+it will automatically go there
+
+19:57.000 --> 19:59.000
+and that thing will not be shown in the browser
+
+19:59.000 --> 20:01.000
+ok
+
+20:01.000 --> 20:03.000
+so now we have saved this thing
+
+20:03.000 --> 20:05.000
+now what do we do
+
+20:05.000 --> 20:07.000
+now we go back to our browser
+
+20:07.000 --> 20:09.000
+and after going to the browser
+
+20:09.000 --> 20:11.000
+now we work
+
+20:11.000 --> 20:13.000
+we press continue with google
+
+20:13.000 --> 20:15.000
+as soon as we press
+
+20:15.000 --> 20:17.000
+here client id is showing
+
+20:17.000 --> 20:19.000
+console is showing
+
+20:19.000 --> 20:21.000
+is there any problem
+
+20:21.000 --> 20:23.000
+ok
+
+20:23.000 --> 20:25.000
+gsi logger
+
+20:25.000 --> 20:27.000
+the given client id is not found
+
+20:27.000 --> 20:29.000
+so here I think
+
+20:31.000 --> 20:33.000
+problem
+
+20:33.000 --> 20:35.000
+why is it coming let me check
+
+20:35.000 --> 20:37.000
+so here it is saying
+
+20:37.000 --> 20:39.000
+client id is not found
+
+20:39.000 --> 20:41.000
+let us see if we put the right client id
+
+20:41.000 --> 20:43.000
+web client 1
+
+20:43.000 --> 20:45.000
+right client id is here
+
+20:45.000 --> 20:47.000
+once we go back
+
+20:47.000 --> 20:49.000
+and check
+
+20:49.000 --> 20:51.000
+so I go back
+
+20:51.000 --> 20:53.000
+and here
+
+20:53.000 --> 20:55.000
+our main.jsx
+
+20:55.000 --> 20:57.000
+inside this .env
+
+20:57.000 --> 20:59.000
+.env
+
+20:59.000 --> 21:01.000
+.env
+
+21:01.000 --> 21:03.000
+here once
+
+21:03.000 --> 21:05.000
+paste it
+
+21:05.000 --> 21:07.000
+paste it
+
+21:07.000 --> 21:09.000
+now we have pasted it
+
+21:09.000 --> 21:11.000
+now after this
+
+21:11.000 --> 21:13.000
+once we
+
+21:13.000 --> 21:15.000
+check it
+
+21:15.000 --> 21:17.000
+let us see once more
+
+21:17.000 --> 21:19.000
+ok
+
+21:19.000 --> 21:21.000
+ok
+
+21:21.000 --> 21:23.000
+I think now
+
+21:23.000 --> 21:25.000
+I think now
+
+21:25.000 --> 21:27.000
+we have copied something wrong
+
+21:27.000 --> 21:29.000
+so ok
+
+21:29.000 --> 21:31.000
+now we go back
+
+21:31.000 --> 21:33.000
+to our browser
+
+21:33.000 --> 21:35.000
+browser
+
+21:35.000 --> 21:37.000
+we have come to browser
+
+21:37.000 --> 21:39.000
+and we
+
+21:39.000 --> 21:41.000
+remove it
+
+21:41.000 --> 21:43.000
+continue with google
+
+21:43.000 --> 21:45.000
+ok
+
+21:45.000 --> 21:47.000
+I think
+
+21:47.000 --> 21:49.000
+I think
+
+21:49.000 --> 21:53.000
+again there is a problem given origin is not allowed for the client id
+
+21:53.000 --> 21:57.000
+ok so what is the problem here let me tell you
+
+21:57.000 --> 22:01.000
+the problem is that here this 127.0.0.1
+
+22:01.000 --> 22:05.000
+it never works so what you have to write here in url
+
+22:05.000 --> 22:09.000
+localhost colon 5173 slash login
+
+22:09.000 --> 22:13.000
+so here you have to write localhost 127
+
+22:13.000 --> 22:17.000
+ok for 127 you have to write localhost and now let's see
+
+22:17.000 --> 22:21.000
+what is written here now for now everything
+
+22:21.000 --> 22:25.000
+seems to be working and the spelling of login is wrong
+
+22:25.000 --> 22:29.000
+ok now login page is coming now see now
+
+22:29.000 --> 22:33.000
+the option is coming now as soon as you press continue with techie recon
+
+22:33.000 --> 22:37.000
+or you press continue with google now it will show you
+
+22:37.000 --> 22:41.000
+ok so it is something like this now as soon as we
+
+22:41.000 --> 22:45.000
+confirm continue with techie recon then what will happen is that
+
+22:45.000 --> 22:47.000
+basically login is done but you know
+
+22:47.000 --> 22:51.000
+it didn't work because after login we didn't specify anything
+
+22:51.000 --> 22:55.000
+what should happen after login right so now we will specify that
+

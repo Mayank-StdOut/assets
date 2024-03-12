@@ -1,0 +1,1386 @@
+WEBVTT
+
+00:06.000 --> 00:10.000
+Let's start creating our project
+
+00:10.000 --> 00:16.000
+Go to your desktop and open the project folder
+
+00:16.000 --> 00:19.000
+Right click on the open in terminal
+
+00:19.000 --> 00:22.000
+Your command prompt will open
+
+00:22.000 --> 00:29.000
+To create our react app we use npx create react app
+
+00:29.000 --> 00:35.000
+The command used to create files for you
+
+00:35.000 --> 00:38.000
+The important files of react js
+
+00:38.000 --> 00:41.000
+Then you have to start coding directly
+
+00:41.000 --> 00:45.000
+Now we will use white
+
+00:45.000 --> 00:48.000
+Here we have written npx create react app
+
+00:48.000 --> 00:51.000
+We will write npm create white
+
+00:51.000 --> 00:54.000
+White is a utility
+
+00:54.000 --> 00:57.000
+Just like create react app is a utility
+
+00:57.000 --> 00:58.000
+Which creates folders for you
+
+00:58.000 --> 00:59.000
+White is a utility
+
+00:59.000 --> 01:01.000
+White also works the same
+
+01:01.000 --> 01:02.000
+There is no difference
+
+01:02.000 --> 01:03.000
+There is only one difference
+
+01:03.000 --> 01:04.000
+White is faster
+
+01:04.000 --> 01:06.000
+That's why we will use white
+
+01:06.000 --> 01:08.000
+Whenever you do something in white
+
+01:08.000 --> 01:12.000
+It immediately saves the changes
+
+01:12.000 --> 01:14.000
+And it is very fast
+
+01:14.000 --> 01:16.000
+We will use it because it is fast
+
+01:16.000 --> 01:19.000
+You don't have to pay much attention to it
+
+01:19.000 --> 01:21.000
+There is nothing different
+
+01:21.000 --> 01:23.000
+It also does the same thing
+
+01:23.000 --> 01:25.000
+Which you used to do by using create react app
+
+01:25.000 --> 01:27.000
+It is just a little faster
+
+01:27.000 --> 01:28.000
+Now we will write the command
+
+01:28.000 --> 01:36.000
+That is npm create white at the date latest
+
+01:36.000 --> 01:38.000
+And as soon as you enter
+
+01:38.000 --> 01:41.000
+So here the first thing you will be asked
+
+01:41.000 --> 01:44.000
+What do you want to give the name of the project
+
+01:44.000 --> 01:46.000
+So as soon as you want to give the name of the project
+
+01:46.000 --> 01:48.000
+For example, I give portfolio builder
+
+01:48.000 --> 01:52.000
+Portfolio builder
+
+01:52.000 --> 01:56.000
+By doing something like this, you can give the name of the project
+
+01:56.000 --> 01:57.000
+You enter
+
+01:57.000 --> 01:59.000
+As soon as you enter, it will ask
+
+01:59.000 --> 02:01.000
+In which technology
+
+02:01.000 --> 02:03.000
+In which tech stack do you want to make your project
+
+02:03.000 --> 02:05.000
+So what are we using now
+
+02:05.000 --> 02:07.000
+Now we are using react
+
+02:07.000 --> 02:09.000
+So we will react and enter
+
+02:09.000 --> 02:11.000
+After that it will ask
+
+02:11.000 --> 02:13.000
+Do you want to use typescript
+
+02:13.000 --> 02:15.000
+Do you want to use javascript
+
+02:15.000 --> 02:17.000
+So basically we will go here and do it in javascript
+
+02:17.000 --> 02:19.000
+And we will enter javascript
+
+02:19.000 --> 02:21.000
+Our app is created
+
+02:21.000 --> 02:23.000
+And the same thing
+
+02:23.000 --> 02:25.000
+If we do npx create react app
+
+02:25.000 --> 02:27.000
+Then what will happen
+
+02:27.000 --> 02:29.000
+How much time does it take
+
+02:29.000 --> 02:31.000
+Now what will we do
+
+02:31.000 --> 02:34.000
+Now we will go to our portfolio builder
+
+02:34.000 --> 02:36.000
+Cd space portfolio builder
+
+02:36.000 --> 02:38.000
+So we will change the directory
+
+02:38.000 --> 02:40.000
+We will go to the directory of the portfolio builder
+
+02:40.000 --> 02:43.000
+And here we will write npm install
+
+02:43.000 --> 02:45.000
+And
+
+02:45.000 --> 02:46.000
+Yes npm install
+
+02:46.000 --> 02:48.000
+And before that you have to do one more thing
+
+02:48.000 --> 02:50.000
+We will use tailwind css here
+
+02:50.000 --> 02:52.000
+Now what is tailwind css
+
+02:52.000 --> 02:54.000
+What we used to do till now
+
+02:54.000 --> 02:56.000
+We used to use normal css
+
+02:56.000 --> 02:57.000
+That is
+
+02:57.000 --> 02:58.000
+We used to go
+
+02:58.000 --> 02:59.000
+We used to make a file
+
+02:59.000 --> 03:00.000
+index.css
+
+03:00.000 --> 03:01.000
+Or app.css
+
+03:01.000 --> 03:03.000
+We used to write our style sheets in it
+
+03:03.000 --> 03:05.000
+And then we used to import
+
+03:05.000 --> 03:08.000
+But there is an easier way than this
+
+03:08.000 --> 03:10.000
+The way is that we
+
+03:10.000 --> 03:12.000
+Use such css frameworks
+
+03:12.000 --> 03:15.000
+Where css has already been written for you
+
+03:15.000 --> 03:17.000
+That is for example
+
+03:17.000 --> 03:19.000
+Someone has written a css for you
+
+03:19.000 --> 03:21.000
+To center the div
+
+03:21.000 --> 03:22.000
+So what you have to do
+
+03:22.000 --> 03:23.000
+You just have to import it
+
+03:23.000 --> 03:26.000
+And put that class name in that div
+
+03:26.000 --> 03:28.000
+Which you have to center
+
+03:28.000 --> 03:30.000
+The same thing is tailwind css
+
+03:30.000 --> 03:31.000
+You don't have to do anything
+
+03:31.000 --> 03:33.000
+You just have to import it
+
+03:33.000 --> 03:35.000
+And you have to add class names
+
+03:35.000 --> 03:37.000
+Those css styles will be added automatically
+
+03:37.000 --> 03:40.000
+Because those css styles have already been written
+
+03:40.000 --> 03:43.000
+You just have to put a class name for those styles
+
+03:43.000 --> 03:45.000
+And as you keep adding class names
+
+03:45.000 --> 03:46.000
+So styles
+
+03:46.000 --> 03:47.000
+Apply automatically
+
+03:47.000 --> 03:48.000
+Okay
+
+03:48.000 --> 03:51.000
+So now we will install tailwind css first
+
+03:51.000 --> 03:53.000
+So there is a command for that
+
+03:53.000 --> 03:55.000
+That command is this
+
+03:55.000 --> 03:56.000
+Which I had copied
+
+03:56.000 --> 03:58.000
+You can see it once
+
+03:58.000 --> 03:59.000
+npm install
+
+03:59.000 --> 04:01.000
+Minus the tailwind css
+
+04:01.000 --> 04:02.000
+Post css
+
+04:02.000 --> 04:03.000
+And auto prefix
+
+04:03.000 --> 04:05.000
+As soon as you enter this
+
+04:05.000 --> 04:07.000
+So your installation will start
+
+04:09.000 --> 04:11.000
+So here whatever your tailwind css
+
+04:11.000 --> 04:14.000
+Main configuration files are
+
+04:14.000 --> 04:16.000
+And all the important things
+
+04:16.000 --> 04:18.000
+They are all being installed here
+
+04:23.000 --> 04:25.000
+So here our tailwind css
+
+04:25.000 --> 04:27.000
+Has been installed
+
+04:27.000 --> 04:29.000
+Now what you have to do
+
+04:29.000 --> 04:30.000
+Here you have to write a command
+
+04:30.000 --> 04:32.000
+npm install
+
+04:32.000 --> 04:33.000
+npm install
+
+04:33.000 --> 04:34.000
+Now see here
+
+04:34.000 --> 04:35.000
+These commands
+
+04:35.000 --> 04:37.000
+As soon as we created the app
+
+04:37.000 --> 04:38.000
+After that you have to write
+
+04:38.000 --> 04:40.000
+That you will put this first
+
+04:40.000 --> 04:41.000
+Then this
+
+04:41.000 --> 04:42.000
+And then this
+
+04:42.000 --> 04:43.000
+Then your app will run
+
+04:43.000 --> 04:44.000
+So npm install
+
+04:44.000 --> 04:45.000
+You enter
+
+04:45.000 --> 04:47.000
+So whatever your utilities are important
+
+04:47.000 --> 04:49.000
+They will start to install
+
+04:49.000 --> 04:51.000
+And it happened so fast
+
+04:51.000 --> 04:53.000
+After that you
+
+04:53.000 --> 04:54.000
+Clear it
+
+04:54.000 --> 04:55.000
+Now screen
+
+04:55.000 --> 04:56.000
+And here we write
+
+04:56.000 --> 04:58.000
+npm run dev
+
+04:58.000 --> 04:59.000
+What will happen with this
+
+04:59.000 --> 05:01.000
+Our development server
+
+05:01.000 --> 05:03.000
+It will start
+
+05:03.000 --> 05:05.000
+So as soon as you write npm run dev
+
+05:05.000 --> 05:07.000
+So this is immediately
+
+05:07.000 --> 05:09.000
+The service in the local host
+
+05:09.000 --> 05:10.000
+It starts
+
+05:10.000 --> 05:11.000
+Control
+
+05:11.000 --> 05:13.000
+And as soon as you right click in it
+
+05:13.000 --> 05:14.000
+And then your
+
+05:14.000 --> 05:16.000
+Web page
+
+05:16.000 --> 05:18.000
+Which is your web page
+
+05:18.000 --> 05:19.000
+It will open
+
+05:19.000 --> 05:20.000
+So see how good it is
+
+05:20.000 --> 05:21.000
+Means
+
+05:21.000 --> 05:22.000
+How fast
+
+05:22.000 --> 05:23.000
+You notice one thing
+
+05:23.000 --> 05:24.000
+That it is very fast
+
+05:24.000 --> 05:26.000
+And once our terminal
+
+05:26.000 --> 05:27.000
+What is it
+
+05:27.000 --> 05:28.000
+Let's check it once
+
+05:28.000 --> 05:29.000
+So you will get to know
+
+05:29.000 --> 05:31.000
+That we will go to make any changes in it
+
+05:31.000 --> 05:32.000
+So it will be very fast
+
+05:32.000 --> 05:33.000
+Ok
+
+05:33.000 --> 05:35.000
+So now we go
+
+05:35.000 --> 05:36.000
+And first of all
+
+05:36.000 --> 05:37.000
+We have our vs code
+
+05:37.000 --> 05:38.000
+What is it
+
+05:38.000 --> 05:39.000
+Let's open
+
+05:39.000 --> 05:40.000
+To open vs code
+
+05:40.000 --> 05:41.000
+Now we will close it first
+
+05:41.000 --> 05:42.000
+The server
+
+05:42.000 --> 05:44.000
+And here you write code
+
+05:44.000 --> 05:45.000
+Or dot
+
+05:45.000 --> 05:46.000
+So your vs code
+
+05:46.000 --> 05:47.000
+Current directory
+
+05:47.000 --> 05:48.000
+That is in the portfolio builder
+
+05:48.000 --> 05:49.000
+Will open
+
+05:49.000 --> 05:51.000
+So it is basically open
+
+05:51.000 --> 05:53.000
+And here we are a little
+
+05:53.000 --> 05:55.000
+Let's adjust it
+
+05:57.000 --> 05:58.000
+So here
+
+05:58.000 --> 05:59.000
+I put my vs code
+
+05:59.000 --> 06:00.000
+A little on the side
+
+06:04.000 --> 06:05.000
+Ok nice
+
+06:06.000 --> 06:07.000
+Ok
+
+06:17.000 --> 06:18.000
+Ok
+
+06:18.000 --> 06:19.000
+So now
+
+06:19.000 --> 06:20.000
+After this
+
+06:20.000 --> 06:21.000
+What will we do
+
+06:21.000 --> 06:22.000
+That once its file
+
+06:22.000 --> 06:23.000
+Structure
+
+06:23.000 --> 06:24.000
+Let's see
+
+06:24.000 --> 06:25.000
+So now
+
+06:25.000 --> 06:26.000
+We will see
+
+06:26.000 --> 06:27.000
+Its file structure
+
+06:27.000 --> 06:28.000
+So here you will get to see
+
+06:28.000 --> 06:29.000
+That same things
+
+06:29.000 --> 06:30.000
+Which are
+
+06:30.000 --> 06:31.000
+Public folder
+
+06:31.000 --> 06:32.000
+Souls folder
+
+06:32.000 --> 06:33.000
+Right
+
+06:33.000 --> 06:34.000
+Assets
+
+06:34.000 --> 06:35.000
+And after this
+
+06:35.000 --> 06:36.000
+All the folders
+
+06:36.000 --> 06:37.000
+Same all things
+
+06:37.000 --> 06:38.000
+Of the same type
+
+06:38.000 --> 06:39.000
+The type
+
+06:39.000 --> 06:40.000
+You used to do
+
+06:40.000 --> 06:41.000
+When you were doing
+
+06:41.000 --> 06:42.000
+npm create react
+
+06:42.000 --> 06:43.000
+Ok
+
+06:43.000 --> 06:44.000
+Now
+
+06:44.000 --> 06:45.000
+After this
+
+06:45.000 --> 06:46.000
+You have to create
+
+06:46.000 --> 06:47.000
+Now we have used tailwind
+
+06:47.000 --> 06:48.000
+So for that
+
+06:48.000 --> 06:49.000
+Configuration file
+
+06:49.000 --> 06:50.000
+Have to be created
+
+06:50.000 --> 06:51.000
+And before that
+
+06:51.000 --> 06:52.000
+You have to go
+
+06:52.000 --> 06:53.000
+In index.css
+
+06:53.000 --> 06:54.000
+And all these things
+
+06:54.000 --> 06:55.000
+Which are
+
+06:55.000 --> 06:56.000
+You remove it
+
+06:56.000 --> 06:58.000
+Clear by control
+
+06:58.000 --> 06:59.000
+And here
+
+06:59.000 --> 07:00.000
+You
+
+07:00.000 --> 07:01.000
+Put another thing
+
+07:01.000 --> 07:02.000
+That is
+
+07:02.000 --> 07:03.000
+This
+
+07:03.000 --> 07:04.000
+As you do this
+
+07:04.000 --> 07:05.000
+Thing
+
+07:05.000 --> 07:06.000
+So your tailwind
+
+07:06.000 --> 07:07.000
+Css
+
+07:07.000 --> 07:08.000
+It is set up
+
+07:08.000 --> 07:09.000
+Everywhere
+
+07:09.000 --> 07:10.000
+Means
+
+07:10.000 --> 07:11.000
+You can use it
+
+07:11.000 --> 07:12.000
+From any file
+
+07:12.000 --> 07:13.000
+Right
+
+07:13.000 --> 07:14.000
+So anywhere
+
+07:14.000 --> 07:15.000
+You can use its css
+
+07:15.000 --> 07:16.000
+So basically
+
+07:16.000 --> 07:17.000
+It is to configure
+
+07:17.000 --> 07:18.000
+Now
+
+07:18.000 --> 07:19.000
+After this
+
+07:19.000 --> 07:20.000
+We have to create
+
+07:20.000 --> 07:21.000
+Another file
+
+07:21.000 --> 07:22.000
+In index.config.js
+
+07:22.000 --> 07:23.000
+So in that
+
+07:23.000 --> 07:24.000
+We will put some
+
+07:24.000 --> 07:25.000
+Configuration
+
+07:25.000 --> 07:26.000
+So how that file
+
+07:26.000 --> 07:27.000
+Is created
+
+07:27.000 --> 07:28.000
+We will see
+
+07:28.000 --> 07:29.000
+That thing
+
+07:29.000 --> 07:30.000
+Once
+
+07:30.000 --> 07:31.000
+So for this thing
+
+07:31.000 --> 07:32.000
+Once I go to my browser
+
+07:32.000 --> 07:33.000
+And what is
+
+07:33.000 --> 07:34.000
+That command
+
+07:34.000 --> 07:35.000
+Actually
+
+07:35.000 --> 07:36.000
+I don't remember
+
+07:36.000 --> 07:37.000
+And it is not necessary
+
+07:37.000 --> 07:38.000
+That you remember
+
+07:38.000 --> 07:39.000
+Any command
+
+07:39.000 --> 07:40.000
+So what you can do
+
+07:40.000 --> 07:41.000
+For that
+
+07:41.000 --> 07:42.000
+You can
+
+07:42.000 --> 07:43.000
+Search it directly
+
+07:43.000 --> 07:44.000
+And when you
+
+07:44.000 --> 07:45.000
+Search
+
+07:45.000 --> 07:46.000
+You will get
+
+07:46.000 --> 07:47.000
+Related resources
+
+07:47.000 --> 07:48.000
+And
+
+07:48.000 --> 07:49.000
+One good thing
+
+07:49.000 --> 07:50.000
+Is that in development
+
+07:50.000 --> 07:51.000
+You have to do
+
+07:51.000 --> 07:52.000
+Searches
+
+07:52.000 --> 07:53.000
+You have to search
+
+07:53.000 --> 07:54.000
+So you
+
+07:54.000 --> 07:55.000
+Can practice it
+
+07:55.000 --> 07:56.000
+It is quite good
+
+07:56.000 --> 07:57.000
+So here
+
+07:57.000 --> 07:58.000
+We
+
+07:58.000 --> 07:59.000
+See below
+
+07:59.000 --> 08:00.000
+So here
+
+08:00.000 --> 08:01.000
+Is the command
+
+08:01.000 --> 08:02.000
+See here
+
+08:02.000 --> 08:03.000
+It is kept
+
+08:03.000 --> 08:04.000
+And
+
+08:04.000 --> 08:05.000
+Generate the configuration
+
+08:05.000 --> 08:06.000
+File
+
+08:06.000 --> 08:07.000
+You take this command
+
+08:07.000 --> 08:08.000
+So that command
+
+08:08.000 --> 08:09.000
+We copied
+
+08:09.000 --> 08:10.000
+Now what we will do
+
+08:10.000 --> 08:11.000
+Our development
+
+08:11.000 --> 08:12.000
+Server
+
+08:12.000 --> 08:13.000
+We stop it for a while
+
+08:13.000 --> 08:14.000
+And paste that command
+
+08:14.000 --> 08:15.000
+Here
+
+08:15.000 --> 08:16.000
+As soon as you paste
+
+08:16.000 --> 08:17.000
+So a
+
+08:17.000 --> 08:18.000
+Tailwind.config.js
+
+08:18.000 --> 08:19.000
+File
+
+08:19.000 --> 08:20.000
+So here
+
+08:20.000 --> 08:21.000
+The file
+
+08:21.000 --> 08:22.000
+Has been created
+
+08:22.000 --> 08:23.000
+So see
+
+08:23.000 --> 08:24.000
+The file
+
+08:24.000 --> 08:25.000
+Has been created
+
+08:25.000 --> 08:26.000
+Now
+
+08:26.000 --> 08:27.000
+What you have to do
+
+08:27.000 --> 08:28.000
+Is that
+
+08:28.000 --> 08:29.000
+This content
+
+08:29.000 --> 08:30.000
+Which is kept here
+
+08:30.000 --> 08:31.000
+In the content
+
+08:31.000 --> 08:32.000
+You have to put
+
+08:32.000 --> 08:33.000
+One thing here
+
+08:33.000 --> 08:34.000
+Which is
+
+08:34.000 --> 08:35.000
+I tell you
+
+08:35.000 --> 08:36.000
+Here
+
+08:36.000 --> 08:37.000
+You have to put
+
+08:37.000 --> 08:38.000
+Something like this
+
+08:38.000 --> 08:39.000
+In the content
+
+08:39.000 --> 08:40.000
+So what does it do
+
+08:40.000 --> 08:41.000
+This is basically
+
+08:41.000 --> 08:42.000
+Configuration file
+
+08:42.000 --> 08:43.000
+What does it do
+
+08:43.000 --> 08:44.000
+It decides
+
+08:44.000 --> 08:45.000
+Where
+
+08:45.000 --> 08:46.000
+Tailwind.css
+
+08:46.000 --> 08:47.000
+Will be added
+
+08:47.000 --> 08:48.000
+So we have told
+
+08:48.000 --> 08:49.000
+In this server
+
+08:49.000 --> 08:50.000
+All the
+
+08:50.000 --> 08:51.000
+Dot.js
+
+08:51.000 --> 08:52.000
+Dot.ts
+
+08:52.000 --> 08:53.000
+Dot.gsx
+
+08:53.000 --> 08:54.000
+Dot.tsx
+
+08:54.000 --> 08:55.000
+Files
+
+08:55.000 --> 08:56.000
+In all of them
+
+08:56.000 --> 08:57.000
+Our
+
+08:57.000 --> 08:58.000
+Tailwind
+
+08:58.000 --> 08:59.000
+Tailwind
+
+08:59.000 --> 09:00.000
+Will run
+
+09:00.000 --> 09:01.000
+Okay
+
+09:01.000 --> 09:02.000
+Because in these files
+
+09:02.000 --> 09:03.000
+We write our
+
+09:03.000 --> 09:04.000
+Normal
+
+09:04.000 --> 09:05.000
+Our
+
+09:05.000 --> 09:06.000
+Tags
+
+09:06.000 --> 09:07.000
+Whatever we put
+
+09:07.000 --> 09:08.000
+Classes
+
+09:08.000 --> 09:09.000
+All
+
+09:09.000 --> 09:10.000
+Are in it
+
+09:10.000 --> 09:11.000
+So that's why
+
+09:11.000 --> 09:12.000
+We have identified
+
+09:12.000 --> 09:13.000
+Here
+
+09:13.000 --> 09:14.000
+We have put this thing
+
+09:14.000 --> 09:15.000
+Okay
+
+09:15.000 --> 09:16.000
+So our
+
+09:16.000 --> 09:17.000
+Tailwind
+
+09:17.000 --> 09:18.000
+Let's run
+
+09:18.000 --> 09:19.000
+Our server
+
+09:19.000 --> 09:20.000
+Once again
+
+09:20.000 --> 09:21.000
+So our
+
+09:21.000 --> 09:22.000
+Configuration
+
+09:22.000 --> 09:23.000
+Server
+
+09:23.000 --> 09:24.000
+First
+
+09:24.000 --> 09:25.000
+Let me clear it
+
+09:25.000 --> 09:26.000
+Here
+
+09:26.000 --> 09:27.000
+Sorry
+
+09:27.000 --> 09:28.000
+So
+
+09:28.000 --> 09:29.000
+Okay
+
+09:29.000 --> 09:30.000
+Here
+
+09:30.000 --> 09:31.000
+I have run
+
+09:31.000 --> 09:32.000
+Our
+
+09:32.000 --> 09:33.000
+Server
+
+09:33.000 --> 09:34.000
+So
+
+09:34.000 --> 09:35.000
+Here
+
+09:35.000 --> 09:36.000
+Let's check
+
+09:36.000 --> 09:37.000
+Our
+
+09:37.000 --> 09:38.000
+Web
+
+09:38.000 --> 09:39.000
+Page
+
+09:39.000 --> 09:40.000
+So
+
+09:40.000 --> 09:41.000
+Here
+
+09:41.000 --> 09:42.000
+Our
+
+09:42.000 --> 09:43.000
+Web
+
+09:43.000 --> 09:44.000
+Page
+
+09:44.000 --> 09:45.000
+Is
+
+09:45.000 --> 09:46.000
+Run
+
+09:46.000 --> 09:47.000
+Now
+
+09:47.000 --> 09:48.000
+It's
+
+09:48.000 --> 09:49.000
+Run
+
+09:49.000 --> 09:50.000
+So
+
+09:50.000 --> 09:51.000
+Here
+
+09:51.000 --> 09:52.000
+I
+
+09:52.000 --> 09:53.000
+Have
+
+09:53.000 --> 09:54.000
+Removed
+
+09:54.000 --> 09:55.000
+All
+
+09:55.000 --> 09:56.000
+The
+
+09:56.000 --> 09:57.000
+Css
+
+09:57.000 --> 09:58.000
+So
+
+09:58.000 --> 09:59.000
+Because of
+
+09:59.000 --> 10:00.000
+This
+
+10:00.000 --> 10:01.000
+It
+
+10:01.000 --> 10:02.000
+Happened
+
+10:02.000 --> 10:03.000
+Now
+
+10:03.000 --> 10:04.000
+Here
+
+10:04.000 --> 10:05.000
+Once
+
+10:05.000 --> 10:06.000
+I
+
+10:06.000 --> 10:07.000
+Show You
+
+10:07.000 --> 10:08.000
+A
+
+10:08.000 --> 10:09.000
+Small
+
+10:09.000 --> 10:10.000
+Demo
+
+10:10.000 --> 10:11.000
+Of
+
+10:11.000 --> 10:12.000
+Tailwind
+
+10:12.000 --> 10:13.000
+So
+
+10:13.000 --> 10:14.000
+For
+
+10:14.000 --> 10:15.000
+This
+
+10:15.000 --> 10:16.000
+We
+
+10:16.000 --> 10:17.000
+Add
+
+10:17.000 --> 10:18.000
+Class Name
+
+10:18.000 --> 10:19.000
+And
+
+10:19.000 --> 10:20.000
+We
+
+10:20.000 --> 10:21.000
+Give
+
+10:21.000 --> 10:22.000
+This
+
+10:22.000 --> 10:23.000
+Class
+
+10:23.000 --> 10:24.000
+Name
+
+10:24.000 --> 10:25.000
+By
+
+10:25.000 --> 10:26.000
+Doing
+
+10:26.000 --> 10:27.000
+Bg
+
+10:27.000 --> 10:28.000
+Blue
+
+10:28.000 --> 10:29.000
+Bg
+
+10:29.000 --> 10:30.000
+Or
+
+10:30.000 --> 10:31.000
+Bg
+
+10:31.000 --> 10:32.000
+Black
+
+10:32.000 --> 10:33.000
+As
+
+10:33.000 --> 10:34.000
+You
+
+10:34.000 --> 10:35.000
+See
+
+10:35.000 --> 10:36.000
+This
+
+10:36.000 --> 10:37.000
+Thing
+
+10:37.000 --> 10:38.000
+So
+
+10:38.000 --> 10:39.000
+You
+
+10:39.000 --> 10:40.000
+Write
+
+10:40.000 --> 10:41.000
+Any
+
+10:41.000 --> 10:42.000
+Css
+
+10:42.000 --> 10:43.000
+Name
+
+10:43.000 --> 10:44.000
+You
+
+10:44.000 --> 10:45.000
+So
+
+10:45.000 --> 10:46.000
+This
+
+10:46.000 --> 10:47.000
+Is
+
+10:47.000 --> 10:48.000
+Very
+
+10:48.000 --> 10:49.000
+Basic
+
+10:49.000 --> 10:50.000
+Here
+
+10:50.000 --> 10:51.000
+We Can Do 
+
+10:51.000 --> 10:52.000
+A Lot Of Things with Tailwind CSS
+
+10:52.000 --> 10:53.000
+Now After this
+
+10:53.000 --> 10:54.000
+We will see
+
+10:54.000 --> 10:55.000
+How we can add
+
+10:55.000 --> 10:56.000
+Google Authentication
+
+

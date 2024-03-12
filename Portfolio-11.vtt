@@ -1,0 +1,3329 @@
+WEBVTT
+
+00:06.000 --> 00:29.980
+So now we will see that the data of our form, portfolio form, which we will fill from the user, how can we save it in sanity, so we have to do the same thing that we have to create a document and push it in sanity, so now I would like to show you one more thing for this, this is a website in which the documentation of sanity is kind of given,
+
+00:30.000 --> 00:58.240
+so this is npmjs.com, so in this you will get everything that these functions are there, like create document, create if not exist, update document, all the functions that are there for sanity, they will be given to you here, so if tomorrow you need any function, then you can see from here, for example, how to create and replace a document, so if you go here, then it will give you this method that this is your document, if you want to create and replace it in sanity, then you can use this function and you can do it,
+
+00:58.240 --> 00:59.440
+ok,
+
+01:00.000 --> 01:28.980
+and now we will use the same method for our form, what does create and replace do, what does create and replace do is that if the user's document is already closed, then it will replace it, but if that document is not made, then it will create it, that is, suppose there is a profile page for someone, you get the option to edit in the profile page, right, so when you edit, your information changes, how does it happen,
+
+01:30.000 --> 01:57.820
+and if a new information is saved in the database, it is edited and replaced with new information, the same thing does this too, if a user's portfolio is form-data, which is form-data, then it will add form data, otherwise if there is form-data and if the user has added any new information, then it will replace it, it is very easy, right, so this is just this, and then there are some more things, create if not exist, which we have used, right, that if there is no document, then it will create it, if there is no document, then it will replace it, so in this way you can do this method, ok,
+
+02:00.000 --> 02:06.000
+After that, there is an update option here that you can update.
+
+02:06.000 --> 02:11.000
+After updating, there are some other things that you can do.
+
+02:11.000 --> 02:13.000
+So now we go back to the code.
+
+02:13.000 --> 02:18.000
+So now we complete our handleSummit function.
+
+02:18.000 --> 02:23.000
+For this, we will first put a parameter in it, which is called event.
+
+02:23.000 --> 02:32.000
+Because here we are going to put the data of the form.
+
+02:32.000 --> 02:35.000
+And finally, when we submit the form,
+
+02:35.000 --> 02:37.000
+this handleSummit function will be called here.
+
+02:37.000 --> 02:40.000
+Where? OnSummit.
+
+02:40.000 --> 02:49.000
+So when it will call onSummit, we will store the values of our input fields.
+
+02:49.000 --> 02:53.000
+So there we will store the values of those fields.
+
+02:53.000 --> 02:57.000
+We will store them in an object named data.
+
+02:57.000 --> 02:59.000
+So how will this happen here?
+
+02:59.000 --> 03:04.000
+We will use the name here to select the input fields.
+
+03:04.000 --> 03:08.000
+And the respective values that we will put in these names,
+
+03:08.000 --> 03:12.000
+we will take them as a value that we will be putting in the values.
+
+03:12.000 --> 03:15.000
+So what will be our key? It will be our name.
+
+03:15.000 --> 03:16.000
+So first name.
+
+03:16.000 --> 03:18.000
+And the value you will put in the first name, for example, John.
+
+03:18.000 --> 03:21.000
+So John will be its key value.
+
+03:21.000 --> 03:23.000
+So in this way, we will be storing it on the key value.
+
+03:23.000 --> 03:25.000
+So now what we will do is,
+
+03:25.000 --> 03:29.000
+we have put the event in our handleSummit function.
+
+03:29.000 --> 03:31.000
+We will want one more thing for this.
+
+03:31.000 --> 03:33.000
+When the form is submitted,
+
+03:33.000 --> 03:35.000
+our form should not be reloaded.
+
+03:35.000 --> 03:37.000
+The page should not be reloaded.
+
+03:37.000 --> 03:39.000
+So by doing preventDefault,
+
+03:39.000 --> 03:41.000
+there is a functionality called preventDefault,
+
+03:41.000 --> 03:43.000
+event.preventDefault.
+
+03:43.000 --> 03:45.000
+So we can put that thing here.
+
+03:45.000 --> 03:48.000
+So that our form should not be loaded.
+
+03:48.000 --> 03:50.000
+That is, it should not be reloaded.
+
+03:50.000 --> 03:51.000
+And after this,
+
+03:51.000 --> 03:53.000
+now we will put one more thing.
+
+03:53.000 --> 03:55.000
+That we will want,
+
+03:55.000 --> 03:58.000
+our button loading state,
+
+03:58.000 --> 04:00.000
+I will tell you what button loading is.
+
+04:00.000 --> 04:02.000
+That state is this.
+
+04:02.000 --> 04:03.000
+See this.
+
+04:03.000 --> 04:05.000
+When a person will click on the submit button,
+
+04:05.000 --> 04:07.000
+this is our submit button.
+
+04:07.000 --> 04:09.000
+When someone will click on the submit button,
+
+04:09.000 --> 04:11.000
+then what will happen is,
+
+04:11.000 --> 04:13.000
+what will happen here first is,
+
+04:13.000 --> 04:16.000
+the data that will be filled in the form of the user,
+
+04:16.000 --> 04:18.000
+that will go to sanity.
+
+04:18.000 --> 04:20.000
+And when that data will be going to sanity,
+
+04:20.000 --> 04:21.000
+the document will be being created in sanity,
+
+04:21.000 --> 04:23.000
+then it will take some time,
+
+04:23.000 --> 04:25.000
+so till the time it is being created,
+
+04:25.000 --> 04:28.000
+till then we will show the loading here.
+
+04:28.000 --> 04:31.000
+So as soon as the person clicks on submit,
+
+04:31.000 --> 04:33.000
+then handleSubmit function will be called.
+
+04:33.000 --> 04:34.000
+Right?
+
+04:34.000 --> 04:36.000
+Because we have written on the top of the form,
+
+04:36.000 --> 04:37.000
+onSubmit.
+
+04:37.000 --> 04:39.000
+HandleSubmit function is called.
+
+04:39.000 --> 04:41.000
+As soon as handleSubmit function is called,
+
+04:41.000 --> 04:43.000
+here we will set its state as loading.
+
+04:43.000 --> 04:45.000
+We will set this B loading as true,
+
+04:45.000 --> 04:47.000
+so this loading will be shown.
+
+04:47.000 --> 04:49.000
+And as soon as the document will be created,
+
+04:49.000 --> 04:51.000
+then we will set its state as false.
+
+04:51.000 --> 04:52.000
+So as soon as we set false,
+
+04:52.000 --> 04:54.000
+then what will happen?
+
+04:54.000 --> 04:55.000
+It will come in submit.
+
+04:55.000 --> 04:56.000
+You must have understood.
+
+04:56.000 --> 04:58.000
+So now what do we do here?
+
+04:58.000 --> 04:59.000
+Just below this,
+
+04:59.000 --> 05:01.000
+set B loading.
+
+05:01.000 --> 05:03.000
+And where did we create this state?
+
+05:03.000 --> 05:05.000
+It is created here.
+
+05:05.000 --> 05:07.000
+This is B loading.
+
+05:07.000 --> 05:08.000
+Right?
+
+05:08.000 --> 05:13.000
+So we will set it here.
+
+05:13.000 --> 05:15.000
+Here.
+
+05:15.000 --> 05:17.000
+Set is B loading.
+
+05:17.000 --> 05:20.000
+And here we will make it true.
+
+05:20.000 --> 05:21.000
+After this,
+
+05:21.000 --> 05:26.000
+now here we will capture the data of the form.
+
+05:26.000 --> 05:29.000
+We will capture the data of the form.
+
+05:29.000 --> 05:31.000
+Here we make a variable named form.
+
+05:31.000 --> 05:32.000
+And in it,
+
+05:32.000 --> 05:33.000
+event.target,
+
+05:33.000 --> 05:35.000
+means all the values that the user will write,
+
+05:35.000 --> 05:36.000
+all of them,
+
+05:36.000 --> 05:40.000
+we capture an event in the form.
+
+05:40.000 --> 05:46.000
+And here we make a constructor by doing a form data.
+
+05:46.000 --> 05:49.000
+And I will tell you what we have to do here.
+
+05:49.000 --> 05:50.000
+By doing form data.
+
+05:51.000 --> 05:53.000
+And here,
+
+05:53.000 --> 06:00.000
+equal to new form data.
+
+06:00.000 --> 06:01.000
+And in it,
+
+06:01.000 --> 06:03.000
+we put the form.
+
+06:03.000 --> 06:04.000
+Now what will happen basically?
+
+06:04.000 --> 06:06.000
+What will this constructor do?
+
+06:06.000 --> 06:09.000
+That whatever form data is coming here,
+
+06:09.000 --> 06:13.000
+whatever form data is coming from event.target,
+
+06:13.000 --> 06:18.000
+all those things will go inside this constructor.
+
+06:18.000 --> 06:19.000
+Right?
+
+06:19.000 --> 06:22.000
+And then after this,
+
+06:22.000 --> 06:24.000
+by doing data,
+
+06:24.000 --> 06:27.000
+here we make an object.
+
+06:27.000 --> 06:28.000
+Now what will this object do?
+
+06:28.000 --> 06:30.000
+I will tell you everything now.
+
+06:30.000 --> 06:32.000
+And here we put a loop.
+
+06:32.000 --> 06:34.000
+We put for of loop.
+
+06:34.000 --> 06:43.000
+For let key and value of form data.
+
+06:43.000 --> 06:44.000
+What is form data?
+
+06:44.000 --> 06:45.000
+What is this?
+
+06:45.000 --> 06:46.000
+This is form data.
+
+06:46.000 --> 06:47.000
+Whatever form data is in it,
+
+06:47.000 --> 06:48.000
+the constructor in it,
+
+06:48.000 --> 06:50.000
+whatever values we have,
+
+06:50.000 --> 06:51.000
+it will loop them.
+
+06:51.000 --> 06:53.000
+Whatever values we have in form data,
+
+06:53.000 --> 06:54.000
+it will loop them.
+
+06:54.000 --> 06:56.000
+All the entries in it,
+
+06:56.000 --> 07:00.000
+this thing will loop them.
+
+07:00.000 --> 07:01.000
+After this,
+
+07:01.000 --> 07:03.000
+whatever entries are in it,
+
+07:03.000 --> 07:04.000
+whatever values are there,
+
+07:04.000 --> 07:05.000
+right?
+
+07:05.000 --> 07:06.000
+Whatever values are there,
+
+07:06.000 --> 07:11.000
+we will put all of them inside the data.
+
+07:11.000 --> 07:12.000
+Now,
+
+07:12.000 --> 07:13.000
+what have we done?
+
+07:13.000 --> 07:15.000
+Let's understand it one more time.
+
+07:15.000 --> 07:16.000
+What have we done?
+
+07:16.000 --> 07:19.000
+We have made a form name variable.
+
+07:19.000 --> 07:20.000
+In it,
+
+07:20.000 --> 07:22.000
+whatever value we are getting in event.target,
+
+07:22.000 --> 07:25.000
+it will be stored in all of them.
+
+07:25.000 --> 07:27.000
+Whatever name value we are getting,
+
+07:27.000 --> 07:28.000
+we have made a constructor
+
+07:28.000 --> 07:30.000
+and we have assigned form to it.
+
+07:30.000 --> 07:31.000
+Form data name.
+
+07:31.000 --> 07:33.000
+And whatever value is stored in it,
+
+07:33.000 --> 07:35.000
+inside it,
+
+07:35.000 --> 07:36.000
+we will loop it.
+
+07:36.000 --> 07:37.000
+And before that,
+
+07:37.000 --> 07:40.000
+we have made an empty object data name.
+
+07:40.000 --> 07:42.000
+Now we will loop that form data.
+
+07:42.000 --> 07:43.000
+And basically,
+
+07:43.000 --> 07:45.000
+we will loop this form data.
+
+07:45.000 --> 07:46.000
+And inside it,
+
+07:46.000 --> 07:47.000
+whatever key values will be there,
+
+07:47.000 --> 07:48.000
+i.e.
+
+07:48.000 --> 07:49.000
+what can be the name?
+
+07:49.000 --> 07:50.000
+What will be the key value?
+
+07:50.000 --> 07:51.000
+In our form,
+
+07:51.000 --> 07:52.000
+whatever name is there,
+
+07:52.000 --> 07:53.000
+that will be the key.
+
+07:53.000 --> 07:54.000
+And whatever value will be there,
+
+07:54.000 --> 07:55.000
+the user will write,
+
+07:55.000 --> 07:56.000
+that will be the value.
+
+07:56.000 --> 07:57.000
+For example,
+
+07:57.000 --> 07:58.000
+if we see here,
+
+07:58.000 --> 07:59.000
+then our first name,
+
+07:59.000 --> 08:00.000
+this is a key.
+
+08:00.000 --> 08:01.000
+Right?
+
+08:01.000 --> 08:02.000
+Last name,
+
+08:02.000 --> 08:03.000
+that is also a key.
+
+08:03.000 --> 08:04.000
+After this,
+
+08:04.000 --> 08:05.000
+here,
+
+08:05.000 --> 08:06.000
+and about,
+
+08:06.000 --> 08:07.000
+this is also a key.
+
+08:07.000 --> 08:08.000
+So,
+
+08:08.000 --> 08:09.000
+these are all the keys.
+
+08:09.000 --> 08:10.000
+So,
+
+08:10.000 --> 08:11.000
+all these things will be in it,
+
+08:11.000 --> 08:12.000
+inside the form data.
+
+08:12.000 --> 08:13.000
+Now,
+
+08:13.000 --> 08:14.000
+it is looping it.
+
+08:14.000 --> 08:15.000
+All the entries in it,
+
+08:15.000 --> 08:16.000
+all the things stored in it,
+
+08:16.000 --> 08:17.000
+it is looping them.
+
+08:17.000 --> 08:18.000
+And it is appending it
+
+08:18.000 --> 08:19.000
+inside the data.
+
+08:19.000 --> 08:20.000
+It is going to insert it
+
+08:20.000 --> 08:21.000
+inside the data.
+
+08:21.000 --> 08:22.000
+Right?
+
+08:22.000 --> 08:23.000
+So,
+
+08:23.000 --> 08:24.000
+it is putting the key
+
+08:24.000 --> 08:25.000
+in the data
+
+08:25.000 --> 08:26.000
+and it is assigning values to it.
+
+08:26.000 --> 08:27.000
+So,
+
+08:27.000 --> 08:28.000
+the data,
+
+08:28.000 --> 08:29.000
+basically,
+
+08:29.000 --> 08:30.000
+our object is being made.
+
+08:30.000 --> 08:31.000
+After this,
+
+08:31.000 --> 08:32.000
+what will we do?
+
+08:32.000 --> 08:33.000
+All the values
+
+08:33.000 --> 08:34.000
+that come to us,
+
+08:34.000 --> 08:35.000
+so,
+
+08:35.000 --> 08:36.000
+we store these values
+
+08:36.000 --> 08:37.000
+at one place.
+
+08:37.000 --> 08:38.000
+And where
+
+08:38.000 --> 08:39.000
+will we store it?
+
+08:39.000 --> 08:40.000
+We will store it
+
+08:40.000 --> 08:41.000
+in our
+
+08:41.000 --> 08:42.000
+form data.
+
+08:42.000 --> 08:43.000
+So,
+
+08:43.000 --> 08:44.000
+we will store it
+
+08:44.000 --> 08:45.000
+inside our
+
+08:45.000 --> 08:46.000
+p form data.
+
+08:46.000 --> 08:47.000
+We want to see
+
+08:47.000 --> 08:48.000
+what values
+
+08:48.000 --> 08:49.000
+we have
+
+08:49.000 --> 08:50.000
+here.
+
+08:50.000 --> 08:51.000
+What is
+
+08:51.000 --> 08:52.000
+p form data?
+
+08:52.000 --> 08:53.000
+Let me tell you
+
+08:53.000 --> 08:54.000
+what is p form data.
+
+08:54.000 --> 08:55.000
+p form data is this.
+
+08:55.000 --> 08:56.000
+We had made
+
+08:56.000 --> 08:57.000
+a state
+
+08:57.000 --> 08:58.000
+p form data
+
+08:58.000 --> 08:59.000
+by calling it
+
+08:59.000 --> 09:00.000
+empty object.
+
+09:00.000 --> 09:01.000
+We will store it
+
+09:01.000 --> 09:02.000
+inside this.
+
+09:02.000 --> 09:03.000
+So,
+
+09:03.000 --> 09:04.000
+to store
+
+09:04.000 --> 09:05.000
+p form data,
+
+09:05.000 --> 09:06.000
+we will go here
+
+09:06.000 --> 09:07.000
+and here
+
+09:07.000 --> 09:08.000
+we will write
+
+09:08.000 --> 09:09.000
+data.
+
+09:09.000 --> 09:10.000
+And we have
+
+09:10.000 --> 09:11.000
+stored data here.
+
+09:11.000 --> 09:12.000
+After this,
+
+09:12.000 --> 09:13.000
+we also
+
+09:13.000 --> 09:14.000
+have
+
+09:14.000 --> 09:15.000
+a
+
+09:15.000 --> 09:16.000
+dot
+
+09:16.000 --> 09:17.000
+log
+
+09:17.000 --> 09:18.000
+and
+
+09:18.000 --> 09:19.000
+we
+
+09:19.000 --> 09:20.000
+stringify
+
+09:20.000 --> 09:21.000
+it.
+
+09:21.000 --> 09:22.000
+p form
+
+09:22.000 --> 09:23.000
+data.
+
+09:23.000 --> 09:24.000
+We have
+
+09:24.000 --> 09:25.000
+stringified
+
+09:25.000 --> 09:26.000
+it like
+
+09:26.000 --> 09:27.000
+this.
+
+09:27.000 --> 09:28.000
+Okay.
+
+09:28.000 --> 09:29.000
+Once we
+
+09:29.000 --> 09:30.000
+see
+
+09:30.000 --> 09:31.000
+how it
+
+09:31.000 --> 09:32.000
+looks.
+
+09:32.000 --> 09:33.000
+And
+
+09:33.000 --> 09:34.000
+what
+
+09:34.000 --> 09:35.000
+have we
+
+09:35.000 --> 09:36.000
+done here?
+
+09:36.000 --> 09:37.000
+As soon as
+
+09:37.000 --> 09:38.000
+the handle
+
+09:38.000 --> 09:39.000
+is submitted,
+
+09:39.000 --> 09:40.000
+we have
+
+09:40.000 --> 09:41.000
+set our
+
+09:41.000 --> 09:42.000
+event
+
+09:42.000 --> 09:43.000
+p form entries
+
+09:43.000 --> 09:44.000
+in the data.
+
+09:44.000 --> 09:45.000
+And then
+
+09:45.000 --> 09:46.000
+we have set it
+
+09:46.000 --> 09:47.000
+in a state
+
+09:47.000 --> 09:48.000
+from the data.
+
+09:48.000 --> 09:49.000
+This much
+
+09:49.000 --> 09:50.000
+is done.
+
+09:50.000 --> 09:51.000
+After this,
+
+09:51.000 --> 09:52.000
+the main thing
+
+09:52.000 --> 09:53.000
+is to create
+
+09:53.000 --> 09:54.000
+a document
+
+09:54.000 --> 09:55.000
+of sanity.
+
+09:55.000 --> 09:56.000
+Now,
+
+09:56.000 --> 09:57.000
+we have
+
+09:57.000 --> 09:58.000
+all the data
+
+09:58.000 --> 09:59.000
+inside it.
+
+09:59.000 --> 10:00.000
+Let's check it
+
+10:00.000 --> 10:01.000
+quickly.
+
+10:01.000 --> 10:02.000
+Now,
+
+10:02.000 --> 10:03.000
+we go to
+
+10:03.000 --> 10:04.000
+our
+
+10:04.000 --> 10:05.000
+web page.
+
+10:05.000 --> 10:06.000
+This is
+
+10:06.000 --> 10:07.000
+our
+
+10:07.000 --> 10:08.000
+web page,
+
+10:08.000 --> 10:09.000
+right?
+
+10:09.000 --> 10:10.000
+Now,
+
+10:10.000 --> 10:11.000
+we put
+
+10:11.000 --> 10:12.000
+hello.
+
+10:12.000 --> 10:13.000
+For example,
+
+10:13.000 --> 10:14.000
+I put
+
+10:14.000 --> 10:15.000
+hello
+
+10:15.000 --> 10:16.000
+here.
+
+10:16.000 --> 10:17.000
+I put
+
+10:17.000 --> 10:18.000
+world.
+
+10:18.000 --> 10:19.000
+I
+
+10:19.000 --> 10:20.000
+put
+
+10:20.000 --> 10:21.000
+how
+
+10:21.000 --> 10:22.000
+are you
+
+10:22.000 --> 10:23.000
+here.
+
+10:23.000 --> 10:24.000
+I put
+
+10:24.000 --> 10:25.000
+anything
+
+10:25.000 --> 10:26.000
+here.
+
+10:26.000 --> 10:27.000
+Here
+
+10:27.000 --> 10:28.000
+and
+
+10:28.000 --> 10:29.000
+here
+
+10:29.000 --> 10:30.000
+I put
+
+10:30.000 --> 10:31.000
+web
+
+10:31.000 --> 10:32.000
+death.
+
+10:32.000 --> 10:33.000
+And
+
+10:33.000 --> 10:34.000
+I do
+
+10:34.000 --> 10:35.000
+this thing
+
+10:35.000 --> 10:36.000
+like this.
+
+10:36.000 --> 10:37.000
+Probe.
+
+10:37.000 --> 10:38.000
+And
+
+10:38.000 --> 10:39.000
+here
+
+10:39.000 --> 10:40.000
+I do
+
+10:40.000 --> 10:41.000
+this.
+
+10:41.000 --> 10:42.000
+I put
+
+10:42.000 --> 10:43.000
+three
+
+10:43.000 --> 10:44.000
+and here
+
+10:44.000 --> 10:45.000
+and here
+
+10:45.000 --> 10:46.000
+abcd.
+
+10:46.000 --> 10:47.000
+Okay,
+
+10:47.000 --> 10:48.000
+we put
+
+10:48.000 --> 10:49.000
+this thing for now.
+
+10:49.000 --> 10:50.000
+Now,
+
+10:50.000 --> 10:51.000
+you will see one thing
+
+10:51.000 --> 10:52.000
+that as soon as I click
+
+10:52.000 --> 10:53.000
+on the submit button,
+
+10:53.000 --> 10:54.000
+as soon as I click
+
+10:54.000 --> 10:55.000
+on the submit button,
+
+10:55.000 --> 10:56.000
+what will happen
+
+10:56.000 --> 10:57.000
+that because of
+
+10:57.000 --> 10:58.000
+event dot
+
+10:58.000 --> 10:59.000
+prevent default,
+
+10:59.000 --> 11:00.000
+it will not load
+
+11:00.000 --> 11:01.000
+first.
+
+11:01.000 --> 11:02.000
+It will not reload,
+
+11:02.000 --> 11:03.000
+right?
+
+11:03.000 --> 11:04.000
+As you have seen
+
+11:04.000 --> 11:05.000
+that whenever you submit
+
+11:05.000 --> 11:06.000
+a form,
+
+11:06.000 --> 11:07.000
+the page reloads.
+
+11:07.000 --> 11:08.000
+But
+
+11:08.000 --> 11:09.000
+event dot
+
+11:09.000 --> 11:10.000
+prevent default
+
+11:10.000 --> 11:11.000
+will stop it from
+
+11:11.000 --> 11:12.000
+loading.
+
+11:12.000 --> 11:13.000
+Why will it
+
+11:13.000 --> 11:14.000
+come?
+
+11:14.000 --> 11:15.000
+I told you
+
+11:15.000 --> 11:16.000
+because
+
+11:16.000 --> 11:17.000
+if you see here,
+
+11:17.000 --> 11:18.000
+because
+
+11:18.000 --> 11:19.000
+here
+
+11:19.000 --> 11:20.000
+we have set
+
+11:20.000 --> 11:21.000
+something like this.
+
+11:21.000 --> 11:22.000
+Set is
+
+11:22.000 --> 11:23.000
+be loading.
+
+11:23.000 --> 11:24.000
+What have we set this be loading?
+
+11:24.000 --> 11:25.000
+Prove.
+
+11:25.000 --> 11:26.000
+When true is set,
+
+11:26.000 --> 11:27.000
+loading will be written.
+
+11:27.000 --> 11:28.000
+So,
+
+11:28.000 --> 11:29.000
+as soon as the handle is submitted,
+
+11:29.000 --> 11:30.000
+be loading is set to true.
+
+11:30.000 --> 11:31.000
+So,
+
+11:31.000 --> 11:32.000
+it will always be set to true
+
+11:32.000 --> 11:33.000
+after clicking submit.
+
+11:33.000 --> 11:34.000
+Okay,
+
+11:34.000 --> 11:35.000
+then we go back
+
+11:35.000 --> 11:36.000
+and
+
+11:36.000 --> 11:37.000
+here
+
+11:37.000 --> 11:38.000
+put
+
+11:38.000 --> 11:39.000
+everything
+
+11:39.000 --> 11:40.000
+and finally
+
+11:40.000 --> 11:41.000
+we will open the console
+
+11:41.000 --> 11:42.000
+and see after this.
+
+11:42.000 --> 11:43.000
+So,
+
+11:43.000 --> 11:44.000
+here we make the console
+
+11:44.000 --> 11:45.000
+a little smaller
+
+11:45.000 --> 11:46.000
+and now
+
+11:46.000 --> 11:47.000
+let's go here and click on submit.
+
+11:47.000 --> 11:48.000
+As soon as we click on submit,
+
+11:48.000 --> 11:49.000
+loading is written here
+
+11:49.000 --> 11:50.000
+and
+
+11:50.000 --> 11:51.000
+whatever
+
+11:51.000 --> 11:52.000
+data we have here
+
+11:52.000 --> 11:53.000
+is basically
+
+11:53.000 --> 11:54.000
+coming here
+
+11:54.000 --> 11:55.000
+and right now
+
+11:55.000 --> 11:56.000
+the p form data
+
+11:56.000 --> 11:57.000
+is coming here empty.
+
+11:57.000 --> 11:58.000
+Why is it coming empty?
+
+11:58.000 --> 11:59.000
+Let's check it quickly
+
+11:59.000 --> 12:00.000
+and
+
+12:00.000 --> 12:01.000
+here
+
+12:01.000 --> 12:02.000
+I
+
+12:02.000 --> 12:03.000
+go back
+
+12:03.000 --> 12:04.000
+and
+
+12:04.000 --> 12:05.000
+let's check
+
+12:05.000 --> 12:06.000
+why the data is empty
+
+12:06.000 --> 12:07.000
+here
+
+12:07.000 --> 12:08.000
+is showing.
+
+12:08.000 --> 12:09.000
+So,
+
+12:09.000 --> 12:10.000
+let's go back
+
+12:10.000 --> 12:11.000
+and
+
+12:11.000 --> 12:12.000
+click on submit.
+
+12:12.000 --> 12:13.000
+Okay,
+
+12:13.000 --> 12:14.000
+now
+
+12:14.000 --> 12:15.000
+here
+
+12:15.000 --> 12:16.000
+you can see
+
+12:16.000 --> 12:17.000
+that here
+
+12:17.000 --> 12:18.000
+basically
+
+12:18.000 --> 12:19.000
+now the data has come here
+
+12:19.000 --> 12:20.000
+so,
+
+12:20.000 --> 12:21.000
+it takes a little time
+
+12:21.000 --> 12:22.000
+whatever data is coming
+
+12:22.000 --> 12:23.000
+it takes a little time
+
+12:23.000 --> 12:24.000
+so,
+
+12:24.000 --> 12:25.000
+as soon as we click here
+
+12:25.000 --> 12:26.000
+the data has come here
+
+12:26.000 --> 12:27.000
+and
+
+12:27.000 --> 12:28.000
+when I click one more time
+
+12:28.000 --> 12:29.000
+it has come again
+
+12:29.000 --> 12:30.000
+so,
+
+12:30.000 --> 12:31.000
+the data is coming here
+
+12:31.000 --> 12:32.000
+the whole data is coming
+
+12:32.000 --> 12:33.000
+that
+
+12:33.000 --> 12:34.000
+first name is coming
+
+12:34.000 --> 12:35.000
+last name is coming
+
+12:35.000 --> 12:36.000
+and
+
+12:36.000 --> 12:37.000
+we are getting
+
+12:37.000 --> 12:38.000
+everything here.
+
+12:38.000 --> 12:39.000
+Okay,
+
+12:39.000 --> 12:40.000
+this means
+
+12:40.000 --> 12:41.000
+we are getting data.
+
+12:41.000 --> 12:42.000
+Now,
+
+12:42.000 --> 12:43.000
+here if we
+
+12:43.000 --> 12:44.000
+don't use
+
+12:44.000 --> 12:45.000
+p form data
+
+12:45.000 --> 12:46.000
+then it will work
+
+12:46.000 --> 12:47.000
+because
+
+12:47.000 --> 12:48.000
+because
+
+12:48.000 --> 12:49.000
+if we remove
+
+12:49.000 --> 12:50.000
+p form data
+
+12:50.000 --> 12:51.000
+and directly
+
+12:51.000 --> 12:52.000
+use data
+
+12:52.000 --> 12:53.000
+console
+
+12:53.000 --> 12:54.000
+dot
+
+12:54.000 --> 12:55.000
+log
+
+12:55.000 --> 12:56.000
+data
+
+12:56.000 --> 12:57.000
+log
+
+12:57.000 --> 12:58.000
+data
+
+12:58.000 --> 12:59.000
+and
+
+12:59.000 --> 13:00.000
+now
+
+13:00.000 --> 13:01.000
+we
+
+13:01.000 --> 13:02.000
+go back
+
+13:02.000 --> 13:03.000
+okay,
+
+13:03.000 --> 13:04.000
+now
+
+13:04.000 --> 13:05.000
+we
+
+13:05.000 --> 13:06.000
+go
+
+13:06.000 --> 13:07.000
+back
+
+13:07.000 --> 13:08.000
+okay,
+
+13:08.000 --> 13:09.000
+now
+
+13:09.000 --> 13:10.000
+we go back
+
+13:10.000 --> 13:11.000
+and
+
+13:11.000 --> 13:12.000
+here is the loading set
+
+13:12.000 --> 13:13.000
+and as soon as I click it
+
+13:13.000 --> 13:14.000
+from the office
+
+13:14.000 --> 13:15.000
+on submit
+
+13:15.000 --> 13:16.000
+you will see that
+
+13:16.000 --> 13:17.000
+the whole data has come
+
+13:17.000 --> 13:18.000
+all the data
+
+13:18.000 --> 13:19.000
+that we have
+
+13:19.000 --> 13:20.000
+has come
+
+13:20.000 --> 13:21.000
+so,
+
+13:21.000 --> 13:22.000
+we don't need p form data
+
+13:22.000 --> 13:23.000
+finally
+
+13:23.000 --> 13:24.000
+I can say that
+
+13:24.000 --> 13:25.000
+we remove the state
+
+13:25.000 --> 13:26.000
+of p form data
+
+13:26.000 --> 13:27.000
+now
+
+13:27.000 --> 13:28.000
+okay
+
+13:28.000 --> 13:29.000
+now
+
+13:29.000 --> 13:30.000
+after this
+
+13:30.000 --> 13:31.000
+after this
+
+13:31.000 --> 13:32.000
+here
+
+13:32.000 --> 13:33.000
+this much
+
+13:33.000 --> 13:34.000
+we have done
+
+13:34.000 --> 13:35.000
+now
+
+13:35.000 --> 13:36.000
+we remove it
+
+13:36.000 --> 13:37.000
+now
+
+13:37.000 --> 13:38.000
+we need
+
+13:38.000 --> 13:39.000
+to create
+
+13:39.000 --> 13:40.000
+a document of sanity
+
+13:40.000 --> 13:41.000
+and to create
+
+13:41.000 --> 13:42.000
+a document of sanity
+
+13:42.000 --> 13:43.000
+we have seen
+
+13:43.000 --> 13:44.000
+how it works
+
+13:44.000 --> 13:45.000
+so
+
+13:45.000 --> 13:46.000
+for that
+
+13:46.000 --> 13:47.000
+you have to
+
+13:47.000 --> 13:48.000
+make a variable
+
+13:48.000 --> 13:49.000
+by doing a doc
+
+13:49.000 --> 13:50.000
+and we have to put
+
+13:50.000 --> 13:51.000
+some things in it
+
+13:51.000 --> 13:52.000
+so,
+
+13:52.000 --> 13:53.000
+we will create
+
+13:53.000 --> 13:54.000
+some document
+
+13:54.000 --> 13:55.000
+like this
+
+13:55.000 --> 13:56.000
+so,
+
+13:56.000 --> 13:57.000
+it will be created
+
+13:57.000 --> 13:58.000
+here
+
+13:58.000 --> 13:59.000
+down
+
+13:59.000 --> 14:00.000
+so,
+
+14:00.000 --> 14:01.000
+by doing a doc
+
+14:01.000 --> 14:02.000
+we made
+
+14:02.000 --> 14:03.000
+an object
+
+14:03.000 --> 14:04.000
+and in this object
+
+14:04.000 --> 14:05.000
+we put an id
+
+14:05.000 --> 14:06.000
+you know
+
+14:06.000 --> 14:07.000
+it is necessary
+
+14:07.000 --> 14:08.000
+to put an id
+
+14:08.000 --> 14:09.000
+so,
+
+14:09.000 --> 14:10.000
+we want to send
+
+14:10.000 --> 14:11.000
+data
+
+14:11.000 --> 14:12.000
+in the profile
+
+14:12.000 --> 14:13.000
+schema
+
+14:13.000 --> 14:14.000
+now
+
+14:14.000 --> 14:15.000
+you will think
+
+14:15.000 --> 14:16.000
+what is written
+
+14:16.000 --> 14:17.000
+in the id
+
+14:17.000 --> 14:18.000
+so,
+
+14:18.000 --> 14:19.000
+I will tell you
+
+14:19.000 --> 14:20.000
+what we have done
+
+14:20.000 --> 14:21.000
+here
+
+14:21.000 --> 14:22.000
+what we have put
+
+14:22.000 --> 14:23.000
+in the first name
+
+14:23.000 --> 14:24.000
+data dot
+
+14:24.000 --> 14:25.000
+first name
+
+14:25.000 --> 14:26.000
+in the data
+
+14:26.000 --> 14:27.000
+the first name
+
+14:27.000 --> 14:28.000
+key
+
+14:28.000 --> 14:29.000
+will go
+
+14:29.000 --> 14:30.000
+in the first name
+
+14:30.000 --> 14:31.000
+in the last name
+
+14:31.000 --> 14:32.000
+data dot
+
+14:32.000 --> 14:33.000
+last name
+
+14:33.000 --> 14:34.000
+will go
+
+14:34.000 --> 14:35.000
+so,
+
+14:35.000 --> 14:36.000
+we are putting
+
+14:36.000 --> 14:37.000
+values
+
+14:37.000 --> 14:38.000
+all these things
+
+14:38.000 --> 14:39.000
+in the sanity
+
+14:39.000 --> 14:40.000
+before that
+
+14:40.000 --> 14:41.000
+let me show you
+
+14:41.000 --> 14:42.000
+the schema
+
+14:42.000 --> 14:43.000
+so,
+
+14:43.000 --> 14:44.000
+our profile dot js
+
+14:44.000 --> 14:45.000
+this is our profile dot js
+
+14:45.000 --> 14:46.000
+and
+
+14:46.000 --> 14:47.000
+I will open it
+
+14:47.000 --> 14:48.000
+what are the fields
+
+14:48.000 --> 14:49.000
+in profile dot js
+
+14:49.000 --> 14:50.000
+user email
+
+14:50.000 --> 14:51.000
+first name
+
+14:51.000 --> 14:52.000
+last name
+
+14:52.000 --> 14:53.000
+profile pic
+
+14:53.000 --> 14:54.000
+about
+
+14:54.000 --> 14:55.000
+work experience
+
+14:55.000 --> 14:56.000
+skill 2
+
+14:56.000 --> 14:57.000
+skill 3
+
+14:57.000 --> 14:58.000
+skill 4
+
+14:58.000 --> 14:59.000
+and then
+
+14:59.000 --> 15:00.000
+role
+
+15:00.000 --> 15:01.000
+these things
+
+15:01.000 --> 15:02.000
+are in our
+
+15:02.000 --> 15:03.000
+profile schema
+
+15:03.000 --> 15:04.000
+and
+
+15:04.000 --> 15:05.000
+in main dot js
+
+15:05.000 --> 15:06.000
+we have set
+
+15:06.000 --> 15:07.000
+these things only
+
+15:07.000 --> 15:08.000
+in the data
+
+15:08.000 --> 15:09.000
+and in the data
+
+15:09.000 --> 15:10.000
+this key
+
+15:10.000 --> 15:11.000
+first name
+
+15:11.000 --> 15:12.000
+last name
+
+15:12.000 --> 15:13.000
+we have seen this
+
+15:13.000 --> 15:14.000
+by printing
+
+15:14.000 --> 15:15.000
+this is coming
+
+15:15.000 --> 15:16.000
+so,
+
+15:16.000 --> 15:17.000
+we have set
+
+15:17.000 --> 15:18.000
+these things
+
+15:18.000 --> 15:19.000
+and these things
+
+15:19.000 --> 15:20.000
+we have already
+
+15:20.000 --> 15:21.000
+defined
+
+15:21.000 --> 15:22.000
+in our profile dot js
+
+15:22.000 --> 15:23.000
+so,
+
+15:23.000 --> 15:24.000
+after that
+
+15:24.000 --> 15:25.000
+we come to
+
+15:25.000 --> 15:26.000
+our profile picture
+
+15:26.000 --> 15:27.000
+so,
+
+15:27.000 --> 15:28.000
+in profile picture
+
+15:28.000 --> 15:29.000
+we have put
+
+15:29.000 --> 15:30.000
+something like
+
+15:30.000 --> 15:31.000
+preview image
+
+15:31.000 --> 15:32.000
+dot length
+
+15:32.000 --> 15:33.000
+greater than 0
+
+15:33.000 --> 15:34.000
+so,
+
+15:34.000 --> 15:35.000
+we remove this
+
+15:35.000 --> 15:36.000
+we don't need to put
+
+15:36.000 --> 15:37.000
+preview image
+
+15:37.000 --> 15:38.000
+review image
+
+15:38.000 --> 15:39.000
+and comma
+
+15:39.000 --> 15:40.000
+see what we have done
+
+15:40.000 --> 15:41.000
+in profile picture
+
+15:41.000 --> 15:42.000
+and in user email
+
+15:42.000 --> 15:43.000
+I am telling you
+
+15:43.000 --> 15:44.000
+what we have done
+
+15:44.000 --> 15:45.000
+by objecting the user
+
+15:45.000 --> 15:46.000
+so,
+
+15:46.000 --> 15:47.000
+basically
+
+15:47.000 --> 15:48.000
+what happened
+
+15:48.000 --> 15:49.000
+that our
+
+15:49.000 --> 15:50.000
+profile picture
+
+15:50.000 --> 15:51.000
+is here
+
+15:51.000 --> 15:52.000
+where
+
+15:52.000 --> 15:53.000
+in preview
+
+15:53.000 --> 15:54.000
+we are picking
+
+15:54.000 --> 15:55.000
+this thing
+
+15:55.000 --> 15:56.000
+suppose
+
+15:56.000 --> 15:57.000
+the user
+
+15:57.000 --> 15:58.000
+chooses a file
+
+15:58.000 --> 15:59.000
+so,
+
+15:59.000 --> 16:00.000
+the data url
+
+16:00.000 --> 16:01.000
+of that file
+
+16:01.000 --> 16:02.000
+will be saved
+
+16:02.000 --> 16:03.000
+so,
+
+16:03.000 --> 16:04.000
+let me show
+
+16:04.000 --> 16:05.000
+data url
+
+16:05.000 --> 16:06.000
+so,
+
+16:06.000 --> 16:07.000
+I will
+
+16:07.000 --> 16:08.000
+roughly
+
+16:08.000 --> 16:09.000
+here
+
+16:09.000 --> 16:10.000
+somewhere
+
+16:10.000 --> 16:11.000
+I will print this
+
+16:11.000 --> 16:12.000
+if
+
+16:12.000 --> 16:13.000
+field
+
+16:13.000 --> 16:14.000
+or
+
+16:14.000 --> 16:15.000
+or
+
+16:15.000 --> 16:16.000
+or
+
+16:16.000 --> 16:17.000
+or
+
+16:17.000 --> 16:18.000
+or
+
+16:18.000 --> 16:19.000
+or
+
+16:19.000 --> 16:20.000
+or
+
+16:20.000 --> 16:21.000
+or
+
+16:21.000 --> 16:22.000
+or
+
+16:22.000 --> 16:23.000
+or
+
+16:23.000 --> 16:24.000
+or
+
+16:24.000 --> 16:25.000
+or
+
+16:25.000 --> 16:26.000
+or
+
+16:26.000 --> 16:27.000
+or
+
+16:27.000 --> 16:28.000
+or
+
+16:28.000 --> 16:29.000
+or
+
+16:29.000 --> 16:30.000
+or
+
+16:30.000 --> 16:31.000
+or
+
+16:31.000 --> 16:32.000
+or
+
+16:32.000 --> 16:33.000
+or
+
+16:33.000 --> 16:34.000
+or
+
+16:34.000 --> 16:35.000
+or
+
+16:35.000 --> 16:36.000
+or
+
+16:36.000 --> 16:37.000
+or
+
+16:37.000 --> 16:38.080
+or
+
+16:38.080 --> 16:38.880
+or
+
+16:38.880 --> 16:39.500
+or
+
+16:39.500 --> 16:39.920
+or
+
+16:39.920 --> 16:40.500
+or
+
+16:40.500 --> 16:41.120
+or
+
+16:41.120 --> 16:41.800
+ok
+
+16:41.800 --> 16:42.040
+now
+
+16:42.040 --> 16:42.440
+let's go
+
+16:42.440 --> 16:43.120
+into our
+
+16:43.120 --> 16:44.000
+web
+
+16:44.000 --> 16:44.200
+page
+
+16:44.200 --> 16:44.740
+let's clear
+
+16:44.740 --> 16:45.080
+console
+
+16:45.080 --> 16:46.500
+here
+
+16:46.500 --> 16:47.940
+basically
+
+16:47.940 --> 16:49.060
+I do
+
+16:49.060 --> 16:50.000
+not
+
+16:50.000 --> 16:51.000
+anything
+
+16:51.000 --> 16:52.400
+here
+
+16:52.400 --> 16:54.000
+I will
+
+16:54.000 --> 16:55.500
+like
+
+16:55.500 --> 16:56.000
+here
+
+16:56.000 --> 16:57.680
+I have
+
+16:57.680 --> 16:58.500
+ал
+
+17:02.700 --> 17:03.000
+last
+
+17:03.000 --> 17:03.560
+screen
+
+17:03.560 --> 17:04.000
+is shakes
+
+17:04.000 --> 17:13.000
+We will show the same thing here because we have to lock the console in the wrong place.
+
+17:13.000 --> 17:15.000
+One minute.
+
+17:15.000 --> 17:19.000
+Okay.
+
+17:19.000 --> 17:21.000
+Okay.
+
+17:21.000 --> 17:27.000
+And apart from this, we have to lock reader.result not previewImage.
+
+17:27.000 --> 17:30.000
+reader.result
+
+17:30.000 --> 17:34.000
+The same thing because reader.result is finally set in previewImage.
+
+17:34.000 --> 17:38.000
+So we directly log reader.result.
+
+17:38.000 --> 17:40.000
+We go back.
+
+17:40.000 --> 17:45.000
+And after coming here, we choose another file.
+
+17:45.000 --> 17:48.000
+We went here and chose this.
+
+17:48.000 --> 17:54.000
+As soon as we choose, you will see how big this data URL is coming.
+
+17:54.000 --> 17:56.000
+This data is written here.
+
+17:56.000 --> 17:59.000
+And then this very big base64 encoded code is coming.
+
+17:59.000 --> 18:00.000
+Very big.
+
+18:00.000 --> 18:02.000
+This is basically our URL.
+
+18:02.000 --> 18:08.000
+Which is finally created after uploading the file.
+
+18:08.000 --> 18:10.000
+So this URL is basically stored.
+
+18:10.000 --> 18:11.000
+This URL.
+
+18:11.000 --> 18:12.000
+Such a big URL.
+
+18:12.000 --> 18:14.000
+Do you understand?
+
+18:14.000 --> 18:16.000
+So let's assume.
+
+18:16.000 --> 18:19.000
+I was going to show you what happens basically.
+
+18:19.000 --> 18:22.000
+Our file is decoded and converted into URL.
+
+18:22.000 --> 18:25.000
+And this URL is finally saved.
+
+18:25.000 --> 18:28.000
+And this URL shows you the image.
+
+18:28.000 --> 18:29.000
+Okay.
+
+18:29.000 --> 18:32.000
+But I was showing you this because.
+
+18:32.000 --> 18:35.000
+Because the preview image we have set here.
+
+18:35.000 --> 18:37.000
+If let's assume.
+
+18:37.000 --> 18:40.000
+If someone puts a preview image user.
+
+18:40.000 --> 18:41.000
+Someone puts.
+
+18:41.000 --> 18:44.000
+So he will get that URL here.
+
+18:44.000 --> 18:45.000
+Data URL.
+
+18:45.000 --> 18:48.000
+But if the user does not choose any file.
+
+18:48.000 --> 18:50.000
+So it is set here by default.
+
+18:50.000 --> 18:52.000
+You will get this URL.
+
+18:52.000 --> 18:53.000
+Got it?
+
+18:53.000 --> 18:56.000
+So here that URL will basically be of the user.
+
+18:56.000 --> 18:58.000
+So whenever in the user's portfolio.
+
+18:58.000 --> 19:00.000
+We will show the profile picture.
+
+19:00.000 --> 19:02.000
+And if he has put any profile picture.
+
+19:02.000 --> 19:04.000
+Then the profile picture of the user will be seen.
+
+19:04.000 --> 19:06.000
+Otherwise the image of the hacker will be seen.
+
+19:06.000 --> 19:08.000
+After this.
+
+19:08.000 --> 19:09.000
+After this.
+
+19:09.000 --> 19:11.000
+Where do we come?
+
+19:11.000 --> 19:13.000
+Let's come back here.
+
+19:13.000 --> 19:14.000
+Where have we taken the user email?
+
+19:14.000 --> 19:15.000
+See.
+
+19:15.000 --> 19:16.000
+Now the user email.
+
+19:16.000 --> 19:19.000
+Now we know that in our local storage.
+
+19:19.000 --> 19:21.000
+User email is kept.
+
+19:21.000 --> 19:23.000
+That is verified.
+
+19:23.000 --> 19:25.000
+That means it has also been checked with sanity.
+
+19:25.000 --> 19:27.000
+We checked it using the use effect.
+
+19:27.000 --> 19:28.000
+See.
+
+19:28.000 --> 19:30.000
+We checked it with sanity.
+
+19:30.000 --> 19:33.000
+So it means that the user email is verified.
+
+19:33.000 --> 19:35.000
+Now when the user email is verified.
+
+19:35.000 --> 19:40.000
+So we directly take the user email from the local storage.
+
+19:40.000 --> 19:42.000
+Now why did we take the user email?
+
+19:42.000 --> 19:43.000
+Let's see this too.
+
+19:43.000 --> 19:45.000
+We took the user email because.
+
+19:45.000 --> 19:48.000
+When we will make the portfolio site tomorrow.
+
+19:48.000 --> 19:50.000
+We will show the portfolio site of the user.
+
+19:50.000 --> 19:52.000
+So it will be something like this.
+
+19:52.000 --> 19:54.000
+I will show you how.
+
+19:54.000 --> 19:55.000
+This is the website.
+
+19:55.000 --> 19:56.000
+Okay.
+
+19:56.000 --> 19:57.000
+This is the website.
+
+19:57.000 --> 19:58.000
+See here in the URL bar.
+
+19:58.000 --> 19:59.000
+It is written localhost.
+
+19:59.000 --> 20:02.000
+As the user will go to slash techy recon.
+
+20:02.000 --> 20:10.000
+So here if a user named techy recon exists in our sanity.
+
+20:10.000 --> 20:13.000
+So its full data will show here.
+
+20:13.000 --> 20:15.000
+With the portfolio website.
+
+20:15.000 --> 20:17.000
+Now what is techy recon?
+
+20:17.000 --> 20:19.000
+Techy recon is basically an email.
+
+20:19.000 --> 20:21.000
+The email from which I am logged in.
+
+20:21.000 --> 20:23.000
+That is the first part of the email.
+
+20:23.000 --> 20:25.000
+It is not written at the readgmail.com.
+
+20:25.000 --> 20:27.000
+So how will we match tomorrow.
+
+20:27.000 --> 20:29.000
+That any user of this name exists.
+
+20:29.000 --> 20:32.000
+If someone put techy recon in the URL.
+
+20:32.000 --> 20:34.000
+So how will we check tomorrow.
+
+20:34.000 --> 20:35.000
+That the person named techy recon.
+
+20:35.000 --> 20:37.000
+Does he have any portfolio with us.
+
+20:37.000 --> 20:39.000
+We will check it like this.
+
+20:39.000 --> 20:41.000
+We have taken input today in the portfolio form.
+
+20:41.000 --> 20:42.000
+User email.
+
+20:42.000 --> 20:44.000
+So when we will check tomorrow.
+
+20:44.000 --> 20:46.000
+So we will use it to check.
+
+20:46.000 --> 20:51.000
+That if the user email is in the profile named document.
+
+20:51.000 --> 20:52.000
+In the schema.
+
+20:52.000 --> 20:53.000
+Its first.
+
+20:53.000 --> 20:58.000
+The first words that come before the at the read.
+
+20:58.000 --> 21:00.000
+The first words that come before the at the read.
+
+21:00.000 --> 21:02.000
+If they match with the URL words.
+
+21:02.000 --> 21:04.000
+Then show the portfolio in it.
+
+21:04.000 --> 21:06.000
+This thing will be clear now.
+
+21:06.000 --> 21:08.000
+So we are taking this.
+
+21:08.000 --> 21:10.000
+Because we can match it later.
+
+21:10.000 --> 21:12.000
+User email and URL email.
+
+21:12.000 --> 21:14.000
+The name above the URL.
+
+21:14.000 --> 21:16.000
+And we can show it the side of the portfolio.
+
+21:16.000 --> 21:18.000
+So for now I will remove it.
+
+21:18.000 --> 21:20.000
+And here.
+
+21:20.000 --> 21:22.000
+Here we have.
+
+21:22.000 --> 21:24.000
+Here we have.
+
+21:24.000 --> 21:25.000
+JSON dot parse object.
+
+21:25.000 --> 21:26.000
+User object dot email.
+
+21:26.000 --> 21:28.000
+Now what is the user object.
+
+21:28.000 --> 21:30.000
+User object is our.
+
+21:30.000 --> 21:32.000
+Basically what.
+
+21:32.000 --> 21:35.000
+Our user object is our local storage.
+
+21:35.000 --> 21:39.000
+Now we define the user object once.
+
+21:39.000 --> 21:42.000
+So here near the main.
+
+21:42.000 --> 21:44.000
+Here we have defined the user object.
+
+21:44.000 --> 21:45.000
+Ok.
+
+21:45.000 --> 21:48.000
+So we have taken the user info object.
+
+21:48.000 --> 21:50.000
+And defined it like a user object.
+
+21:50.000 --> 21:52.000
+And we have taken the email from it.
+
+21:52.000 --> 21:54.000
+Now we have everything.
+
+21:54.000 --> 21:55.000
+Here we know everything.
+
+21:55.000 --> 21:56.000
+What we have taken.
+
+21:56.000 --> 21:57.000
+What we have done.
+
+21:57.000 --> 21:58.000
+Type.
+
+21:58.000 --> 21:59.000
+We know the type.
+
+21:59.000 --> 22:00.000
+It will be saved in the profile name document.
+
+22:00.000 --> 22:01.000
+Now what is the ID.
+
+22:01.000 --> 22:03.000
+Now you must be thinking.
+
+22:03.000 --> 22:05.000
+Why are we not keeping all that in the ID.
+
+22:05.000 --> 22:08.000
+Which we had kept while making the user.
+
+22:08.000 --> 22:09.000
+All.
+
+22:09.000 --> 22:10.000
+Now see what is there.
+
+22:10.000 --> 22:11.000
+Of every document.
+
+22:11.000 --> 22:12.000
+Of every schema.
+
+22:12.000 --> 22:14.000
+Like the user.
+
+22:14.000 --> 22:17.000
+User was a different schema.
+
+22:17.000 --> 22:20.000
+Profile is a different schema.
+
+22:20.000 --> 22:21.000
+Now.
+
+22:21.000 --> 22:23.000
+For both of them.
+
+22:23.000 --> 22:25.000
+We cannot use the same ID.
+
+22:25.000 --> 22:27.000
+Once we have used the ID in the user.
+
+22:27.000 --> 22:28.000
+All.
+
+22:28.000 --> 22:29.000
+We have used all as ID.
+
+22:29.000 --> 22:32.000
+Now we cannot use the same thing in the profile.
+
+22:32.000 --> 22:34.000
+So we have to use something different here.
+
+22:34.000 --> 22:35.000
+So what have we done.
+
+22:35.000 --> 22:38.000
+We have made a function of string to ask.
+
+22:38.000 --> 22:39.000
+Now what it does.
+
+22:39.000 --> 22:41.000
+The email of the user.
+
+22:41.000 --> 22:43.000
+The email of the user.
+
+22:43.000 --> 22:46.000
+It converts it to ask.
+
+22:46.000 --> 22:47.000
+Where does the user take the email from.
+
+22:47.000 --> 22:48.000
+From the local storage.
+
+22:48.000 --> 22:49.000
+From the local storage.
+
+22:49.000 --> 22:50.000
+From the user object.
+
+22:50.000 --> 22:51.000
+From the user object.
+
+22:51.000 --> 22:52.000
+From the local storage.
+
+22:52.000 --> 22:53.000
+He takes the email.
+
+22:53.000 --> 22:55.000
+And here we have converted it to the object.
+
+22:55.000 --> 22:56.000
+Because in the local storage.
+
+22:56.000 --> 22:58.000
+This object is stored in the form of a string.
+
+22:58.000 --> 22:59.000
+Okay.
+
+22:59.000 --> 23:03.000
+Now here the user email.
+
+23:03.000 --> 23:04.000
+Basically ours.
+
+23:04.000 --> 23:05.000
+In the local storage.
+
+23:05.000 --> 23:07.000
+It converts it to ask.
+
+23:07.000 --> 23:08.000
+And it gives it as an ID.
+
+23:08.000 --> 23:09.000
+Now what is this.
+
+23:09.000 --> 23:10.000
+I will tell you.
+
+23:10.000 --> 23:13.000
+What is ask?
+
+23:13.000 --> 23:16.000
+You will go to the browser.
+
+23:16.000 --> 23:17.000
+Search ask.
+
+23:17.000 --> 23:19.000
+Ask is the American Standard Quote.
+
+23:19.000 --> 23:28.000
+You will see.
+
+23:28.000 --> 23:30.000
+For questions.
+
+23:30.000 --> 23:37.000
+You will take question after your其实 is answered.
+
+23:37.000 --> 23:42.000
+This is a variable to which we have to also translate.
+
+23:42.000 --> 23:43.000
+How will we translate this.
+
+23:43.000 --> 23:44.000
+We can also use such a,
+
+23:44.000 --> 23:45.000
+Sometimes it isToo much which we have applied.
+
+23:45.000 --> 23:46.000
+To make it simple.
+
+23:46.000 --> 23:47.000
+I have done it.
+
+23:47.000 --> 23:48.000
+And every request.
+
+23:48.000 --> 24:08.000
+Wait a minute, I think I can see the ACA table here, here one by one, like A, A has been given a value of 65
+
+24:08.000 --> 24:16.000
+When we type A in the computer, it by default takes 65 as a number and converts it into a number
+
+24:16.000 --> 24:20.000
+Similarly, when we type small, by default, the computer converts it into 97
+
+24:20.000 --> 24:28.000
+Because it is easier for the computer to convert the numerical to binary code than the letter
+
+24:28.000 --> 24:37.000
+So now just understand that all the letters written in your keyboard, a particular number has been assigned to it by default
+
+24:37.000 --> 24:43.000
+And when you type the same number, the same number reads the computer as a memory
+
+24:43.000 --> 24:45.000
+It doesn't read A, it reads 97
+
+24:45.000 --> 24:46.000
+It reads capital E
+
+24:46.000 --> 24:48.000
+It doesn't read A, it reads 65
+
+24:48.000 --> 24:57.000
+Okay, so what we have done is that we have converted our code here
+
+24:57.000 --> 25:07.000
+We have converted the email of the user, one by one, like t-e-c-h-y-f-g-o-h-n-john-doe-at-the-reads-email.com
+
+25:07.000 --> 25:11.000
+So we have converted each and every string into ASCII
+
+25:11.000 --> 25:13.000
+Converted into ASCII, that is, into numbers
+
+25:13.000 --> 25:15.000
+And we have assigned the same numbers to the ID
+
+25:15.000 --> 25:17.000
+Now how will we convert it into ASCII?
+
+25:17.000 --> 25:18.000
+It is quite easy
+
+25:18.000 --> 25:19.000
+I will tell you
+
+25:19.000 --> 25:21.000
+We will go up
+
+25:21.000 --> 25:26.000
+And somewhere up here
+
+25:26.000 --> 25:27.000
+We will make a function
+
+25:27.000 --> 25:29.000
+The function is string to ASCII
+
+25:29.000 --> 25:32.000
+We will put a string as a parameter in it
+
+25:32.000 --> 25:34.000
+Now we will assign an empty array
+
+25:34.000 --> 25:37.000
+By doing ASCII array, we will make an empty array
+
+25:37.000 --> 25:44.000
+And all the words, all the letters in the email
+
+25:44.000 --> 25:47.000
+In JavaScript, there is a function called character code
+
+25:47.000 --> 25:50.000
+There is a function called character code
+
+25:50.000 --> 25:52.000
+Basically, there is a method
+
+25:52.000 --> 25:54.000
+By using this, we will give each letter in it
+
+25:54.000 --> 25:57.000
+And it will convert it into numerical value
+
+25:57.000 --> 25:59.000
+And finally, it will be appended in the array
+
+25:59.000 --> 26:01.000
+It will be pushed in the array
+
+26:01.000 --> 26:04.000
+And finally, we will join the whole array
+
+26:04.000 --> 26:06.000
+And it will become a very big number
+
+26:06.000 --> 26:07.000
+Okay
+
+26:07.000 --> 26:09.000
+So now I will show you by printing it
+
+26:09.000 --> 26:10.000
+What is it? How is it?
+
+26:10.000 --> 26:13.000
+After this, whatever document we have here
+
+26:13.000 --> 26:16.000
+We have made it
+
+26:16.000 --> 26:21.000
+Now we will see the document once by doing console.log
+
+26:27.000 --> 26:29.000
+console.log document
+
+26:29.000 --> 26:32.000
+Now we will see the document by doing console.log
+
+26:32.000 --> 26:35.000
+We will go to our browser
+
+26:35.000 --> 26:37.000
+And after going to the browser
+
+26:37.000 --> 26:39.000
+Here I clear console.log
+
+26:39.000 --> 26:41.000
+Here I write hello
+
+26:43.000 --> 26:46.000
+Hello world
+
+26:46.000 --> 26:52.000
+Here I write anything
+
+26:52.000 --> 26:57.000
+logo
+
+26:57.000 --> 26:59.000
+hello world
+
+26:59.000 --> 27:01.000
+Hello world
+
+27:01.000 --> 27:03.000
+You have to put all the values ​​in here
+
+27:03.000 --> 27:04.000
+OK
+
+27:04.000 --> 27:05.000
+And as soon I submitted it
+
+27:05.000 --> 27:08.000
+Our doc here
+
+27:08.000 --> 27:10.000
+Which is an object by create
+
+27:10.000 --> 27:12.000
+And here all the values ​​come in it
+
+27:12.000 --> 27:14.000
+we don't have any profile picture here
+
+27:14.000 --> 27:16.000
+so by default profile picture is going to this
+
+27:16.000 --> 27:18.000
+we have put something in about
+
+27:18.000 --> 27:20.000
+that came
+
+27:20.000 --> 27:22.000
+user email is this
+
+27:22.000 --> 27:24.000
+user email is from local storage
+
+27:24.000 --> 27:26.000
+id is this
+
+27:26.000 --> 27:28.000
+i told you that it will convert user email to number
+
+27:28.000 --> 27:30.000
+so it converted to number
+
+27:30.000 --> 27:32.000
+so it became a unique id
+
+27:32.000 --> 27:34.000
+so for everyone it will be a unique id
+
+27:34.000 --> 27:36.000
+and type profile
+
+27:36.000 --> 27:38.000
+so it became one document
+
+27:38.000 --> 27:40.000
+now we have to push this document in sanity
+
+27:40.000 --> 27:42.000
+how we will do that
+
+27:42.000 --> 27:44.000
+how we will do that
+
+27:44.000 --> 27:46.000
+you can see this document
+
+27:46.000 --> 27:48.000
+i will show you one more time
+
+27:48.000 --> 27:50.000
+here by default profile picture is set
+
+27:50.000 --> 27:52.000
+and after that id and all things
+
+27:52.000 --> 27:54.000
+ok
+
+27:54.000 --> 27:56.000
+after that we go to
+
+27:56.000 --> 27:58.000
+code
+
+27:58.000 --> 28:00.000
+and
+
+28:00.000 --> 28:02.000
+here we
+
+28:02.000 --> 28:04.000
+here we will use this method
+
+28:06.000 --> 28:08.000
+here we will use this
+
+28:08.000 --> 28:10.000
+this
+
+28:10.000 --> 28:12.000
+and dot create and replace
+
+28:12.000 --> 28:14.000
+i told you create and replace
+
+28:14.000 --> 28:16.000
+if document doesn't exist then it will create
+
+28:16.000 --> 28:18.000
+and if it will actually exist then it will replace
+
+28:18.000 --> 28:20.000
+we have used it for this
+
+28:20.000 --> 28:22.000
+if tomorrow if a user
+
+28:22.000 --> 28:24.000
+fill new things in portfolio form
+
+28:24.000 --> 28:26.000
+then details of his portfolio
+
+28:26.000 --> 28:28.000
+will change
+
+28:28.000 --> 28:30.000
+and we did the same thing
+
+28:30.000 --> 28:32.000
+here we printed id id
+
+28:32.000 --> 28:34.000
+and here we did one more thing
+
+28:34.000 --> 28:36.000
+set is visible to true
+
+28:36.000 --> 28:38.000
+and button loading to false set
+
+28:38.000 --> 28:40.000
+now what will happen
+
+28:40.000 --> 28:42.000
+when user will click in submit
+
+28:42.000 --> 28:44.000
+then
+
+28:44.000 --> 28:46.000
+till the time this document will be created
+
+28:46.000 --> 28:48.000
+till then button loading will be true
+
+28:48.000 --> 28:50.000
+means loading will be written
+
+28:50.000 --> 28:52.000
+and as soon as document will be created
+
+28:52.000 --> 28:54.000
+then button loading will be false set
+
+28:54.000 --> 28:56.000
+and submit will be written
+
+28:56.000 --> 28:58.000
+ok
+
+28:58.000 --> 29:00.000
+after this set is visible to true
+
+29:00.000 --> 29:02.000
+we have set is visible to true
+
+29:02.000 --> 29:04.000
+set is visible to true
+
+29:04.000 --> 29:06.000
+why we have set it to true
+
+29:06.000 --> 29:08.000
+and here i will tell you
+
+29:08.000 --> 29:10.000
+what is the state
+
+29:10.000 --> 29:12.000
+you will go down
+
+29:12.000 --> 29:14.000
+and here
+
+29:14.000 --> 29:16.000
+at the very bottom
+
+29:16.000 --> 29:18.000
+one minute
+
+29:18.000 --> 29:20.000
+at the very bottom here
+
+29:20.000 --> 29:22.000
+as soon as
+
+29:22.000 --> 29:24.000
+submit button is clicked
+
+29:24.000 --> 29:26.000
+as soon as
+
+29:26.000 --> 29:28.000
+submit button is clicked
+
+29:28.000 --> 29:30.000
+then here our
+
+29:30.000 --> 29:32.000
+is visible is set to true
+
+29:32.000 --> 29:34.000
+now as soon as is visible is set to true
+
+29:34.000 --> 29:36.000
+then we have made this div
+
+29:36.000 --> 29:38.000
+this div
+
+29:38.000 --> 29:40.000
+this div basically
+
+29:40.000 --> 29:42.000
+gives the user
+
+29:42.000 --> 29:44.000
+the url of portfolio
+
+29:44.000 --> 29:46.000
+gives the url of portfolio
+
+29:46.000 --> 29:48.000
+now what is the url of portfolio
+
+29:48.000 --> 29:50.000
+i have told you
+
+29:50.000 --> 29:52.000
+that localhost
+
+29:52.000 --> 29:54.000
+slash techydecon
+
+29:54.000 --> 29:56.000
+the first word of our email
+
+29:56.000 --> 29:58.000
+the first word of our email at the rate
+
+29:58.000 --> 30:00.000
+will be our url of portfolio
+
+30:00.000 --> 30:02.000
+so this is the only thing
+
+30:02.000 --> 30:04.000
+as soon as we click in submit
+
+30:04.000 --> 30:06.000
+then we have
+
+30:06.000 --> 30:08.000
+whatever is our email in local storage
+
+30:08.000 --> 30:10.000
+its first word means
+
+30:10.000 --> 30:12.000
+the first word of our email
+
+30:12.000 --> 30:14.000
+which is in the 0th index
+
+30:14.000 --> 30:16.000
+before the rate
+
+30:16.000 --> 30:18.000
+that thing we get here
+
+30:18.000 --> 30:20.000
+as a url
+
+30:20.000 --> 30:22.000
+and we present it in some way
+
+30:22.000 --> 30:24.000
+visit your portfolio
+
+30:24.000 --> 30:26.000
+and as soon as someone clicks in this
+
+30:26.000 --> 30:28.000
+then he
+
+30:28.000 --> 30:30.000
+slash
+
+30:30.000 --> 30:32.000
+slash
+
+30:32.000 --> 30:34.000
+and whatever is our email
+
+30:34.000 --> 30:36.000
+the first word of our email goes in it
+
+30:36.000 --> 30:38.000
+now i am understanding
+
+30:38.000 --> 30:40.000
+so we save it for now
+
+30:40.000 --> 30:42.000
+after saving
+
+30:42.000 --> 30:44.000
+we go to our
+
+30:44.000 --> 30:46.000
+we go to our web page
+
+30:46.000 --> 30:48.000
+now let's see
+
+30:48.000 --> 30:50.000
+what we have done
+
+30:52.000 --> 30:54.000
+we come here
+
+30:54.000 --> 30:56.000
+we have all the details
+
+30:56.000 --> 30:58.000
+ok
+
+30:58.000 --> 31:00.000
+we click here
+
+31:00.000 --> 31:02.000
+and see what happened
+
+31:02.000 --> 31:04.000
+as soon as i clicked there
+
+31:04.000 --> 31:06.000
+what happened
+
+31:06.000 --> 31:08.000
+we got the object
+
+31:08.000 --> 31:10.000
+after that
+
+31:10.000 --> 31:12.000
+document was created
+
+31:12.000 --> 31:14.000
+and here
+
+31:14.000 --> 31:16.000
+submit came from there
+
+31:16.000 --> 31:18.000
+loading state was false set
+
+31:18.000 --> 31:20.000
+and this visit your portfolio
+
+31:20.000 --> 31:22.000
+which i was telling you
+
+31:22.000 --> 31:24.000
+this thing came here
+
+31:24.000 --> 31:26.000
+as soon as you click in visit your portfolio
+
+31:26.000 --> 31:28.000
+then you will go to slash techy recon
+
+31:28.000 --> 31:30.000
+and what is techy recon
+
+31:30.000 --> 31:32.000
+whatever is my email set in local storage
+
+31:32.000 --> 31:34.000
+this is it
+
+31:34.000 --> 31:36.000
+this is the first word of my email
+
+31:36.000 --> 31:38.000
+understood
+
+31:38.000 --> 31:40.000
+so this will be the URL for any of these
+
+31:40.000 --> 31:42.000
+so we want
+
+31:42.000 --> 31:44.000
+the URL of our portfolio site
+
+31:44.000 --> 31:46.000
+will be like this for everyone
+
+31:46.000 --> 31:48.000
+the first word of his email
+
+31:48.000 --> 31:50.000
+will be the URL of his portfolio
+
+31:50.000 --> 31:52.000
+so now how will it be
+
+31:52.000 --> 31:54.000
+we will tell you in detail
+
+31:54.000 --> 31:56.000
+before that let's go and see our
+
+31:56.000 --> 31:58.000
+sanity
+
+31:58.000 --> 32:00.000
+go to profile
+
+32:00.000 --> 32:02.000
+as soon as you go to profile
+
+32:02.000 --> 32:04.000
+you will get the data of techy recon
+
+32:04.000 --> 32:06.000
+and here everything
+
+32:06.000 --> 32:08.000
+everything is set here
+
+32:08.000 --> 32:10.000
+now we don't have to do anything
+
+32:10.000 --> 32:12.000
+now we just
+
+32:12.000 --> 32:14.000
+whatever our
+
+32:14.000 --> 32:16.000
+portfolio
+
+32:16.000 --> 32:18.000
+what we have done here
+
+32:18.000 --> 32:20.000
+we have logged in
+
+32:20.000 --> 32:22.000
+filled the form
+
+32:22.000 --> 32:24.000
+now we have to start making the portfolio site
+
