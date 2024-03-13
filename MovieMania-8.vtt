@@ -1,0 +1,290 @@
+WEBVTT
+
+00:06.000 --> 00:11.000
+So, finally, we have one last thing left which is Real-time Movie Search.
+
+00:11.000 --> 00:18.000
+So, what was happening here is that when you were clicking on the search button, the movie was showing up.
+
+00:18.000 --> 00:20.000
+But what are we going to do now?
+
+00:20.000 --> 00:22.000
+We are going to search in real-time.
+
+00:22.000 --> 00:27.000
+That means, as you keep searching, the movies will keep showing up.
+
+00:27.000 --> 00:29.000
+How will that happen?
+
+00:29.000 --> 00:32.000
+Here, we will be using React UseEffect.
+
+00:32.000 --> 00:34.000
+What is UseEffect?
+
+00:34.000 --> 00:37.000
+Basically, what is UseEffect?
+
+00:37.000 --> 00:41.000
+Whenever your page gets loaded, when you use UseEffect,
+
+00:41.000 --> 00:47.000
+whenever you load a page or according to some parameters,
+
+00:47.000 --> 00:52.000
+you can run a particular function or a particular thing.
+
+00:52.000 --> 00:55.000
+That means, let me show you.
+
+00:55.000 --> 00:59.000
+To use UseEffect, first of all, you have to import it on top.
+
+00:59.000 --> 01:04.000
+So, you will do useEffect, comma, slash useEffect.
+
+01:04.000 --> 01:06.000
+So, it will automatically import.
+
+01:06.000 --> 01:10.000
+To use it, its syntax is of this type.
+
+01:10.000 --> 01:12.000
+So, we go down here.
+
+01:12.000 --> 01:14.000
+Now, before that, let me tell you one more thing.
+
+01:14.000 --> 01:18.000
+All the things related to JSX are written in return.
+
+01:18.000 --> 01:23.000
+All the variables and functions that are created on it are created on top of it.
+
+01:23.000 --> 01:25.000
+So, you have to keep this in mind.
+
+01:25.000 --> 01:27.000
+So, what is UseEffect?
+
+01:27.000 --> 01:30.000
+You do something like this.
+
+01:30.000 --> 01:33.000
+After that, you create an arrow function inside it.
+
+01:33.000 --> 01:35.000
+Callback function, basically.
+
+01:35.000 --> 01:38.000
+And whatever you write inside it,
+
+01:38.000 --> 01:42.000
+it will run whenever your page gets loaded
+
+01:42.000 --> 01:45.000
+or whenever you want it to run.
+
+01:45.000 --> 01:50.000
+That means, we want that whenever a user writes something in search,
+
+01:50.000 --> 01:51.000
+in the search box,
+
+01:51.000 --> 01:53.000
+whenever the search runs,
+
+01:53.000 --> 01:56.000
+then only this function of search movies will run.
+
+01:56.000 --> 01:59.000
+That means, for example, user is writing Avengers.
+
+01:59.000 --> 02:02.000
+So, not after pressing the search button,
+
+02:02.000 --> 02:05.000
+the movie should be seen at the same time.
+
+02:05.000 --> 02:07.000
+So, what we will put here?
+
+02:07.000 --> 02:10.000
+We will put the function of search movies.
+
+02:10.000 --> 02:13.000
+And we will say that here is the search term.
+
+02:13.000 --> 02:14.000
+This is basic.
+
+02:14.000 --> 02:16.000
+You know that what will the movie search?
+
+02:16.000 --> 02:17.000
+What will go in the movie function?
+
+02:17.000 --> 02:20.000
+The search term will go and the movie will be searched there.
+
+02:20.000 --> 02:23.000
+But the special thing here is that
+
+02:23.000 --> 02:25.000
+when your page gets loaded,
+
+02:25.000 --> 02:27.000
+when your page gets loaded for now,
+
+02:27.000 --> 02:32.000
+then whatever is inside the search term will be searched.
+
+02:32.000 --> 02:35.000
+That means, Avengers is inside the search term by default.
+
+02:35.000 --> 02:37.000
+So, you will get this as a search value.
+
+02:37.000 --> 02:39.000
+See, I will show you.
+
+02:39.000 --> 02:41.000
+Now, you will go to Chrome.
+
+02:41.000 --> 02:43.000
+So, you will see Avengers.
+
+02:43.000 --> 02:46.000
+Here, you will be able to see Avengers' data below.
+
+02:46.000 --> 02:48.000
+You can see Avengers.
+
+02:48.000 --> 02:51.000
+You did not search Avengers, but you can still see it.
+
+02:51.000 --> 02:54.000
+Here, in default, you have the Avengers value.
+
+02:54.000 --> 02:56.000
+You set that.
+
+02:56.000 --> 02:58.000
+Wait a minute.
+
+02:58.000 --> 03:02.000
+You set the Avengers value in default.
+
+03:02.000 --> 03:05.000
+If you are not using the use effect,
+
+03:05.000 --> 03:11.000
+then you do not see it even after setting the Avengers value.
+
+03:11.000 --> 03:12.000
+That is why you do not see it.
+
+03:12.000 --> 03:15.000
+Because the search term has not been called yet.
+
+03:15.000 --> 03:17.000
+But as soon as you used the use effect,
+
+03:17.000 --> 03:18.000
+as soon as the page got loaded,
+
+03:18.000 --> 03:20.000
+it immediately called the function of search movies.
+
+03:20.000 --> 03:23.000
+And the search term was visible to you.
+
+03:23.000 --> 03:26.000
+But we want that when the user starts searching something,
+
+03:26.000 --> 03:28.000
+then the search movies are visible to him.
+
+03:28.000 --> 03:31.000
+So, here we pass a dependency array.
+
+03:31.000 --> 03:33.000
+What is a dependency array?
+
+03:33.000 --> 03:35.000
+Whatever you will put in it,
+
+03:35.000 --> 03:36.000
+by putting a comma,
+
+03:36.000 --> 03:38.000
+whenever there will be changes in that thing,
+
+03:38.000 --> 03:41.000
+then only your function use effect will work.
+
+03:41.000 --> 03:43.000
+For example, we put the search term here.
+
+03:43.000 --> 03:46.000
+So, whenever we will keep doing changes in the search term,
+
+03:46.000 --> 03:48.000
+the user will keep searching.
+
+03:48.000 --> 03:51.000
+The data of the movie will keep changing again and again.
+
+03:51.000 --> 03:52.000
+So, now we go to Chrome.
+
+03:52.000 --> 03:55.000
+And now here once,
+
+03:55.000 --> 03:58.000
+we try to do something.
+
+03:58.000 --> 04:01.000
+For example, we do iron man here.
+
+04:01.000 --> 04:02.000
+So, see this.
+
+04:02.000 --> 04:03.000
+We did not click the search button,
+
+04:03.000 --> 04:05.000
+even after that it was searched.
+
+04:05.000 --> 04:07.000
+So, this is real-time search.
+
+04:07.000 --> 04:10.000
+We implemented using the use effect.
+
+04:10.000 --> 04:13.000
+So, finally our project is completed.
+
+04:13.000 --> 04:17.000
+You will mention it in your resume anywhere.
+
+04:17.000 --> 04:19.000
+And remember one more thing here,
+
+04:19.000 --> 04:22.000
+that you can modify it according to you.
+
+04:22.000 --> 04:25.000
+This is a basic idea you have taken.
+
+04:25.000 --> 04:27.000
+You can modify it according to you
+
+04:27.000 --> 04:29.000
+and take it to the next level.
+
+04:29.000 --> 04:32.000
+So, for now this project is completed.
+

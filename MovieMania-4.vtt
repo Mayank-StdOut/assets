@@ -1,0 +1,839 @@
+WEBVTT
+
+00:06.000 --> 00:12.000
+So far we have seen how to use API to search data of movies.
+
+00:12.000 --> 00:17.000
+Now the second thing is that we have to set the search data that we have now.
+
+00:17.000 --> 00:20.000
+And then we have to show the data to the user.
+
+00:20.000 --> 00:23.000
+So now to set the data we use states in react.
+
+00:23.000 --> 00:24.000
+So what are states?
+
+00:24.000 --> 00:26.000
+States are basically used to set the data.
+
+00:26.000 --> 00:28.000
+For now you know this much.
+
+00:28.000 --> 00:30.000
+So how are states written?
+
+00:30.000 --> 00:32.000
+So you define a constant state here.
+
+00:32.000 --> 00:39.000
+And after defining a const you open it with a square bracket.
+
+00:39.000 --> 00:42.000
+You put two parameters in the square bracket.
+
+00:42.000 --> 00:45.000
+The first parameter is variable.
+
+00:45.000 --> 00:47.000
+And the second parameter is set the variable.
+
+00:47.000 --> 00:50.000
+So in the first parameter you declare any variable.
+
+00:50.000 --> 00:52.000
+And in the second you set it.
+
+00:52.000 --> 00:56.000
+For example, we are searching movies here.
+
+00:56.000 --> 00:58.000
+And then the data of that movie.
+
+00:58.000 --> 00:59.000
+We have to set it.
+
+00:59.000 --> 01:01.000
+So we define it as set movies.
+
+01:01.000 --> 01:03.000
+These two things we define here.
+
+01:03.000 --> 01:07.000
+Now basically a use state hook is applied to it.
+
+01:07.000 --> 01:08.000
+Use state hook.
+
+01:08.000 --> 01:12.000
+So to use it what you have to do first is to import it from here.
+
+01:12.000 --> 01:16.000
+Which has automatically been imported above due to the functionality of VS Code.
+
+01:16.000 --> 01:20.000
+Now in this we define what kind of data we are going to set.
+
+01:20.000 --> 01:22.000
+Like the set movies that we will set here.
+
+01:22.000 --> 01:23.000
+What kind of data will it be?
+
+01:23.000 --> 01:25.000
+So in our case it is a list of movies.
+
+01:25.000 --> 01:27.000
+That means when you saw that we searched movies.
+
+01:27.000 --> 01:29.000
+So a list of movies came.
+
+01:29.000 --> 01:31.000
+So we have to set it.
+
+01:31.000 --> 01:34.000
+So we set a list of movies here.
+
+01:34.000 --> 01:37.000
+So for this we have used an array here.
+
+01:37.000 --> 01:41.000
+And list of movies means that we are storing an array of movies.
+
+01:41.000 --> 01:42.000
+Second thing.
+
+01:42.000 --> 01:44.000
+Now we are setting these movies.
+
+01:44.000 --> 01:47.000
+For this we will first search the name of the movie from the user.
+
+01:47.000 --> 01:49.000
+Then we will set the same data.
+
+01:49.000 --> 01:51.000
+So when the user will search.
+
+01:51.000 --> 01:54.000
+So for that also we have to make a state.
+
+01:54.000 --> 01:56.000
+We name it as search term.
+
+01:56.000 --> 01:58.000
+Whatever the user will search.
+
+01:58.000 --> 01:59.000
+It will be set in this.
+
+01:59.000 --> 02:01.000
+And set search term.
+
+02:03.000 --> 02:05.000
+Now slowly you will understand everything well.
+
+02:05.000 --> 02:07.000
+When we will do the code now.
+
+02:07.000 --> 02:09.000
+So in this basically what we will do.
+
+02:09.000 --> 02:11.000
+We will set the search term of the user.
+
+02:11.000 --> 02:13.000
+Whatever the user wants to search.
+
+02:13.000 --> 02:15.000
+It will be set here.
+
+02:15.000 --> 02:17.000
+So here we have used an empty string.
+
+02:17.000 --> 02:20.000
+Because here we will want the user to set a string.
+
+02:20.000 --> 02:22.000
+He will search a string.
+
+02:22.000 --> 02:23.000
+Right.
+
+02:23.000 --> 02:24.000
+A string will search the user.
+
+02:24.000 --> 02:25.000
+So here we will.
+
+02:25.000 --> 02:28.000
+Here we will set the value as a string.
+
+02:28.000 --> 02:30.000
+Now our work is down here.
+
+02:30.000 --> 02:32.000
+Near the return.
+
+02:32.000 --> 02:34.000
+Where we will write our jsx.
+
+02:34.000 --> 02:36.000
+And there only the user will be shown in the web page.
+
+02:36.000 --> 02:39.000
+So here the first thing we have to make.
+
+02:39.000 --> 02:42.000
+That is a search box.
+
+02:42.000 --> 02:45.000
+So for this we will first make a div to make a search box.
+
+02:45.000 --> 02:47.000
+Whose class name we will give app.
+
+02:47.000 --> 02:50.000
+So you will write dot app.
+
+02:50.000 --> 02:52.000
+So because of the functionality of the ds code.
+
+02:52.000 --> 02:53.000
+A div will be created automatically.
+
+02:53.000 --> 02:55.000
+Whose class name will be app.
+
+02:55.000 --> 02:57.000
+After this you have to give it an id.
+
+02:57.000 --> 02:58.000
+Search.
+
+02:58.000 --> 03:01.000
+We will make this div with the search id.
+
+03:01.000 --> 03:03.000
+And in this we will make one more div.
+
+03:03.000 --> 03:05.000
+This is the main div.
+
+03:05.000 --> 03:07.000
+In which there will be a full search box.
+
+03:07.000 --> 03:09.000
+We will make one more div.
+
+03:09.000 --> 03:11.000
+Whose class name we will give search.
+
+03:11.000 --> 03:14.000
+So this is the input for the search box.
+
+03:14.000 --> 03:16.000
+And here in this we will make an input.
+
+03:16.000 --> 03:17.000
+Sorry.
+
+03:17.000 --> 03:19.000
+In this we will use an input.
+
+03:19.000 --> 03:21.000
+We will make an input tag.
+
+03:21.000 --> 03:22.000
+What will happen in the input tag.
+
+03:22.000 --> 03:24.000
+Basically there will be a search input.
+
+03:24.000 --> 03:27.000
+So here type is equal to text already.
+
+03:27.000 --> 03:28.000
+Attribute is set.
+
+03:28.000 --> 03:30.000
+Second attribute we will put is placeholder.
+
+03:30.000 --> 03:33.000
+In which by default it will be written search for movies.
+
+03:33.000 --> 03:37.000
+So by default user will see this thing in the search box.
+
+03:37.000 --> 03:40.000
+Second thing is value.
+
+03:40.000 --> 03:43.000
+Means we have to set the value here.
+
+03:43.000 --> 03:44.000
+In the search box.
+
+03:44.000 --> 03:46.000
+Whatever user will search.
+
+03:46.000 --> 03:48.000
+We have to set that value.
+
+03:48.000 --> 03:51.000
+So we have already made a state above here.
+
+03:51.000 --> 03:52.000
+By doing set search term.
+
+03:52.000 --> 03:53.000
+And by doing search term.
+
+03:53.000 --> 03:55.000
+So we will put this thing in value.
+
+03:55.000 --> 03:58.000
+Because whatever user will search will be set in this.
+
+03:58.000 --> 04:01.000
+And the same thing will be shown in the search box.
+
+04:01.000 --> 04:05.000
+So here we will set the search term in value.
+
+04:05.000 --> 04:09.000
+And the second attribute will be onChange.
+
+04:09.000 --> 04:11.000
+Now what will onChange do?
+
+04:11.000 --> 04:13.000
+Whenever any user will type.
+
+04:13.000 --> 04:16.000
+So this will be put in the search term.
+
+04:16.000 --> 04:19.000
+Means for example users typed ironman.
+
+04:19.000 --> 04:22.000
+So it will set ironman in the search term.
+
+04:22.000 --> 04:25.000
+So here we will make a callback function.
+
+04:25.000 --> 04:27.000
+In which we will capture an event.
+
+04:27.000 --> 04:29.000
+Event means whatever user will be typing.
+
+04:29.000 --> 04:31.000
+We will capture the event of that.
+
+04:31.000 --> 04:32.000
+And we will set it here.
+
+04:32.000 --> 04:35.000
+Set in the search term.
+
+04:35.000 --> 04:37.000
+So we will set some value like this.
+
+04:37.000 --> 04:42.000
+In which we will write e.target.value.
+
+04:42.000 --> 04:45.000
+So now we will understand what is it.
+
+04:45.000 --> 04:47.000
+We basically said here.
+
+04:47.000 --> 04:49.000
+Whatever user is typing.
+
+04:49.000 --> 04:50.000
+Capture it as an event.
+
+04:50.000 --> 04:51.000
+E.
+
+04:51.000 --> 04:53.000
+We gave the name of that event as e.
+
+04:53.000 --> 04:55.000
+We said whatever user is typing.
+
+04:55.000 --> 04:56.000
+Whatever is typing.
+
+04:56.000 --> 04:59.000
+We will set it in the set search term.
+
+04:59.000 --> 05:01.000
+To set in the search term.
+
+05:01.000 --> 05:04.000
+We will use the set search term and set it.
+
+05:04.000 --> 05:06.000
+So basically whatever user will search here.
+
+05:06.000 --> 05:07.000
+It will be shown here.
+
+05:07.000 --> 05:09.000
+So for now let's see the web page.
+
+05:09.000 --> 05:12.000
+There we should get a search box.
+
+05:12.000 --> 05:14.000
+Very basic.
+
+05:14.000 --> 05:16.000
+So once we go.
+
+05:16.000 --> 05:18.000
+So see our web page.
+
+05:18.000 --> 05:20.000
+It has a very basic search box.
+
+05:20.000 --> 05:21.000
+On top.
+
+05:21.000 --> 05:23.000
+Now here for now there is an error.
+
+05:23.000 --> 05:26.000
+So this error will be coming because of API.
+
+05:26.000 --> 05:28.000
+We will fix this too.
+
+05:28.000 --> 05:31.000
+But for now you saw how it was.
+
+05:31.000 --> 05:32.000
+After this we do one thing.
+
+05:32.000 --> 05:34.000
+We go back to the code editor.
+
+05:34.000 --> 05:36.000
+And we check our terminal once.
+
+05:36.000 --> 05:37.000
+What error is coming in it.
+
+05:37.000 --> 05:39.000
+There is a warning.
+
+05:39.000 --> 05:40.000
+That brother.
+
+05:40.000 --> 05:42.000
+You have made movie and set movies.
+
+05:42.000 --> 05:44.000
+But you never used it.
+
+05:44.000 --> 05:46.000
+So this is also true.
+
+05:46.000 --> 05:48.000
+We have made set movies and movies.
+
+05:48.000 --> 05:49.000
+We did not use it.
+
+05:49.000 --> 05:51.000
+We will use it slowly.
+
+05:51.000 --> 05:53.000
+Before that I want one thing.
+
+05:53.000 --> 05:58.000
+That you have given CSS in the code section.
+
+05:58.000 --> 06:01.000
+In which you have given CSS of the whole page.
+
+06:01.000 --> 06:03.000
+Style sheets have been given.
+
+06:03.000 --> 06:04.000
+You copy it.
+
+06:04.000 --> 06:07.000
+Go to app.css and paste it.
+
+06:07.000 --> 06:09.000
+So I have already copied it.
+
+06:09.000 --> 06:11.000
+So we will go to app.css.
+
+06:11.000 --> 06:14.000
+And here we will remove whatever is already there.
+
+06:14.000 --> 06:17.000
+And we will paste what we have copied there.
+
+06:17.000 --> 06:19.000
+Because the whole CSS.
+
+06:19.000 --> 06:23.000
+We wanted that you do not waste your time in design.
+
+06:23.000 --> 06:24.000
+You learn logic.
+
+06:24.000 --> 06:26.000
+Because the questions asked in the interview.
+
+06:26.000 --> 06:27.000
+Wherever you go.
+
+06:27.000 --> 06:29.000
+So you are working on the main logic.
+
+06:29.000 --> 06:30.000
+Styles.
+
+06:30.000 --> 06:35.000
+You can do it by searching from chrome, internet, chat, gpt, google.
+
+06:35.000 --> 06:37.000
+This style is not the matter.
+
+06:37.000 --> 06:38.000
+The thing is logic.
+
+06:38.000 --> 06:41.000
+So we want you to focus on logic.
+
+06:41.000 --> 06:43.000
+So we have already given you styles.
+
+06:43.000 --> 06:45.000
+We will explain you the styles too.
+
+06:45.000 --> 06:47.000
+So now we check the app once.
+
+06:47.000 --> 06:49.000
+So see this.
+
+06:49.000 --> 06:52.000
+Here our web page looks something like this.
+
+06:52.000 --> 06:53.000
+You can see.
+
+06:53.000 --> 06:55.000
+It has become a search box.
+
+06:55.000 --> 06:57.000
+And all these things have happened.
+
+06:57.000 --> 06:58.000
+Right.
+
+06:58.000 --> 07:02.000
+So this is our basic web page.
+
+07:02.000 --> 07:05.000
+After this.
+
+07:05.000 --> 07:07.000
+The second thing is.
+
+07:07.000 --> 07:08.000
+Now we have to do.
+
+07:08.000 --> 07:10.000
+Let's put a search image too.
+
+07:10.000 --> 07:11.000
+Search box.
+
+07:11.000 --> 07:13.000
+The search box that is visible to us.
+
+07:13.000 --> 07:15.000
+It is also necessary to see an image in it.
+
+07:15.000 --> 07:17.000
+So we put an image somewhere here.
+
+07:17.000 --> 07:19.000
+So what you have to do to put a search button.
+
+07:19.000 --> 07:20.000
+First of all.
+
+07:20.000 --> 07:22.000
+You have to go to your source folder.
+
+07:22.000 --> 07:24.000
+There you have to click on the source folder.
+
+07:24.000 --> 07:26.000
+And you have to make a new file.
+
+07:26.000 --> 07:28.000
+Which you have to name as search.svg.
+
+07:28.000 --> 07:30.000
+Search.svg.
+
+07:30.000 --> 07:32.000
+We will put a svg code in it.
+
+07:32.000 --> 07:35.000
+Search image.
+
+07:35.000 --> 07:37.000
+The search button will be your svg.
+
+07:37.000 --> 07:43.000
+So for that we have given you a svg code by doing a search.svg in the code section.
+
+07:43.000 --> 07:45.000
+You just have to copy it from there and paste it in it.
+
+07:45.000 --> 07:47.000
+Now what you have to do.
+
+07:47.000 --> 07:50.000
+You just have to import it in your app.
+
+07:50.000 --> 07:52.000
+And you have to use it as a search icon.
+
+07:52.000 --> 07:54.000
+So what you have to do to import.
+
+07:54.000 --> 07:56.000
+You have to write import here.
+
+07:56.000 --> 07:58.000
+And you can give any name to this search svg.
+
+07:58.000 --> 08:00.000
+I have given the name by doing a search icon.
+
+08:00.000 --> 08:03.000
+And you can write the path of this svg here.
+
+08:03.000 --> 08:04.000
+Search.svg.
+
+08:04.000 --> 08:07.000
+We have imported search.svg in the code with the name of this search icon.
+
+08:07.000 --> 08:09.000
+Now what we have to do.
+
+08:09.000 --> 08:13.000
+Now we have to make an image tag just below the input tag.
+
+08:13.000 --> 08:14.000
+And in the image tag.
+
+08:14.000 --> 08:16.000
+We have to give a search icon in the source.
+
+08:16.000 --> 08:18.000
+Which we have just imported.
+
+08:18.000 --> 08:20.000
+We have to just give a search icon here.
+
+08:20.000 --> 08:21.000
+By doing a search icon.
+
+08:21.000 --> 08:22.000
+We have to give this.
+
+08:22.000 --> 08:25.000
+After that we are giving an alternative name from here.
+
+08:25.000 --> 08:26.000
+When the image is not loaded.
+
+08:26.000 --> 08:28.000
+Then it will show search.
+
+08:28.000 --> 08:30.000
+So we have done so much work.
+
+08:30.000 --> 08:32.000
+Now the second thing is.
+
+08:32.000 --> 08:37.000
+Now we want that when the user clicks on his search button at any time.
+
+08:37.000 --> 08:38.000
+Then the movie should be searched.
+
+08:38.000 --> 08:41.000
+So we will put an onclick method here.
+
+08:41.000 --> 08:43.000
+And in onclick we will make a callback function here.
+
+08:44.000 --> 08:51.000
+Which will do that when the user clicks on the search button.
+
+08:51.000 --> 08:53.000
+Then our function of search movies will be called.
+
+08:53.000 --> 08:55.000
+Which is the function of search movies?
+
+08:55.000 --> 08:56.000
+This one.
+
+08:56.000 --> 08:58.000
+Which we used while calling API.
+
+08:58.000 --> 08:59.000
+You must remember.
+
+08:59.000 --> 09:02.000
+When we locked the data in the console.
+
+09:02.000 --> 09:06.000
+Then we saw that the function of search movies was working.
+
+09:06.000 --> 09:08.000
+So we called the function of search movies.
+
+09:08.000 --> 09:10.000
+As soon as the user clicks on the search button.
+
+09:10.000 --> 09:13.000
+And in the search movies function we used a parameter.
+
+09:13.000 --> 09:14.000
+The name of the movie.
+
+09:14.000 --> 09:16.000
+So where will the name of the movie come from?
+
+09:16.000 --> 09:18.000
+The name of the movie will come from the search term.
+
+09:18.000 --> 09:19.000
+See this.
+
+09:19.000 --> 09:21.000
+Which the user had put in the input box.
+
+09:21.000 --> 09:22.000
+He had put the search term.
+
+09:22.000 --> 09:23.000
+See this.
+
+09:23.000 --> 09:24.000
+You must remember.
+
+09:24.000 --> 09:25.000
+So this search term.
+
+09:25.000 --> 09:29.000
+We have to put a parameter in it.
+
+09:29.000 --> 09:32.000
+Because it will search the search term.
+
+09:32.000 --> 09:34.000
+Now after this.
+
+09:34.000 --> 09:37.000
+Let's go to the web page and check once.
+
+09:37.000 --> 09:39.000
+Is the movie being searched or not?
+
+09:39.000 --> 09:41.000
+So we go to the web page.
+
+09:41.000 --> 09:42.000
+Go to the web page.
+
+09:43.000 --> 09:46.000
+And here you must be able to see.
+
+09:46.000 --> 09:48.000
+See our search button is also seen here.
+
+09:48.000 --> 09:50.000
+See the search button has also come here.
+
+09:50.000 --> 09:51.000
+Now let's do one thing.
+
+09:51.000 --> 09:55.000
+Here we open our console.
+
+09:55.000 --> 09:56.000
+We open the console here.
+
+09:56.000 --> 09:58.000
+Now our console is empty.
+
+09:58.000 --> 09:59.000
+Nothing in the console.
+
+09:59.000 --> 10:01.000
+Now here we search a movie.
+
+10:01.000 --> 10:04.000
+I search the name of the movie for example Iron Man here.
+
+10:04.000 --> 10:06.000
+And I click it here.
+
+10:06.000 --> 10:07.000
+As soon as I clicked it.
+
+10:07.000 --> 10:10.000
+So the function of search movies was called.
+
+10:10.000 --> 10:12.000
+And it locked the data in the console.
+
+10:12.000 --> 10:14.000
+So see the search results have come.
+
+10:14.000 --> 10:16.000
+And here we have got 10 arrays.
+
+10:16.000 --> 10:19.000
+In this see the movies of Iron Man have come.
+
+10:19.000 --> 10:20.000
+Iron Man.
+
+10:20.000 --> 10:21.000
+Iron Man 3.
+
+10:21.000 --> 10:22.000
+Iron Man 2.
+
+10:22.000 --> 10:23.000
+So you are able to see.
+
+10:23.000 --> 10:25.000
+The whole search data is visible to us.
+
+10:25.000 --> 10:29.000
+So here we have successfully implemented the search in our code.
+

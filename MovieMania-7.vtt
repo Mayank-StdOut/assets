@@ -1,0 +1,443 @@
+WEBVTT
+
+00:06.000 --> 00:27.060
+So now we are making a header, header means the navigation bar of the top, now we will make that and it will be a very simple navigation bar so that our site looks better, so what we will do for that, we will go back to the source folder and make a new component whose name we will name header.jsx, so we will name it header.jsx.
+
+00:27.060 --> 00:46.060
+First of all, we will do our things there by doing rfc, after that we will set the language to jsx again, you will remember how to set the language, it will be written by doing javascript in the bottom right corner, you have to type jsx by clicking there and your jsx will be set.
+
+00:46.060 --> 00:57.060
+After that what you have to do, now you have to do the first thing here that you have to go to a div and a nav,
+
+00:57.060 --> 01:16.060
+after that you have to use your tag and you have to give the class name of it, you have to give the class name of it, translucent navbar, translucent navbar is the class that we have given, we have defined it in our style sheet,
+
+01:16.060 --> 01:25.060
+in this we have named it according to the properties of the navbar, now what you have to do here, you have to make another div in it,
+
+01:25.060 --> 01:27.060
+which you have to name navcontainer.
+
+01:27.060 --> 01:39.060
+After naming navcontainer, you have to make a div, so if you write .navcontainer here, then that div will automatically be made, .navcontainer, so your div will be made.
+
+01:39.060 --> 01:54.060
+In this div, the first thing you need is that there should be our logo in our navigation bar, the second thing should be that there should be a search button in which if we click on search, then we go directly to the search bar.
+
+01:54.060 --> 01:55.060
+So what we will do for that?
+
+01:55.060 --> 02:09.060
+We will go here and here we will first do the image and we will leave the source as it is, and after that the first thing we need is the image, the second thing we need is a link in an unordered list,
+
+02:09.060 --> 02:22.060
+so there should be an unordered list and the unordered list should have its class name, we will keep its class name navlinks, so we will keep its class name navlinks.
+
+02:22.060 --> 02:23.060
+Now what will we do after this?
+
+02:23.060 --> 02:24.060
+Now what will we do?
+
+02:24.060 --> 02:46.060
+We will add a list content in it, the first list content will be our button, so there will be an anchor tag in it, there will be an anchor tag in it, and we will keep its href, we will define its href later, first we put the name of the button here, we put the name of movies.
+
+02:47.060 --> 02:50.060
+So this our basic header app is ready.
+
+02:50.060 --> 02:51.060
+But this will not look special now.
+
+02:51.060 --> 02:52.060
+Because we have written code in it.
+
+02:52.060 --> 02:53.060
+So we have written code in it.
+
+02:53.060 --> 02:57.060
+no CSS has been added to the header.
+
+02:57.060 --> 03:01.060
+So, we will define a CSS for the header.
+
+03:01.060 --> 03:05.060
+For that, we will go back to the source and create a file
+
+03:05.060 --> 03:09.060
+called header.css.
+
+03:09.060 --> 03:13.060
+And what we will do is, in header.css,
+
+03:13.060 --> 03:17.060
+CSS has been given in the code section again. So, you have to use
+
+03:17.060 --> 03:21.060
+that CSS. So, we copied the CSS from there and pasted it here.
+
+03:21.060 --> 03:25.060
+In header.css. So, now let me explain
+
+03:25.060 --> 03:29.060
+what is in it. So, the glass called TranslucentNavBar
+
+03:29.060 --> 03:33.060
+in header.jsx. So, the style
+
+03:33.060 --> 03:37.060
+of this will be something like this. Its background color will be something like this.
+
+03:37.060 --> 03:41.060
+The height will be this much. The width will be this much. And the z-index tells us
+
+03:41.060 --> 03:45.060
+how much it should look up. In z-axis, how much it should look up.
+
+03:45.060 --> 03:49.060
+So, this is what the z-index tells us.
+
+03:49.060 --> 03:53.060
+So, we have given these properties to the nav-content
+
+03:53.060 --> 03:57.060
+which also includes nav-links. And justify-content-space-between.
+
+03:57.060 --> 04:01.060
+And the logo that we will use, we have given its color white. So, we have added these properties here.
+
+04:01.060 --> 04:05.060
+Again, we go to our header.js.
+
+04:05.060 --> 04:09.060
+And the first thing that we will be setting here is our logo.
+
+04:09.060 --> 04:13.060
+So, to set the logo, we also need a logo here.
+
+04:13.060 --> 04:17.060
+So, what we do is, you will get a link in the link section.
+
+04:17.060 --> 04:21.060
+So, you can pick up the logo from there. You can download it from there.
+
+04:21.060 --> 04:25.060
+Or you can directly use the link. And the logo is
+
+04:25.060 --> 04:29.060
+something like this. I will show you.
+
+04:29.060 --> 04:33.060
+You will get the logo by typing y2.png
+
+04:33.060 --> 04:37.060
+So, I will put this logo in the source folder.
+
+04:37.060 --> 04:41.060
+These are some logos. Now, what we have to do is go to header.js
+
+04:41.060 --> 04:45.060
+You have to import this logo. So, you will import it.
+
+04:45.060 --> 04:49.060
+And we will put its path.
+
+04:49.060 --> 04:53.060
+LogoMoviewhite.png
+
+04:53.060 --> 04:57.060
+What is its name? LogoMoviewhite.png
+
+04:57.060 --> 05:01.060
+So, you can import the logo with this name.
+
+05:01.060 --> 05:05.060
+So, one minute. After that,
+
+05:05.060 --> 05:09.060
+we have to do something like this.
+
+05:09.060 --> 05:13.060
+And here we have to use from. And our logo has been imported.
+
+05:13.060 --> 05:17.060
+Now, you have to directly use that logo instead of image source.
+
+05:17.060 --> 05:21.060
+So, you will write logo here. So, you will be able to use that logo here.
+
+05:21.060 --> 05:25.060
+And here you can write movie mania.
+
+05:25.060 --> 05:29.060
+Okay. This thing which is our header is almost ready.
+
+05:29.060 --> 05:33.060
+Now, after this, what we have to do here is that
+
+05:33.060 --> 05:37.060
+we have to give some style to the image. So, the width of the image
+
+05:37.060 --> 05:41.060
+What do we keep? We keep the width of the image around 10%.
+
+05:41.060 --> 05:45.060
+So, in style, we give the width to the image.
+
+05:45.060 --> 05:49.060
+And the width will be something like
+
+05:49.060 --> 05:53.060
+around 10%. So, we have given some width to the image.
+
+05:53.060 --> 05:57.060
+Now, here we have to save it.
+
+05:57.060 --> 06:01.060
+And this header, we have to import this header
+
+06:01.060 --> 06:05.060
+in our app.js.
+
+06:05.060 --> 06:09.060
+Import header.
+
+06:09.060 --> 06:13.060
+And to use this header, you have to keep it above the movie carousel.
+
+06:13.060 --> 06:17.060
+Because this is a header. So, it should be above the movie carousel.
+
+06:17.060 --> 06:21.060
+Now, we will go to our chrome and check it once.
+
+06:21.060 --> 06:25.060
+So, now there is some error here. Okay. So, here it says
+
+06:25.060 --> 06:29.060
+can't import the logo. So, okay.
+
+06:29.060 --> 06:33.060
+We will go to our header once. And the brackets
+
+06:33.060 --> 06:37.060
+which we have put here, we will remove them. Okay. Now,
+
+06:37.060 --> 06:41.060
+let's check it. So, now see, here you have
+
+06:41.060 --> 06:45.060
+some movie mania navbar. But it looks
+
+06:45.060 --> 06:49.060
+so dirty. You can see that it is not looking good at all.
+
+06:49.060 --> 06:53.060
+Here, only movie mania and movies are showing. Because we have not
+
+06:53.060 --> 06:57.060
+imported css here. We have to import css too. So, what will we do?
+
+06:57.060 --> 07:01.060
+First of all, we will go and import css here.
+
+07:01.060 --> 07:05.060
+In header. Import header.css.
+
+07:07.060 --> 07:11.060
+Header.css.
+
+07:11.060 --> 07:15.060
+Now, as soon as you import header.css, and once you go and check it.
+
+07:15.060 --> 07:19.060
+So, here, now there is also
+
+07:19.060 --> 07:23.060
+some problem. Let's check it once. Is there any problem?
+
+07:23.060 --> 07:27.060
+This is header.css. Okay. We haven't saved this. We have to save this too.
+
+07:27.060 --> 07:31.060
+Okay. So, now we have saved it too. Now, we will go to chrome once and see.
+
+07:31.060 --> 07:35.060
+Our header looks good now. Our header
+
+07:35.060 --> 07:39.060
+is here in which we are writing movie mania and
+
+07:39.060 --> 07:43.060
+the movie button is also here. But when we click on the movie button
+
+07:43.060 --> 07:47.060
+then nothing will happen. So, what we want is that when we click on the movie button
+
+07:47.060 --> 07:51.060
+then after this, we come here.
+
+07:51.060 --> 07:55.060
+We come inside this search movies. So, what will we do?
+
+07:55.060 --> 07:59.060
+We will directly minimize it. And after this, we will go
+
+07:59.060 --> 08:03.060
+to our header.css. And in href, we will put the hashtag search.
+
+08:05.060 --> 08:09.060
+Now, what will we do? We have put the hashtag search. We will go to our app.js.
+
+08:09.060 --> 08:13.060
+Now, what will happen is that whenever someone will click on the movie button in the header.
+
+08:13.060 --> 08:17.060
+So, the hashtag search will come directly in the search div
+
+08:17.060 --> 08:21.060
+in this page. So, let's go to chrome once.
+
+08:21.060 --> 08:25.060
+And now, let's see. So, we come here in chrome. And as soon as we
+
+08:25.060 --> 08:29.060
+clicked on movies, we came to search. Directly below.
+
+08:29.060 --> 08:33.060
+Now, we can search anything here. So, our header is also
+
+08:35.060 --> 08:39.060
+here. So, finally, after the header is completed, we should also
+
+08:39.060 --> 08:43.060
+put a footer. So that our web page looks good.
+
+08:43.060 --> 08:47.060
+So, to put a footer, there is a very simple code.
+
+08:47.060 --> 08:51.060
+This is optional. If you want to put it, then you can put it.
+
+08:51.060 --> 08:55.060
+Otherwise, you can leave it as it is. There is also a
+
+08:55.060 --> 08:59.060
+code for the footer. It is a very small code. So, the code for the footer
+
+08:59.060 --> 09:03.060
+you can directly copy it and go to app.js. And there
+
+09:03.060 --> 09:07.060
+is a code for the footer. Just here at the end.
+
+09:07.060 --> 09:11.060
+Now, paste it. So, the code given at the end is
+
+09:11.060 --> 09:15.060
+the footer code. Now, in this, you have given logo w
+
+09:15.060 --> 09:19.060
+in the source. So, you will also need this logo w
+
+09:19.060 --> 09:23.060
+in your source folder. So, what will you do for this?
+
+09:23.060 --> 09:27.060
+This logo w, first of all,
+
+09:27.060 --> 09:31.060
+you will search in the links section. And that logo w
+
+09:31.060 --> 09:35.060
+is your logo-white.png. So, the logo-white
+
+09:35.060 --> 09:39.060
+we will source it. We already have it. So, we will not
+
+09:39.060 --> 09:43.060
+put it back. So, we will leave it as it is. So, we will cancel it.
+
+09:43.060 --> 09:47.060
+And directly we will import this logo. So, to import it,
+
+09:47.060 --> 09:51.060
+we have already imported it in the header. So, we will pick it up from here.
+
+09:51.060 --> 09:55.060
+And here we will go back to app.js.
+
+09:55.060 --> 09:59.060
+And here we will import it.
+
+09:59.060 --> 10:03.060
+And we will name it logo-w.
+
+10:03.060 --> 10:07.060
+Okay. As soon as you do this, after this
+
+10:07.060 --> 10:11.060
+you go back to chrome. After going to chrome,
+
+10:11.060 --> 10:15.060
+something has come here. Year is not defined. Okay.
+
+10:15.060 --> 10:19.060
+So, there is one more thing. What we will show in our footer is
+
+10:19.060 --> 10:23.060
+we will have to show the year too. Here we have written copyright at the rate
+
+10:23.060 --> 10:27.060
+this this. So, what is copyright current year? So, for current year, we will do one thing.
+
+10:27.060 --> 10:29.060
+For current year, we will show here
+
+10:29.060 --> 10:33.060
+a function in java script
+
+10:33.060 --> 10:37.060
+to define year. First, we will fetch current year. For that, we will go
+
+10:37.060 --> 10:41.060
+down from here. Here we will make a variable by
+
+10:41.060 --> 10:45.060
+const date. After that, we will use
+
+10:45.060 --> 10:49.060
+date function. We will use date function. And after that,
+
+10:49.060 --> 10:53.060
+we will use const year. Here
+
+10:53.060 --> 10:57.060
+we will use date.getFullYear.
+
+10:57.060 --> 11:01.060
+Here we will fetch year. So, here you will notice
+
+11:01.060 --> 11:05.060
+one thing that I have put semicolon somewhere or not.
+
+11:05.060 --> 11:09.060
+So, semicolon is optional in java script. If you want to put, then do it.
+
+11:09.060 --> 11:13.060
+If you don't want to put, then don't. There will be no error. So, here we have
+
+11:13.060 --> 11:17.060
+stored year in year variable. Now, this thing has come directly here.
+
+11:17.060 --> 11:21.060
+Now, let's go to chrome and run it.
+
+11:21.060 --> 11:25.060
+So, there is no error now. And now I will take you to the website.
+
+11:25.060 --> 11:29.060
+See, at the bottom, our beautiful footer is
+
+11:29.060 --> 11:33.220
+ready.
+

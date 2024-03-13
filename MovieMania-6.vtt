@@ -1,0 +1,317 @@
+WEBVTT
+
+00:06.000 --> 00:21.000
+So now we will see how to make a movie carousel, how to make a carousel, then it will be shown on the side, we are going to make the same carousel, so what we will do is go to the source folder first of all and in this we will make a movie carousel and make a component here,
+
+00:21.000 --> 00:45.000
+here you have to create a file and here you have to write movie carousel.jsx, as soon as you go into it, as soon as you make a component, you will write rfc in it, the basic body will be the structure, before that there is one more thing, there are many things in our source folder that we do not need, like this app test.js,
+
+00:45.000 --> 00:51.000
+after this index.css and after this logo.srg, reward web by tilt, these are some things that we do not need,
+
+00:51.000 --> 01:00.000
+then we delete this, like we delete this first and second, first, after that we do not need the logo.svc, we delete this,
+
+01:01.000 --> 01:11.000
+then here we do not need the report web by tilt, we delete this and this step setup test.js we do not need it, so we delete this as well,
+
+01:12.000 --> 01:20.000
+after this, go to index.js and like they are report web by tils, all this is removed, we did not need them, these are a few things that we do not need,
+
+01:21.000 --> 01:26.000
+Now let's save it and check our terminal to see if there is any error.
+
+01:26.000 --> 01:31.000
+There is no error. Now we will go to our Movie Crousel.
+
+01:31.000 --> 01:36.000
+Now here we start doing our main Movie Crousel code.
+
+01:36.000 --> 01:41.000
+So before that, one more thing which is Movie Crousel. Movie Crousel
+
+01:41.000 --> 01:46.000
+is basically a library which we will use in our Crousel.
+
+01:46.000 --> 01:51.000
+We will have to install its React library. Basically,
+
+01:51.000 --> 01:56.000
+we call it a module. So what is a module? Someone has already done that code.
+
+01:56.000 --> 02:01.000
+Someone has already made the Crousel. We will install it and use it for ourselves.
+
+02:01.000 --> 02:06.000
+Okay. So what happens is that it looks very beautiful.
+
+02:06.000 --> 02:11.000
+You don't have to reinvent everything and you can use it quickly and efficiently
+
+02:11.000 --> 02:16.000
+and add your logic to it. So now what will you do? You will go to your terminal
+
+02:16.000 --> 02:21.000
+and open a new one. And here
+
+02:21.000 --> 02:26.000
+what will you do? First of all, I will go back to my project. So my project
+
+02:26.000 --> 02:31.000
+is inside this. And
+
+02:31.000 --> 02:36.000
+here I am in my project.
+
+02:36.000 --> 02:41.000
+You can directly use the terminal here. Let me show you. This terminal here
+
+02:41.000 --> 02:46.000
+you can use this terminal below.
+
+02:46.000 --> 02:51.000
+I am not using it so that you get a good experience
+
+02:51.000 --> 02:55.000
+so that you can see the code that I am writing. So that is why I am doing all these things
+
+02:55.000 --> 02:58.000
+separately in the command prompt. But you can install it here as well.
+
+02:58.000 --> 03:03.000
+And for that, the command is npm i react-crousel-manual.
+
+03:03.000 --> 03:06.000
+So you have to install this library. You will hit enter.
+
+03:06.000 --> 03:11.000
+So it will be installed. So now I have installed it in the terminal and shown it to you.
+
+03:11.000 --> 03:15.000
+So till the time it is being installed, we will remove the extra we have opened.
+
+03:16.000 --> 03:21.000
+And let it run in the background. So this install
+
+03:21.000 --> 03:26.000
+has been done. So it has been installed.
+
+03:26.000 --> 03:31.000
+Now we will clear it. Now we will remove it.
+
+03:31.000 --> 03:36.000
+So now you will have to import it in your code. So you will import it like this.
+
+03:36.000 --> 03:41.000
+import brackets-crousel
+
+03:41.000 --> 03:46.000
+from react-crousel-manual. So see this has come automatically.
+
+03:46.000 --> 03:51.000
+Now after this, after this there are some things which is the
+
+03:51.000 --> 03:56.000
+crousel. In that crousel, you were also seeing images. Those images
+
+03:56.000 --> 04:01.000
+you have to basically show those images here in the crousel. What you have to do is
+
+04:01.000 --> 04:06.000
+that you have to make an array of images. You have to make a container. So that array, that container
+
+04:06.000 --> 04:11.000
+in which the image will have a link. You have given the code of that in the code section.
+
+04:11.000 --> 04:16.000
+Copy it from there and paste it directly here. Because there are many links in it. So we have to manually
+
+04:16.000 --> 04:21.000
+type it. So our time will be wasted. We don't want to do that. And after this, what you have to do is
+
+04:21.000 --> 04:26.000
+as soon as you have done your link, now you have to go here in div. And after this, you have to
+
+04:26.000 --> 04:31.000
+bring the component of the crousel here. The component of the crousel you have to bring here.
+
+04:31.000 --> 04:36.000
+For this, you will do something like this. First, we set this file in JSX
+
+04:36.000 --> 04:41.000
+as we did. And done. So we have to render the component of the crousel here.
+
+04:41.000 --> 04:46.000
+And now we have to put some properties in it. We have to put some attributes in it.
+
+04:46.000 --> 04:51.000
+The first thing is the data. What will we show in this data?
+
+04:51.000 --> 04:56.000
+In this, we will pass the data that will be used to show the images.
+
+04:56.000 --> 05:01.000
+So the data is basically this. This is the whole
+
+05:01.000 --> 05:06.000
+array. The data of the image is complete in it. So we passed this in the data.
+
+05:06.000 --> 05:11.000
+Right? After this, the second thing we have to do is we have to put the time in it.
+
+05:11.000 --> 05:16.000
+Basically, after how much time delay the images will show us. So we have put 2000 here.
+
+05:16.000 --> 05:21.000
+That means the images will come after 2 seconds delay. After this, we have to put the width.
+
+05:21.000 --> 05:26.000
+In width, we will put how much width the images should have.
+
+05:26.000 --> 05:31.000
+Or how much width the crousel should have. So we have defined here 9000 pixels
+
+05:31.000 --> 05:36.000
+or something. Then we have to put the height here. So we have defined the height as well.
+
+05:36.000 --> 05:41.000
+The height will be 500 pixels.
+
+05:41.000 --> 05:46.000
+After this, we will put the slide number here. Do you have to show the slide number or not?
+
+05:46.000 --> 05:51.000
+Should the slide number be visible or not? So after every slide, the slide number is
+
+05:51.000 --> 05:54.000
+being shown by doing 1, 2, 3. So we say that we don't want to show the slide number.
+
+05:54.000 --> 05:59.000
+After this, should it slide automatically or should it slide when the user clicks?
+
+05:59.000 --> 06:04.000
+So we are saying that it should slide automatically. So we set it to true.
+
+06:04.000 --> 06:09.000
+Right? After this, we have to show the dots that come down here. You must have noticed
+
+06:09.000 --> 06:14.000
+the dots that come when the image slides. You have to show those dots as well.
+
+06:14.000 --> 06:19.000
+So for that too, set the dots to true. After this, there are some other
+
+06:19.000 --> 06:24.000
+properties of this type. You can put those properties one by one here.
+
+06:24.000 --> 06:29.000
+For example, what should be the color of the pause icon? So the color of the pause icon
+
+06:29.000 --> 06:34.000
+should be white. The pause icon should be white.
+
+06:34.000 --> 06:39.000
+After this, what should be the size of the pause icon?
+
+06:39.000 --> 06:44.000
+So we said that the size of the pause icon is around 40 pixels.
+
+06:44.000 --> 06:49.000
+So in this way, there are some other properties that you will find in the code section
+
+06:49.000 --> 06:54.000
+again. You can directly pick them up from there and you can simply copy and paste here.
+
+06:54.000 --> 06:59.000
+So I am doing it here as well. Apart from these properties,
+
+06:59.000 --> 07:04.000
+the slide background color, the background color of the slide will be dark gray.
+
+07:04.000 --> 07:09.000
+How will the image fit? Should the image fit or not? So you put the image fit
+
+07:09.000 --> 07:13.000
+cover here so that the image covers the entire carousel.
+
+07:13.000 --> 07:18.000
+Thumbnails means the images that you saw below should come.
+
+07:18.000 --> 07:23.000
+And then give it a style that the text should be aligned in the center, the max width should be
+
+07:23.000 --> 07:28.000
+this much. So you have put these few things. Now what do we do after this?
+
+07:28.000 --> 07:33.000
+Let's save it and once we check how our carousel is looking.
+
+07:33.000 --> 07:38.000
+So let's save it once. Now we have made the carousel.
+
+07:38.000 --> 07:43.000
+After this, we will have to import this carousel into app.js as well. Because our main app is here. It is here.
+
+07:43.000 --> 07:48.000
+Everything will be visible here. So first we will have to import the carousel. So what we will do here is
+
+07:48.000 --> 07:53.000
+import the movie carousel that we have made. And this movie carousel
+
+07:53.000 --> 07:58.000
+where do we want to show it? We want to show the movie carousel at the top. Where?
+
+07:58.000 --> 08:03.000
+We want to show it before the search. So here we do the movie carousel
+
+08:03.000 --> 08:08.000
+here. Movie carousel
+
+08:08.000 --> 08:13.000
+and I will have to set JSX here again. Ok.
+
+08:13.000 --> 08:18.000
+Movie carousel. And now our movie carousel will be visible here.
+
+08:18.000 --> 08:23.000
+Now what do we do? Once we open our web page and see if
+
+08:23.000 --> 08:28.000
+we can see the movie carousel. So see our movie carousel is visible.
+
+08:28.000 --> 08:33.000
+See this. You can see that the whole movie carousel is visible.
+
+08:33.000 --> 08:38.000
+And it looks so good to see. So how quickly did you make a carousel?
+
+08:38.000 --> 08:43.000
+If you had gone to code this carousel, it would have taken you a lot of time. But as soon as you used that module, your carousel became very fast.
+
+08:43.000 --> 08:48.000
+So how interactive is this? You can do it from here to there. There are also some thumbnails
+
+08:48.000 --> 08:53.000
+below. Here are some thumbnails. This is called search. So here we search something again.
+
+08:53.000 --> 08:58.000
+Here we search for example Sinchan
+
+08:58.000 --> 09:03.000
+or something like that. So let's search Sinchan here once.
+
+09:03.000 --> 09:08.000
+So here I might have put some wrong spelling. I really don't remember the spelling. So let's do
+
+09:08.000 --> 09:11.000
+Batman here.
+
+09:11.000 --> 09:16.000
+And look at this. Batman's movies have come here.
+
+09:16.000 --> 09:21.000
+And the carousel has come all the way up. So here we learned
+
+09:21.000 --> 09:26.000
+how to put a carousel.
+

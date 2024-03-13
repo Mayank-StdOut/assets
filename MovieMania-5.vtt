@@ -1,0 +1,1340 @@
+WEBVTT
+
+00:06.000 --> 00:15.000
+So, till now we have seen how we made the search box, after that we implemented the search and we locked the search data in the console.
+
+00:15.000 --> 00:21.000
+Now, the second thing is that we will have to show the search result somewhere, so where will we show it?
+
+00:21.000 --> 00:24.000
+So, for this, we will make a new component.
+
+00:24.000 --> 00:34.000
+So, as you know, what is a component? A component is basically a part of your website which is used as a component in react.
+
+00:34.000 --> 00:39.000
+So, we will make a component in which we will show the results.
+
+00:39.000 --> 00:42.000
+So, what you have to do to make a component? You have to click on the source folder.
+
+00:42.000 --> 00:50.000
+There you have to make a new file by doing movie card and in this movie card component, we will show our results.
+
+00:50.000 --> 00:54.000
+Remember, whenever you make a component, its name should start with capital letter.
+
+00:54.000 --> 01:00.000
+Because in react, before making any component, you have to keep its name on capital letter only.
+
+01:00.000 --> 01:08.000
+After this, now what will you do here? First of all, we will use a shortcut whose name is rafce.
+
+01:08.000 --> 01:17.000
+Now, let's do this. So, you don't have to make the above code, the function to be made, the callback arrow function.
+
+01:17.000 --> 01:20.000
+See, you have generated everything by yourself and got it.
+
+01:20.000 --> 01:23.000
+You just have to start writing from here, from the inside of the return.
+
+01:23.000 --> 01:26.000
+So, this div, we will give it a class name.
+
+01:26.000 --> 01:29.000
+And the class name, we will name it movie.
+
+01:29.000 --> 01:33.000
+Now, what will we show in this div?
+
+01:33.000 --> 01:40.000
+In this, we want to show the year of the movie, the data which we are getting from our API.
+
+01:40.000 --> 01:43.000
+So, for that, we will do one thing. Here, we will make a div again.
+
+01:43.000 --> 01:47.000
+And in this div, if you see, as you wrote div here.
+
+01:47.000 --> 01:52.000
+I will tell you one more thing. When you wrote div here and hit enter, then it did not come as a div by itself.
+
+01:53.000 --> 02:02.000
+This happened because here, your language set is only javascript set.
+
+02:02.000 --> 02:06.000
+And we are using javascript as a javascript jsx here.
+
+02:06.000 --> 02:08.000
+So, we have to set the jsx.
+
+02:08.000 --> 02:10.000
+So, what will we do for this?
+
+02:10.000 --> 02:17.000
+Here, you will see at the bottom, at the bottom of your vs code, in the bottom right, you will write javascript.
+
+02:17.000 --> 02:18.000
+You have to click on it.
+
+02:18.000 --> 02:20.000
+And this search will open at the top.
+
+02:20.000 --> 02:21.000
+Select language mode.
+
+02:21.000 --> 02:22.000
+Here you have to write jsx.
+
+02:22.000 --> 02:24.000
+And you have to hit enter.
+
+02:24.000 --> 02:26.000
+After this, you will be able to use shortcuts here.
+
+02:26.000 --> 02:30.000
+So, as soon as you write div and hit enter, it will automatically become a div.
+
+02:30.000 --> 02:31.000
+Okay.
+
+02:31.000 --> 02:34.000
+So, first, we have to put a paragraph in this div.
+
+02:34.000 --> 02:35.000
+What will we show here in paragraph?
+
+02:35.000 --> 02:38.000
+Here, we will show the year of the movie.
+
+02:38.000 --> 02:39.000
+We will show the year of the movie here.
+
+02:39.000 --> 02:42.000
+So, we make a bracket here.
+
+02:42.000 --> 02:48.000
+So, the thing to know here is that we are getting all this data in app.js.
+
+02:48.000 --> 02:49.000
+Here.
+
+02:49.000 --> 02:51.000
+I mean, we are getting all the data here.
+
+02:51.000 --> 02:52.000
+This.
+
+02:52.000 --> 02:53.000
+This is all the data.
+
+02:53.000 --> 02:58.000
+So, how do we take this data from here to the movie card?
+
+02:58.000 --> 03:03.000
+So, now we will know about the second thing here, which is react props.
+
+03:03.000 --> 03:05.000
+What do props do?
+
+03:05.000 --> 03:09.000
+Props are basically used to pass data.
+
+03:09.000 --> 03:12.000
+You can send data from one component to another component.
+
+03:12.000 --> 03:14.000
+So, you send using props.
+
+03:14.000 --> 03:15.000
+How is that?
+
+03:15.000 --> 03:20.000
+To send data to the movie card, you will have to import the movie card first and bring it to app.js.
+
+03:20.000 --> 03:21.000
+So, what will you do?
+
+03:21.000 --> 03:23.000
+You will import the movie card.
+
+03:23.000 --> 03:24.000
+So, here you have imported the movie card.
+
+03:24.000 --> 03:26.000
+After that, you have to go to the bottom.
+
+03:26.000 --> 03:33.000
+And you have to place the movie card just below this div of yours, your search div.
+
+03:33.000 --> 03:36.000
+So, for this, you will write the movie card.
+
+03:36.000 --> 03:43.000
+And if you will type forward slash and press enter, then it will automatically put angular brackets.
+
+03:43.000 --> 03:45.000
+So, this is how you import a component.
+
+03:45.000 --> 03:46.000
+So, what will happen now?
+
+03:46.000 --> 03:47.000
+You will see the search above.
+
+03:47.000 --> 03:48.000
+Just you have to import the movie card.
+
+03:48.000 --> 03:49.000
+What will you do now?
+
+03:49.000 --> 03:52.000
+you will see the movie card component in the website.
+
+03:52.000 --> 03:55.000
+So, both these things will be rendered.
+
+03:55.000 --> 03:58.000
+So, you don't have to code the movie card code below.
+
+03:58.000 --> 04:01.000
+This is the beauty of React.
+
+04:01.000 --> 04:04.000
+You made the movie card as a component
+
+04:04.000 --> 04:07.000
+and you can call that component in any code
+
+04:07.000 --> 04:10.000
+and render it there.
+
+04:10.000 --> 04:13.000
+After this, what we wanted
+
+04:13.000 --> 04:16.000
+is that the data should be sent from the movie card
+
+04:16.000 --> 04:19.000
+to the movie card.
+
+04:19.000 --> 04:22.000
+So, for this,
+
+04:22.000 --> 04:25.000
+we will use props.
+
+04:25.000 --> 04:28.000
+To use props,
+
+04:28.000 --> 04:31.000
+go to the parent component.
+
+04:31.000 --> 04:34.000
+The parent component is the movie card.
+
+04:34.000 --> 04:37.000
+The movie card is the main component.
+
+04:37.000 --> 04:40.000
+This is basically the child component.
+
+04:40.000 --> 04:43.000
+Don't understand this.
+
+04:43.000 --> 04:46.000
+You have to write movie at the top.
+
+04:46.000 --> 04:49.000
+We need a data from the name of the movie.
+
+04:49.000 --> 04:52.000
+For that, write movie
+
+04:52.000 --> 04:55.000
+and put brackets here.
+
+04:55.000 --> 04:58.000
+Now, go to app.js
+
+04:58.000 --> 05:01.000
+and in the movie card,
+
+05:01.000 --> 05:04.000
+write movie
+
+05:04.000 --> 05:07.000
+and equals to
+
+05:07.000 --> 05:10.000
+the data of the movie.
+
+05:10.000 --> 05:13.000
+We will send it here.
+
+05:13.000 --> 05:16.000
+But before that, we have to keep one more thing in mind.
+
+05:16.000 --> 05:19.000
+The data of the movie
+
+05:19.000 --> 05:22.000
+has a lot of movies in it.
+
+05:22.000 --> 05:23.000
+Not just one movie.
+
+05:23.000 --> 05:25.000
+List of 10 movies.
+
+05:25.000 --> 05:27.000
+There are a lot of movies in it.
+
+05:27.000 --> 05:30.000
+So, we have to show the movies one by one.
+
+05:30.000 --> 05:31.000
+Now, what we will do is
+
+05:31.000 --> 05:33.000
+we will use a thing here
+
+05:33.000 --> 05:35.000
+which we call map function.
+
+05:35.000 --> 05:37.000
+What map function does is
+
+05:37.000 --> 05:40.000
+it will take out one movie from the 10 movies
+
+05:40.000 --> 05:43.000
+and send it to the movie card.
+
+05:43.000 --> 05:45.000
+And it will be rendered every movie.
+
+05:45.000 --> 05:47.000
+Not just one movie.
+
+05:47.000 --> 05:50.000
+Every movie will be rendered in the page.
+
+05:50.000 --> 05:52.000
+And before that, we have to do one more thing.
+
+05:52.000 --> 05:54.000
+We have to see this.
+
+05:54.000 --> 05:56.000
+For example, we search a movie
+
+05:56.000 --> 05:58.000
+which does not exist.
+
+05:58.000 --> 06:00.000
+So, in that, our API
+
+06:00.000 --> 06:02.000
+will not give us anything in the result.
+
+06:02.000 --> 06:04.000
+It will give an empty result.
+
+06:04.000 --> 06:06.000
+So, first we have to check
+
+06:06.000 --> 06:08.000
+whether our result is empty or not.
+
+06:08.000 --> 06:10.000
+If our result is empty,
+
+06:10.000 --> 06:12.000
+then we will show
+
+06:12.000 --> 06:14.000
+no movies found.
+
+06:14.000 --> 06:17.000
+But if our result has movies,
+
+06:17.000 --> 06:19.000
+if our data has movies,
+
+06:19.000 --> 06:21.000
+then we will show them movies.
+
+06:21.000 --> 06:23.000
+So, for this, what you have to do is
+
+06:23.000 --> 06:26.000
+you have to define some conditions here.
+
+06:26.000 --> 06:28.000
+How to define conditions?
+
+06:28.000 --> 06:30.000
+First of all, you will put brackets here.
+
+06:30.000 --> 06:32.000
+Because in these brackets,
+
+06:32.000 --> 06:34.000
+we will write the logic of JavaScript.
+
+06:34.000 --> 06:36.000
+So, here we write movies
+
+06:36.000 --> 06:38.000
+and here we put question mark
+
+06:38.000 --> 06:40.000
+dot length
+
+06:40.000 --> 06:42.000
+greater than zero.
+
+06:42.000 --> 06:44.000
+So,
+
+06:44.000 --> 06:46.000
+what is happening here?
+
+06:46.000 --> 06:48.000
+Now, here we are saying
+
+06:48.000 --> 06:50.000
+that the array called movies
+
+06:50.000 --> 06:52.000
+which we have seen,
+
+06:52.000 --> 06:54.000
+which we have shown in the console,
+
+06:54.000 --> 06:56.000
+that array,
+
+06:56.000 --> 06:58.000
+is it empty?
+
+06:58.000 --> 07:00.000
+If it is empty,
+
+07:00.000 --> 07:02.000
+then we will show that movies are not there.
+
+07:02.000 --> 07:04.000
+But if it is not empty,
+
+07:04.000 --> 07:06.000
+then we have to show this movie card component.
+
+07:06.000 --> 07:08.000
+So, now let's assume that
+
+07:08.000 --> 07:10.000
+it has movies in it.
+
+07:10.000 --> 07:12.000
+So, for that, we write conditions.
+
+07:12.000 --> 07:14.000
+If there is a movie in that data,
+
+07:14.000 --> 07:16.000
+then we will show
+
+07:16.000 --> 07:18.000
+this movie card component.
+
+07:18.000 --> 07:20.000
+So, for this, what you have to do is
+
+07:20.000 --> 07:22.000
+you have to write this thing.
+
+07:22.000 --> 07:24.000
+After this, what you have to do is
+
+07:24.000 --> 07:26.000
+you have to put this open and close parenthesis
+
+07:26.000 --> 07:28.000
+here and
+
+07:28.000 --> 07:30.000
+you have to put this movie card
+
+07:30.000 --> 07:32.000
+in it.
+
+07:34.000 --> 07:36.000
+So, now what we have said here
+
+07:36.000 --> 07:38.000
+and after this, you have to put
+
+07:38.000 --> 07:40.000
+a colon here.
+
+07:40.000 --> 07:42.000
+After putting a colon, what you have to do is
+
+07:42.000 --> 07:44.000
+you have to make a div.
+
+07:44.000 --> 07:46.000
+You have to show the div to the user
+
+07:46.000 --> 07:48.000
+in which it will be written movie not found.
+
+07:48.000 --> 07:50.000
+So, we will make a div here
+
+07:50.000 --> 07:52.000
+and the name of the div will be
+
+07:52.000 --> 07:54.000
+empty.
+
+07:54.000 --> 07:56.000
+And the div class will be empty
+
+07:56.000 --> 07:58.000
+and we will put an h2 tag in it.
+
+07:58.000 --> 08:00.000
+And in the h2 tag,
+
+08:00.000 --> 08:02.000
+we will write no movies found.
+
+08:04.000 --> 08:06.000
+By saying no movies found.
+
+08:06.000 --> 08:08.000
+So, what will happen now?
+
+08:08.000 --> 08:10.000
+If we get the movies,
+
+08:10.000 --> 08:12.000
+then it will show the movie card,
+
+08:12.000 --> 08:14.000
+if we don't get the movie card,
+
+08:14.000 --> 08:16.000
+then it will show the movie card.
+
+08:16.000 --> 08:18.000
+But one more thing,
+
+08:18.000 --> 08:20.000
+you have to see the syntax
+
+08:20.000 --> 08:22.000
+of this once,
+
+08:22.000 --> 08:24.000
+that how we have defined the conditions.
+
+08:24.000 --> 08:26.000
+So, what have we done?
+
+08:26.000 --> 08:28.000
+Let me explain you one more time.
+
+08:28.000 --> 08:30.000
+We have put curly braces here.
+
+08:30.000 --> 08:32.000
+In this, we have written our condition.
+
+08:32.000 --> 08:34.000
+That condition can be any of us.
+
+08:34.000 --> 08:36.000
+Here I will write
+
+08:36.000 --> 08:38.000
+any condition to you.
+
+08:38.000 --> 08:40.000
+Like if movies length
+
+08:40.000 --> 08:42.000
+Here I have written to explain you.
+
+08:42.000 --> 08:44.000
+Movies length
+
+08:44.000 --> 08:46.000
+or if condition
+
+08:46.000 --> 08:48.000
+any of your if condition.
+
+08:48.000 --> 08:50.000
+If condition
+
+08:50.000 --> 08:52.000
+then question mark
+
+08:52.000 --> 08:54.000
+do this
+
+08:54.000 --> 08:56.000
+else
+
+08:56.000 --> 08:58.000
+do this
+
+08:58.000 --> 09:00.000
+So, here
+
+09:00.000 --> 09:02.000
+from this comment,
+
+09:02.000 --> 09:04.000
+you must be able to understand
+
+09:04.000 --> 09:06.000
+that if this is the if condition
+
+09:06.000 --> 09:08.000
+if it is true
+
+09:08.000 --> 09:10.000
+then you have to do this
+
+09:10.000 --> 09:12.000
+or you have to do this.
+
+09:12.000 --> 09:14.000
+Same thing we have done below
+
+09:14.000 --> 09:16.000
+that if this condition is true
+
+09:16.000 --> 09:18.000
+then you have to show movies card
+
+09:18.000 --> 09:20.000
+or else you have to show
+
+09:20.000 --> 09:22.000
+this portion below.
+
+09:22.000 --> 09:24.000
+Okay, so hope you have understood this.
+
+09:24.000 --> 09:26.000
+After this,
+
+09:26.000 --> 09:28.000
+the second thing is
+
+09:28.000 --> 09:30.000
+that now as we have discussed
+
+09:30.000 --> 09:32.000
+that here in movies
+
+09:32.000 --> 09:34.000
+not one but 10 movies data is coming
+
+09:34.000 --> 09:36.000
+but we have to show
+
+09:36.000 --> 09:38.000
+the data of the user one by one.
+
+09:38.000 --> 09:40.000
+We cannot show the data of the movie
+
+09:40.000 --> 09:42.000
+in one card only.
+
+09:42.000 --> 09:44.000
+So, for this
+
+09:44.000 --> 09:46.000
+we will extract the data of the movie one by one.
+
+09:46.000 --> 09:48.000
+For this we will use the map function.
+
+09:48.000 --> 09:50.000
+For this we will use the map function.
+
+09:50.000 --> 09:52.000
+So, for this we will remove the movie card
+
+09:52.000 --> 09:54.000
+and make a div in it
+
+09:54.000 --> 09:56.000
+first of all.
+
+09:56.000 --> 09:58.000
+And the class of div
+
+09:58.000 --> 10:00.000
+we give is container class.
+
+10:00.000 --> 10:02.000
+And in this
+
+10:02.000 --> 10:04.000
+we will use our map function.
+
+10:04.000 --> 10:06.000
+So, for this we will
+
+10:06.000 --> 10:08.000
+open a curly bracket again.
+
+10:08.000 --> 10:10.000
+Here we write that in which map function
+
+10:10.000 --> 10:12.000
+we have to run the map function.
+
+10:12.000 --> 10:14.000
+We have to run the map function in the array named movies.
+
+10:14.000 --> 10:16.000
+So, we will write movies.map
+
+10:16.000 --> 10:18.000
+After this,
+
+10:18.000 --> 10:20.000
+what name will you give to the movies
+
+10:20.000 --> 10:22.000
+which are coming out of it one by one?
+
+10:22.000 --> 10:24.000
+Movies is our entire array.
+
+10:24.000 --> 10:26.000
+But the one which is coming out of
+
+10:26.000 --> 10:28.000
+one by one,
+
+10:28.000 --> 10:30.000
+we will know it by the name of movie.
+
+10:30.000 --> 10:32.000
+Okay, in movies
+
+10:32.000 --> 10:34.000
+we are extracting movies one by one.
+
+10:34.000 --> 10:36.000
+After this what we have to do?
+
+10:36.000 --> 10:38.000
+One more thing,
+
+10:38.000 --> 10:40.000
+the syntax is of this type.
+
+10:40.000 --> 10:42.000
+So, you have to open two brackets.
+
+10:42.000 --> 10:44.000
+And here you have to
+
+10:44.000 --> 10:46.000
+make an arrow function.
+
+10:46.000 --> 10:48.000
+And after this
+
+10:48.000 --> 10:50.000
+you have to take parentheses again.
+
+10:50.000 --> 10:52.000
+And in parentheses
+
+10:52.000 --> 10:54.000
+you have to
+
+10:54.000 --> 10:56.000
+render the movie card
+
+10:56.000 --> 10:58.000
+here.
+
+10:58.000 --> 11:00.000
+After this
+
+11:00.000 --> 11:02.000
+you have to send
+
+11:02.000 --> 11:04.000
+movie through the
+
+11:04.000 --> 11:06.000
+prop.
+
+11:06.000 --> 11:08.000
+We will understand it one more time.
+
+11:08.000 --> 11:10.000
+See what happened.
+
+11:10.000 --> 11:12.000
+We extracted
+
+11:12.000 --> 11:14.000
+one movie from the array of movies.
+
+11:14.000 --> 11:16.000
+We named it movie.
+
+11:16.000 --> 11:18.000
+We are calling every movie a movie.
+
+11:18.000 --> 11:20.000
+Now in the movie card component
+
+11:20.000 --> 11:22.000
+we have passed
+
+11:22.000 --> 11:24.000
+a prop named movie.
+
+11:24.000 --> 11:26.000
+We said
+
+11:26.000 --> 11:28.000
+we want the details of every movie here.
+
+11:28.000 --> 11:30.000
+So, we
+
+11:30.000 --> 11:32.000
+named it movie and said
+
+11:32.000 --> 11:34.000
+we want the details of every movie.
+
+11:34.000 --> 11:36.000
+So, we said okay,
+
+11:36.000 --> 11:38.000
+we are asking for the details
+
+11:38.000 --> 11:40.000
+and we will
+
+11:40.000 --> 11:42.000
+set the variable of
+
+11:42.000 --> 11:44.000
+the movie here.
+
+11:44.000 --> 11:46.000
+So, this data
+
+11:46.000 --> 11:48.000
+now will pass in the movie card.
+
+11:48.000 --> 11:50.000
+So, we will save it first.
+
+11:50.000 --> 11:52.000
+Now we will go to the movie card.
+
+11:52.000 --> 11:54.000
+After going to the movie card
+
+11:54.000 --> 11:56.000
+now what we do is
+
+11:56.000 --> 11:58.000
+we render each data.
+
+11:58.000 --> 12:00.000
+So, in this
+
+12:00.000 --> 12:02.000
+we will see
+
+12:02.000 --> 12:04.000
+the movie.er data.
+
+12:04.000 --> 12:06.000
+The data
+
+12:06.000 --> 12:11.500
+The second data is that of the image, the poster data of a movie.
+
+12:11.500 --> 12:14.000
+We will put an image tag for that.
+
+12:14.000 --> 12:15.500
+What will we write in the source?
+
+12:15.500 --> 12:19.000
+In the source, we will write movie dot.
+
+12:19.000 --> 12:20.500
+Why are we writing movie dot?
+
+12:20.500 --> 12:22.500
+Because movie is an object.
+
+12:22.500 --> 12:24.500
+It has a data named year.
+
+12:24.500 --> 12:29.000
+It has a data named poster in which the movie's photo is.
+
+12:29.000 --> 12:31.500
+Now we will put a condition in this too.
+
+12:31.500 --> 12:37.000
+We will say that if movie poster, who knows, some movie posters are not there.
+
+12:37.000 --> 12:38.500
+There is a very old movie.
+
+12:38.500 --> 12:40.000
+We did not get its image.
+
+12:40.000 --> 12:42.000
+So we will put a condition here too.
+
+12:42.000 --> 12:46.500
+If the poster of the movie has the value of n a.
+
+12:46.500 --> 12:47.500
+n slash a.
+
+12:47.500 --> 12:49.500
+This means if the movie poster is not there.
+
+12:49.500 --> 12:51.500
+So what do you have to show here?
+
+12:51.500 --> 12:53.500
+So you have to show here.
+
+12:53.500 --> 12:58.000
+You have to show a placeholder.
+
+12:58.000 --> 13:01.000
+What do you have to show in movie dot poster?
+
+13:01.000 --> 13:08.000
+You have to show something in movie dot poster.
+
+13:08.000 --> 13:09.000
+This is our link.
+
+13:09.000 --> 13:22.000
+https sorry via dot placeholder dot com slash 404.
+
+13:22.000 --> 13:25.000
+So this will show us a photo of a placeholder.
+
+13:25.000 --> 13:28.000
+If we do not get the photo of the movie.
+
+13:28.000 --> 13:29.000
+Sorry 400.
+
+13:29.000 --> 13:31.000
+400 means 400 by 400.
+
+13:31.000 --> 13:33.000
+We will show a placeholder.
+
+13:33.000 --> 13:34.000
+Then we will put an alt.
+
+13:34.000 --> 13:39.000
+And the name of the alt will be movie dot title.
+
+13:39.000 --> 13:41.000
+We are getting all this data from the object.
+
+13:41.000 --> 13:44.000
+That was the object of our API.
+
+13:44.000 --> 13:45.000
+Okay.
+
+13:45.000 --> 13:47.000
+So you must have understood this condition.
+
+13:47.000 --> 13:50.000
+You must have understood the condition here.
+
+13:50.000 --> 13:52.000
+After this.
+
+13:52.000 --> 13:54.000
+The third thing we need.
+
+13:54.000 --> 13:56.000
+What do we need?
+
+13:56.000 --> 13:59.000
+We need the type of our movie.
+
+13:59.000 --> 14:01.000
+So what is the type of the movie?
+
+14:01.000 --> 14:03.000
+So here we have div.
+
+14:03.000 --> 14:05.000
+And in this we will render the type of the movie.
+
+14:05.000 --> 14:06.000
+In this we will use expand tag.
+
+14:06.000 --> 14:12.000
+In this we will put movie dot type.
+
+14:12.000 --> 14:14.000
+And we will close this.
+
+14:14.000 --> 14:16.000
+Then after this we will put the third thing.
+
+14:16.000 --> 14:17.000
+That will be one.
+
+14:17.000 --> 14:18.000
+Head tag.
+
+14:18.000 --> 14:24.000
+In which we will show the title of the movie.
+
+14:24.000 --> 14:29.000
+The title of the movie.
+
+14:29.000 --> 14:32.000
+So these things we have to show in our movie card.
+
+14:32.000 --> 14:34.000
+We will show the year of the movie.
+
+14:34.000 --> 14:35.000
+The image of the movie.
+
+14:35.000 --> 14:36.000
+The type of the movie.
+
+14:36.000 --> 14:37.000
+And the title of the movie.
+
+14:37.000 --> 14:40.000
+So after this we have to do one more thing.
+
+14:40.000 --> 14:46.000
+We will go to app dot js.
+
+14:46.000 --> 14:51.000
+And finally we have to set the data of the movie.
+
+14:51.000 --> 14:53.000
+What was happening till now?
+
+14:53.000 --> 14:55.000
+That the data coming from the API.
+
+14:55.000 --> 14:57.000
+What was happening directly?
+
+14:57.000 --> 14:58.000
+It was being printed on the web page.
+
+14:59.000 --> 15:01.000
+Or sorry in the console.
+
+15:01.000 --> 15:03.000
+Directly it was being printed on the console.
+
+15:03.000 --> 15:07.000
+So now we have to set the data which is being printed.
+
+15:07.000 --> 15:11.000
+We have to set it in the set movies state.
+
+15:11.000 --> 15:12.000
+So for that what we will do?
+
+15:12.000 --> 15:14.000
+We will go here.
+
+15:14.000 --> 15:16.000
+And here we will do set movies.
+
+15:16.000 --> 15:18.000
+And in this we will set the data.
+
+15:18.000 --> 15:19.000
+Ok.
+
+15:19.000 --> 15:22.000
+But before this one more thing.
+
+15:22.000 --> 15:26.000
+We will not be able to see the data of the movie.
+
+15:26.000 --> 15:27.000
+Why we will not be able to see?
+
+15:27.000 --> 15:29.000
+Let us go to chrome and see.
+
+15:29.000 --> 15:31.000
+We will come to our chrome.
+
+15:31.000 --> 15:34.000
+And here you will see one thing.
+
+15:34.000 --> 15:37.000
+Here I will open the inspect element.
+
+15:37.000 --> 15:39.000
+And here I will go to the console.
+
+15:39.000 --> 15:41.000
+For now there are many errors here.
+
+15:41.000 --> 15:42.000
+So I will remove it.
+
+15:42.000 --> 15:45.000
+Ok.
+
+15:45.000 --> 15:48.000
+After this here I will search any movie.
+
+15:48.000 --> 15:50.000
+For example I will search something else.
+
+15:50.000 --> 15:52.000
+Here I will search Spiderman.
+
+15:52.000 --> 15:55.000
+And here I will search it.
+
+15:55.000 --> 15:56.000
+As soon as I search here.
+
+15:56.000 --> 15:57.000
+See the array came.
+
+15:57.000 --> 15:58.000
+Now when you click on it.
+
+15:58.000 --> 15:59.000
+When you click on it.
+
+15:59.000 --> 16:00.000
+Then you will see.
+
+16:00.000 --> 16:02.000
+That in this array.
+
+16:02.000 --> 16:03.000
+In this search array.
+
+16:03.000 --> 16:05.000
+In this object.
+
+16:05.000 --> 16:07.000
+There are many things in it.
+
+16:07.000 --> 16:08.000
+There is response.
+
+16:08.000 --> 16:09.000
+There is total result.
+
+16:09.000 --> 16:12.000
+But we don't care about response and total result.
+
+16:12.000 --> 16:16.000
+We need this search array in this search.
+
+16:16.000 --> 16:18.000
+So we need this particular thing.
+
+16:18.000 --> 16:20.000
+And then we need all the things in it.
+
+16:20.000 --> 16:23.000
+So we don't care about response and length.
+
+16:23.000 --> 16:24.000
+So what we have to do?
+
+16:24.000 --> 16:26.000
+We have to come back to our code.
+
+16:26.000 --> 16:28.000
+And after coming back to the code.
+
+16:28.000 --> 16:30.000
+We just need that search array.
+
+16:30.000 --> 16:32.000
+So here we will search data dot.
+
+16:32.000 --> 16:35.000
+So that we get only that meaning.
+
+16:35.000 --> 16:36.000
+Which we need.
+
+16:36.000 --> 16:37.000
+Ok.
+
+16:37.000 --> 16:39.000
+So you were able to see till now.
+
+16:39.000 --> 16:41.000
+That the data which is showing here.
+
+16:41.000 --> 16:42.000
+That was not happening.
+
+16:42.000 --> 16:44.000
+Let me show you here.
+
+16:44.000 --> 16:45.000
+So you were able to see.
+
+16:45.000 --> 16:47.000
+That data was not showing here.
+
+16:47.000 --> 16:48.000
+That's why it was not happening.
+
+16:48.000 --> 16:52.000
+Because we were fetching all the objects.
+
+16:52.000 --> 16:54.000
+And our code was confused.
+
+16:54.000 --> 16:56.000
+So because of this it was not happening.
+
+16:56.000 --> 16:57.000
+But now see.
+
+16:57.000 --> 16:59.000
+Now I will search it again.
+
+16:59.000 --> 17:01.000
+And as soon as I search.
+
+17:01.000 --> 17:03.000
+All the movies have come down.
+
+17:03.000 --> 17:05.000
+See this.
+
+17:05.000 --> 17:11.000
+So all these movies have come down.
+
+17:11.000 --> 17:14.000
+So finally you have understood here.
+
+17:14.000 --> 17:16.000
+How to call API.
+
+17:16.000 --> 17:17.000
+How to search.
+
+17:17.000 --> 17:18.000
+And how to show it.
+
+17:18.000 --> 17:19.000
+You understood components.
+
+17:19.000 --> 17:20.000
+You understood props.
+
+17:20.000 --> 17:22.000
+You understood map function.
+
+17:22.000 --> 17:24.000
+So all these things which are coming here.
+
+17:24.000 --> 17:25.000
+All the styles in it.
+
+17:25.000 --> 17:26.000
+All these.
+
+17:26.000 --> 17:28.000
+All these styles which we have put in CSS.
+
+17:28.000 --> 17:29.000
+All these styles which we have put in CSS.
+
+17:29.000 --> 17:30.000
+All these styles which we have put in CSS.
+
+17:30.000 --> 17:31.000
+See this.
+
+17:31.000 --> 17:32.000
+So what we did there.
+
+17:32.000 --> 17:34.000
+We put the type of movie there.
+
+17:34.000 --> 17:36.000
+So this type is movie only.
+
+17:36.000 --> 17:38.000
+Here we put movie.year.
+
+17:38.000 --> 17:39.000
+You will remember.
+
+17:39.000 --> 17:40.000
+After this this is movie poster.
+
+17:40.000 --> 17:42.000
+And this is movie name.
+
+17:42.000 --> 17:46.000
+So we have understood this here.
+
+17:46.000 --> 17:48.000
+Now after this what we will be making.
+
+17:48.000 --> 17:50.000
+That will be a Krausel.
+
+17:50.000 --> 17:51.000
+So we are understanding Krausel.
+
+17:51.000 --> 17:52.000
+And we will be making.
+
+17:52.000 --> 17:53.000
+After this.
+
+
+
+

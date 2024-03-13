@@ -1,0 +1,1076 @@
+WEBVTT
+
+00:06.000 --> 00:18.000
+Okay, so now we will start making our main project, where first of all I would like you to come to the same folder in which you have opened the movie mania project.
+
+00:18.000 --> 00:22.000
+So this movie mania project is made in our desktop and this is the folder.
+
+00:22.000 --> 00:36.000
+So you click here at the top where the location of the folder is and here you write cmd and after that here you write npm start.
+
+00:36.000 --> 00:45.000
+So what will happen with this is that your development server will start, the development server of react will start and your website will open on chrome.
+
+00:45.000 --> 00:51.000
+So you can do this thing on the terminal, you can also do it on the terminal of vs code, but it seems more convenient to me.
+
+00:51.000 --> 00:52.000
+So you can do this thing on the terminal, you can also do it on the terminal, but it seems more convenient to me.
+
+00:52.000 --> 00:55.000
+So you can do this thing on the terminal, you can also do it on the terminal, you can also do it on the terminal, but it seems more convenient to me.
+
+00:55.000 --> 01:00.000
+So you can do this thing on the terminal, you can also do it on the terminal, you can also do it on the terminal, you can also do it on the terminal, you can also do it on the terminal, you can also do it on the terminal,
+
+01:00.000 --> 01:02.000
+Because I have opened it on cmd.
+
+01:02.000 --> 01:07.000
+So the development server has arrived and my site is opening here, okay.
+
+01:07.000 --> 01:13.000
+So this site has opened here, this is open because after we do a work and we minimize it.
+
+01:13.000 --> 01:21.000
+So, here, the first thing is, we do not need this key, we remove it at the top.
+
+01:21.000 --> 01:24.000
+If you don't need it, then you can remove it from the page.
+
+01:24.000 --> 01:26.000
+Okay, let's save it now.
+
+01:26.000 --> 01:35.000
+Okay, so now the first thing we will need before making our website will be the API key.
+
+01:35.000 --> 01:37.000
+What is the API key?
+
+01:37.000 --> 01:46.000
+The data of the movie that we will take, the data of the movie, the photos of the movie, the year of the movie, the name of the movie.
+
+01:46.000 --> 01:49.000
+So we will fetch all this data from the API key.
+
+01:49.000 --> 01:51.000
+What is API?
+
+01:51.000 --> 01:54.000
+API is basically Application Programming Interface.
+
+01:54.000 --> 01:57.000
+You can understand it like this.
+
+01:57.000 --> 01:59.000
+It is a URL.
+
+01:59.000 --> 02:12.000
+When you call that URL, that is, when you search that URL or when you go to that URL, it gives you a particular data that can be useful to you.
+
+02:12.000 --> 02:18.000
+So here our URL will also give us a data and that data will be of the movie.
+
+02:18.000 --> 02:19.000
+Okay.
+
+02:19.000 --> 02:21.000
+So we need this right now.
+
+02:21.000 --> 02:22.000
+So let's do one thing.
+
+02:22.000 --> 02:29.000
+For that, we will go to Chrome and search OMDB API.
+
+02:29.000 --> 02:33.000
+And the top link is written as API key.
+
+02:33.000 --> 02:35.000
+You have to click here.
+
+02:35.000 --> 02:39.000
+After that, see here, the API key has come.
+
+02:39.000 --> 02:40.000
+You can also see the URL.
+
+02:40.000 --> 02:44.000
+If you come directly to this URL, then you will get this here.
+
+02:44.000 --> 02:47.000
+Now your email is asking you here.
+
+02:47.000 --> 02:48.000
+So email.
+
+02:48.000 --> 02:53.000
+I will tell you a way by which you can take a temporary email.
+
+02:53.000 --> 02:56.000
+You will go to a website by doing temp email.
+
+02:56.000 --> 03:03.000
+After that, here you will generate an email.
+
+03:03.000 --> 03:06.000
+Copy this email.
+
+03:06.000 --> 03:09.000
+And come here and paste this email.
+
+03:09.000 --> 03:12.000
+And submit it.
+
+03:12.000 --> 03:15.000
+As soon as we submit.
+
+03:15.000 --> 03:16.000
+So it is saying here.
+
+03:16.000 --> 03:18.000
+No Patreon was found.
+
+03:18.000 --> 03:19.000
+Okay.
+
+03:19.000 --> 03:20.000
+You have to select free here.
+
+03:20.000 --> 03:21.000
+Free.
+
+03:21.000 --> 03:22.000
+So what will be the free one?
+
+03:22.000 --> 03:24.000
+Actually, you will have 1000 daily limit.
+
+03:24.000 --> 03:27.000
+Means you can fetch 1000 movies data daily.
+
+03:27.000 --> 03:28.000
+So this is enough for us.
+
+03:28.000 --> 03:30.000
+After that, you can put any name here.
+
+03:30.000 --> 03:33.000
+I put anything here by doing ABCD.
+
+03:33.000 --> 03:37.000
+And after that, you put anything here by doing ABCD.
+
+03:37.000 --> 03:38.000
+It doesn't make any difference to us.
+
+03:38.000 --> 03:40.000
+You submit it.
+
+03:40.000 --> 03:43.000
+As soon as you submit.
+
+03:43.000 --> 03:45.000
+Open your email here.
+
+03:45.000 --> 03:46.000
+And see here.
+
+03:46.000 --> 03:48.000
+Email will come to you.
+
+03:48.000 --> 03:50.000
+You have to click on email.
+
+03:50.000 --> 03:52.000
+And you will get your API key here.
+
+03:52.000 --> 03:53.000
+Which is this.
+
+03:53.000 --> 03:56.000
+This is your API URL.
+
+03:56.000 --> 03:59.000
+You have to copy it as it is.
+
+03:59.000 --> 04:03.000
+And after that, you have to click on this activate link below.
+
+04:03.000 --> 04:05.000
+So that your API key gets activated.
+
+04:05.000 --> 04:07.000
+And it is done.
+
+04:07.000 --> 04:08.000
+That's it.
+
+04:08.000 --> 04:09.000
+Now you have nothing after this.
+
+04:09.000 --> 04:10.000
+You have to cut it.
+
+04:10.000 --> 04:14.000
+You have to come to your VS code after copying that link.
+
+04:14.000 --> 04:16.000
+And here.
+
+04:16.000 --> 04:20.000
+Here you have to paste it at the very top.
+
+04:20.000 --> 04:21.000
+Where?
+
+04:21.000 --> 04:22.000
+Here somewhere.
+
+04:22.000 --> 04:24.000
+Do this and paste it.
+
+04:24.000 --> 04:26.000
+And put these two forward slash.
+
+04:26.000 --> 04:27.000
+What will happen with this?
+
+04:27.000 --> 04:29.000
+Your code will be commented.
+
+04:29.000 --> 04:30.000
+Ok.
+
+04:30.000 --> 04:32.000
+Now we will save it.
+
+04:32.000 --> 04:35.000
+After this, we remove it.
+
+04:35.000 --> 04:36.000
+Here we declare a variable.
+
+04:36.000 --> 04:38.000
+Which we name it.
+
+04:38.000 --> 04:40.000
+API URL.
+
+04:40.000 --> 04:42.000
+API URL.
+
+04:42.000 --> 04:43.000
+So now whatever we request.
+
+04:43.000 --> 04:45.000
+The URL on which we will send the request.
+
+04:45.000 --> 04:48.000
+It will be the API URL here.
+
+04:48.000 --> 04:49.000
+Which?
+
+04:49.000 --> 04:50.000
+The one we copied above.
+
+04:50.000 --> 04:52.000
+So we have to copy it like this.
+
+04:52.000 --> 04:54.000
+And.
+
+04:54.000 --> 04:57.000
+We paste it in this.
+
+04:57.000 --> 04:59.000
+Ok.
+
+04:59.000 --> 05:01.000
+After this.
+
+05:01.000 --> 05:03.000
+The first thing we have to do is.
+
+05:03.000 --> 05:05.000
+That we have to use this API URL.
+
+05:05.000 --> 05:08.000
+To fetch the data of any movie.
+
+05:08.000 --> 05:10.000
+So what do we have to do for this?
+
+05:10.000 --> 05:11.000
+For this.
+
+05:11.000 --> 05:12.000
+First of all.
+
+05:12.000 --> 05:13.000
+You have to remove this.
+
+05:13.000 --> 05:14.000
+From here.
+
+05:14.000 --> 05:15.000
+These parameters.
+
+05:15.000 --> 05:18.000
+From here to here.
+
+05:18.000 --> 05:19.000
+You remove it.
+
+05:19.000 --> 05:21.000
+And keep it directly like this.
+
+05:21.000 --> 05:23.000
+We only need this much URL.
+
+05:23.000 --> 05:24.000
+After this.
+
+05:24.000 --> 05:25.000
+What you have to do is.
+
+05:25.000 --> 05:28.000
+Here we will create a function.
+
+05:28.000 --> 05:30.000
+And that function.
+
+05:30.000 --> 05:33.000
+That will be basically an asynchronous function.
+
+05:33.000 --> 05:36.000
+What is asynchronous function in JavaScript?
+
+05:36.000 --> 05:39.000
+Now let's understand it with an example.
+
+05:39.000 --> 05:40.000
+For example.
+
+05:40.000 --> 05:41.000
+You went to a restaurant.
+
+05:41.000 --> 05:45.000
+And you ordered coffee from a waiter there.
+
+05:45.000 --> 05:46.000
+Then what happens?
+
+05:46.000 --> 05:48.000
+Does the waiter immediately bring coffee for you?
+
+05:48.000 --> 05:50.000
+As soon as you said I want coffee.
+
+05:50.000 --> 05:53.000
+So the waiter doesn't immediately bring coffee for you.
+
+05:53.000 --> 05:54.000
+The waiter promises you.
+
+05:54.000 --> 05:55.000
+Sir.
+
+05:55.000 --> 05:56.000
+You give me your order.
+
+05:56.000 --> 05:59.000
+And I will deliver coffee to your table.
+
+05:59.000 --> 06:01.000
+So in asynchronous JavaScript.
+
+06:01.000 --> 06:02.000
+This is the thing.
+
+06:02.000 --> 06:04.000
+That some code.
+
+06:04.000 --> 06:06.000
+Can take time to run.
+
+06:06.000 --> 06:08.000
+Because here we will do the request.
+
+06:08.000 --> 06:09.000
+We will do the API key.
+
+06:09.000 --> 06:10.000
+We will do the URL.
+
+06:10.000 --> 06:12.000
+We will send the request to the URL.
+
+06:12.000 --> 06:14.000
+And it can take time.
+
+06:14.000 --> 06:15.000
+That's why.
+
+06:15.000 --> 06:18.000
+Until the request is accepted.
+
+06:18.000 --> 06:20.000
+Until the request is sent.
+
+06:20.000 --> 06:22.000
+Until then this asynchronous function.
+
+06:22.000 --> 06:23.000
+It runs.
+
+06:23.000 --> 06:27.000
+And it stops by bringing you data.
+
+06:27.000 --> 06:28.000
+So for now.
+
+06:28.000 --> 06:29.000
+Understand this much here.
+
+06:29.000 --> 06:30.000
+So for that we will make a function.
+
+06:30.000 --> 06:31.000
+Asynchronous function.
+
+06:31.000 --> 06:34.000
+So here you write.
+
+06:34.000 --> 06:35.000
+Const.
+
+06:35.000 --> 06:36.000
+Search movies.
+
+06:36.000 --> 06:37.000
+By doing this.
+
+06:37.000 --> 06:38.000
+We write the name of the function.
+
+06:38.000 --> 06:39.000
+And.
+
+06:39.000 --> 06:41.000
+And this is an async function.
+
+06:41.000 --> 06:43.000
+So here we will have to use an async keyword.
+
+06:43.000 --> 06:45.000
+And after that.
+
+06:45.000 --> 06:48.000
+We will put our basic parameter in it.
+
+06:48.000 --> 06:49.000
+By title.
+
+06:49.000 --> 06:51.000
+So we are the title of the movie.
+
+06:51.000 --> 06:52.000
+Of the movie.
+
+06:52.000 --> 06:54.000
+We will be searching for the movie details.
+
+06:54.000 --> 06:57.000
+And this is basically an arrow function.
+
+06:57.000 --> 06:58.000
+In it.
+
+06:58.000 --> 06:59.000
+Now two things will go here.
+
+06:59.000 --> 07:01.000
+The first thing will go to your response.
+
+07:01.000 --> 07:04.000
+Response variable.
+
+07:04.000 --> 07:05.000
+In which we.
+
+07:05.000 --> 07:06.000
+Whatever the data is.
+
+07:06.000 --> 07:07.000
+We will fetch there.
+
+07:07.000 --> 07:08.000
+This is the response variable.
+
+07:08.000 --> 07:09.000
+In this response variable.
+
+07:09.000 --> 07:10.000
+What does await keyword do?
+
+07:10.000 --> 07:11.000
+It waits.
+
+07:11.000 --> 07:12.000
+Until the data is fetched.
+
+07:12.000 --> 07:13.000
+And what does fetch do?
+
+07:13.000 --> 07:14.000
+Fetch.
+
+07:14.000 --> 07:15.000
+What does fetch do?
+
+07:15.000 --> 07:16.000
+Fetch.
+
+07:16.000 --> 07:17.000
+Our.
+
+07:17.000 --> 07:18.000
+API.
+
+07:18.000 --> 07:19.000
+Whatever the data is from the key.
+
+07:19.000 --> 07:20.000
+It is useful to fetch it.
+
+07:20.000 --> 07:21.000
+So here.
+
+07:21.000 --> 07:22.000
+By using back tick.
+
+07:22.000 --> 07:23.000
+In it.
+
+07:23.000 --> 07:24.000
+First of all.
+
+07:24.000 --> 07:25.000
+We will put one thing.
+
+07:25.000 --> 07:26.000
+API.
+
+07:26.000 --> 07:27.000
+URL.
+
+07:27.000 --> 07:28.000
+First parameter.
+
+07:28.000 --> 07:29.000
+API.
+
+07:29.000 --> 07:30.000
+URL.
+
+07:30.000 --> 07:31.000
+After that.
+
+07:31.000 --> 07:32.000
+By doing here.
+
+07:32.000 --> 07:33.000
+And.
+
+07:33.000 --> 07:34.000
+Here.
+
+07:34.000 --> 07:35.000
+Now.
+
+07:35.000 --> 07:36.000
+S.
+
+07:36.000 --> 07:37.000
+Is equals to.
+
+07:37.000 --> 07:38.000
+Then.
+
+07:38.000 --> 07:39.000
+Here.
+
+07:39.000 --> 07:40.000
+We.
+
+07:40.000 --> 07:41.000
+Put one.
+
+07:41.000 --> 07:42.000
+Title.
+
+07:42.000 --> 07:43.000
+That.
+
+07:43.000 --> 07:44.000
+Let's put.
+
+07:44.000 --> 07:45.000
+Title.
+
+07:45.000 --> 07:46.000
+Basically.
+
+07:46.000 --> 07:47.000
+Whatever movie we will search.
+
+07:47.000 --> 07:48.000
+Its title.
+
+07:48.000 --> 07:49.000
+After that.
+
+07:49.000 --> 07:50.000
+After this.
+
+07:50.000 --> 07:51.000
+Now.
+
+07:51.000 --> 07:52.000
+Whatever the data is.
+
+07:52.000 --> 07:53.000
+That.
+
+07:53.000 --> 07:54.000
+In the form of a json object.
+
+07:54.000 --> 07:55.000
+We have to keep.
+
+07:55.000 --> 07:56.000
+What is a json object?
+
+07:56.000 --> 07:57.000
+A.
+
+07:57.000 --> 07:58.000
+Javascript.
+
+07:58.000 --> 07:59.000
+Object.
+
+07:59.000 --> 08:00.000
+That is a.
+
+08:00.000 --> 08:01.000
+Json object.
+
+08:01.000 --> 08:02.000
+So after this.
+
+08:02.000 --> 08:03.000
+Here.
+
+08:03.000 --> 08:04.000
+Using await.
+
+08:04.000 --> 08:05.000
+Response dot.
+
+08:05.000 --> 08:06.000
+Wait.
+
+08:06.000 --> 08:07.000
+Here.
+
+08:07.000 --> 08:08.000
+Json.
+
+08:08.000 --> 08:09.000
+You.
+
+08:09.000 --> 08:10.000
+Need.
+
+08:10.000 --> 08:11.000
+So.
+
+08:11.000 --> 08:12.000
+In the form of a json.
+
+08:12.000 --> 08:13.000
+You need the data.
+
+08:13.000 --> 08:14.000
+That.
+
+08:14.000 --> 08:15.000
+You will need.
+
+08:15.000 --> 08:16.000
+Ok.
+
+08:16.000 --> 08:17.000
+After this.
+
+08:17.000 --> 08:18.000
+Now.
+
+08:18.000 --> 08:19.000
+What do we do?
+
+08:19.000 --> 08:20.000
+This.
+
+08:20.000 --> 08:21.000
+We.
+
+08:21.000 --> 08:22.000
+Once in the console.
+
+08:22.000 --> 08:23.000
+Let's print it.
+
+08:23.000 --> 08:24.000
+Let's see.
+
+08:24.000 --> 08:25.000
+Whether we have the data of the movie.
+
+08:25.000 --> 08:26.000
+Which we want.
+
+08:26.000 --> 08:27.000
+Is it coming or not?
+
+08:27.000 --> 08:28.000
+Data dot.
+
+08:28.000 --> 08:29.000
+Search.
+
+08:29.000 --> 08:30.000
+Or we just.
+
+08:30.000 --> 08:31.000
+Console dot.
+
+08:31.000 --> 08:32.000
+Log data.
+
+08:32.000 --> 08:33.000
+Let's do it.
+
+08:33.000 --> 08:34.000
+Now.
+
+08:34.000 --> 08:35.000
+Here.
+
+08:35.000 --> 08:36.000
+Once.
+
+08:36.000 --> 08:37.000
+Let's run it.
+
+08:37.000 --> 08:38.000
+And.
+
+08:38.000 --> 08:39.000
+Let's check.
+
+08:39.000 --> 08:40.000
+Whether we have the data.
+
+08:40.000 --> 08:41.000
+Is it coming or not.
+
+08:41.000 --> 08:42.000
+For this.
+
+08:42.000 --> 08:43.000
+We search the movie.
+
+08:43.000 --> 08:44.000
+Once.
+
+08:44.000 --> 08:45.000
+Let's call.
+
+08:45.000 --> 08:46.000
+And.
+
+08:46.000 --> 08:47.000
+The title.
+
+08:47.000 --> 08:48.000
+Of the movie.
+
+08:48.000 --> 08:49.000
+Let's search here.
+
+08:49.000 --> 08:50.000
+What?
+
+08:50.000 --> 08:51.000
+Avengers.
+
+08:51.000 --> 08:52.000
+Let's search the movie.
+
+08:52.000 --> 08:53.000
+By doing Avengers.
+
+08:53.000 --> 08:54.000
+Now.
+
+08:54.000 --> 08:55.000
+Let's go.
+
+08:55.000 --> 08:56.000
+First.
+
+08:56.000 --> 08:57.000
+Let's check.
+
+08:57.000 --> 08:58.000
+In the command prompt.
+
+08:58.000 --> 08:59.000
+Everything.
+
+08:59.000 --> 09:00.000
+Has been built successfully.
+
+09:00.000 --> 09:01.000
+Now.
+
+09:01.000 --> 09:02.000
+We will go.
+
+09:02.000 --> 09:03.000
+On our.
+
+09:03.000 --> 09:04.000
+Chrome.
+
+09:04.000 --> 09:05.000
+And.
+
+09:05.000 --> 09:06.000
+After.
+
+09:06.000 --> 09:07.000
+Going to.
+
+09:07.000 --> 09:08.000
+Chrome.
+
+09:08.000 --> 09:09.000
+Let's reload the page once.
+
+09:09.000 --> 09:10.000
+There was no need to.
+
+09:10.000 --> 09:11.000
+And.
+
+09:11.000 --> 09:12.000
+Here.
+
+09:12.000 --> 09:13.000
+We go.
+
+09:13.000 --> 09:14.000
+On the console.
+
+09:14.000 --> 09:15.000
+So.
+
+09:15.000 --> 09:16.000
+We go.
+
+09:16.000 --> 09:17.000
+On the console.
+
+09:17.000 --> 09:18.000
+For that.
+
+09:18.000 --> 09:19.000
+We.
+
+09:19.000 --> 09:20.000
+Go.
+
+09:20.000 --> 09:21.000
+On the console.
+
+09:21.000 --> 09:22.000
+And.
+
+09:22.000 --> 09:23.000
+Here.
+
+09:23.000 --> 09:24.000
+You see.
+
+09:24.000 --> 09:25.000
+When I.
+
+09:25.000 --> 09:26.000
+Searched.
+
+09:26.000 --> 09:27.000
+Avengers.
+
+09:27.000 --> 09:28.000
+It has an object.
+
+09:28.000 --> 09:29.000
+And.
+
+09:29.000 --> 09:30.000
+In this object.
+
+09:30.000 --> 09:31.000
+Ten.
+
+09:31.000 --> 09:32.000
+Areas.
+
+09:32.000 --> 09:33.000
+Have come.
+
+09:33.000 --> 09:34.000
+See.
+
+09:34.000 --> 09:35.000
+Ten.
+
+09:35.000 --> 09:36.000
+Areas.
+
+09:36.000 --> 09:37.000
+Have come.
+
+09:37.000 --> 09:38.000
+So.
+
+09:38.000 --> 09:39.000
+Here.
+
+09:39.000 --> 09:40.000
+At least.
+
+09:40.000 --> 09:41.000
+Ten.
+
+09:41.000 --> 09:42.000
+Movies.
+
+09:42.000 --> 09:43.000
+Have come.
+
+09:43.000 --> 09:44.000
+Which.
+
+09:44.000 --> 09:45.000
+Of.
+
+09:45.000 --> 09:46.000
+Avengers.
+
+09:46.000 --> 09:47.000
+So.
+
+09:47.000 --> 09:48.000
+Here.
+
+09:48.000 --> 09:49.000
+What.
+
+09:49.000 --> 09:50.000
+What.
+
+09:50.000 --> 09:51.000
+You.
+
+09:51.000 --> 09:52.000
+Got.
+
+09:52.000 --> 09:53.000
+Poster.
+
+09:53.000 --> 09:54.000
+Got.
+
+09:54.000 --> 09:55.000
+Title.
+
+09:55.000 --> 09:56.000
+Got.
+
+09:56.000 --> 09:57.000
+Type.
+
+09:57.000 --> 09:58.000
+Got.
+
+09:58.000 --> 09:59.000
+Year.
+
+09:59.000 --> 10:00.000
+And.
+
+10:00.000 --> 10:01.000
+IMDB.
+
+10:01.000 --> 10:02.000
+ID.
+
+10:02.000 --> 10:03.000
+Got.
+
+10:03.000 --> 10:04.000
+So.
+
+10:04.000 --> 10:05.000
+Here.
+
+10:05.000 --> 10:06.000
+You.
+
+10:06.000 --> 10:07.000
+Got.
+
+10:07.000 --> 10:08.000
+So.
+
+10:08.000 --> 10:09.000
+We.
+
+10:09.000 --> 10:10.000
+Use.
+
+10:10.000 --> 10:11.000
+This.
+
+10:11.000 --> 10:12.000
+Data.
+
+10:12.000 --> 10:13.000
+To.
+
+10:13.000 --> 10:14.000
+Show.
+
+10:14.000 --> 10:15.000
+The.
+
+10:15.000 --> 10:16.000
+Results.
+
