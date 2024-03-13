@@ -1,0 +1,1325 @@
+WEBVTT
+
+00:06.000 --> 00:09.440
+Now we will enhance the UI of our extension.
+
+00:09.440 --> 00:13.000
+Till now we have done everything in the back-end by using Hello World.
+
+00:13.000 --> 00:20.240
+Now we will use its UI so that it can be depicted and shown to the user properly.
+
+00:20.240 --> 00:29.160
+First of all, we will create a folder named Components in a pop-up folder which I have already created.
+
+00:29.160 --> 00:32.160
+I will delete it once and make it again.
+
+00:32.160 --> 00:43.860
+Click on the pop-up and go to the folder section in the top and create a folder named Components.
+
+00:43.860 --> 00:52.160
+First of all, you have to create a file named Header.tsx in which we will add the header of our extension.
+
+00:52.160 --> 00:53.860
+You have created Header.tsx.
+
+00:53.860 --> 00:57.560
+The code of Header.tsx is of 2-3 lines.
+
+00:57.560 --> 00:59.060
+You have to create it directly.
+
+00:59.160 --> 01:02.460
+You have to pick it up from our code section and add it here.
+
+01:02.460 --> 01:05.460
+See, here the code is very simple.
+
+01:05.460 --> 01:10.460
+Here we have given the header tag and in that we have given the class name Header.tsx.
+
+01:10.460 --> 01:13.460
+And the CSS of pop-up.css will be used here.
+
+01:13.460 --> 01:15.460
+And we have added it here by saying welcome.
+
+01:15.460 --> 01:25.460
+Now the second thing I would like to tell you is that you must have got the code of pop-up.css in the section and code section.
+
+01:25.460 --> 01:29.160
+So now pick up the code of pop-up.css from there as well.
+
+01:29.160 --> 01:31.460
+And replace your code with it.
+
+01:31.460 --> 01:37.460
+Now here the code of pop-up.css, I will explain to you slowly where it is being used.
+
+01:37.460 --> 01:39.460
+So what is being used in Header.tsx right now?
+
+01:39.460 --> 01:40.460
+Header text.
+
+01:40.460 --> 01:48.460
+So in pop-up.css, what we have added in Header text is that we have basically given it there.
+
+01:48.460 --> 01:52.460
+Font style, font size, we have given all these things.
+
+01:52.460 --> 01:56.460
+So Header text will be somewhere here.
+
+01:56.460 --> 01:57.160
+What is this?
+
+01:57.160 --> 01:58.460
+So we have given padding here.
+
+01:58.460 --> 01:59.460
+We have given text align center.
+
+01:59.460 --> 02:00.460
+We have given background.
+
+02:00.460 --> 02:03.460
+So here we have basically given it for text.
+
+02:03.460 --> 02:04.460
+This is in Header text.
+
+02:04.460 --> 02:07.460
+And in the same way, when we will make footer, we have given this class for that.
+
+02:07.460 --> 02:09.460
+So we have added very simple things.
+
+02:09.460 --> 02:11.460
+We have gone to Header.tsx.
+
+02:11.460 --> 02:13.460
+Here our header has been made.
+
+02:13.460 --> 02:16.460
+The second thing you have to make in the component is by doing footer.tsx.
+
+02:16.460 --> 02:18.460
+So you will make a file.
+
+02:18.460 --> 02:23.460
+Footer.tsx.
+
+02:23.460 --> 02:27.460
+Now the code of footer.tsx is also very small and of 2-3 lines.
+
+02:27.460 --> 02:28.460
+The same code is also added.
+
+02:28.460 --> 02:29.460
+You will get the code.
+
+02:29.460 --> 02:30.460
+You will just bring it here and keep it.
+
+02:30.460 --> 02:32.460
+So here we have done the same thing that we used to do.
+
+02:32.460 --> 02:37.460
+Date, year, ampersand copy is an HTML entity.
+
+02:37.460 --> 02:39.460
+What are HTML entities?
+
+02:39.460 --> 02:40.460
+Let's see that quickly.
+
+02:40.460 --> 02:43.460
+What are HTML entities?
+
+02:43.460 --> 02:46.460
+So we have gone here in our browser.
+
+02:46.460 --> 02:51.460
+And HTML entities are basically different types of basic small codes.
+
+02:51.460 --> 02:53.460
+That is, they are kind of small keywords.
+
+02:53.460 --> 02:55.460
+By using which you can enter different symbols.
+
+02:55.460 --> 02:57.460
+So the ampersand copy that we have used there.
+
+02:57.460 --> 02:59.460
+We had used the ampersand copy.
+
+02:59.460 --> 03:01.460
+So that it becomes the copyright symbol.
+
+03:01.460 --> 03:03.460
+So what have we done?
+
+03:03.460 --> 03:05.460
+So we have searched HTML entities.
+
+03:05.460 --> 03:08.460
+We have gone.
+
+03:08.460 --> 03:10.460
+And here you will be able to see.
+
+03:10.460 --> 03:12.460
+The site which is called Mozilla.
+
+03:12.460 --> 03:14.460
+Here you will be able to see that the entities that I have told you about.
+
+03:14.460 --> 03:16.460
+What are they?
+
+03:16.460 --> 03:17.460
+There are many basic things.
+
+03:17.460 --> 03:18.460
+There are keywords.
+
+03:18.460 --> 03:21.460
+By using which you can make different things.
+
+03:21.460 --> 03:23.460
+Like here you can see that by using ampersand copy.
+
+03:23.460 --> 03:25.460
+Copyright has been made.
+
+03:25.460 --> 03:28.460
+Similarly, these are all the entities.
+
+03:28.460 --> 03:30.460
+So here as you write this.
+
+03:30.460 --> 03:32.460
+Then an ampersand becomes automatically.
+
+03:32.460 --> 03:33.460
+Or it becomes the end.
+
+03:33.460 --> 03:34.460
+If you write this.
+
+03:34.460 --> 03:36.460
+Then it becomes a sign of less than.
+
+03:36.460 --> 03:37.460
+If you write this.
+
+03:37.460 --> 03:38.460
+Then it becomes greater than.
+
+03:38.460 --> 03:39.460
+If you write ampersand copy.
+
+03:39.460 --> 03:41.460
+Then it becomes the copyright sign.
+
+03:41.460 --> 03:42.460
+So you must have understood.
+
+03:42.460 --> 03:44.460
+So from here you can also copy.
+
+03:44.460 --> 03:46.460
+If you need any other entity tomorrow.
+
+03:46.460 --> 03:47.460
+Then you can do it.
+
+03:47.460 --> 03:48.460
+After this.
+
+03:48.460 --> 03:51.460
+We go back to our code.
+
+03:51.460 --> 03:53.460
+And after going here.
+
+03:53.460 --> 03:55.460
+We have seen by putting header and footer.
+
+03:55.460 --> 03:57.460
+Now once we see our extension.
+
+03:57.460 --> 03:58.460
+So we go back.
+
+03:58.460 --> 04:01.460
+And once we open our extension.
+
+04:01.460 --> 04:02.460
+So here you will see.
+
+04:02.460 --> 04:04.460
+That hello world has been written.
+
+04:04.460 --> 04:05.460
+After this.
+
+04:05.460 --> 04:08.460
+Here the style has not been put.
+
+04:08.460 --> 04:09.460
+So why did this happen?
+
+04:09.460 --> 04:10.460
+Why our style has not been put?
+
+04:10.460 --> 04:12.460
+Because.
+
+04:12.460 --> 04:13.460
+Because the problem is.
+
+04:13.460 --> 04:14.460
+That we have made hello world.
+
+04:14.460 --> 04:15.460
+Sorry.
+
+04:15.460 --> 04:16.460
+Footer and header have been made.
+
+04:16.460 --> 04:17.460
+Component.
+
+04:17.460 --> 04:19.460
+But it will have to be put somewhere.
+
+04:19.460 --> 04:20.460
+I mean.
+
+04:20.460 --> 04:21.460
+It will have to be shown somewhere.
+
+04:21.460 --> 04:22.460
+We have just made the component.
+
+04:22.460 --> 04:23.460
+It will also have to be imported.
+
+04:23.460 --> 04:25.460
+So this thing came down from my mind.
+
+04:25.460 --> 04:26.460
+So what do we do for this?
+
+04:26.460 --> 04:27.460
+Let's go back.
+
+04:27.460 --> 04:29.460
+We have made header and footer.
+
+04:29.460 --> 04:30.460
+Now we will do one thing.
+
+04:30.460 --> 04:31.460
+We will go to app.tsx.
+
+04:31.460 --> 04:33.460
+We have seen in app.tsx.
+
+04:33.460 --> 04:34.460
+Our popup is being rendered here.
+
+04:34.460 --> 04:36.460
+The header is above the popup.
+
+04:36.460 --> 04:38.460
+So we will do the same here.
+
+04:38.460 --> 04:39.460
+Here we have the header.
+
+04:39.460 --> 04:41.460
+We will bring the header here.
+
+04:41.460 --> 04:44.460
+We have brought the header by doing this.
+
+04:44.460 --> 04:45.460
+After this we will go here.
+
+04:45.460 --> 04:48.460
+And we will import the footer in this way.
+
+04:48.460 --> 04:49.460
+And to import it.
+
+04:49.460 --> 04:51.460
+We will select it here.
+
+04:51.460 --> 04:53.460
+Press control space.
+
+04:53.460 --> 04:54.460
+And hit enter.
+
+04:54.460 --> 04:56.460
+So it will be imported automatically.
+
+04:56.460 --> 04:57.460
+Same thing here.
+
+04:57.460 --> 04:58.460
+Press control space and hit enter.
+
+04:58.460 --> 04:59.460
+It is imported.
+
+04:59.460 --> 05:01.460
+So now the popup here.
+
+05:01.460 --> 05:03.460
+This is basically ours.
+
+05:03.460 --> 05:05.460
+In which our hello world etc. is visible.
+
+05:05.460 --> 05:07.460
+Now where is this popup being rendered?
+
+05:07.460 --> 05:09.460
+In app.tsx.
+
+05:09.460 --> 05:11.460
+And what did we do in this?
+
+05:11.460 --> 05:13.460
+We just put header above the popup.
+
+05:13.460 --> 05:14.460
+And put footer below it.
+
+05:14.460 --> 05:15.460
+So what happened?
+
+05:15.460 --> 05:18.460
+That header and footer went up and down.
+
+05:18.460 --> 05:21.460
+So here by default they will show up and down.
+
+05:21.460 --> 05:22.460
+So what do we do now?
+
+05:22.460 --> 05:24.460
+Now we go back to our browser.
+
+05:24.460 --> 05:25.460
+And now.
+
+05:25.460 --> 05:26.460
+And now we open our extension once.
+
+05:26.460 --> 05:27.460
+So now see.
+
+05:27.460 --> 05:28.460
+What happened here?
+
+05:28.460 --> 05:29.460
+Welcome has come and under that footer has come.
+
+05:29.460 --> 05:30.460
+You are able to understand now.
+
+05:30.460 --> 05:31.460
+Here footer and welcome has come.
+
+05:31.460 --> 05:32.460
+And the background style has also changed because of the popup.css.
+
+05:32.460 --> 05:33.460
+Now as soon as our main content will go in the middle.
+
+05:33.460 --> 05:34.460
+So this footer will automatically come down.
+
+05:34.460 --> 05:35.460
+Ok.
+
+05:35.460 --> 05:36.460
+So what do we do now?
+
+05:36.460 --> 05:37.460
+This basic UI has been made.
+
+05:37.460 --> 05:38.460
+Now what do we do?
+
+05:38.460 --> 05:39.460
+That we first go to the browser.
+
+05:39.460 --> 05:40.460
+And then we go here.
+
+05:40.460 --> 05:41.460
+And here we go to.
+
+05:41.460 --> 05:42.460
+And here we go here.
+
+05:42.460 --> 05:43.460
+And here we go.
+
+05:43.460 --> 05:44.460
+Now.
+
+05:44.460 --> 05:45.460
+And here.
+
+05:45.460 --> 05:46.460
+And here we go.
+
+05:46.460 --> 05:47.460
+And here.
+
+05:47.460 --> 05:48.460
+And here we go.
+
+05:48.460 --> 05:49.460
+And here we go.
+
+05:49.460 --> 05:50.460
+And here we go.
+
+05:50.460 --> 05:52.460
+So, our basic UI is ready.
+
+05:52.460 --> 05:54.460
+Now, what we do is,
+
+05:54.460 --> 05:56.460
+first of all, we go and
+
+05:56.460 --> 05:58.460
+put a button instead of hello word.
+
+05:58.460 --> 06:00.460
+After clicking on it,
+
+06:00.460 --> 06:02.460
+the analysis will start.
+
+06:02.460 --> 06:04.460
+So, you also
+
+06:04.460 --> 06:06.460
+come back to your popup.
+
+06:06.460 --> 06:08.460
+After that, go to the bottom.
+
+06:08.460 --> 06:10.460
+First, we will create a state.
+
+06:10.460 --> 06:12.460
+We will name it as
+
+06:12.460 --> 06:14.460
+scraped.
+
+06:14.460 --> 06:16.460
+And I am telling you
+
+06:16.460 --> 06:18.460
+why you need this state.
+
+06:18.460 --> 06:20.460
+So, we have created
+
+06:20.460 --> 06:22.460
+this state.
+
+06:22.460 --> 06:24.460
+Use
+
+06:24.460 --> 06:26.460
+state.
+
+06:26.460 --> 06:28.460
+And here,
+
+06:28.460 --> 06:30.460
+first of all,
+
+06:30.460 --> 06:32.460
+we will show false.
+
+06:32.460 --> 06:34.460
+So, what will happen?
+
+06:34.460 --> 06:36.460
+We will set here
+
+06:36.460 --> 06:38.460
+whether the content has been scraped.
+
+06:38.460 --> 06:40.460
+That is, whether the content of the website
+
+06:40.460 --> 06:42.460
+that we are doing using the scrape function
+
+06:42.460 --> 06:44.460
+has been scraped or not.
+
+06:44.460 --> 06:46.460
+According to this, we will change our animation in the UI.
+
+06:46.460 --> 06:48.460
+So, I will show you how.
+
+06:48.460 --> 06:50.460
+So, we have set it as false.
+
+06:50.460 --> 06:52.460
+It has not been scraped yet.
+
+06:52.460 --> 06:54.460
+By default, it is a false value set.
+
+06:54.460 --> 06:56.460
+Now, we will go to our
+
+06:56.460 --> 06:58.460
+chrome.execute
+
+06:58.460 --> 07:00.460
+script method.
+
+07:00.460 --> 07:02.460
+Here, we will go
+
+07:02.460 --> 07:04.460
+to the bottom.
+
+07:04.460 --> 07:06.460
+Here, we will create a callback function.
+
+07:06.460 --> 07:08.460
+What will happen with this?
+
+07:08.460 --> 07:10.460
+I will tell you now.
+
+07:10.460 --> 07:12.460
+And here, we will write
+
+07:12.460 --> 07:14.460
+set is scraped.
+
+07:14.460 --> 07:16.460
+We will put true in it.
+
+07:16.460 --> 07:18.460
+Now, what will happen with this? I will tell you.
+
+07:18.460 --> 07:20.460
+As soon as the scraping will end,
+
+07:20.460 --> 07:22.460
+this function
+
+07:22.460 --> 07:24.460
+as soon as it will end,
+
+07:24.460 --> 07:26.460
+after that, this thing will be called.
+
+07:26.460 --> 07:28.460
+And here, the set is scraped will be true.
+
+07:28.460 --> 07:30.460
+That is, as soon as the scraping will end,
+
+07:30.460 --> 07:32.460
+this thing will be true set.
+
+07:32.460 --> 07:34.460
+Now, what will we do with this?
+
+07:34.460 --> 07:36.460
+We have said that the set is scraped.
+
+07:36.460 --> 07:38.460
+We have set it true.
+
+07:38.460 --> 07:40.460
+So, what will we do?
+
+07:40.460 --> 07:42.460
+Now, what will we do with this?
+
+07:42.460 --> 07:44.460
+Basically, we will put an image tag here.
+
+07:44.460 --> 07:46.460
+And here, we will make a button.
+
+07:46.460 --> 07:48.460
+Now, what will be the button?
+
+07:48.460 --> 07:50.460
+Here, our button will be icon128.png.
+
+07:50.460 --> 07:52.460
+This one.
+
+07:52.460 --> 07:54.460
+We will use this as our button.
+
+07:54.460 --> 07:56.460
+So, as soon as the user will click in this,
+
+07:56.460 --> 07:58.460
+after this, the analysis will start.
+
+07:58.460 --> 08:00.460
+So, now we will go in this.
+
+08:00.460 --> 08:02.460
+We have asked the source.
+
+08:02.460 --> 08:04.460
+So, dot forward slash icon128.png
+
+08:04.460 --> 08:06.460
+because it is in the current folder.
+
+08:06.460 --> 08:08.460
+Dot png
+
+08:08.460 --> 08:10.460
+And after this, the alternative
+
+08:10.460 --> 08:12.460
+it has written alt.
+
+08:12.460 --> 08:14.460
+So, here you will write summary.
+
+08:14.460 --> 08:16.460
+This is summarize.
+
+08:16.460 --> 08:18.460
+After this.
+
+08:18.460 --> 08:20.460
+It is very easy.
+
+08:20.460 --> 08:22.460
+On click.
+
+08:22.460 --> 08:24.460
+Now, as soon as the button clicks the photo,
+
+08:24.460 --> 08:26.460
+the summarize function should work.
+
+08:26.460 --> 08:28.460
+So, here we have added this.
+
+08:28.460 --> 08:30.460
+Now, here comes the turn
+
+08:30.460 --> 08:32.460
+to change the animation.
+
+08:32.460 --> 08:34.460
+How will that happen?
+
+08:34.460 --> 08:36.460
+Now, I will tell you.
+
+08:36.460 --> 08:38.460
+First, do it in the class name.
+
+08:38.460 --> 08:40.460
+In the class name, you have to write is scraped.
+
+08:40.460 --> 08:42.460
+Is scraped.
+
+08:42.460 --> 08:44.460
+Question mark.
+
+08:44.460 --> 08:46.460
+If content is scraped.
+
+08:46.460 --> 08:48.460
+Content is scraped.
+
+08:48.460 --> 08:50.460
+If content is scraped.
+
+08:50.460 --> 08:52.460
+Then the class that will be set
+
+08:52.460 --> 08:54.460
+will be set as afterscape.
+
+08:54.460 --> 08:56.460
+Now, here I will tell you what I am doing.
+
+08:56.460 --> 08:58.460
+The afterscape class will be set.
+
+08:58.460 --> 09:00.460
+There is double underscore in it.
+
+09:00.460 --> 09:02.460
+After this.
+
+09:02.460 --> 09:04.460
+Otherwise, the normal class will be
+
+09:04.460 --> 09:06.460
+summarized.
+
+09:06.460 --> 09:08.460
+The normal class will be
+
+09:08.460 --> 09:10.460
+summarized by clicking the button.
+
+09:10.460 --> 09:12.460
+Now, what is happening here?
+
+09:12.460 --> 09:14.460
+Let's see it once.
+
+09:14.460 --> 09:16.460
+So, what have we done?
+
+09:16.460 --> 09:18.460
+Here, we have given the class name of the image.
+
+09:18.460 --> 09:20.460
+We have
+
+09:20.460 --> 09:22.460
+automatically
+
+09:22.460 --> 09:24.460
+changed it
+
+09:24.460 --> 09:26.460
+according to the situations.
+
+09:26.460 --> 09:28.460
+That is,
+
+09:28.460 --> 09:30.460
+if the content is not scraped.
+
+09:30.460 --> 09:32.460
+Suppose, the user has not clicked the button yet.
+
+09:32.460 --> 09:34.460
+So, the normal class with the
+
+09:34.460 --> 09:36.460
+summarized button will be put in it.
+
+09:36.460 --> 09:38.460
+Now, the class with the summarized button.
+
+09:38.460 --> 09:40.460
+Let's see its popup once.
+
+09:40.460 --> 09:42.460
+Let's see its style.
+
+09:42.460 --> 09:44.460
+So, if you see its style.
+
+09:44.460 --> 09:46.460
+It is something like this.
+
+09:46.460 --> 09:48.460
+This is the work of the summarized button.
+
+09:48.460 --> 09:50.460
+So, you will get this at the top.
+
+09:50.460 --> 09:52.460
+Summarized button.
+
+09:52.460 --> 09:54.460
+What is this?
+
+09:54.460 --> 09:56.460
+So, here we have told that where to place the image.
+
+09:56.460 --> 09:58.460
+That the margin has to be given
+
+09:58.460 --> 10:00.460
+46% from the top.
+
+10:00.460 --> 10:02.460
+The auto has to be given from the side so that it is in the center.
+
+10:02.460 --> 10:04.460
+Display flex has to be given.
+
+10:04.460 --> 10:06.460
+The align item has to be given in the center.
+
+10:06.460 --> 10:08.460
+So, we have told it that it should come in the center.
+
+10:08.460 --> 10:10.460
+What is the page's photo?
+
+10:10.460 --> 10:12.460
+So, if it has not clicked till now, then it will be in the center of the page.
+
+10:12.460 --> 10:14.460
+But as soon as it clicks.
+
+10:14.460 --> 10:16.460
+As soon as it clicks, then the content
+
+10:16.460 --> 10:18.460
+starts here.
+
+10:18.460 --> 10:20.460
+And as soon as the content is scraped,
+
+10:20.460 --> 10:22.460
+then we put this class.
+
+10:22.460 --> 10:24.460
+That means the content has been scraped.
+
+10:24.460 --> 10:26.460
+So, in popup.css, let's see the after scrape class.
+
+10:26.460 --> 10:28.460
+So, see this.
+
+10:28.460 --> 10:30.460
+In after scrape, we have put an animation by doing slide left.
+
+10:30.460 --> 10:32.460
+What will happen with this?
+
+10:32.460 --> 10:34.460
+That the animation of slide left
+
+10:34.460 --> 10:36.460
+will lift the photo from the center of the page
+
+10:36.460 --> 10:38.460
+and slide it towards the left.
+
+10:38.460 --> 10:40.460
+There will be an animation.
+
+10:40.460 --> 10:42.460
+So, see this. 0%.
+
+10:42.460 --> 10:44.460
+That means in the beginning, the image is in the center.
+
+10:44.460 --> 10:46.460
+But as soon as the animation is applied,
+
+10:46.460 --> 10:48.460
+then it will go minus 300%
+
+10:48.460 --> 10:50.460
+to the left.
+
+10:50.460 --> 10:52.460
+That means it will disappear from the page.
+
+10:52.460 --> 10:54.460
+And this will happen with the speed of 0.9 seconds.
+
+10:54.460 --> 10:56.460
+Do you understand?
+
+10:56.460 --> 10:58.460
+So, here you must have understood that
+
+10:58.460 --> 11:00.460
+as soon as the content is scraped and the button is clicked,
+
+11:00.460 --> 11:02.460
+then the photo will slide to the left.
+
+11:02.460 --> 11:04.460
+So, from here,
+
+11:04.460 --> 11:06.460
+we have found out this.
+
+11:06.460 --> 11:08.460
+Now, let's check this thing once.
+
+11:08.460 --> 11:10.460
+Chrome extension.
+
+11:10.460 --> 11:12.460
+So, now we have come here.
+
+11:12.460 --> 11:14.460
+See, now everything is fine.
+
+11:14.460 --> 11:16.460
+Here, our
+
+11:16.460 --> 11:18.460
+button has come.
+
+11:18.460 --> 11:20.460
+The footer has been set well below.
+
+11:20.460 --> 11:22.460
+The header has been set well above.
+
+11:22.460 --> 11:24.460
+The hello word is still written because we have not removed it.
+
+11:24.460 --> 11:26.460
+Now, what do we do with this?
+
+11:26.460 --> 11:28.460
+As soon as we click,
+
+11:28.460 --> 11:30.460
+now what will happen?
+
+11:30.460 --> 11:32.460
+This click has not been clicked yet.
+
+11:32.460 --> 11:34.460
+So, the class of summarize button is active in this.
+
+11:34.460 --> 11:36.460
+As soon as we click, the class of after scrape will come.
+
+11:36.460 --> 11:38.460
+Because the content will be scraped by the time.
+
+11:38.460 --> 11:40.460
+Because it is a real-time process.
+
+11:40.460 --> 11:42.460
+So, this slide will go to the left.
+
+11:42.460 --> 11:44.460
+As soon as we click, it slides to the left.
+
+11:44.460 --> 11:46.460
+Now, what do we want?
+
+11:46.460 --> 11:48.460
+It slides to the left.
+
+11:48.460 --> 11:50.460
+But now the scraped content will go to the open area.
+
+11:50.460 --> 11:52.460
+So, till then, we have to show the load.
+
+11:52.460 --> 11:54.460
+The content is loading.
+
+11:54.460 --> 11:56.460
+So, now we will put a loader.
+
+11:56.460 --> 11:58.460
+We call it pulse loader.
+
+11:58.460 --> 12:00.460
+We will put that here.
+
+12:00.460 --> 12:02.460
+So, now what do we do first?
+
+12:02.460 --> 12:04.460
+Let's go back to the code.
+
+12:04.460 --> 12:06.460
+And
+
+12:06.460 --> 12:08.460
+after going to the code, we will do one thing here.
+
+12:08.460 --> 12:10.460
+The div that we have given here,
+
+12:10.460 --> 12:11.980
+the hello word one, we remove it first.
+
+12:12.460 --> 12:14.460
+So, we don't need the hello word one now.
+
+12:14.460 --> 12:16.460
+Now, what we will do is
+
+12:16.460 --> 12:18.460
+that now
+
+12:18.460 --> 12:20.460
+a small org code
+
+12:20.460 --> 12:22.460
+will be basically given
+
+12:22.460 --> 12:24.460
+in the code section.
+
+12:24.460 --> 12:26.460
+So, you don't have to do anything.
+
+12:26.460 --> 12:28.460
+You just have to pick it up and paste it.
+
+12:28.460 --> 12:30.460
+Now, what is this?
+
+12:30.460 --> 12:32.460
+I will tell you this once.
+
+12:32.460 --> 12:34.460
+So,
+
+12:34.460 --> 12:36.460
+see here
+
+12:36.460 --> 12:38.460
+what we have done.
+
+12:38.460 --> 12:40.460
+We have put some conditions here.
+
+12:40.460 --> 12:42.460
+You must have understood the image one.
+
+12:42.460 --> 12:44.460
+We have set a new summary here.
+
+12:44.460 --> 12:46.460
+Summary means
+
+12:46.460 --> 12:48.460
+when the content was analyzed.
+
+12:48.460 --> 12:50.460
+So, we said that
+
+12:50.460 --> 12:52.460
+if the summary.length is greater than zero,
+
+12:52.460 --> 12:54.460
+that means there is something in the summary.
+
+12:54.460 --> 12:56.460
+That means, if there is something in the summary,
+
+12:56.460 --> 12:58.460
+then we will normally show the summary
+
+12:58.460 --> 13:00.460
+here.
+
+13:00.460 --> 13:02.460
+Normally, we have shown the summary here.
+
+13:02.460 --> 13:04.460
+But
+
+13:04.460 --> 13:06.460
+until the summary is not there
+
+13:06.460 --> 13:08.460
+and the content is scraped,
+
+13:08.460 --> 13:10.460
+but the summary has not come,
+
+13:10.460 --> 13:12.460
+then we will put the loader pulse here.
+
+13:12.460 --> 13:14.460
+So, we will show the content
+
+13:14.460 --> 13:16.460
+in this way.
+
+13:16.460 --> 13:18.460
+See here.
+
+13:18.460 --> 13:20.460
+So, we have put the condition
+
+13:20.460 --> 13:22.460
+here.
+
+13:22.460 --> 13:24.460
+As the summary.length is greater than zero,
+
+13:24.460 --> 13:26.460
+that means the summary comes,
+
+13:26.460 --> 13:28.460
+then the summary will show something like this.
+
+13:28.460 --> 13:30.460
+But until the summary does not come,
+
+13:30.460 --> 13:32.460
+until the content is scraped,
+
+13:32.460 --> 13:34.460
+then only the loader animation
+
+13:34.460 --> 13:36.460
+is shown.
+
+13:36.460 --> 13:38.460
+And whatever the CSS of the loader animation is in the pop-up,
+
+13:38.460 --> 13:40.460
+then everything is given here.
+
+13:40.460 --> 13:42.460
+Basically, how will the load be?
+
+13:42.460 --> 13:44.460
+It is a very basic animation.
+
+13:44.460 --> 13:46.460
+It is a very basic animation.
+
+13:46.460 --> 13:48.460
+So, here it is.
+
+13:48.460 --> 13:50.460
+Where is the loader pulse animation?
+
+13:50.460 --> 13:52.460
+That is your basic animation.
+
+13:52.460 --> 13:54.460
+You will see it by pulsing.
+
+13:54.460 --> 13:56.460
+So, here we are just increasing the opacity.
+
+13:56.460 --> 13:58.460
+So, we are increasing the opacity.
+
+13:58.460 --> 14:00.460
+So, due to this, it seems that it is loading.
+
+14:00.460 --> 14:02.460
+So, now we will show you nicely.
+
+14:02.460 --> 14:04.460
+Now, here
+
+14:04.460 --> 14:06.460
+this thing is ready.
+
+14:06.460 --> 14:08.460
+Now, what do we do once?
+
+14:08.460 --> 14:10.460
+Let's go back to our extension.
+
+14:10.460 --> 14:12.460
+Ok.
+
+14:12.460 --> 14:14.460
+One minute.
+
+14:14.460 --> 14:16.460
+Here is our browser.
+
+14:16.460 --> 14:18.460
+And we go back to our extension.
+
+14:18.460 --> 14:20.460
+Now, let's see how clear and clean our extension is.
+
+14:20.460 --> 14:22.460
+Now, let's see how clear and clean our extension is.
+
+14:22.460 --> 14:24.460
+We put a header above and a footer below.
+
+14:24.460 --> 14:26.460
+We put buttons in the middle and gave it a style.
+
+14:26.460 --> 14:28.460
+As soon as we click, what will happen first?
+
+14:28.460 --> 14:30.460
+It will check whether the content has been scraped or not.
+
+14:30.460 --> 14:32.460
+So, as soon as you click, the content is scraped.
+
+14:32.460 --> 14:34.460
+So, it will slide to the left immediately.
+
+14:34.460 --> 14:36.460
+Animation will be applied.
+
+14:36.460 --> 14:38.460
+As soon as it slides, you can see
+
+14:38.460 --> 14:40.460
+that the loader animation has come automatically.
+
+14:40.460 --> 14:42.460
+So, what does the loader animation do?
+
+14:42.460 --> 14:44.460
+It tells that the content is loading.
+
+14:44.460 --> 14:46.460
+Now, as soon as it loads,
+
+14:46.460 --> 14:48.460
+the summary dot length becomes greater than zero.
+
+14:48.460 --> 14:50.460
+So, here it shows the summary.
+
+14:50.460 --> 14:52.460
+So, here it shows the summary.
+
+14:52.460 --> 14:54.460
+It was very basic and very easy.
+
+14:54.460 --> 14:56.460
+And here the summary has come very nicely.
+
+14:56.460 --> 14:58.460
+So, this was our basic extension part
+
+14:58.460 --> 15:00.460
+where we enhanced the UI.
+
+15:00.460 --> 15:02.460
+where we enhanced the UI.
+

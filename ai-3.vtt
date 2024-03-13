@@ -1,0 +1,482 @@
+WEBVTT
+
+00:06.000 --> 00:12.000
+So now let's see how we can take messages from one script to another script.
+
+00:12.000 --> 00:19.000
+For example, here we have scraped content of the website, text content.
+
+00:19.000 --> 00:24.000
+Now if we want this scraped content to be analyzed,
+
+00:24.000 --> 00:27.000
+we can give that to chat GPT API.
+
+00:27.000 --> 00:30.000
+So we want to do this task in the background.
+
+00:30.000 --> 00:34.000
+Because here we are calling our API,
+
+00:34.000 --> 00:37.000
+then sending data from API, then receiving.
+
+00:37.000 --> 00:41.000
+So this work will be done in the background only then it will be better.
+
+00:41.000 --> 00:45.000
+And it happens that such works happen in the background.
+
+00:45.000 --> 00:50.000
+So for this we have to transfer our scraped content to the background script.
+
+00:50.000 --> 00:52.000
+So what will we do for that?
+
+00:52.000 --> 00:54.000
+So now you can see that our background script
+
+00:54.000 --> 00:57.000
+is background.ts.
+
+00:57.000 --> 01:01.000
+If we want to transfer this scraped content to this script,
+
+01:01.000 --> 01:02.000
+then what will we do?
+
+01:02.000 --> 01:06.000
+We have a method to send message from here.
+
+01:06.000 --> 01:09.000
+It is called chrome.runtime.sendMessage.
+
+01:09.000 --> 01:15.000
+By using this, we can transfer a message from one place to another in any script.
+
+01:15.000 --> 01:17.000
+So there goes this method.
+
+01:17.000 --> 01:19.000
+In which what you do is,
+
+01:19.000 --> 01:21.000
+first you put an object.
+
+01:21.000 --> 01:23.000
+First you write chrome.runtime.sendMessage.
+
+01:23.000 --> 01:25.000
+In that, an object goes.
+
+01:25.000 --> 01:29.000
+In which you can put any name of an object.
+
+01:29.000 --> 01:32.000
+For example, you can call a trimmed text as a scraped text.
+
+01:32.000 --> 01:35.000
+And you give it the value of a scrimmed text.
+
+01:35.000 --> 01:39.000
+So if you want to access this scrimmed text from anywhere,
+
+01:39.000 --> 01:41.000
+then you can access it as a scraped text.
+
+01:41.000 --> 01:44.000
+So let me tell you this well.
+
+01:44.000 --> 01:47.000
+What happened is that this message has spread out everywhere.
+
+01:47.000 --> 01:50.000
+Now you can receive this message from any file.
+
+01:50.000 --> 01:52.000
+You just have to use a method.
+
+01:52.000 --> 01:56.000
+Which is the method of chrome.runtime.sendMessage.
+
+01:56.000 --> 01:58.000
+As soon as you use that method,
+
+01:58.000 --> 02:00.000
+you will be able to receive it from anywhere.
+
+02:00.000 --> 02:05.000
+So this scrimmed text which is also our content,
+
+02:05.000 --> 02:07.000
+has gone inside the scraped text.
+
+02:07.000 --> 02:10.000
+And as soon as you directly access the scraped text,
+
+02:10.000 --> 02:12.000
+this scrimmed text will automatically come to you.
+
+02:12.000 --> 02:14.000
+So first we save it.
+
+02:14.000 --> 02:16.000
+Let's go to the background.
+
+02:16.000 --> 02:18.000
+Let's paste it.
+
+02:18.000 --> 02:21.000
+And our function is something like this.
+
+02:22.000 --> 02:24.000
+So this function is something like this,
+
+02:24.000 --> 02:26.000
+which you use to receive a message.
+
+02:26.000 --> 02:28.000
+Now here you write the first thing, if
+
+02:28.000 --> 02:32.000
+message.scraped
+
+02:32.000 --> 02:35.000
+Here I have turned on my caps lock.
+
+02:35.000 --> 02:38.000
+So let me do it in small letters first.
+
+02:38.000 --> 02:42.000
+message.scrapedText
+
+02:42.000 --> 02:44.000
+Now I will explain to you what this is and what I am doing.
+
+02:44.000 --> 02:47.000
+So what I have done here is,
+
+02:47.000 --> 02:49.000
+and once console.log
+
+02:49.000 --> 02:51.000
+message.scrapedText
+
+02:52.000 --> 02:56.000
+Now let's see what I have done here.
+
+02:56.000 --> 02:58.000
+First of all,
+
+02:58.000 --> 03:00.000
+from the popup,
+
+03:00.000 --> 03:04.000
+we have sent our message with the scraped text in every file.
+
+03:04.000 --> 03:06.000
+It has been sent everywhere.
+
+03:06.000 --> 03:09.000
+Then we have received it from the background.
+
+03:09.000 --> 03:13.000
+We have used the method of chrome.runtime.onMessage.
+
+03:13.000 --> 03:15.000
+We have put a message parameter in it.
+
+03:15.000 --> 03:18.000
+So whatever message will come from here,
+
+03:18.000 --> 03:21.000
+will be saved in the message parameter.
+
+03:21.000 --> 03:26.000
+And then we can access the message from it.
+
+03:26.000 --> 03:29.000
+So the scraped text was saved in the message.
+
+03:29.000 --> 03:32.000
+We have accessed it by doing message.scrapedText
+
+03:32.000 --> 03:34.000
+and it has been accessed.
+
+03:34.000 --> 03:36.000
+So you can access it in this way.
+
+03:36.000 --> 03:38.000
+We have accessed it in the background.
+
+03:38.000 --> 03:40.000
+So now whenever the text will be scraped,
+
+03:40.000 --> 03:42.000
+it will come directly in the background
+
+03:42.000 --> 03:45.000
+and it will be printed in the background.
+
+03:45.000 --> 03:47.000
+It will be logged in the console.
+
+03:47.000 --> 03:49.000
+Right now we are logging it.
+
+03:49.000 --> 03:51.000
+What we will do tomorrow is,
+
+03:51.000 --> 03:53.000
+we will do analysis,
+
+03:53.000 --> 03:54.000
+we will summarize,
+
+03:54.000 --> 03:56.000
+we will use openAI here.
+
+03:56.000 --> 03:57.000
+So for now,
+
+03:57.000 --> 04:00.000
+I will show you whether it is printing or not.
+
+04:00.000 --> 04:01.000
+So for that,
+
+04:01.000 --> 04:02.000
+first of all,
+
+04:02.000 --> 04:03.000
+you go to chrome.
+
+04:03.000 --> 04:05.000
+After going to chrome,
+
+04:05.000 --> 04:07.000
+the first thing you have to do is,
+
+04:07.000 --> 04:09.000
+you have to go to extension,
+
+04:09.000 --> 04:11.000
+chrome slash extensions.
+
+04:11.000 --> 04:13.000
+And you have to reload it.
+
+04:13.000 --> 04:14.000
+Because,
+
+04:14.000 --> 04:17.000
+whenever you do changes in background.ts,
+
+04:17.000 --> 04:19.000
+or content.js,
+
+04:19.000 --> 04:20.000
+or in ts,
+
+04:20.000 --> 04:24.000
+then you have to reload the extension every time.
+
+04:24.000 --> 04:26.000
+So what you have to do here is,
+
+04:26.000 --> 04:29.000
+you go back to the artificial intelligence wikipedia.
+
+04:29.000 --> 04:31.000
+And your extension,
+
+04:31.000 --> 04:33.000
+I had un-pinned it.
+
+04:33.000 --> 04:35.000
+I will pin it back.
+
+04:35.000 --> 04:37.000
+We have opened the extension.
+
+04:37.000 --> 04:39.000
+And this time we will click on hello world.
+
+04:39.000 --> 04:41.000
+So when we used to click earlier,
+
+04:41.000 --> 04:42.000
+you might remember,
+
+04:42.000 --> 04:43.000
+after scraping,
+
+04:43.000 --> 04:44.000
+alert used to show.
+
+04:44.000 --> 04:45.000
+But now it won't.
+
+04:45.000 --> 04:47.000
+As soon as you clicked on hello world,
+
+04:47.000 --> 04:48.000
+the message has been transferred
+
+04:48.000 --> 04:49.000
+to the background script.
+
+04:49.000 --> 04:50.000
+And the background script
+
+04:50.000 --> 04:52.000
+has printed that thing in the console.
+
+04:52.000 --> 04:53.000
+So now you can see,
+
+04:53.000 --> 04:55.000
+the message we have,
+
+04:55.000 --> 04:56.000
+has come completely.
+
+04:56.000 --> 04:58.000
+Whatever was written in the web page,
+
+04:58.000 --> 04:59.000
+everything has come.
+
+04:59.000 --> 05:01.000
+If you click on show more,
+
+05:01.000 --> 05:03.000
+then the whole content of the web page,
+
+05:03.000 --> 05:06.000
+has come to us.
+
+05:06.000 --> 05:09.000
+So now you can see,
+
+05:09.000 --> 05:12.000
+how easy it was to send the message.
+
+05:12.000 --> 05:13.000
+Now here,
+
+05:13.000 --> 05:15.000
+in the whole backend,
+
+05:15.000 --> 05:16.000
+you can see background.ts.
+
+05:16.000 --> 05:17.000
+Like here,
+
+05:17.000 --> 05:18.000
+by selecting background.js,
+
+05:18.000 --> 05:20.000
+I will click on hello world.
+
+05:20.000 --> 05:21.000
+And when I go back,
+
+05:21.000 --> 05:22.000
+you can see,
+
+05:22.000 --> 05:24.000
+you get all the text.
+
+05:24.000 --> 05:25.000
+So here you can understand,
+
+05:25.000 --> 05:26.000
+tomorrow,
+
+05:26.000 --> 05:27.000
+we will keep our analyzed text,
+
+05:27.000 --> 05:28.000
+summarized text.
+
+05:28.000 --> 05:29.000
+And in the same way,
+
+05:29.000 --> 05:30.000
+we will send the text,
+
+05:30.000 --> 05:31.000
+which will be analyzed,
+
+05:31.000 --> 05:32.000
+which will be summarized,
+
+05:32.000 --> 05:33.000
+to the message,
+
+05:33.000 --> 05:34.000
+in the popup.
+
+05:34.000 --> 05:35.000
+So here,
+
+05:35.000 --> 05:36.000
+it will be analyzed.
+
+05:36.000 --> 05:37.000
+Then the message will be sent
+
+05:37.000 --> 05:38.000
+to the popup.
+
+05:38.000 --> 05:39.000
+Then your result will be shown here.
+
+05:39.000 --> 05:40.000
+So now,
+
+05:40.000 --> 05:41.000
+you can see,
+
+05:41.000 --> 05:42.000
+that the text,
+
+05:42.000 --> 05:43.000
+which was analyzed,
+
+05:43.000 --> 05:44.000
+will be sent to the popup.
+
+05:44.000 --> 05:45.000
+So here,
+
+05:45.000 --> 05:46.000
+the text,
+
+05:46.000 --> 05:47.000
+will be sent to the popup.
+
+05:47.000 --> 05:48.000
+And here,
+
+05:48.000 --> 05:49.000
+the result will be shown.
+
+05:49.000 --> 05:50.000
+So,
+
+05:50.000 --> 05:51.000
+I hope,
+
+05:51.000 --> 05:52.000
+you understood,
+
+05:52.000 --> 05:53.000
+how to send a message.
+
+05:53.000 --> 05:54.000
+And what is the need for it.
+
