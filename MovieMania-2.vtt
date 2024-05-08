@@ -1,1395 +1,813 @@
 WEBVTT
 
-00:06.000 --> 00:11.000
-First we will create our first react app
 
-00:11.000 --> 00:16.000
-For our first project we are creating our first react app
+00:06.000 --> 00:09.000
+So now we will create our first react app
 
-00:16.000 --> 00:19.000
-For that we will create a folder
+00:09.000 --> 00:12.000
+So our first project is moviemania
 
-00:19.000 --> 00:22.000
-We will name it as moviemania
+00:12.000 --> 00:14.000
+For that we are creating our first react app
 
-00:22.000 --> 00:26.000
-Make sure everything is in small letters
+00:14.000 --> 00:17.000
+So for that you have to create a folder
 
-00:26.000 --> 00:31.000
-After that what you have to do is
+00:17.000 --> 00:20.000
+Whose name we will keep as moviemania
 
-00:31.000 --> 00:35.000
+00:20.000 --> 00:22.000
+So keep in mind that everything should be in small letters
+
+00:22.000 --> 00:25.000
+And after creating the folder moviemania
+
+00:25.000 --> 00:27.000
+What you have to do is
+
+00:27.000 --> 00:31.000
 If you are in windows 11 then you have to do shift plus right click
 
-00:35.000 --> 00:38.000
+00:31.000 --> 00:33.000
 And click on open with code
 
-00:38.000 --> 00:43.000
+00:33.000 --> 00:38.000
 So that your vs code editor will open in that folder
 
-00:43.000 --> 00:49.000
-After that you will see in the right top corner
-
-00:49.000 --> 00:51.000
-You will see a toggle panel here
-
-00:51.000 --> 00:53.000
-You have to click on it
-
-00:53.000 --> 00:56.000
-And a command prompt will open below
-
-00:56.000 --> 00:59.000
-And after that you have to write a command
-
-00:59.000 --> 01:01.000
-npx create react app
-
-01:01.000 --> 01:03.000
-What will happen is that
-
-01:03.000 --> 01:07.000
-The basic files and folders that you need in react app
-
-01:07.000 --> 01:09.000
-Will be created automatically
-
-01:09.000 --> 01:11.000
-You will not have to make it manually
-
-01:11.000 --> 01:16.000
-So you will write here npx create react app
-
-01:16.000 --> 01:18.000
-And after that you will put a dot
-
-01:18.000 --> 01:22.000
-This dot will ensure that all the files in this folder
-
-01:22.000 --> 01:24.000
-Will be created in this folder
-
-01:24.000 --> 01:26.000
-All the files that will be created now
-
-01:26.000 --> 01:27.000
-Will be in this folder
-
-01:27.000 --> 01:29.000
-So this dot ensures this
-
-01:29.000 --> 01:31.000
-After that you will enter it
-
-01:31.000 --> 01:33.000
-And this is a little time taking process
-
-01:33.000 --> 01:36.000
-Because it has a lot of things like installation
-
-01:36.000 --> 01:38.000
-So this can take a little time
-
-01:38.000 --> 01:40.000
-So we will wait for this
-
-01:44.000 --> 01:46.000
-So finally after creating react app
-
-01:46.000 --> 01:48.000
-You will see something like this below
-
-01:48.000 --> 01:51.000
-This will give you a message after success
-
-01:51.000 --> 01:54.000
-And our react app has been created
-
-01:54.000 --> 01:55.000
-Ok
-
-01:55.000 --> 01:57.000
-So now we will clear the terminal
-
-01:57.000 --> 01:59.000
-With the CLS command
-
-01:59.000 --> 02:01.000
-And after that we will make it smaller
-
-02:01.000 --> 02:03.000
-So now you can see that
-
-02:03.000 --> 02:05.000
-All the files and folders have been created
-
-02:05.000 --> 02:07.000
-On the side
-
-02:07.000 --> 02:09.000
-You didn't even make them
-
-02:09.000 --> 02:11.000
-This react app was created
-
-02:11.000 --> 02:13.000
-When you created it
-
-02:13.000 --> 02:15.000
-And you can see a lot of things here
-
-02:15.000 --> 02:17.000
-That have been created automatically
-
-02:17.000 --> 02:19.000
-So now you will put another command here
-
-02:19.000 --> 02:22.000
-With which you will be able to run your react app
-
-02:22.000 --> 02:24.000
-You will be able to see it
-
-02:24.000 --> 02:26.000
-So as soon as you run npm start
-
-02:26.000 --> 02:27.000
-This command will run
-
-02:27.000 --> 02:28.000
-So what will happen is
-
-02:28.000 --> 02:31.000
-Your react app will run automatically
-
-02:31.000 --> 02:33.000
-And you will be able to see it
-
-02:33.000 --> 02:35.000
-So as soon as you start npm
-
-02:35.000 --> 02:39.000
-Here the development server runs
-
-02:39.000 --> 02:41.000
-And your react app opens automatically
-
-02:41.000 --> 02:43.000
-On the browser
-
-02:45.000 --> 02:48.000
-So here our react app is opening
-
-02:51.000 --> 02:52.000
-Ok
-
-02:52.000 --> 02:54.000
-So this is our first react app
-
-02:54.000 --> 02:56.000
-So congratulations
-
-02:56.000 --> 02:58.000
-If this is your first react app
-
-02:58.000 --> 03:00.000
-Now we will make changes in it
-
-03:00.000 --> 03:02.000
-And we will
-
-03:02.000 --> 03:04.000
-Take it to the final project
-
-03:04.000 --> 03:06.000
-So after that we will minimize it
-
-03:06.000 --> 03:08.000
-And as long as we understand
-
-03:08.000 --> 03:10.000
-These folders
-
-03:10.000 --> 03:12.000
-And file structures
-
-03:12.000 --> 03:14.000
-So basically
-
-03:14.000 --> 03:16.000
-Here you can see
-
-03:16.000 --> 03:18.000
-The main folders of our work
-
-03:18.000 --> 03:19.000
-Are these two
-
-03:19.000 --> 03:20.000
-Public and source
-
-03:20.000 --> 03:21.000
-There are others too
-
-03:21.000 --> 03:23.000
-But you won't get that much use
-
-03:23.000 --> 03:25.000
-Of these two folders
-
-03:25.000 --> 03:26.000
-Of public and source folder
-
-03:26.000 --> 03:28.000
-So in the public folder
-
-03:28.000 --> 03:30.000
-The main thing is index.html
-
-03:30.000 --> 03:31.000
-Apart from this
-
-03:31.000 --> 03:33.000
-All other things are of no use
-
-03:33.000 --> 03:35.000
-You don't need to pay attention to them
-
-03:35.000 --> 03:37.000
-So what is index.html
-
-03:37.000 --> 03:39.000
-Here you can see all the content
-
-03:39.000 --> 03:40.000
-Of the website
-
-03:40.000 --> 03:42.000
-Here your react app is rendered
-
-03:42.000 --> 03:44.000
-That is the website you are seeing
-
-03:44.000 --> 03:45.000
-On the browser
-
-03:45.000 --> 03:47.000
-This is inside index.html
-
-03:47.000 --> 03:49.000
-This whole website
-
-03:49.000 --> 03:51.000
-Its code is inside index.html
-
-03:51.000 --> 03:52.000
-And you can see that
-
-03:52.000 --> 03:53.000
-You can see it
-
-03:53.000 --> 03:54.000
-So when you will
-
-03:54.000 --> 03:55.000
-Source the view page
-
-03:55.000 --> 03:56.000
-You will see
-
-03:56.000 --> 03:57.000
-Here you will see
-
-03:57.000 --> 03:58.000
-index.html
-
-03:58.000 --> 03:59.000
-After this
-
-03:59.000 --> 04:00.000
-The second thing
-
-04:00.000 --> 04:01.000
-That comes
-
-04:01.000 --> 04:02.000
-We have understood
-
-04:02.000 --> 04:03.000
-Index.html
-
-04:03.000 --> 04:04.000
-The main thing
-
-04:04.000 --> 04:05.000
-That comes
-
-04:05.000 --> 04:06.000
-Is the source folder
-
-04:06.000 --> 04:07.000
-Inside this
-
-04:07.000 --> 04:08.000
-You will be writing
-
-04:08.000 --> 04:09.000
-All your code
-
-04:09.000 --> 04:10.000
-And all this code
-
-04:10.000 --> 04:11.000
-When you have written
-
-04:11.000 --> 04:12.000
-All this code
-
-04:12.000 --> 04:13.000
-That you will write
-
-04:13.000 --> 04:14.000
-Here
-
-04:14.000 --> 04:15.000
-All this code
-
-04:15.000 --> 04:16.000
-Will go inside this source
-
-04:16.000 --> 04:17.000
-And inside this source
-
-04:17.000 --> 04:18.000
-You will see
-
-04:18.000 --> 04:19.000
-There are many
-
-04:19.000 --> 04:20.000
-Components
-
-04:20.000 --> 04:21.000
-Here
-
-04:21.000 --> 04:22.000
-You will see
-
-04:22.000 --> 04:23.000
-All the components
-
-04:23.000 --> 04:24.000
-Inside the source
-
-04:24.000 --> 04:25.000
-Now you will understand
-
-04:25.000 --> 04:26.000
-All this
-
-04:26.000 --> 04:27.000
-Before that
-
-04:27.000 --> 04:28.000
-We will see
-
-04:28.000 --> 04:29.000
-Inside the source
-
-04:29.000 --> 04:30.000
-There is one
-
-04:30.000 --> 04:31.000
-Index.js file
-
-04:31.000 --> 04:32.000
-What does
-
-04:32.000 --> 04:33.000
-Index.js file do
-
-04:33.000 --> 04:34.000
-That
-
-04:34.000 --> 04:35.000
-It renders
-
-04:35.000 --> 04:36.000
-The application
-
-04:36.000 --> 04:37.000
-That is
-
-04:37.000 --> 04:38.000
-Your
-
-04:38.000 --> 04:39.000
-App.js
-
-04:39.000 --> 04:40.000
-Whatever code
-
-04:40.000 --> 04:41.000
-You have written
-
-04:41.000 --> 04:42.000
-Inside it
-
-04:42.000 --> 04:43.000
-Here
-
-04:43.000 --> 04:44.000
-Whatever you write
-
-04:44.000 --> 04:45.000
-Inside app.js
-
-04:45.000 --> 04:46.000
-What it does
-
-04:46.000 --> 04:47.000
-It goes to
-
-04:47.000 --> 04:48.000
-Index.js
-
-04:48.000 --> 04:49.000
-And
-
-04:49.000 --> 04:50.000
-Index.js
-
-04:50.000 --> 04:51.000
-You
-
-04:51.000 --> 04:52.000
-Send it
-
-04:52.000 --> 04:53.000
-To the public
-
-04:53.000 --> 04:54.000
-Source
-
-04:54.000 --> 04:55.000
-In index.html
-
-04:55.000 --> 04:56.000
-So
-
-04:56.000 --> 04:57.000
-By sending it
-
-04:57.000 --> 04:58.000
-To the public
-
-04:58.000 --> 04:59.000
-Index.html
-
-04:59.000 --> 05:00.000
-It renders
-
-05:00.000 --> 05:01.000
-Your website
-
-05:01.000 --> 05:02.000
-That is when
-
-05:02.000 --> 05:03.000
-It shows
-
-05:03.000 --> 05:04.000
-Here
-
-05:04.000 --> 05:05.000
-You will be able
-
-05:05.000 --> 05:06.000
-To see
-
-05:06.000 --> 05:07.000
-Inside the source
-
-05:07.000 --> 05:08.000
-There is app.js
-
-05:08.000 --> 05:09.000
-So
-
-05:09.000 --> 05:10.000
-Inside app.js
-
-05:10.000 --> 05:11.000
-You write
-
-05:11.000 --> 05:12.000
-Your code
-
-05:12.000 --> 05:13.000
-Here
-
-05:13.000 --> 05:14.000
-Website
-
-05:14.000 --> 05:15.000
-Code
-
-05:15.000 --> 05:16.000
-Like
-
-05:16.000 --> 05:17.000
-It is already
-
-05:17.000 --> 05:18.000
-Written
-
-05:18.000 --> 05:19.000
-Here
-
-05:19.000 --> 05:20.000
-I will show
-
-05:20.000 --> 05:21.000
-Here
-
-05:21.000 --> 05:22.000
-And
-
-05:22.000 --> 05:23.000
-What you can see
-
-05:23.000 --> 05:24.000
-In the browser
-
-05:24.000 --> 05:25.000
-So
-
-05:25.000 --> 05:26.000
-Here
-
-05:26.000 --> 05:27.000
-If
-
-05:27.000 --> 05:28.000
-If you
-
-05:28.000 --> 05:29.000
-Take
-
-05:29.000 --> 05:30.000
-This
-
-05:30.000 --> 05:31.000
-Return
-
-05:31.000 --> 05:32.000
-Statement
-
-05:32.000 --> 05:33.000
-Whatever is
-
-05:33.000 --> 05:34.000
-Inside the
-
-05:34.000 --> 05:35.000
-Return
-
-05:35.000 --> 05:36.000
-Statement
-
-05:36.000 --> 05:37.000
-That is
-
-05:37.000 --> 05:38.000
-This
-
-05:38.000 --> 05:39.000
-Code
-
-05:39.000 --> 05:40.000
-Which
-
-05:40.000 --> 05:41.000
-You can
-
-05:41.000 --> 05:42.000
-See
-
-05:42.000 --> 05:43.000
-Here
-
-05:43.000 --> 05:44.000
-If
-
-05:44.000 --> 05:45.000
-I remove
-
-05:45.000 --> 05:46.000
-It
-
-05:46.000 --> 05:47.000
-If
-
-05:47.000 --> 05:48.000
-I
-
-05:48.000 --> 05:49.000
-Remove
-
-05:49.000 --> 05:50.000
-This
-
-05:50.000 --> 05:51.000
-Code
-
-05:51.000 --> 05:52.000
-Then
-
-05:52.000 --> 05:53.000
-Everything
-
-05:53.000 --> 05:54.000
-Which
-
-05:54.000 --> 05:55.000
-Was
-
-05:55.000 --> 05:56.000
-Seen
-
-05:56.000 --> 05:57.000
-Was
-
-05:57.000 --> 05:58.000
-Inside
-
-05:58.000 --> 05:59.000
-App.js
-
-05:59.000 --> 06:00.000
-And
-
-06:00.000 --> 06:01.000
-When
-
-06:01.000 --> 06:02.000
-We
-
-06:02.000 --> 06:03.000
-Removed
-
-06:03.000 --> 06:04.000
-The
-
-06:04.000 --> 06:05.000
-Code
-
-06:05.000 --> 06:06.000
-It
-
-06:06.000 --> 06:07.000
-Is
-
-06:07.000 --> 06:08.000
-Empty
-
-06:08.000 --> 06:09.000
+00:38.000 --> 00:40.000
 Okay
 
-06:09.000 --> 06:10.000
-So
+00:40.000 --> 00:42.000
+After that you will be able to see here
 
-06:10.000 --> 06:11.000
-Whatever
+00:42.000 --> 00:44.000
+In the right top corner
 
-06:11.000 --> 06:12.000
-You
+00:44.000 --> 00:46.000
+You will see a toggle panel
 
-06:12.000 --> 06:13.000
-Write
+00:46.000 --> 00:48.000
+You have to click on that
 
-06:13.000 --> 06:14.000
-Here
+00:48.000 --> 00:51.000
+And a command prompt will open below
 
-06:14.000 --> 06:15.000
-It
+00:51.000 --> 00:54.000
+And after that you have to write a command
 
-06:15.000 --> 06:16.000
-Writes
+00:54.000 --> 00:56.000
+npx create react app
 
-06:16.000 --> 06:17.000
-In
+00:56.000 --> 00:57.000
+With this
 
-06:17.000 --> 06:18.000
-Your
+00:57.000 --> 00:58.000
+What will happen is
 
-06:18.000 --> 06:19.000
-Website
+00:58.000 --> 01:01.000
+The basic files and folders that you need in react app
 
-06:19.000 --> 06:20.000
-What
+01:01.000 --> 01:03.000
+Will be created automatically
 
-06:20.000 --> 06:21.000
-Is
+01:03.000 --> 01:05.000
+You don't have to make it manually
 
-06:21.000 --> 06:22.000
-Component
+01:05.000 --> 01:06.000
+So you will write here
 
-06:22.000 --> 06:23.000
-Component
+01:06.000 --> 01:08.000
+npx create react app
 
-06:23.000 --> 06:24.000
-Is
+01:10.000 --> 01:12.000
+And after that you will put a dot
 
-06:24.000 --> 06:25.000
-A
+01:12.000 --> 01:13.000
+What will happen is
 
-06:25.000 --> 06:26.000
-Part
+01:13.000 --> 01:15.000
+This dot will ensure that
 
-06:26.000 --> 06:27.000
-Of
+01:15.000 --> 01:16.000
+All the files in this folder
 
-06:27.000 --> 06:28.000
-Website
+01:16.000 --> 01:18.000
+Will be created in this folder
 
-06:28.000 --> 06:29.000
-Of
+01:18.000 --> 01:19.000
+All the files that are going to be created
 
-06:29.000 --> 06:30.000
-React
+01:19.000 --> 01:20.000
+Will be in this folder
 
-06:30.000 --> 06:31.000
-As
+01:20.000 --> 01:22.000
+So this dot ensures this
 
-06:31.000 --> 06:32.000
-You
+01:22.000 --> 01:24.000
+After that you will enter it
 
-06:32.000 --> 06:33.000
-Can
+01:24.000 --> 01:26.000
+And this is a time taking process
 
-06:33.000 --> 06:34.000
-See
+01:26.000 --> 01:29.000
+Because a lot of things are installed in this
 
-06:34.000 --> 06:35.000
-Here
+01:29.000 --> 01:31.000
+So it can take some time
 
-06:35.000 --> 06:36.000
-We
+01:31.000 --> 01:33.000
+So we will wait for this
 
-06:36.000 --> 06:37.000
-Can
+01:33.000 --> 01:35.000
+So finally after creating react app
 
-06:37.000 --> 06:38.000
-See
+01:35.000 --> 01:37.000
+You will see something like this below
 
-06:38.000 --> 06:39.000
-This
+01:37.000 --> 01:40.000
+This will give you a message after success
 
-06:39.000 --> 06:40.000
-Site
+01:40.000 --> 01:42.000
+And our react app is created
 
-06:40.000 --> 06:41.000
-Website
+01:42.000 --> 01:43.000
+Okay
 
-06:41.000 --> 06:42.000
-So
+01:43.000 --> 01:45.000
+So now we will clear the terminal
 
-06:42.000 --> 06:43.000
-This
+01:45.000 --> 01:47.000
+With the CLS command
 
-06:43.000 --> 06:44.000
-Top
+01:47.000 --> 01:49.000
+And after that we will make it smaller
 
-06:44.000 --> 06:45.000
-Part
+01:49.000 --> 01:51.000
+So now you can see that
 
-06:45.000 --> 06:46.000
-Of
+01:51.000 --> 01:54.000
+All the files and folders are created automatically
 
-06:46.000 --> 06:47.000
-Website
+01:54.000 --> 01:55.000
+You didn't even make them
 
-06:47.000 --> 06:47.800
-Is
+01:55.000 --> 01:58.000
+When you created this react app
 
-06:47.800 --> 06:48.800
-Divided
+01:58.000 --> 02:00.000
+It happened after that
 
-06:48.800 --> 06:49.800
-In
+02:00.000 --> 02:02.000
+And you can see a lot of things here
 
-06:49.800 --> 06:50.800
-Different Parts
+02:02.000 --> 02:04.000
+That have been created automatically
 
-06:50.800 --> 06:51.800
-And
+02:04.000 --> 02:06.000
+So now you will put another command here
 
-06:51.800 --> 06:52.800
-In
+02:06.000 --> 02:09.000
+With which you will be able to run your react app
 
-06:52.800 --> 06:53.800
-React
+02:09.000 --> 02:10.000
+You will be able to run it
 
-06:53.800 --> 06:54.800
-You
+02:10.000 --> 02:11.000
+You will be able to see it
 
-06:54.800 --> 06:55.800
-Can
+02:11.000 --> 02:13.000
+So as soon as you run this command
 
-06:55.800 --> 06:56.800
-Code
+02:13.000 --> 02:14.000
+What will happen is
 
-06:56.800 --> 06:57.800
-These
+02:14.000 --> 02:17.000
+That your react app will run automatically
 
-06:57.800 --> 06:58.800
-Parts
+02:17.000 --> 02:19.000
+And you will be able to see it
 
-06:58.800 --> 06:59.800
-Separately
+02:19.000 --> 02:21.000
+So as soon as you start npm
 
-06:59.800 --> 07:00.800
-You
+02:21.000 --> 02:24.000
+The development server runs here
 
-07:00.800 --> 07:01.800
-Can
+02:24.000 --> 02:27.000
+And your react app will open automatically
 
-07:01.800 --> 07:02.800
-Code
+02:27.000 --> 02:28.000
+On the browser
 
-07:02.800 --> 07:03.800
-These
+02:28.000 --> 02:29.000
+Okay
 
-07:03.800 --> 07:04.800
-Parts
+02:29.000 --> 02:32.000
+So this is our first react app
 
-07:04.800 --> 07:05.800
-Separately
+02:32.000 --> 02:33.000
+So congratulations
 
-07:05.800 --> 07:06.800
-And
+02:33.000 --> 02:35.000
+If this is your first react app
 
-07:06.800 --> 07:07.800
-Then
+02:35.000 --> 02:37.000
+Now we will make changes in this
 
-07:07.800 --> 07:08.800
-You
+02:37.000 --> 02:39.000
+And we will
 
-07:08.800 --> 07:09.800
-Can
+02:39.000 --> 02:41.000
+Make it reach the final project
 
-07:09.800 --> 07:10.800
-Show
+02:41.000 --> 02:43.000
+So after this we will minimize it
 
-07:10.800 --> 07:11.800
-These
+02:43.000 --> 02:45.000
+And as long as we understand
 
-07:11.800 --> 07:12.800
-Parts
+02:45.000 --> 02:47.000
+These folders
 
-07:12.800 --> 07:13.800
-As
+02:47.000 --> 02:49.000
+And file structures
 
-07:13.800 --> 07:14.800
-A
+02:49.000 --> 02:51.000
+So basically see here
 
-07:14.800 --> 07:15.800
-Website
+02:51.000 --> 02:53.000
+The main folders of our work
 
-07:15.800 --> 07:16.800
-So
+02:53.000 --> 02:55.000
+Are these two
 
-07:16.800 --> 07:17.800
-Let's
+02:55.000 --> 02:56.000
+Public and source
 
-07:17.800 --> 07:18.800
-For
+02:56.000 --> 02:57.000
+There are others too
 
-07:18.800 --> 07:19.800
-Example
+02:57.000 --> 02:59.000
+But you will not be able to use the rest
 
-07:19.800 --> 07:20.800
-Here
+02:59.000 --> 03:01.000
+As much as you will be able to use these two folders
 
-07:20.800 --> 07:21.800
-We
+03:01.000 --> 03:03.000
+Of public and source folder
 
-07:21.800 --> 07:22.800
-Make
+03:03.000 --> 03:05.000
+So the main thing in the public folder
 
-07:22.800 --> 07:23.800
-A
+03:05.000 --> 03:07.000
+Is index.html
 
-07:23.800 --> 07:24.800
-Div
+03:07.000 --> 03:08.000
+Apart from this all other things
 
-07:24.800 --> 07:25.800
-Division
+03:08.000 --> 03:09.000
+Are of no use
 
-07:25.800 --> 07:26.800
-Tag
+03:09.000 --> 03:11.000
+You don't need to pay attention to them
 
-07:26.800 --> 07:27.800
-So
+03:11.000 --> 03:13.000
+So what is index.html
 
-07:27.800 --> 07:28.800
-In
+03:13.000 --> 03:16.000
+Here you can see all the content of the website
 
-07:28.800 --> 07:29.800
-Your
+03:16.000 --> 03:18.000
+Here your react app is rendered
 
-07:29.800 --> 07:30.800
-HTML
+03:18.000 --> 03:20.000
+That means the website you are able to see
 
-07:30.800 --> 07:31.800
-What
+03:20.000 --> 03:21.000
+On the browser
 
-07:31.800 --> 07:32.800
-Is
+03:21.000 --> 03:22.000
+Is inside index.html
 
-07:32.800 --> 07:33.800
-Div
+03:22.000 --> 03:24.000
+The whole website
 
-07:33.800 --> 07:34.800
-Tag
+03:24.000 --> 03:26.000
+Is inside index.html
 
-07:34.800 --> 07:35.800
-This
+03:26.000 --> 03:28.000
+And you can see it
 
-07:35.800 --> 07:36.800
-Is
+03:28.000 --> 03:30.000
+So when you will do the view page source
 
-07:36.800 --> 07:37.800
-Basic
+03:30.000 --> 03:32.000
+Here you will see index.html
 
-07:37.800 --> 07:38.800
-Div
+03:32.000 --> 03:34.000
+After this
 
-07:38.800 --> 07:39.800
-Tag
+03:34.000 --> 03:36.000
+The second thing that comes
 
-07:39.800 --> 07:40.800
-In
+03:36.000 --> 03:38.000
+We have understood index.html
 
-07:40.800 --> 07:41.800
-This
+03:38.000 --> 03:40.000
+The main thing that comes
 
-07:41.800 --> 07:42.800
-You
+03:40.000 --> 03:42.000
+Is the source folder
 
-07:42.800 --> 07:43.800
-Write
+03:42.000 --> 03:44.000
+In this you will be writing all your code
 
-07:43.800 --> 07:44.800
-Anything
+03:44.000 --> 03:46.000
+And when you have written all the code
 
-07:44.800 --> 07:45.800
-In
+03:46.000 --> 03:48.000
+The code that you will write here
 
-07:45.800 --> 07:46.800
-Hello
+03:48.000 --> 03:50.000
+All this code will go inside this source
 
-07:46.800 --> 07:47.800
-What
+03:50.000 --> 03:52.000
+And inside this source
 
-07:47.800 --> 07:48.800
-As
+03:52.000 --> 03:55.000
+There are many components
 
-07:48.800 --> 07:49.800
-It
+03:55.000 --> 03:57.000
+Here you will put the components inside the source
 
-07:49.800 --> 07:50.800
-Is
+03:57.000 --> 03:59.000
+Now you will understand all that
 
-07:50.800 --> 07:51.800
-Rendered
+03:59.000 --> 04:01.000
+Before that we will see
 
-07:51.800 --> 07:52.800
-Here
+04:01.000 --> 04:02.000
+Inside the source there is one thing
 
-07:52.800 --> 07:53.800
+04:02.000 --> 04:04.000
+Index.js file
+
+04:04.000 --> 04:06.000
+What index.js file does
+
+04:06.000 --> 04:08.000
+That
+
+04:08.000 --> 04:10.000
+It renders the application
+
+04:10.000 --> 04:12.000
+That means
+
+04:12.000 --> 04:14.000
+Whatever code you have written inside your app.js
+
+04:14.000 --> 04:16.000
+Here whatever you write inside app.js
+
+04:16.000 --> 04:18.000
+What it does
+
+04:18.000 --> 04:20.000
+It goes to index.js
+
+04:20.000 --> 04:22.000
+And index.js
+
+04:22.000 --> 04:24.000
+You send it to the public source
+
+04:24.000 --> 04:26.000
+In index.html
+
+04:26.000 --> 04:28.000
+So by sending it to public index.html
+
+04:28.000 --> 04:30.000
+It renders it
+
+04:30.000 --> 04:32.000
+Your website
+
+04:32.000 --> 04:34.000
+Then it shows
+
+04:36.000 --> 04:38.000
+So here you will be able to see
+
+04:38.000 --> 04:40.000
+Inside the source there is app.js
+
+04:40.000 --> 04:42.000
+So inside app.js you write your code
+
+04:42.000 --> 04:44.000
+The code of the website
+
+04:44.000 --> 04:46.000
+As it is already written here
+
+04:46.000 --> 04:48.000
+I will show you
+
+04:48.000 --> 04:49.000
+As it is already written here
+
+04:49.000 --> 04:51.000
+Everything
+
+04:51.000 --> 04:53.000
+And what you see in the browser
+
+04:53.000 --> 04:55.000
+So here
+
+04:55.000 --> 04:57.000
+For example
+
+04:57.000 --> 04:59.000
+Whatever is in this return statement
+
+04:59.000 --> 05:01.000
+That is all the code
+
+05:01.000 --> 05:03.000
+If I remove it
+
+05:03.000 --> 05:05.000
+If I remove all this
+
+05:05.000 --> 05:07.000
+And then I save it once
+
+05:07.000 --> 05:09.000
+And here I
+
+05:09.000 --> 05:11.000
+For now
+
+05:11.000 --> 05:13.000
+I put this
+
+05:13.000 --> 05:15.000
 Ok
 
-07:53.800 --> 07:54.800
+05:15.000 --> 05:17.000
+Now I save it
+
+05:17.000 --> 05:19.000
+See the whole app is empty
+
+05:19.000 --> 05:21.000
+Everything was inside app.js
+
+05:21.000 --> 05:23.000
+And as soon as we removed all the code
+
+05:23.000 --> 05:25.000
+It is empty
+
+05:25.000 --> 05:27.000
+Ok
+
+05:27.000 --> 05:29.000
+So whatever you write here
+
+05:29.000 --> 05:31.000
+It is written in your website
+
+05:31.000 --> 05:33.000
+For now you should know this much
+
+05:33.000 --> 05:35.000
+Now
+
+05:35.000 --> 05:37.000
+What I have done here
+
+05:37.000 --> 05:39.000
+I will slowly explain to you
+
+05:39.000 --> 05:41.000
+So first of all
+
+05:41.000 --> 05:43.000
+What is this
+
+05:43.000 --> 05:45.000
+What is app.js
+
+05:45.000 --> 05:47.000
+App.js is basically a component
+
+05:47.000 --> 05:49.000
+What is component?
+
+05:49.000 --> 05:51.000
+App.js is a component
+
+05:51.000 --> 05:53.000
+Of the website of react
+
+05:53.000 --> 05:55.000
+Of the website of react
+
+05:55.000 --> 05:57.000
+As you can see here
+
+05:57.000 --> 05:59.000
+You can see the vs code editor
+
+05:59.000 --> 06:01.000
+Let's assume this is a website
+
+06:01.000 --> 06:03.000
+So the top part of vs code editor
+
+06:03.000 --> 06:05.000
+Where the search is
+
+06:05.000 --> 06:07.000
+This is a different component
+
+06:07.000 --> 06:09.000
+Which we can call search component
+
+06:09.000 --> 06:11.000
+The code you are writing in the middle
+
+06:11.000 --> 06:13.000
+This is a different component
+
+06:13.000 --> 06:15.000
+Where your folders are visible
+
+06:15.000 --> 06:17.000
+This is a different component
+
+06:17.000 --> 06:19.000
+In react you can code these parts separately
+
+06:19.000 --> 06:21.000
+That is you can code it separately
+
+06:21.000 --> 06:23.000
+You can code it separately
+
+06:23.000 --> 06:25.000
+And you can code it separately
+
+06:25.000 --> 06:27.000
+Then you can show these three together
+
+06:27.000 --> 06:29.000
+As a website
+
+06:29.000 --> 06:31.000
+So app.js is also here
+
+06:31.000 --> 06:33.000
+The part you were seeing in app.js
+
+06:33.000 --> 06:35.000
+Everything was written in app.js
+
+06:35.000 --> 06:37.000
+So now
+
+06:37.000 --> 06:39.000
+You will make changes here
+
+06:39.000 --> 06:41.000
+And those changes will be seen in your browser
+
+06:41.000 --> 06:43.000
+So let's assume
+
+06:43.000 --> 06:45.000
+For example
+
+06:45.000 --> 06:47.000
+We make a div here
+
+06:47.000 --> 06:49.000
+We make a division tag
+
+06:49.000 --> 06:51.000
 So
 
-07:54.800 --> 07:55.800
-This Is
+06:51.000 --> 06:53.000
+You must have seen in your html
 
-07:55.800 --> 07:56.800
-Basic Functionality
+06:53.000 --> 06:55.000
+What is div tag
 
-07:56.800 --> 07:57.800
-You
+06:55.000 --> 06:57.000
+This div is a basic div tag
 
-07:57.800 --> 07:58.800
-Will Say
+06:57.000 --> 06:59.000
+In this you write anything
 
-07:58.800 --> 07:59.800
-What Is
+06:59.000 --> 07:01.000
+Like hello world
 
-07:59.800 --> 08:00.800
-Good
+07:01.000 --> 07:03.000
+Here we write hello world
 
-08:00.800 --> 08:01.800
-In
+07:05.000 --> 07:07.000
+You wrote hello world in div
 
-08:01.800 --> 08:02.800
-This
+07:07.000 --> 07:09.000
+Now you will go to browser
 
-08:02.800 --> 08:03.800
-What Is
+07:09.000 --> 07:11.000
+So you will see here
 
-08:03.800 --> 08:04.800
-Special
+07:11.000 --> 07:13.000
+Hello world as it is rendered here
 
-08:04.800 --> 08:05.800
-In
+07:13.000 --> 07:15.000
+So this is a basic functionality
 
-08:05.800 --> 08:06.800
-This
+07:15.000 --> 07:17.000
+You will say what is good in this
 
-08:06.800 --> 08:07.800
-Let's
+07:17.000 --> 07:19.000
+Now let's assume
 
-08:07.800 --> 08:08.800
-Assume
+07:19.000 --> 07:21.000
+You put a bracket here
 
-08:08.800 --> 08:09.800
-Here
+07:21.000 --> 07:23.000
+Curly braces
 
-08:09.800 --> 08:10.800
-A
+07:23.000 --> 07:25.000
+And in curly braces you write
 
-08:10.800 --> 08:11.800
-Bracket
+07:25.000 --> 07:27.000
+4 plus 4
 
-08:11.800 --> 08:12.800
-Curly
+07:29.000 --> 07:31.000
+If you are making normal websites
 
-08:12.800 --> 08:13.800
-Braces
+07:31.000 --> 07:33.000
+If you are using normal html
 
-08:13.800 --> 08:14.800
-And
+07:33.000 --> 07:35.000
+So what happens is
 
-08:14.800 --> 08:15.800
-Here You
+07:35.000 --> 07:37.000
+You see 4 plus 4
 
-08:15.800 --> 08:16.800
-See
+07:37.000 --> 07:39.000
+You only see 4 plus 4
 
-08:16.800 --> 08:17.800
-Hello
+07:39.000 --> 07:41.000
+You write hello world bracket 4 plus 4
 
-08:17.800 --> 08:18.800
-Word
+07:41.000 --> 07:43.000
+But when you see here
 
-08:18.800 --> 08:19.800
-Bracket
+07:43.000 --> 07:45.000
+You will see hello world and 8
 
-08:19.800 --> 08:20.800
-4
+07:45.000 --> 07:47.000
+This means
 
-08:20.800 --> 08:21.800
-Plus
+07:47.000 --> 07:49.000
+You can do logical implementation
 
-08:21.800 --> 08:22.800
-4
+07:49.000 --> 07:51.000
+In your html
 
-08:22.800 --> 08:23.800
-But
+07:51.000 --> 07:53.000
+You can add logics in your code
 
-08:23.800 --> 08:24.800
-When
+07:53.000 --> 07:55.000
+If you were in html
 
-08:24.800 --> 08:25.800
-You
+07:55.000 --> 07:57.000
+You will see 4 plus 4
 
-08:25.800 --> 08:26.800
-See
+07:57.000 --> 07:59.000
+But if you are in react
 
-08:26.800 --> 08:27.800
-Here
+07:59.000 --> 08:01.000
+You will see calculated value
 
-08:27.800 --> 08:28.800
-You
+08:01.000 --> 08:03.000
+Now let's do this
 
-08:28.800 --> 08:29.800
-See
+08:03.000 --> 08:05.000
+With one more thing
 
-08:29.800 --> 08:30.800
-Hello
+08:05.000 --> 08:07.000
+Let's assume
 
-08:30.800 --> 08:31.800
-Word
+08:07.000 --> 08:09.000
+You made a variable
 
-08:31.800 --> 08:32.800
-And
+08:09.000 --> 08:11.000
+What is a variable
 
-08:32.800 --> 08:33.800
-8
+08:11.000 --> 08:13.000
+You must have known
 
-08:33.800 --> 08:34.800
-This
+08:13.000 --> 08:15.000
+But then I will tell you
 
-08:34.800 --> 08:35.800
-Means
+08:15.000 --> 08:17.000
+Variables are basically
 
-08:35.800 --> 08:36.800
-Here
+08:17.000 --> 08:19.000
+Used to store any value
 
-08:36.800 --> 08:37.800
-You
+08:19.000 --> 08:21.000
+Where we make a variable
 
-08:37.800 --> 08:38.800
-Can
+08:21.000 --> 08:23.000
+In javascript
 
-08:38.800 --> 08:39.800
-Do
+08:23.000 --> 08:25.000
+Variable is made in this way
 
-08:39.800 --> 08:40.800
-Logical
+08:25.000 --> 08:27.000
+Name of const and variable
 
-08:40.800 --> 08:41.800
-Implementation
+08:27.000 --> 08:29.000
+Whatever name you give
 
-08:41.800 --> 08:42.800
-In
+08:29.000 --> 08:31.000
+In question
 
-08:42.800 --> 08:43.800
-Your
+08:31.000 --> 08:33.000
+We give it some value
 
-08:43.800 --> 08:44.800
-Name
+08:33.000 --> 08:35.000
+Like we give react
 
-08:44.800 --> 08:45.800
-Let's
+08:35.000 --> 08:37.000
+React here
 
-08:45.800 --> 08:46.800
-Assume
+08:37.000 --> 08:39.000
+And what we do after this
 
-08:46.800 --> 08:47.800
-Here
+08:39.000 --> 08:41.000
+In this curly braces
 
-08:47.800 --> 08:48.800
-You
+08:41.000 --> 08:43.000
+We pass name
 
-08:48.800 --> 08:49.800
-Made
+08:43.000 --> 08:45.000
+And when we save it
 
-08:49.800 --> 08:50.800
-A
+08:45.000 --> 08:47.000
+You will see
 
-08:50.800 --> 08:51.800
-Variable
+08:47.000 --> 08:49.000
+Hello world reacted
 
-08:51.800 --> 08:52.800
-What
+08:49.000 --> 08:51.000
+You can see
 
-08:52.800 --> 08:53.800
-Are
+08:51.000 --> 08:53.000
+Dynamically values are changing
 
-08:53.800 --> 08:54.800
-Variables
+08:53.000 --> 08:55.000
+You can also use variables
 
-08:54.800 --> 08:55.800
-You
+08:55.000 --> 08:57.000
+In code
 
-08:55.800 --> 08:56.800
-Know
+08:57.000 --> 08:59.000
+So how convenient it is
 
-08:56.800 --> 08:57.800
-You
+08:59.000 --> 09:01.000
+How useful it is
 
-08:57.800 --> 08:58.800
-Must
+09:01.000 --> 09:03.000
+You must be able to understand
 
-08:58.800 --> 08:59.800
-Have
+09:03.000 --> 09:05.000
+So this was the basics
 
-08:59.800 --> 09:00.800
-Done
+09:05.000 --> 09:07.000
+About our react folders
 
-09:00.800 --> 09:01.800
-More
+09:07.000 --> 09:09.000
+And basic things
 
-09:01.800 --> 09:02.800
-Languages
+09:09.000 --> 09:11.000
+So now
 
-09:02.800 --> 09:03.800
-But
+09:11.000 --> 09:13.000
+We will know it better
 
-09:03.800 --> 09:04.800
-Then
-
-09:04.800 --> 09:05.800
-I
-
-09:05.800 --> 09:06.800
-Tell
-
-09:06.800 --> 09:07.800
-You
-
-09:07.800 --> 09:08.800
-Variables
-
-09:08.800 --> 09:09.800
-Are
-
-09:09.800 --> 09:10.800
-Used
-
-09:10.800 --> 09:11.800
-To
-
-09:11.800 --> 09:12.800
-Store
-
-09:12.800 --> 09:13.800
-Any
-
-09:13.800 --> 09:14.800
-Variables
-
-09:14.800 --> 09:15.800
-Here
-
-09:15.800 --> 09:16.800
-In
-
-09:16.800 --> 09:17.800
-Your
-
-09:17.800 --> 09:18.800
-Name
-
-09:18.800 --> 09:19.800
-And
-
-09:19.800 --> 09:20.800
-Here
-
-09:20.800 --> 09:21.800
-You
-
-09:21.800 --> 09:22.800
-Can
-
-09:22.800 --> 09:23.800
-Save
-
-09:23.800 --> 09:24.800
-Your
-
-09:24.800 --> 09:25.800
-Name
-
-09:25.800 --> 09:26.800
-And
-
-09:26.800 --> 09:27.800
-Here
-
-09:27.800 --> 09:28.800
-You
-
-09:28.800 --> 09:29.800
-Can
-
-09:29.800 --> 09:30.800
-Save
-
-09:30.800 --> 09:31.800
-Your
-
-09:31.800 --> 09:32.800
-Name
-
-09:32.800 --> 09:33.800
-And
-
-09:33.800 --> 09:34.800
-Save
-
-09:34.800 --> 09:35.800
-Your
-
-09:35.800 --> 09:36.800
-Name
-
-09:36.800 --> 09:37.800
-Here
-
-09:37.800 --> 09:38.800
-And
-
-09:38.800 --> 09:39.800
-Here
-
-09:39.800 --> 09:40.800
-You
-
-09:40.800 --> 09:41.800
-Can
-
-09:41.800 --> 09:42.800
-Save
-
-09:42.800 --> 09:43.600
-Your Name
-
-09:43.600 --> 09:44.320
-What
-
-09:44.320 --> 09:44.660
-rive
-
-09:45.040 --> 09:45.060
-Is
-
-09:45.060 --> 09:45.680
-Here
-
-09:45.680 --> 09:46.040
-Where
-
-09:46.040 --> 09:46.540
-Is
-
-09:46.540 --> 09:46.820
-Here
-
-09:46.820 --> 09:48.200
-So
-
-09:48.200 --> 09:48.620
-Here
-
-09:48.620 --> 09:49.060
-You
-
-09:49.060 --> 09:49.720
-Have
-
-09:49.720 --> 09:50.240
-Know
-
-09:50.240 --> 09:51.100
-The
-
-09:51.100 --> 09:51.860
-Full
-
-09:51.860 --> 09:54.580
-Data
-
-09:54.580 --> 09:54.840
-Of
-
-09:54.840 --> 09:55.760
-So
-
+09:13.000 --> 09:15.000
+Let's move forward
 
